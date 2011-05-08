@@ -1,0 +1,394 @@
+// intent of the 'design' sass is that all essential design elements for the application are placed here
+// individual element styling will be addressed in element name spaced sass files
+
+
+
+@import "imports/dependencies.sass"
+
+html, body
+  height: 100%
+
+a
+  color: $href_color
+  text-decoration: none
+
+  &:hover
+    text-decoration: underline
+
+.spinner_sml
+  +ajax_spinner_sml
+  
+.spinner_lg
+  +ajax_spinner_lg
+
+#header
+  position: fixed
+  width: 100%
+
+.active_edit  
+  background-color: $kilo_grey
+
+.title_bar
+  padding: 0 0 0 10px
+  +alpha_color_gradient
+  +flexbox(horizontal, start, end, 100%, 60px)
+  h1
+    margin-bottom: 0px
+  .navigation
+    margin-left: 60px
+  .utility
+    text-align: right
+    margin-right: 10px
+    +flex(1)
+    
+.action_buttons_container
+  background-color: $india_grey
+  width: 90%
+  margin: 0 auto
+  +box_shadow($shadow_color, 0px 0px 10px)
+  +border_radius(0px, 0px, 10px, 10px)
+  padding: 10px
+  .action_buttons
+    display: inline-block
+    width: 100%
+    margin: 0
+  li
+    float: left
+    width: auto
+    + li
+      float: right
+      width: auto
+  
+    
+
+////////  I don't know why the flexbox is not working?
+////////  needs to be re-factored 
+////////  this is only a boot-strap till I can figure this out
+.gecko
+  #header
+    h1, .navigation
+      float: left
+    .navigation
+      margin: 25px 0 0 60px
+    .utility
+      margin-top: 40px
+      float: right
+////////  I don't know why the flexbox is not working?
+////////  needs to be re-factored 
+////////  this is only a boot-strap till I can figure this out
+
+
+
+#application
+  #content
+    width: 100%
+    padding-top: 120px
+  
+    textarea#editor
+      border: 1px solid #ccc
+      border-right: 0
+      float: left
+      height: 350px
+      margin: 60px 0 0 6px
+      width: 40%
+    
+
+
+   
+////////// these are deprecated  ////////////
+////////// do not use classes in building new widgets
+////////// build classes using mixin arguments shown
+.flexbox_vertical
+  +flexbox(vertical, center, center, 100%, 100%)
+  
+.flexbox_horizontal
+  +flexbox(horizontal, start, end, 100%, 100%)
+////////// these are deprecated  //////////// 
+
+
+
+
+///// tabbed UI //////
+.tabbed_ui
+  margin: 0
+  li
+    font-weight: 600
+    +large
+    color: $bravo_color
+    padding: 10px 20px
+    line-height: 1em
+    +border_radius(6px, 6px, 0, 0)
+    display: inline-block
+    margin: 0px
+    +golf_color_gradient
+    margin-right: 3px
+    &:hover
+      color: $bravo_color
+      +hotel_color_gradient
+    &:active
+      color: $alpha_color 
+    a
+      display: inline-block
+      margin: -10px -20px
+      padding: 10px 15px
+      color: $india_grey
+      &:hover
+        color: $bravo_color
+  .selected_tab
+    background: $india_grey
+    &:hover
+      background: $india_grey
+    a
+      color: $bravo_color !important
+      &:hover
+        text-decoration: none
+        cursor: text
+        
+.small_tab
+  li
+    +medium
+    +mike_color_gradient
+    line-height: 1em
+    padding: 8px 12px
+    border: 1px solid $golf_grey
+    border-bottom: 0px
+    margin-right: 5px
+    &:hover
+      margin-bottom: -1px
+      padding-bottom: 9px
+      background: $india_grey
+      a
+        color: $alpha_grey
+    &:first-child
+      margin-left: 10px
+  .selected_tab
+    padding-bottom: 9px
+    margin-bottom: -1px
+    a
+      color: $alpha_grey
+      &:hover
+        color: $alpha_grey
+///// tabbed UI //////
+
+
+
+
+///// UI code for edit containers //////
+#views-container
+  #preview-container
+    margin-bottom: 10px
+
+    #preview
+      border: 0
+      overflow: hidden
+      width: 100%
+      min-height: 400px
+      
+#sites-container
+  width: 100%
+  #preview-container
+    
+
+    #preview
+      border: 0
+      min-height: 400px
+      width: 100%
+      overflow: hidden
+
+
+// pretty sure that this is dead //
+//#view-selector
+//  ul
+//    height: 300px
+//    overflow: auto
+//    border: 1px solid $alpha_grey
+//
+//    li
+//      padding: 0 0 0px 10px
+//      height: 20px
+//      line-height: 20px
+//      &:first-child
+//        margin-top: 10px
+//      &:last-child
+//        margin-bottom: 10px
+//    
+//    li:hover
+//      background-color: #ccc
+//      cursor: pointer
+// pretty sure that this is dead //
+
+
+///// UI code for edit containers //////
+
+
+//// log in screen UI ////
+#login-screen
+  +login_bkg
+  
+  #content
+    height: 100%
+//// log in screen UI ////
+
+
+//// edit bib UI ////
+#edit_tab_content
+  width: 100%
+  position: fixed
+  top: 60px
+//// edit bib UI ////
+
+
+/////// color blocks ////////
+.alpha_grey
+  background-color: $alpha_grey
+
+.bravo_grey
+  background-color: $bravo_grey
+  
+.charlie_grey
+  background-color: $charlie_grey
+  
+.delta_grey
+  background-color: $delta_grey
+  
+.echo_grey
+  background-color: $echo_grey
+  
+.fox_grey
+  background-color: $fox_grey
+  
+.golf_grey
+  background-color: $golf_grey
+  
+.hotel_grey
+  background-color: $hotel_grey
+
+.india_grey
+  background-color: $india_grey
+
+.juliet_grey
+  background-color: $juliet_grey
+
+.kilo_grey
+  background-color: $kilo_grey
+
+
+.alpha_color
+  background-color: $alpha_color
+
+.bravo_color
+  background-color: $bravo_color
+  
+.charlie_color
+  background-color: $charlie_color
+  
+.delta_color
+  background-color: $delta_color
+  
+.echo_color
+  background-color: $echo_color
+  
+.fox_color
+  background-color: $fox_color
+  
+.golf_color
+  background-color: $golf_color
+  
+.hotel_color
+  background-color: $hotel_color
+  
+.alpha_color_stop
+  background-color: $alpha_color_stop
+  
+.bravo_color_stop
+  background-color: $bravo_color_stop
+  
+.charlie_color_stop
+  background-color: $charlie_color_stop
+  
+.delta_color_stop
+  background-color: $delta_color_stop
+  
+.echo_color_stop
+  background-color: $echo_color_stop
+/////// color blocks ////////
+
+/////// gradient color blocks ////////
+.alpha_color_gradient
+  +alpha_color_gradient
+    
+.bravo_color_gradient
+  +bravo_color_gradient
+  
+.charlie_color_gradient
+  +charlie_color_gradient
+  
+.delta_color_gradient
+  +delta_color_gradient
+
+.echo_color_gradient
+  +echo_color_gradient
+  
+.fox_color_gradient
+  +fox_color_gradient
+  
+.golf_color_gradient
+  +golf_color_gradient
+  
+.hotel_color_gradient
+  +hotel_color_gradient
+  
+.india_color_gradient
+  +india_color_gradient
+  
+.juliet_color_gradient
+  +juliet_color_gradient
+  
+.kilo_color_gradient
+  +kilo_color_gradient
+  
+.lima_color_gradient
+  +lima_color_gradient
+  
+.mike_color_gradient
+  +mike_color_gradient
+/////// gradient color blocks ////////
+
+
+// pretty sure that this is dead //
+// /////// jQuery UI Modal over-rides ////////
+// .standard_modal
+//   article
+//     min-height: 92px
+//     width: 100%
+// /////// jQuery UI Modal over-rides ////////
+
+
+
+
+
+///////////// table ui /////////////
+table
+  width: 100%
+  border: 1px solid $golf_grey
+  border-width: 1px 1px 0
+  margin-bottom: 10px
+  thead
+    text-align: left
+    background-color: $echo_grey
+    color: $india_grey
+    line-height: 38px
+  th, td
+    padding: 0 10px
+  td
+    padding: 10px
+    line-height: 1.5em
+  tbody
+    tr
+      line-height: 30px
+      border-bottom: 1px solid $golf_grey
+      &:hover
+        background-color: $juliet_grey
+///////////// table ui /////////////
+
+

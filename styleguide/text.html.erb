@@ -1,0 +1,101 @@
+<% content_for :content do %>
+	<header class="styleguide_header"><h1>Styleguide_TEXT</h1></header>
+	<article class="styleguide_body">
+		<%= render "nav" %>
+		<header><p>1. Heading text</p></header>
+		<article class="h1s">
+			<h1>H1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere malesuada adipiscing.</h1>
+			<h2>H2: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere malesuada adipiscing.</h2>
+			<h3>H3: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere malesuada adipiscing.</h3>
+			<h4>H4: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere malesuada adipiscing.</h4>
+			<h5>H5: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere malesuada adipiscing.</h5>
+		</article>
+		<footer></footer>
+
+		
+		<header>
+			<p>2. body text</p>
+			<article>
+				<em>
+					<p>Site default copy is set to '12px/1.5em Arial, color: $alpha_grey; Verdana, sans-serif;'  When applying copy to the application, if no special classes are applied to the parent block element, this will be the default value.</p>
+					<p>Applying a size class to the parent block element will adjust the font size in the appropiate em scale.</p>
+				</em>
+			</article>
+		</header>
+		<article class="body_text">
+			<p class="extra_small"><span>class="extra_small"</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dolor diam, condimentum gravida ultricies non, sollicitudin eget nunc.</p>
+			<p class="small"><span>class="small"</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dolor diam, condimentum gravida ultricies non, sollicitudin eget nunc.</p>
+			<p class="medium"><span>class="medium" (default site style)</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dolor diam, condimentum gravida ultricies non, sollicitudin eget nunc.</p>
+		</article>
+		<article class="body_text">
+			<p class="large"><span>class="large"</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dolor diam, condimentum gravida ultricies non, sollicitudin eget nunc.</p>
+			<p class="extra_large"><span>class="extra_large"</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dolor diam, condimentum gravida ultricies non, sollicitudin eget nunc.</p>
+			<p class="xx_large"><span>class="xx_large"</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dolor diam, condimentum gravida ultricies non, sollicitudin eget nunc.</p>
+		</article>
+		<footer></footer>
+		
+		<header><p>3. Standard body links</p></header>
+		<article>
+			<p><em>Note: The following examples show that by simply using an &lt;a&gt; tag will produce the desired UI.  But also appending the font size classes as described in #2 will accont for the appropiate font sizes.</em>  </p>
+		</article>
+		<article class="link_text">
+			<p class="extra_small"><a href="#">&lt;p class=&quot;extra_small&quot;&gt;&lt;a href=&quot;#&quot;&gt;extra-small&lt;/a&gt;&lt;/p&gt;</a></p>
+			<p class="small"><a href="#">&lt;p class=&quot;small&quot;&gt;&lt;a href=&quot;#&quot;&gt;small&lt;/a&gt;&lt;/p&gt;</a></p>
+			<p><a href="#">&lt;p&gt;&lt;a href=&quot;#&quot;&gt;medium (defult)&lt;/a&gt;&lt;/p&gt;</a></p>
+		</article>
+		<footer></footer>
+		
+		<header>
+			<p>4. Gradient fill links</p>
+			<article>
+				<p>The following example is a text link contained withn a gradient filled block element. </p>
+			</article>
+		</header>
+		<article class="link_text alpha_color_gradient" style="height: 100px">
+			<p class="extra_small"><a href="#">&lt;p class=&quot;extra_small&quot;&gt;&lt;a href=&quot;#&quot;&gt;extra-small&lt;/a&gt;&lt;/p&gt;</a></p>
+			<p class="small"><a href="#">&lt;p class=&quot;small&quot;&gt;&lt;a href=&quot;#&quot;&gt;small&lt;/a&gt;&lt;/p&gt;</a></p>
+			<p><a href="#">&lt;p&gt;&lt;a href=&quot;#&quot;&gt;medium (defult)&lt;/a&gt;&lt;/p&gt;</a></p>
+		</article>
+		<article>
+			<p>Applying the <em>.alpha_color_gradient</em> class to a parent block element will address the color fill as well as the updated text and link colors as shown.</p>
+			<p>Exmaple code:</p>
+			<pre>
+&lt;div class=&quot;alpha_color_gradient&quot;&gt;
+	&lt;p class=&quot;extra_small&quot;&gt;&lt;a href=&quot;#&quot;&gt;This is a link&lt;/a&gt;&lt;/p&gt;
+	&lt;p class=&quot;small&quot;&gt;&lt;a href=&quot;#&quot;&gt;This is a link&lt;/a&gt;&lt;/p&gt;
+	&lt;p&gt;&lt;a href=&quot;#&quot;&gt;This is a link&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+			</pre>
+		</article>
+		<footer></footer>
+		
+		<header>
+			<p>5. Headings in alpha_color_gradient</p>
+			<article>
+				<p>The application of this UI is specific to block element using the alpha_color_gradient style.</p>
+			</article>
+		</header>
+		<article class="alpha_color_gradient h1s" style="margin-bottom: 10px">
+			<h1>H1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere malesuada adipiscing.</h1>
+			<h2>H2: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere malesuada adipiscing.</h2>
+			<h3>H3: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere malesuada adipiscing.</h3>
+			<h4>H4: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere malesuada adipiscing.</h4>
+			<h5>H5: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere malesuada adipiscing.</h5>
+		</article>
+		<article>
+			<p>The code below illsutrates placing a <em>.alpha_color_gradient</em> class on the parent block.  This will override the color values of the standard h1 - h5 tags to properly display within the alpha_color_gradient style.</p>
+			<p>Example code:</p>
+			<pre>
+&lt;div class=&quot;alpha_color_gradient&quot;&gt;
+  &lt;h1&gt;H1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere malesuada adipiscing.&lt;/h1&gt;
+  &lt;h2&gt;H2: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere malesuada adipiscing.&lt;/h2&gt;
+  &lt;h3&gt;H3: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere malesuada adipiscing.&lt;/h3&gt;
+  &lt;h4&gt;H4: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere malesuada adipiscing.&lt;/h4&gt;
+  &lt;h5&gt;H5: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere malesuada adipiscing.&lt;/h5&gt;
+&lt;/div&gt;
+			</pre>
+		</article>
+		
+	</article>
+	<%= render "footer" %>
+<% end %>

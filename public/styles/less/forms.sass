@@ -1,0 +1,336 @@
+// intent of the 'form' sass is that all essential form elements for the application are placed here
+// individual element styling will be addressed in element name spaced sass files
+
+@import "imports/dependencies.sass"
+
+
+//////// buttons ////////
+button, input[type=submit], a.button
+  +primary_button
+
+.primary_button
+  button, input[type=submit], a.button
+    +primary_button
+
+.secondary_button
+  button, input[type=submit], a.button
+    +secondary_button
+      
+.small_button
+  button, input[type=submit], a.button
+    +small_button
+  a.button
+    line-height: 2.5em
+    
+
+button, input[type=submit], a.button    
+  &:nth-child(n+2)
+    +secondary_button
+
+a.button
+  font-weight: bold
+  letter-spacing: -0.06em
+  line-height: 2em
+  
+button.active, input[type=submit].active, a.active
+  +ajax_spinner_lg
+  color: transparentize($alpha_grey, 1.0) !important
+  +box_shadow($india_grey, 0 0 0 !important)
+  
+button.active, input[type=submit].active, a.active
+  &:hover
+    +ajax_spinner_lg
+    
+.anti_button
+  +anti_button
+
+//////// buttons ////////
+
+
+
+//////// special case buttons use ////////
+.dual_primary_button
+  button, input[type=submit], a.button
+    &:nth-child(n+2)
+      +primary_button
+    &:nth-child(n+3)
+      +secondary_button
+
+.reverse_primary_button
+  button, input[type=submit], a.button
+    &:nth-child(1)
+      +secondary_button
+    &:nth-child(1n+2)
+      +primary_button
+
+
+.dual_primary_button_small
+  button, input[type=submit], a.button
+    +small_button
+    &:nth-child(n+2)
+      +primary_button
+      +small_button
+    &:nth-child(n+3)
+      +secondary_button
+      
+.reverse_primary_button_small
+  button, input[type=submit], a.button
+    +small_button
+    &:nth-child(1)
+      +secondary_button
+    &:nth-child(1n+2)
+      +primary_button
+      +small_button
+//////// special case buttons use ////////
+
+//////////// styles for custom-select UI ///////////
+.custom-select 
+  position: relative
+  display: inline-block
+  margin-bottom: 16px
+  width: 100%
+  select 
+    margin: 0 !important
+    font: inherit
+    line-height: 1.2
+    color: $alpha_grey
+    +four_stop_linear_gradient(#E2E2E2, #DBDBDB, #D1D1D1, #DDDDDD)
+        
+    -webkit-appearance: none // remove the strong OSX influence from Webkit //
+        
+    +border_radius(6px, 6px, 6px, 6px)
+    
+  &:after
+    content: "\25BC"
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    line-height: 28px
+    padding: 0 7px
+    +four_stop_linear_gradient(#E2E2E2, #DBDBDB, #D1D1D1, #DDDDDD)
+    color: $alpha_grey
+    border: 1px solid $charlie_grey
+    border-width: 1px 1px 1px 0
+  
+    pointer-events:none
+  
+    +border_radius(0, 6px, 6px, 0)
+  
+.no-pointer-events 
+  .custom-select:after 
+    content: none
+
+///////// styles for custom-select UI ///////////						
+
+
+//////// inputs ////////
+
+input[type=text], input[type=password], select, textarea, a.ui-selectmenu, .mceLayout
+  border: 1px solid $form_field_border
+  padding: 6px 0 6px 6px
+  width: 98%
+  outline: none
+  +field_input_spacing
+  +field_focus
+  
+select
+  width: 100%
+  
+.fail
+  background: $form_field_fail_bkg
+  border-color: $form_field_border_fail !important
+  &:focus
+    background: $form_field_fail_bkg !important
+  select
+    background: $form_field_fail_bkg
+    border-color: $form_field_border_fail
+    &:focus
+      background: $form_field_fail_bkg
+  &:after
+    background: $form_field_fail_bkg
+    border-color: $form_field_border_fail
+  
+input[disabled], textarea[disabled], .disabled
+  background-color: $input_disabled_bkg
+  border-color: $input_disabled_border
+  color: $input_disabled_text
+  opacity: .35
+  filter: Alpha(Opacity = 35)
+  select
+    background: $input_disabled_bkg
+    &:focus
+      background: $input_disabled_bkg
+    opacity: .35
+    filter: Alpha(Opacity = 35)
+  &:after
+    background: none
+    opacity: .35
+    filter: Alpha(Opacity = 35)
+    border: 0
+
+
+input[type=submit]
+  opacity: 1.0
+  filter: Alpha(Opacity = 100)
+
+textarea
+  height: 250px
+      
+input[type=file], dl.horizontal_selectors, dl.vertical_selectors
+  +field_input_spacing
+
+a#disabled
+  +primary_button_disabled
+  cursor: text
+
+//////// inputs ////////
+    
+
+//////// form layouts ////////
+
+label
+  display: block
+  +small
+  font-weight: bold
+  line-height: 1em
+  margin-bottom: 4px
+  span
+    color: $delta_grey
+    padding-left: 3px
+    font-weight: normal
+
+form
+  dl
+    + p
+      margin-bottom: 0px
+      
+//////////// styles to manage <ul> containers ///////////
+
+.horizontal_selectors
+  +flexbox(horizontal, start, end, 100%, 100%)
+  +field_input_spacing
+  li
+    margin-right: 10px
+    padding-right: 10px
+  label
+    display: inline-block
+    line-height: 1.5em
+    font-weight: normal
+    font-size: 1em
+    margin: 0px
+    
+.vertical_selectors
+  +field_input_spacing
+  label
+    display: inline-block
+    font-weight: normal
+    margin-bottom: 8px
+    font-size: 1em
+    
+//////////// styles to manage <ul> containers ///////////              
+
+
+//////////// special formatting for editing modals ///////////
+.editor-container
+  button, input[type=submit], a.button  // changes the default buttons to be small buttons
+    +small_button
+  
+  button + a, input[type=submit] + a, a.button + a // all styles for the 'cancel' link in the edit modal
+    display: inline-block
+    height: 30px
+    border: 1px solid $alpha_grey
+    border-width: 0 0 0 1px
+    position: relative
+    line-height: 30px
+    color: $alpha_grey
+    padding: 0 0 0 10px
+  
+  fieldset  // auto formats the spacing for the instructional and error text on the screen
+    + p
+      margin: 0px
+    p
+      margin-bottom: 16px
+      line-height: 1em
+      
+  select
+    + a
+      text-decoration: none
+//////////// special formatting for editing modals ///////////
+
+  
+////////////// Pagination ui //////////////
+.pagination
+  +flexbox(horizontal, end, center, 100%, 100%)
+  input[type=text]
+    width: 22px
+    margin: 0px 8px !important
+    padding-right: 6px
+    border-color: $echo_grey
+  li.pagination_left
+    +flex(1)
+  li
+    > ul
+      +flexbox(horizontal, end, center, 100%, 100%)
+      margin: 0px
+      li
+        line-height: 1em
+        width: 32px
+        height: 22px
+        border: 1px solid $echo_grey
+        +lima_color_gradient
+        &:active
+          +box_shadow(inset transparentize($alpha_grey, .8), 0px 0px 10px 0px)
+        &:hover
+          a
+            border-color: transparent $bravo_color transparent $bravo_color
+      li
+        &:nth-child(1)
+          margin: 0 1px 0 6px
+        &:nth-child(2)
+          margin: 0
+      li 
+        a
+          border-color: transparent $bravo_grey transparent transparent
+          border-style: solid
+          border-width: 6px 11px 6px 0px
+          display: inline-block
+          position: relative
+          top: 5px
+          left: 10px
+      li 
+        + li 
+          a
+            border-color: transparent transparent transparent $bravo_grey
+            border-width: 6px 0px 6px 11px
+    
+////////////// Pagination ui //////////////
+
+////////////// Error alert ui //////////////    
+.alert-box
+  background-color: $echo_color
+  +alert_box
+  .alert_icon
+    +alert_icon_placement
+    &:before
+      +alert_placement_before
+      top: -34px
+      
+.success-box
+  background-color: $fox_color
+  +alert_box
+  .success_icon
+    +alert_icon_placement
+    &:before
+      +alert_placement_before
+      top: 0px
+
+.error-box
+  background-color: $delta_color_stop
+  +alert_box
+  .error_icon
+    +alert_icon_placement
+    &:before
+      +alert_placement_before
+      top: -16px
+////////////// Error alert ui //////////////

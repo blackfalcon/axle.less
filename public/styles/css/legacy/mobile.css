@@ -1,0 +1,15 @@
+#about section section article {
+	/* font-size: 18px; */
+	line-height: 1.5em; 
+}
+
+/*
+section section article, section section aside, section section article, section section aside {
+	float: none;
+	width: 100%; 
+}
+*/
+
+footer {
+	position:static;
+}

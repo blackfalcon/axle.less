@@ -1,0 +1,44 @@
+<% content_for :content do %>
+	<header class="styleguide_header"><h1>Styleguide_ALERTS</h1></header>
+	<article class="styleguide_body">
+		<%= render "nav" %>		
+		<header>
+			<p>1. Alert box</p>
+		</header>
+		<article class="flex_blocks">
+			<div class="alert-box">This is an alert. You may need to pay attention to this message.</div>
+		</article>
+		<p>Exmaple code:</p>
+		<pre>
+&lt;div <span>class=&quot;alert-box&quot;</span>&gt;This is an alert. You may need to pay attention to this message.&lt;/div&gt;
+		</pre>
+		<footer></footer>
+		
+		<header>
+			<p>2. Success</p>
+		</header>
+		<article class="flex_blocks">
+			<div class="success-box">Congratulations.  You have done something awesome.</div>
+		</article>
+		<p>Example code:</p>
+		<pre>
+&lt;div <span>class=&quot;success-box&quot;</span>&gt;Congratulations.  You have done something awesome.&lt;/div&gt;		
+		</pre>
+		<footer></footer>
+		
+		<header>
+			<p>3. Errors</p>
+		</header>
+		<article class="flex_blocks">
+			<div class="error-box">Wow.  You are really doing it wrong.</div>
+		</article>
+		<p>Example code:</p>
+		<pre>
+&lt;div <span>class=&quot;error-box&quot;</span>&gt;Wow.  You are really doing it wrong.&lt;/div&gt;
+		</pre>
+		<footer></footer>
+	</article>
+
+
+	<%= render "footer" %>
+<% end %>

@@ -1,0 +1,136 @@
+/////// buttons ////////
+=primary_button
+  +extra_large
+  font-weight: 400
+  color: $button_text
+  padding: 0px 20px
+  height: 35px
+  display: inline-block
+  line-height: 1em
+  +border_radius(15px, 15px, 15px, 15px)
+  +primary_button_color
+  +box_shadow($shadow_color, 0px 2px 2px)
+  text-decoration: none
+  margin: 4px 10px 0 0
+  width: auto
+  outline: none
+  
+  &:hover
+    background: $primary_button_hover
+    
+  &:active
+    +primary_button_active
+    
+  &[disabled]
+    +primary_button_disabled
+    
+=secondary_button
+  +secondary_button_color
+  &:hover
+    background: $secondary_button_hover
+  &:active
+    +secondary_button_active
+  &[disabled]
+    +secondary_button_disabled
+
+=small_button
+  +medium
+  padding: 0 12px
+  line-height: 1em
+  height: 2.5em
+  
+=anti_button
+  button, input[type=submit], a.button
+    font-size: inherit
+    font-weight: normal
+    color: $alpha_grey
+    padding: 0
+    height: auto
+    display: inline-block
+    line-height: 1em
+    +border_radius(0, 0, 0, 0)
+    background: #fff
+    +box_shadow(#fff, 0px 0px 0px)
+    text-decoration: none
+    margin: 0
+    width: auto
+    outline: none
+    
+    &:hover
+      background: #fff
+      
+    &:active
+      background: #fff
+      
+    &[disabled]
+      background: #fff
+    
+  
+/////// buttons ////////
+
+
+
+//////// repeated form settings //////////
+=field_input_spacing
+  margin-bottom: 16px !important
+  +small
+  + .instructional + .alert
+    margin-top: -8px
+    
+=dl_selectors
+  float: left
+  width: 100%
+  margin-bottom: 14px
+  dt, dd
+    float: left
+    height: 20px
+  dt
+    padding-right: 4px
+  dd
+    margin-right: 10px
+    padding-right: 10px
+  label
+    line-height: 1.5em
+    font-weight: normal
+    font-size: 1em
+    margin: 0px
+    
+=field_focus
+  &:focus
+    background-color: $field_focus_color
+
+
+=large_form
+  input
+    padding: 9px 0 9px 6px
+    +border_radius(5px, 5px, 5px, 5px)
+    +field_focus
+    font-size: 33px
+    line-height: 33px
+  label
+    +extra-large
+    line-height: 1em
+//////// repeated form settings //////////
+
+
+
+////////////// Alert icon Mixins //////////////
+=alert_box
+  +border_radius(6px, 6px, 6px, 6px)
+  margin-bottom: 16px
+  padding: 6px 10px 10px
+  
+=alert_icon_placement
+  width: 16px
+  height: 17px
+  display: inline-block
+  overflow: hidden
+  margin-right: 8px
+  position: relative
+  top: 4px
+  
+=alert_placement_before
+  content: URL("../images/alert_icons_sprite.png")
+  left: 0px 
+  position: relative
+////////////// Alert icon Mixins //////////////
