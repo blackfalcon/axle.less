@@ -1,4 +1,4 @@
 *.DS_Store
 *.tmproj
 *.lock
-/public/styles/css/core.css
+public/styles/css/core.css
