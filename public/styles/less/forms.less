@@ -1,7 +1,7 @@
 // intent of the 'form' sass is that all essential form elements for the application are placed here
 // individual element styling will be addressed in element name spaced sass files
 
-@import "imports/dependencies.sass"
+//@import "imports/dependencies.sass"
 
 
 //////// buttons ////////
@@ -59,26 +59,27 @@ button.active, input[type=submit].active, a.active {
 	.anti_button;
 }
 
-//////// buttons ////////
-
-
-
-//////// special case buttons use ////////
-.dual_primary_buttons {
-	button, input[type=submit], a.button {
-		&:nth-child(n.2) {
-			.primary_button;
-		}
-		&:nth-child(n.3) {
-			.secondary_button;
-		}
-	}
-}
-
+////// buttons ////////
+ 
+ 
+ 
+ //////// special case buttons use ////////
+ .dual_primary_buttons {
+ 	button, input[type=submit], a.button {
+ 		&:nth-child(n.2) {
+ 			.primary_button;
+ 		}
+ 		&:nth-child(n.3) {
+ 			.secondary_button;
+ 		}
+ 	}
+ }
+ 
 .reverse_primary_buttons {
 	button, input[type=submit], a.button {
 		&:nth-child(1) {
 			.secondary_button;
+		}
 		&:nth-child(1n.2) {
 			.primary_button;
 		}
@@ -179,11 +180,14 @@ select {
 	border-color: $form_field_border_fail !important;
 	&:focus {
 		background: $form_field_fail_bkg !important;
+	}
 	select {
 		background: $form_field_fail_bkg;
 		border-color: $form_field_border_fail;
-		&:focus
+		&:focus {
 			background: $form_field_fail_bkg;
+		}
+	}
 	&:after {
 		background: $form_field_fail_bkg;
 		border-color: $form_field_border_fail;
@@ -200,6 +204,7 @@ input[disabled], textarea[disabled], .disabled {
 		background: $input_disabled_bkg;
 		&:focus {
 			background: $input_disabled_bkg;
+		}
 		opacity: .35;
 		filter: Alpha(Opacity = 35);
 	}
@@ -219,6 +224,7 @@ input[type=submit] {
 
 textarea {
 	height: 250px;
+}
 			
 input[type=file], dl.horizontal_selectors, dl.vertical_selectors {
 	.field_input_spacing;
@@ -255,7 +261,7 @@ form {
 	}
 }
 			
-//////////// styles to manage <ul> containers ///////////
+///////// styles to manage <ul> containers ///////////
 
 .horizontal_selectors {
 	.flexbox(horizontal, start, end, 100%, 100%);
@@ -263,6 +269,7 @@ form {
 	li {
 		margin-right: 10px;
 		padding-right: 10px;
+	}
 	label {
 		display: inline-block;
 		line-height: 1.5em;
@@ -282,7 +289,7 @@ form {
 	}
 }
 		
-//////////// styles to manage <ul> containers ///////////							
+///////// styles to manage <ul> containers ///////////							
 
 
 
