@@ -1,0 +1,184 @@
+/////// gray color blocks ////////
+@alpha_grey: #1c1d1f;
+@bravo_grey: #36383c;
+@charlie_grey: #55585d;
+@delta_grey: #74787f;
+@echo_grey: #91969f;
+@fox_grey: #aeb4bf;
+@golf_grey: #cad1dd;
+@hotel_grey: #e5edfd;
+@india_grey: #fff;
+@juliet_grey: #eee;
+@kilo_grey: #777779;
+/////// gray color blocks ////////
+
+
+
+
+/////// color blocks ////////
+@alpha_color: #3D610A;
+@bravo_color: #71B213;
+@charlie_color: #FF9B01;
+@delta_color: #E12829;
+@echo_color: #FFEC53;
+@fox_color: #BEF662;
+@golf_color: #FBF0D5;
+@hotel_color: #E85C00;
+
+@alpha_color_stop: #2D4807;
+@bravo_color_stop: #4C790C;
+@charlie_color_stop: #FF6600;
+@delta_color_stop: #FFDDDD;
+@echo_color_stop: #FFFFAA;
+/////// color blocks ////////
+
+
+
+
+/////// gradient color mixins ////////
+.alpha_color_gradient {
+	.two_stop_linear_gradient(@charlie_grey, @alpha_grey);
+	color: @india_grey;
+	a, h1, h2, h3, h4, h5 {
+		color: @india_grey;
+	}
+	a:hover {
+		color: @bravo_color;
+	}
+}
+
+.bravo_color_gradient {
+	.two_stop_linear_gradient(@bravo_color_stop, @bravo_color);
+}
+
+.charlie_color_gradient {
+	.two_stop_linear_gradient(@alpha_color_stop, @alpha_color);
+}
+
+.delta_color_gradient {
+	.three_stop_linear_gradient(@alpha_color_stop, @alpha_color, @alpha_color_stop);
+}
+
+.echo_color_gradient {
+	.two_stop_linear_gradient(@charlie_color, @charlie_color_stop);
+}
+
+.fox_color_gradient {
+	.five_stop_linear_gradient(@alpha_color_stop, @alpha_color, @alpha_color_stop, @bravo_color_stop, @bravo_color);
+}
+
+.golf_color_gradient {
+	.two_stop_linear_gradient(@echo_grey, @bravo_grey);
+}
+
+.hotel_color_gradient {
+	.two_stop_linear_gradient(@hotel_grey, @india_grey);
+}
+
+.india_color_gradient {
+	.two_stop_linear_gradient(@charlie_color_stop, @charlie_color);
+}
+
+.juliet_color_gradient {
+	.two_stop_linear_gradient(@hotel_grey, @fox_grey);
+}
+	
+.kilo_color_gradient {
+	.two_stop_linear_gradient(@bravo_grey, @echo_grey);
+}
+
+.lima_color_gradient {
+	.two_stop_linear_gradient(@india_grey, @hotel_grey);
+}
+
+.mike_color_gradient {
+	.two_stop_linear_gradient(@fox_grey, @delta_grey);
+}
+
+/////// gradient color mixins ////////
+
+
+///////// general UI mixins	///////// 
+.ajax_spinner_sml {
+	background: URL("../images/ajax-loader_sml.gif") no-repeat 50% 50%;
+	height: 16px;
+	line-height: 16px !important;
+}
+
+.ajax_spinner_lg {
+	background: URL("../images/ajax-loader.gif") no-repeat 50% 50% !important;
+	line-height: 32px !important;
+}
+
+///////// general UI mixins	/////////
+
+
+/////// semantic combinations ////////
+@primary_text: @alpha_grey;
+@href_color: @bravo_color;
+@highlight_color: @echo_color;
+@selection_color: @charlie_color;
+@selection_text_color: @india_grey;
+
+@instructional_text: @delta_grey;
+@error_text: @delta_color;
+
+@button_text: @india_grey;
+
+@shadow_color: transparentize(@alpha_grey, .4);
+
+@cms_overlay: transparentize(@alpha_grey, .4);
+
+@primary_button_hover: @hotel_color ;
+@secondary_button_hover: @charlie_grey;
+
+@field_focus_color: @golf_color;
+
+@form_field_border: @delta_grey;
+@form_field_border_fail: @delta_color;
+@form_field_fail_bkg: @delta_color_stop;
+
+@input_disabled_bkg: @hotel_grey;
+@input_disabled_border: @golf_grey;
+@input_disabled_text: @fox_grey;
+
+@logo_title: @bravo_color;
+
+@modal_background_color: @india_grey;
+
+@grid_spot_edit_border: @bravo_color;
+@grid_spot_updated_border: @charlie_color_stop;
+@grid_spot_locked_border: @delta_grey;
+
+
+.login_bkg {
+	.fox_color_gradient;
+}
+
+.primary_button_color {
+	.echo_color_gradient;
+}
+
+.primary_button_active {
+	.india_color_gradient;
+}
+
+.primary_button_disabled {
+	.juliet_color_gradient;
+	color: @input_disabled_text;
+	cursor: text;
+}
+	
+.secondary_button_color {
+	.golf_color_gradient;
+}
+	
+.secondary_button_active {
+	.kilo_color_gradient;
+}
+	
+.secondary_button_disabled {
+	.juliet_color_gradient;
+}
+
+/////// semantic combinations ///////
