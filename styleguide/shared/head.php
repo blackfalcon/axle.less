@@ -20,6 +20,7 @@
 	<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
 	
 	<!-- CSS : implied media="screen" -->
+	<link rel="stylesheet" href="/public/styles/css/google_fonts.css" />
 	<link rel="stylesheet" href="/styleguide/public/styles/core.css"/>
 
 	<script src="http://code.jquery.com/jquery-1.4.4.js"></script>
@@ -33,4 +34,3 @@
 <body>
 	<section class="container" id="">
 		
-	<?php include 'shared/browser_warning.php'?>
