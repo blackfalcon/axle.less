@@ -32,7 +32,7 @@ button, input[type=submit], a.button {
 		
 
 button, input[type=submit], a.button {	
-	&:nth-child(n.2) {
+	&:nth-child(n+2) {
 		.secondary_button;
 	}
 }
@@ -45,8 +45,8 @@ a.button {
 	
 button.active, input[type=submit].active, a.active {
 	.ajax_spinner_lg;
-	color: transparentize($alpha_grey, 1.0) !important;
-	.box_shadow($india_grey, 0 0 0 !important);
+	color: fadeout(@alpha_grey, 100%);
+	.box_shadow(@india_grey, 0 0 0);
 }
 	
 button.active, input[type=submit].active, a.active {
@@ -64,12 +64,12 @@ button.active, input[type=submit].active, a.active {
  
  
  //////// special case buttons use ////////
- .dual_primary_buttons {
+.dual_primary_buttons {
  	button, input[type=submit], a.button {
- 		&:nth-child(n.2) {
+ 		&:nth-child(n+2) {
  			.primary_button;
  		}
- 		&:nth-child(n.3) {
+ 		&:nth-child(n+3) {
  			.secondary_button;
  		}
  	}
@@ -80,7 +80,7 @@ button.active, input[type=submit].active, a.active {
 		&:nth-child(1) {
 			.secondary_button;
 		}
-		&:nth-child(1n.2) {
+		&:nth-child(1n+2) {
 			.primary_button;
 		}
 	}
@@ -90,11 +90,11 @@ button.active, input[type=submit].active, a.active {
 .dual_primary_buttons_small {
 	button, input[type=submit], a.button {
 		.small_button;
-		&:nth-child(n.2) {
+		&:nth-child(n+2) {
 			.primary_button;
 			.small_button;
 		}
-		&:nth-child(n.3) {
+		&:nth-child(n+3) {
 			.secondary_button;
 		}
 	}
@@ -106,7 +106,7 @@ button.active, input[type=submit].active, a.active {
 		&:nth-child(1) {
 			.secondary_button;
 		}
-		&:nth-child(1n.2) {
+		&:nth-child(1n+2) {
 			.primary_button;
 			.small_button;
 		}
@@ -124,10 +124,10 @@ button.active, input[type=submit].active, a.active {
 		margin: 0 !important;
 		font: inherit;
 		line-height: 1.2;
-		color: $alpha_grey;
+		color: @alpha_grey;
 		.four_stop_linear_gradient(#E2E2E2, #DBDBDB, #D1D1D1, #DDDDDD);
 				
-		-webkit-appearance: none // remove the strong OSX influence from Webkit //
+		-webkit-appearance: none;
 				
 		.border_radius(6px);
 	}
@@ -141,8 +141,8 @@ button.active, input[type=submit].active, a.active {
 		line-height: 28px;
 		padding: 0 7px;
 		.four_stop_linear_gradient(#E2E2E2, #DBDBDB, #D1D1D1, #DDDDDD);
-		color: $alpha_grey;
-		border: 1px solid $charlie_grey;
+		color: @alpha_grey;
+		border: 1px solid @charlie_grey;
 		border-width: 1px 1px 1px 0;
 	
 		pointer-events:none;
@@ -163,7 +163,7 @@ button.active, input[type=submit].active, a.active {
 //////// inputs ////////
 
 input[type=text], input[type=password], select, textarea, a.ui-selectmenu, .mceLayout {
-	border: 1px solid $form_field_border;
+	border: 1px solid @form_field_border;
 	padding: 6px 0 6px 6px;
 	width: 98%;
 	outline: none;
@@ -176,50 +176,50 @@ select {
 }
 	
 .fail {
-	background: $form_field_fail_bkg;
-	border-color: $form_field_border_fail !important;
+	background: @form_field_fail_bkg;
+	border-color: @form_field_border_fail !important;
 	&:focus {
-		background: $form_field_fail_bkg !important;
+		background: @form_field_fail_bkg !important;
 	}
 	select {
-		background: $form_field_fail_bkg;
-		border-color: $form_field_border_fail;
+		background: @form_field_fail_bkg;
+		border-color: @form_field_border_fail;
 		&:focus {
-			background: $form_field_fail_bkg;
+			background: @form_field_fail_bkg;
 		}
 	}
 	&:after {
-		background: $form_field_fail_bkg;
-		border-color: $form_field_border_fail;
+		background: @form_field_fail_bkg;
+		border-color: @form_field_border_fail;
 	}
 }
-	
+
 input[disabled], textarea[disabled], .disabled {
-	background-color: $input_disabled_bkg;
-	border-color: $input_disabled_border;
-	color: $input_disabled_text;
+	background-color: @input_disabled_bkg;
+	border-color: @input_disabled_border;
+	color: @input_disabled_text;
 	opacity: .35;
-	filter: Alpha(Opacity = 35);
+	filter: Alpha(Opacity=35);
 	select {
-		background: $input_disabled_bkg;
+		background: @input_disabled_bkg;
+		opacity: .35;
+		filter: Alpha(Opacity=35);
 		&:focus {
-			background: $input_disabled_bkg;
+			background: @input_disabled_bkg;
 		}
-		opacity: .35;
-		filter: Alpha(Opacity = 35);
 	}
-	&:after {
-		background: none;
-		opacity: .35;
-		filter: Alpha(Opacity = 35);
-		border: 0;
-	}
+ 	&:after {
+ 		background: none;
+ 		opacity: .35;
+ 		filter: Alpha(Opacity=35);
+ 		border: 0;
+ 	}
 }
 
 
 input[type=submit] {
 	opacity: 1.0;
-	filter: Alpha(Opacity = 100);
+	filter: Alpha(Opacity=100);
 }
 
 textarea {
@@ -231,7 +231,7 @@ input[type=file], dl.horizontal_selectors, dl.vertical_selectors {
 }
 
 a#disabled {
-	.primary_button_disabled
+	.primary_button_disabled;
 	cursor: text;
 }
 
@@ -247,7 +247,7 @@ label {
 	line-height: 1em;
 	margin-bottom: 4px;
 	span {
-		color: $delta_grey;
+		color: @delta_grey;
 		padding-left: 3px;
 		font-weight: normal;
 	}
@@ -300,7 +300,7 @@ form {
 		width: 22px;
 		margin: 0px 8px !important;
 		padding-right: 6px;
-		border-color: $echo_grey;
+		border-color: @echo_grey;
 	}
 	li.pagination_left {
 		.flex(1);
@@ -313,14 +313,14 @@ form {
 				line-height: 1em;
 				width: 32px;
 				height: 22px;
-				border: 1px solid $echo_grey;
+				border: 1px solid @echo_grey;
 				.lima_color_gradient;
 				&:active {
-					.box_shadow(inset transparentize($alpha_grey, .8), 0px 0px 10px 0px);
+					.box_shadow(inset transparentize(@alpha_grey, .8), 0px 0px 10px 0px);
 				}
 				&:hover {
 					a {
-						border-color: transparent $bravo_color transparent $bravo_color;
+						border-color: transparent @bravo_color transparent @bravo_color;
 					}
 				}
 			}
@@ -334,7 +334,7 @@ form {
 			}
 			li  {
 				a {
-					border-color: transparent $bravo_grey transparent transparent;
+					border-color: transparent @bravo_grey transparent transparent;
 					border-style: solid;
 					border-width: 6px 11px 6px 0px;
 					display: inline-block;
@@ -346,7 +346,7 @@ form {
 			li  {
 				+ li  {
 					a {
-						border-color: transparent transparent transparent $bravo_grey;
+						border-color: transparent transparent transparent @bravo_grey;
 						border-width: 6px 0px 6px 11px;
 					}
 				}
@@ -359,7 +359,7 @@ form {
 
 ////////////// Error alert ui //////////////		
 .alert-box {
-	background-color: $echo_color;
+	background-color: @echo_color;
 	.warning_box;
 	.alert_icon {
 		.warning_icon_placement;
@@ -371,7 +371,7 @@ form {
 }
 			
 .success-box {
-	background-color: $fox_color;
+	background-color: @fox_color;
 	.warning_box;
 	.success_icon {
 		.warning_icon_placement;
@@ -383,7 +383,7 @@ form {
 }
 
 .error-box {
-	background-color: $delta_color_stop;
+	background-color: @delta_color_stop;
 	.warning_box;
 	.error_icon {
 		.warning_icon_placement;

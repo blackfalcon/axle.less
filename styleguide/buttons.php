@@ -1,7 +1,10 @@
-<?php include 'shared/head.php'?>
+<?php include 'shared/head.php'?>	
 	<header class="styleguide_header"><h1>Styleguide_BUTTONS</h1></header>
 	<?php include 'shared/nav.php'?>	
 	<article class="styleguide_body button_styleguide">
+
+
+
 		<header>
 			<p>1. Primary buttons</p>
 		</header>
@@ -34,26 +37,26 @@
 			<p>2. Secondary buttons</p>
 		</header>
 		<article>
-			<div class="secondary_button" id="">
+			<div class="secondary_buttons" id="">
 				<button>Button text</button><button disabled="disabled">Button text</button>
 			</div>
-			<div class="secondary_button" id="">
+			<div class="secondary_buttons" id="">
 				<input type="submit" value="Button text"><input type="submit" value="Button text" disabled="disabled">
 			</div>
-			<div class="secondary_button" id="">
+			<div class="secondary_buttons" id="">
 				<a href="#" class="button">Button text</a><a href="#" class="button" id="disabled">Button text</a>
 			</div>
 			<div class="" id="">
-				<p>Place the <em>.secondary_button</em> class on the parent block</p>
+				<p>Place the <em>.secondary_buttons</em> class on the parent block</p>
 				<p>Example code:</p>
 				<pre>
-&lt;div <span>class=&quot;secondary_button&quot;</span> id=&quot;&quot;&gt;
+&lt;div <span>class=&quot;secondary_buttons&quot;</span>&gt;
 	&lt;button&gt;Button text&lt;/button&gt;&lt;button disabled=&quot;disabled&quot;&gt;Button text&lt;/button&gt;
 &lt;/div&gt;
-&lt;div <span>class=&quot;secondary_button&quot;</span> id=&quot;&quot;&gt;
+&lt;div <span>class=&quot;secondary_buttons&quot;</span>&gt;
 	&lt;input type=&quot;submit&quot; value=&quot;Button text&quot;&gt;&lt;input type=&quot;submit&quot; value=&quot;Button text&quot; disabled=&quot;disabled&quot;&gt;
 &lt;/div&gt;
-&lt;div <span>class=&quot;secondary_button&quot;</span> id=&quot;&quot;&gt;
+&lt;div <span>class=&quot;secondary_buttons&quot;</span>&gt;
 	&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Button text&lt;/a&gt;&lt;a href=&quot;#&quot; class=&quot;button&quot; id=&quot;disabled&quot;&gt;Button text&lt;/a&gt;
 &lt;/div&gt;
 				</pre>
@@ -65,14 +68,14 @@
 			<p>3. Small primary button</p>
 		</header>
 		<article>
-			<div class="small_button" id="">
+			<div class="small_buttons" id="">
 				<button>Button text</button><button disabled="disabled">Button text</button>
 			</div>
 			<div class="" id="">
-				<p>The small primary button will assume the default <buttom> style.  Apply the <em>.small_button</em> class to a parent block element to reduce the appearance.  </p>
+				<p>The small primary button will assume the default <buttom> style.  Apply the <em>.small_buttons</em> class to a parent block element to reduce the appearance.  </p>
 				<p>Example code:</p>
 				<pre>
-&lt;div <span>class=&quot;small_button&quot;</span> id=&quot;&quot;&gt;
+&lt;div <span>class=&quot;small_buttons&quot;</span>&gt;
 	&lt;button&gt;Button text&lt;/button&gt;&lt;button disabled=&quot;disabled&quot;&gt;Button text&lt;/button&gt;
 &lt;/div&gt;
 				</pre>
@@ -83,14 +86,14 @@
 			<p>4. Small secondary button</p>
 		</header>
 		<article>
-			<div class="secondary_button small_button" id="">
+			<div class="secondary_buttons small_buttons" id="">
 				<button>Button text</button><button disabled="disabled">Button text</button>
 			</div>
 			<div class="" id="">
-				<p>The small secondary button requires two class modificatins.<br>Apply the <em>.secondary_button</em> and <em>.small_button</em> classes to a parent block element for this UI.</p>
+				<p>The small secondary button requires two class modifications.<br>Apply the <em>.secondary_buttons</em> and <em>.small_button</em> classes to a parent block element for this UI.</p>
 				<p>Example code:</p>
 				<pre>
-&lt;div <span>class=&quot;secondary_button small_button&quot;</span> id=&quot;&quot;&gt;
+&lt;div <span>class=&quot;secondary_buttons small_buttons&quot;</span>&gt;
 	&lt;button&gt;Button text&lt;/button&gt;&lt;button disabled=&quot;disabled&quot;&gt;Button text&lt;/button&gt;
 &lt;/div&gt;
 				</pre>
@@ -103,7 +106,7 @@
 		</header>
 		<article>
 			<div class="" id="">
-				<button>Button text</button><button>Button text</button><button disabled="disabled">Button text</button>
+				<button>Button text</button><button>Button text</button><button>Button text</button><button disabled="disabled">Button text</button>
 			</div>
 			
 			<div class="" id="">
@@ -111,14 +114,14 @@
 				<p>Example code:</p>
 				<p>
 					<pre>
-&lt;button&gt;Button text&lt;/button&gt;&lt;button&gt;Button text&lt;/button&gt;&lt;button disabled=&quot;disabled&quot;&gt;Button text&lt;/button&gt;
+&lt;button&gt;Button text&lt;/button&gt;&lt;button&gt;Button text&lt;/button&gt;&lt;button&gt;Button text&lt;/button&gt;&lt;button disabled=&quot;disabled&quot;&gt;Button text&lt;/button&gt;
 					</pre>
 				</p>
 			</div>
 			
 			
 			<div class="dual_primary_button" id="">
-				<button>Button text</button><button>Button text</button><button disabled="disabled">Button text</button>
+				<button>Button text</button><button>Button text</button><button>Button text</button><button disabled="disabled">Button text</button>
 			</div>
 			
 			<div class="" id="">
@@ -126,15 +129,15 @@
 				<p>Example code:</p>
 				<p>
 					<pre>
-&lt;div <span>class=&quot;dual_primary_button&quot;</span> id=&quot;&quot;&gt;
-	&lt;button&gt;Button text&lt;/button&gt;&lt;button&gt;Button text&lt;/button&gt;&lt;button disabled=&quot;disabled&quot;&gt;Button text&lt;/button&gt;
+&lt;div <span>class=&quot;dual_primary_button&quot;</span>&gt;
+	&lt;button&gt;Button text&lt;/button&gt;&lt;button&gt;Button text&lt;/button&gt;&lt;button&gt;Button text&lt;/button&gt;&lt;button disabled=&quot;disabled&quot;&gt;Button text&lt;/button&gt;
 &lt;/div&gt;
 
 or
 
-&lt;div id=&quot;&quot;&gt;
+&lt;div&gt;
   &lt;p <span>class=&quot;dual_primary_button&quot;</span>&gt;
-    &lt;button&gt;Button text&lt;/button&gt;&lt;button&gt;Button text&lt;/button&gt;&lt;button disabled=&quot;disabled&quot;&gt;Button text&lt;/button&gt;
+    &lt;button&gt;Button text&lt;/button&gt;&lt;button&gt;Button text&lt;/button&gt;&lt;button&gt;Button text&lt;/button&gt;&lt;button disabled=&quot;disabled&quot;&gt;Button text&lt;/button&gt;
   &lt;/p&gt;
 &lt;/div&gt;
 					</pre>
@@ -142,43 +145,88 @@ or
 			</div>
 			
 			
+			<div class="reverse_primary_button" id="">
+				<button>Button text</button><button>Button text</button><button>Button text</button><button disabled="disabled">Button text</button>
+			</div>
+			<p>To produce an alternate series of buttons whereas the first (1) button is the secondary UI and the remaining buttons use the primary UI style, simply concatenate a series of &lt;button&gt; tags.  IMPORTANT! you will need to place a <em>.reverse_primary_button</em> class in the directly preceeding parent.  The <em>disabled="disabled"</em> attribute is required to apply the disabled UI. </p>
+			<p>Example code:</p>
+				<p>
+					<pre>
+&lt;div <span>class=&quot;reverse_primary_button&quot;</span>&gt;
+	&lt;button&gt;Button text&lt;/button&gt;&lt;button&gt;Button text&lt;/button&gt;&lt;button&gt;Button text&lt;/button&gt;&lt;button disabled=&quot;disabled&quot;&gt;Button text&lt;/button&gt;
+&lt;/div&gt;
+
+or
+
+&lt;div&gt;
+  &lt;p <span>class=&quot;reverse_primary_button&quot;</span>&gt;
+    &lt;button&gt;Button text&lt;/button&gt;&lt;button&gt;Button text&lt;/button&gt;&lt;button&gt;Button text&lt;/button&gt;&lt;button disabled=&quot;disabled&quot;&gt;Button text&lt;/button&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
+					</pre>
+				</p>
 			
 			
 			
 			
 			
 			
+			<header>
+				<p>5.1 Combination usage small buttons</p>
+			</header>
 			<div class="small_button" id="">
-				<button>Button text</button><button>Button text</button><button disabled="disabled">Button text</button>
+				<button>Button text</button><button>Button text</button><button>Button text</button><button disabled="disabled">Button text</button>
 			</div>
 			
 			<div class="" id="">
 				<p>To produce a series of buttons, simply concatenate a series of &lt;button&gt; tags.  The <em>disabled="disabled"</em> attribute is required to apply the disabled UI. For the smaller buttons, place the <em>.small_button</em> class on a parent container.</p>
 				<p>Example code:</p>
 				<pre>
-&lt;div <span>class=&quot;small_button&quot;</span> id=&quot;&quot;&gt;
-	&lt;button&gt;Button text&lt;/button&gt;&lt;button&gt;Button text&lt;/button&gt;&lt;button disabled=&quot;disabled&quot;&gt;Button text&lt;/button&gt;
+&lt;div <span>class=&quot;small_button&quot;</span>&gt;
+	&lt;button&gt;Button text&lt;/button&gt;&lt;button&gt;Button text&lt;/button&gt;&lt;button&gt;Button text&lt;/button&gt;&lt;button disabled=&quot;disabled&quot;&gt;Button text&lt;/button&gt;
 &lt;/div&gt;
 				</pre>
 			</div>
 			
 			<div class="dual_primary_button_small" id="">
-				<button>Button text</button><button>Button text</button><button disabled="disabled">Button text</button>
+				<button>Button text</button><button>Button text</button><button>Button text</button><button disabled="disabled">Button text</button>
 			</div>
 			
 			<div class="" id="">
 				<p>To produce an alternate series of buttons whereas the first (2) buttons carry over the primary UI style, simply concatenate a series of &lt;button&gt; tags.  IMPORTANT! you will need to place a <em>.dual_primary_button_small</em> class in the directly preceeding parent.  The <em>disabled="disabled"</em> attribute is required to apply the disabled UI. </p>
 				<p>Example code:</p>
 					<pre>
-&lt;div <span>class=&quot;dual_primary_button_small&quot;</span> id=&quot;&quot;&gt;
-	&lt;button&gt;Button text&lt;/button&gt;&lt;button&gt;Button text&lt;/button&gt;&lt;button disabled=&quot;disabled&quot;&gt;Button text&lt;/button&gt;
+&lt;div <span>class=&quot;dual_primary_button_small&quot;</span>&gt;
+	&lt;button&gt;Button text&lt;/button&gt;&lt;button&gt;Button text&lt;/button&gt;&lt;button&gt;Button text&lt;/button&gt;&lt;button disabled=&quot;disabled&quot;&gt;Button text&lt;/button&gt;
 &lt;/div&gt;
 
 or
 
-&lt;div id=&quot;&quot;&gt;
+&lt;div&gt;
   &lt;p <span>class=&quot;dual_primary_button_small&quot;</span>&gt;
-    &lt;button&gt;Button text&lt;/button&gt;&lt;button&gt;Button text&lt;/button&gt;&lt;button disabled=&quot;disabled&quot;&gt;Button text&lt;/button&gt;
+    &lt;button&gt;Button text&lt;/button&gt;&lt;button&gt;Button text&lt;/button&gt;&lt;button&gt;Button text&lt;/button&gt;&lt;button disabled=&quot;disabled&quot;&gt;Button text&lt;/button&gt;
+  &lt;/p&gt;
+&lt;/div&gt;
+					</pre>
+			</div>
+			
+			<div class="reverse_primary_button_small" id="">
+				<button>Button text</button><button>Button text</button><button>Button text</button><button disabled="disabled">Button text</button>
+			</div>
+			
+			<div class="" id="">
+				<p>To produce an alternate series of buttons whereas the first (2) buttons carry over the primary UI style, simply concatenate a series of &lt;button&gt; tags.  IMPORTANT! you will need to place a <em>.dual_primary_button_small</em> class in the directly preceeding parent.  The <em>disabled="disabled"</em> attribute is required to apply the disabled UI. </p>
+				<p>Example code:</p>
+					<pre>
+&lt;div <span>class=&quot;reverse_primary_button_small&quot;</span>&gt;
+	&lt;button&gt;Button text&lt;/button&gt;&lt;button&gt;Button text&lt;/button&gt;&lt;button&gt;Button text&lt;/button&gt;&lt;button disabled=&quot;disabled&quot;&gt;Button text&lt;/button&gt;
+&lt;/div&gt;
+
+or
+
+&lt;div&gt;
+  &lt;p <span>class=&quot;reverse_primary_button_small&quot;</span>&gt;
+    &lt;button&gt;Button text&lt;/button&gt;&lt;button&gt;Button text&lt;/button&gt;&lt;button&gt;Button text&lt;/button&gt;&lt;button disabled=&quot;disabled&quot;&gt;Button text&lt;/button&gt;
   &lt;/p&gt;
 &lt;/div&gt;
 					</pre>
@@ -234,11 +282,10 @@ or
 			</div>
 			<p>Example code:</p>
 			<pre>
-&lt;div <span>class=&quot;small_button&quot;</span> id=&quot;&quot;&gt;
+&lt;div <span>class=&quot;small_button&quot;</span>&gt;
   &lt;button <span>class=&quot;active&quot;</span>&gt;Button text&lt;/button&gt;&lt;button&gt;Button text&lt;/button&gt;&lt;button disabled=&quot;disabled&quot;&gt;Button text&lt;/button&gt;
 &lt;/div&gt;
 			</pre>
 		</article>
 		<footer></footer>
 	</article>
-<?php include 'shared/footer.php'?>

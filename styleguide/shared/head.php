@@ -21,7 +21,7 @@
 	
 	<!-- CSS : implied media="screen" -->
 	<link rel="stylesheet" href="/public/styles/css/google_fonts.css" />
-	<link rel="stylesheet" href="/styleguide/public/styles/core.css"/>
+	<link rel="stylesheet" href="/public/styles/css/core.css"/>
 
 	<script src="http://code.jquery.com/jquery-1.4.4.js"></script>
 	<script src="/styleguide/public/javascripts/modernizr-1.7.min.js"></script>
