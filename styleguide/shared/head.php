@@ -24,10 +24,10 @@
 	<link rel="stylesheet" href="/public/styles/css/core.css"/>
 
 	<script src="http://code.jquery.com/jquery-1.4.4.js"></script>
-	<script src="/styleguide/public/javascripts/modernizr-1.7.min.js"></script>
-	<script src="/styleguide/public/javascripts/css_browser_selector.js"></script>
-	<script src="/styleguide/public/javascripts/less-1.0.41.min.js"></script>
-	<script src="/styleguide/public/javascripts/application.js"></script>
+	<script src="/public/javascripts/modernizr-1.7.min.js"></script>
+	<script src="/public/javascripts/css_browser_selector.js"></script>
+	<script src="/public/javascripts/less-1.0.41.min.js"></script>
+	<script src="/public/javascripts/application.js"></script>
 
 </head>
 

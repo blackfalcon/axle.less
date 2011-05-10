@@ -8,6 +8,23 @@
 		display: none;
 	}
 	
+	.version_banner {
+		position: fixed;
+		z-index: 2000;
+		top: 29px;
+		right: -90px;
+		background: url(/public/images/red-banner.png) repeat-x 50% 50%;
+		.transform(rotate(44deg));
+		text-align: center;
+		.large;
+		height: 38px;
+		line-height: 38px;
+		width: 282px;
+		color: #fff;
+		.box_shadow(@shadow_color, 0 0 20px);
+		font-weight: bold;
+	}
+	
 	.instructions {
 		display: block;
 		margin-top: 40px;
@@ -64,6 +81,7 @@
 		width: 100%;
 		position: fixed;
 		top: 0px;
+		z-index: 1000;
 		h1 {
 			color: #fff;
 			padding: 10px 20px;
@@ -85,6 +103,8 @@
 			border-width: 0 0 1px 0;
 			margin: 30px 0 10px 0;
 			.clearfix;
+			float: left;
+			width: 100%;
 		}
 		.h1s {
 			h1, h2, h3, h4, h5 {

@@ -1,47 +1,50 @@
-<% content_for :content do %>
-	<header class="styleguide_header"><h1>Styleguide_COLOR</h1></header>
+<?php include 'shared/head.php'?>
+	<header class="styleguide_header"><h1>| Axle | 'general color pallet'</h1></header>
+	<?php include 'shared/nav.php'?>
 	<article class="styleguide_body">
-		<%= render "nav" %>		
+		<div class="instructions">
+			<p>Axle's buttons are based on the principal that the styles support the markup. The UIs presented here are styled simply for <code>button, input[type=submit], a.button</code>.  Follow the code samples below for instructions on using class placed on the parent block element to get special layout and sizing adjustments. </p>
+		</div>
 		<header>
 			<p>1. Greyscale chart</p>
 		</header>
 		<article class="colorcode">
 			<div class="alpha_grey" id="">
-				<p>$alpha_grey</p>
+				<p>@alpha_grey</p>
 			</div>
 			<div class="bravo_grey" id="">
-				<p>$bravo_grey</p>
+				<p>@bravo_grey</p>
 			</div>
 			<div class="charlie_grey" id="">
-				<p>$charlie_grey</p>
+				<p>@charlie_grey</p>
 			</div>
 
 			<div class="delta_grey" id="">
-				<p>$delta_grey</p>
+				<p>@delta_grey</p>
 			</div>
 			<div class="echo_grey" id="">
-				<p>$echo_grey</p>
+				<p>@echo_grey</p>
 			</div>
 			<div class="fox_grey" id="">
-				<p>$fox_grey</p>
+				<p>@fox_grey</p>
 			</div>
 
 			<div class="golf_grey" id="">
-				<p>$golf_grey</p>
+				<p>@golf_grey</p>
 			</div>
 			<div class="hotel_grey" id="">
-				<p>$hotel_grey</p>
+				<p>@hotel_grey</p>
 			</div>
 			<div class="india_grey" id="">
-				<p>$india_grey</p>
+				<p>@india_grey</p>
 			</div>
 			
 			<div class="juliet_grey" id="">
-				<p>$juliet_grey</p>
+				<p>@juliet_grey</p>
 			</div>
 			
 			<div class="kilo_grey" id="">
-				<p>$kilo_grey</p>
+				<p>@kilo_grey</p>
 			</div>		
 
 			
@@ -53,44 +56,44 @@
 		</header>
 		<article class="colorcode">
 			<div class="alpha_color" id="">
-				<p>$alpha_color</p>
+				<p>@alpha_color</p>
 			</div>
 			<div class="alpha_color_stop" id="">
-				<p>$alpha_color_stop</p>
+				<p>@alpha_color_stop</p>
 			</div>
 			<div class="bravo_color" id="">
-				<p>$bravo_color</p>
+				<p>@bravo_color</p>
 			</div>
 			<div class="bravo_color_stop" id="">
-				<p>$bravo_color_stop</p>
+				<p>@bravo_color_stop</p>
 			</div>
 			<div class="charlie_color" id="">
-				<p>$charlie_color</p>
+				<p>@charlie_color</p>
 			</div>
 			<div class="charlie_color_stop" id="">
-				<p>$charlie_color_stop</p>
+				<p>@charlie_color_stop</p>
 			</div>
 			<div class="delta_color" id="">
-				<p>$delta_color</p>
+				<p>@delta_color</p>
 			</div>
 			<div class="delta_color_stop" id="">
-				<p>$delta_color_stop</p>
+				<p>@delta_color_stop</p>
 			</div>
 			<div class="echo_color" id="">
-				<p>$echo_color</p>
+				<p>@echo_color</p>
 			</div>
 			<div class="echo_color_stop" id="">
-				<p>$echo_color_stop</p>
+				<p>@echo_color_stop</p>
 			</div>
 			<div class="fox_color" id="">
-				<p>$fox_color</p>
+				<p>@fox_color</p>
 			</div>
 			<div class="golf_color" id="">
-				<p>$golf_color</p>
+				<p>@golf_color</p>
 			</div>
 
 			<div class="hotel_color" id="">
-				<p>$hotel_color</p>
+				<p>@hotel_color</p>
 			</div>
 		</article>
 		<footer></footer>
@@ -149,5 +152,4 @@
 		<footer></footer>
 
 	</article>
-	<%= render "footer" %>
-<% end %>
+<?php include 'shared/footer.php'?>
