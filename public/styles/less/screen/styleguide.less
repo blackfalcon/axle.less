@@ -8,6 +8,18 @@
 		display: none;
 	}
 	
+	.instructions {
+		display: block;
+		margin-top: 40px;
+		.large;
+	}
+	
+	code {
+		padding: 3px 6px;
+		border: 1px solid @alpha_grey;
+		white-space: nowrap;
+	}
+	
 	article {
 		float: left;
 		width: 100%;
@@ -50,19 +62,22 @@
 	
 	.styleguide_header {
 		width: 100%;
+		position: fixed;
+		top: 0px;
 		h1 {
 			color: #fff;
 			padding: 10px 20px;
 			.complex_gradient(#b8e1fc, #a9d2f3, #90bae4, #90bcea, #90bff0, #6ba8e5, #a2daf5, #bdf3fd );
 			border-bottom: 1px solid @alpha_grey;
 			.box_shadow(@shadow_color, 0px 0px 40px);
+			font-family: 'Pacifico', arial, serif;
 		}
 	}
 	
 	.styleguide_body {
 		float: none;
 		width: 960px;
-		margin: 0 auto;
+		margin: 125px auto 0 auto;
 		.clearfix;
 		header {
 			color: #999;
@@ -98,6 +113,7 @@
 		float: left;
 		text-align: center;
 		padding: 30px 0 30px 0;
+		height: 100px;
 	}
 		
 	.colorcode, .gradient {

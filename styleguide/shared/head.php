@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	
-	<title>I need a better name for this</title>
+	<title>Axle v.alpha</title>
 	
 	<meta http-equiv="Content-Language" content="en-us" />
 	<meta name="description" content="">
@@ -20,7 +20,7 @@
 	<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
 	
 	<!-- CSS : implied media="screen" -->
-	<link rel="stylesheet" href="/public/styles/css/google_fonts.css" />
+	<link href="http://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="/public/styles/css/core.css"/>
 
 	<script src="http://code.jquery.com/jquery-1.4.4.js"></script>
