@@ -310,11 +310,11 @@
 	// not intended to be used throughout the application
 	
 	.grid_960 {
-		background: url(/images/12_col.gif) repeat-y ;
+		background: url(/public/images/12_col.gif) repeat-y ;
 		width: 960px;
 		.clearfix;
 		text-align: center;
-		margin: 10px 0
+		margin: 10px 0;
 		float: left;
 		.large;
 		font-weight: bold;
@@ -322,7 +322,7 @@
 			.clearfix;
 			margin: 1em 0;
 			li {
-				background: transparentize(@india_grey, .5);
+				background: fadeout(@india_grey, 50%);
 				.box_shadow(inset 0 0 10px, @alpha_grey);
 				padding: 5px 0;
 			}
