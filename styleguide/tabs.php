@@ -1,6 +1,7 @@
-<% content_for :content do %>
-	<header class="styleguide_header"><h1>Styleguide_TABS</h1></header>
-	<%= render "nav" %>	
+<?php include 'shared/head.php'?>
+	<?php include 'shared/banner.php'?>
+	<header class="styleguide_header"><h1>| Axle | 'tabs'</h1></header>
+	<?php include 'shared/nav.php'?>
 	<article class="styleguide_body button_styleguide">
 		<header>
 			<p>1. General purpose header tabs</p>
@@ -50,5 +51,4 @@
 
 
 	</article>
-	<%= render "footer" %>
-<% end %>
+<?php include 'shared/footer.php'?>

@@ -1,4 +1,5 @@
 <?php include 'shared/head.php'?>
+	<?php include 'shared/banner.php'?>
 	<header class="styleguide_header"><h1>| Axle | 'semantic color pallet'</h1></header>
 	<?php include 'shared/nav.php'?>
 	<article class="styleguide_body">

@@ -295,7 +295,7 @@ form {
 
 ////////////// Pagination ui //////////////
 .pagination {
-	.flexbox(horizontal, end, center, 100%, 100%)
+	.flexbox(horizontal, end, center, 100%, 100%);
 	input[type=text] {
 		width: 22px;
 		margin: 0px 8px !important;
@@ -316,7 +316,7 @@ form {
 				border: 1px solid @echo_grey;
 				.lima_color_gradient;
 				&:active {
-					.box_shadow(inset transparentize(@alpha_grey, .8), 0px 0px 10px 0px);
+					.box_shadow(inset fadeout(@alpha_grey, 80%), 0px 0px 10px 0px);
 				}
 				&:hover {
 					a {

@@ -1,7 +1,8 @@
-<% content_for :content do %>
-	<header class="styleguide_header"><h1>Styleguide_ALERTS</h1></header>
+<?php include 'shared/head.php'?>
+	<?php include 'shared/banner.php'?>
+	<header class="styleguide_header"><h1>| Axle | 'alerts'</h1></header>
+	<?php include 'shared/nav.php'?>
 	<article class="styleguide_body">
-		<%= render "nav" %>		
 		<header>
 			<p>1. Alert box</p>
 		</header>
@@ -40,5 +41,4 @@
 	</article>
 
 
-	<%= render "footer" %>
-<% end %>
+<?php include 'shared/footer.php'?>

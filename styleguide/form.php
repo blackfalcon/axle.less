@@ -1,7 +1,8 @@
-<% content_for :content do %>
-	<header class="styleguide_header"><h1>Styleguide_FORMS</h1></header>
+<?php include 'shared/head.php'?>
+	<?php include 'shared/banner.php'?>
+	<header class="styleguide_header"><h1>| Axle | 'form elements'</h1></header>
 	<article class="styleguide_body form_styleguide">
-		<%= render "nav" %>		
+		<?php include 'shared/nav.php'?>		
 		<header>
 			<p>1. input type="text"</p>
 		</header>
@@ -793,5 +794,4 @@
 		
 		
 	</article>
-	<%= render "footer" %>
-<% end %>
+<?php include 'shared/footer.php'?>

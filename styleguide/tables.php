@@ -1,7 +1,8 @@
-<% content_for :content do %>
-	<header class="styleguide_header"><h1>Styleguide_TABLES</h1></header>
+<?php include 'shared/head.php'?>
+	<?php include 'shared/banner.php'?>
+	<header class="styleguide_header"><h1>| Axle | 'tables'</h1></header>
 	<article class="styleguide_body">
-		<%= render "nav" %>
+		<?php include 'shared/nav.php'?>
 		<header>
 			<p>1. Standard table UI</p>
 			<article>	
@@ -76,5 +77,4 @@
 		<footer></footer>
 
 	</article>
-	<%= render "footer" %>
-<% end %>
+<?php include 'shared/footer.php'?>
