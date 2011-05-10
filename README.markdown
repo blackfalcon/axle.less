@@ -5,7 +5,7 @@ An evolving UI framework aimed to assist in Elemental Development Patterns.
 The software provided is in alpha development.  There are no guarantees or warranties of any kind when using this software.  Use at your own risk at this time.
 
 ## Author
-Compass is written by [Dale Sande][dale_sande].<br>
+Axle is written by [Dale Sande][dale_sande].<br>
 Dale is a UI Engineer with [Getty Images][gettyimages.com].
 
 ## License
