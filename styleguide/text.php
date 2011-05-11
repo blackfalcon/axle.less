@@ -18,8 +18,7 @@
 			<p>2. body text</p>
 			<article>
 				<em>
-					<p>Site default copy is set to '12px/1.5em Arial, color: $alpha_grey; Verdana, sans-serif;'  When applying copy to the application, if no special classes are applied to the parent block element, this will be the default value.</p>
-					<p>Applying a size class to the parent block element will adjust the font size in the appropiate em scale.</p>
+					<p>Applying a size class to the parent block element or the LESS mixin to a semantic class will adjust the font size in the appropriate em scale.</p>
 				</em>
 			</article>
 		</header>
