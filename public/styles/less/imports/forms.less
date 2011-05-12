@@ -1,5 +1,44 @@
+// Intent of this document is to contain all the mixin awesome that can be fed up to the /less/forms.less file
 
-/////// buttons ////////
+// UI elements included in this document
+// ----------------------------------------------
+// 1) Semantic button styles
+// 2) Buttons design - primary, secondary, and small
+// 3) OOCSS form settings
+// 4) Alert icon Mixins
+
+
+/////// Semantic button styles ///////////
+.primary_button_color {
+	.echo_color_gradient;
+}
+
+.primary_button_active {
+	.india_color_gradient;
+}
+
+.primary_button_disabled {
+	.juliet_color_gradient;
+	color: @input_disabled_text;
+	cursor: text;
+}
+	
+.secondary_button_color {
+	.golf_color_gradient;
+}
+	
+.secondary_button_active {
+	.kilo_color_gradient;
+}
+	
+.secondary_button_disabled {
+	.juliet_color_gradient;
+}
+/////// Semantic button styles ///////////
+
+
+
+/////// Buttons design - primary, secondary, and small ////////
 .primary_button {
 	.extra_large;
 	font-weight: 400;
@@ -81,11 +120,11 @@
 }
 		
 	
-/////// buttons ////////
+/////// Buttons design - primary, secondary, and small ////////
 
 
 
-//////// repeated form settings //////////
+//////// OOCSS form settings //////////
 .field_input_spacing {
 	margin-bottom: 16px !important;
 	.small;
@@ -137,7 +176,7 @@
 		line-height: 1em;
 	}
 }
-//////// repeated form settings //////////
+//////// OOCSS form settings //////////
 
 
 

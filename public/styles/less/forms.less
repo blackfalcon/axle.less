@@ -1,26 +1,44 @@
-
 // intent of the 'form' LESS is that all essential form elements for the application are placed here
 // individual element styling will be addressed in element name spaced LESS files
+
+// UI elements included in this document
+// ----------------------------------------------
+// 1) Buttons
+//		a) Mixins live in /public/styles/less/imports/forms.less 
+// 2) dynamic layout nth child styles for special arrangements 
+// 3) styles for custom-select UI
+// 4) inputs
+// 5) form layouts
+// 6) styles to manage <ul> containers
+// 7) Pagination ui
+// 8) Error alert ui
+// ----------------------------------------------
 
 
 
 //////// buttons ////////
+// ----------------------------------------------
+
+// This will auto concatenate a primary button with a secondary button
 button, input[type=submit], a.button {
 	.primary_button;
 }
 
+// This will concatenate a row of button all with the primary style
 .primary_buttons {
 	button, input[type=submit], a.button {
 		.primary_button;
 	}
 }
 
+// This will concatenate a row of button all with the secondary style
 .secondary_buttons {
 	button, input[type=submit], a.button {
 		.secondary_button;
 	}
 }
-			
+
+// This will convert a row of buttons to the SMALL style	
 .small_buttons {
 	button, input[type=submit], a.button {
 		.small_button;
@@ -37,13 +55,19 @@ button, input[type=submit], a.button {
 	}
 }
 
+// Special styles to support an <a> button
 a.button {
 	font-weight: bold;
 	letter-spacing: -0.06em;
 	line-height: 2em;
 }
+
+a#disabled {
+	.primary_button_disabled;
+}
 	
-button.active, input[type=submit].active, a.active {
+// button.active, input[type=submit].active, a.active
+.active {
 	.ajax_spinner_lg;
 	color: fadeout(@alpha_grey, 100%);
 	.box_shadow(@india_grey, 0 0 0);
@@ -63,7 +87,10 @@ button.active, input[type=submit].active, a.active {
  
  
  
- //////// special case buttons use ////////
+///////// dynamic layout nth child styles for special arrangements ////////
+// ----------------------------------------------
+
+// Special use case if you need two primary buttons followed by secondary buttons
 .dual_primary_buttons {
  	button, input[type=submit], a.button {
  		&:nth-child(n+2) {
@@ -115,6 +142,9 @@ button.active, input[type=submit].active, a.active {
 //////// special case buttons use ////////
 
 //////////// styles for custom-select UI ///////////
+// ----------------------------------------------
+
+// To suport a stylized select drop down menu
 .custom-select {
 	position: relative;
 	display: inline-block;
@@ -161,6 +191,7 @@ button.active, input[type=submit].active, a.active {
 
 
 //////// inputs ////////
+// ----------------------------------------------
 
 input[type=text], input[type=password], select, textarea, a.ui-selectmenu, .mceLayout {
 	border: 1px solid @form_field_border;
@@ -231,14 +262,13 @@ input[type=file], dl.horizontal_selectors, dl.vertical_selectors {
 	.field_input_spacing;
 }
 
-a#disabled {
-	.primary_button_disabled;
-}
+
 
 //////// inputs ////////
 		
 
 //////// form layouts ////////
+// ----------------------------------------------
 
 label {
 	display: block;
@@ -262,6 +292,7 @@ form {
 }
 			
 ///////// styles to manage <ul> containers ///////////
+// ----------------------------------------------
 
 .horizontal_selectors {
 	.flexbox(horizontal, start, end, 100%, 100%);
@@ -294,6 +325,7 @@ form {
 
 
 ////////////// Pagination ui //////////////
+// ----------------------------------------------
 .pagination {
 	.flexbox(horizontal, end, center, 100%, 100%);
 	input[type=text] {
@@ -358,6 +390,8 @@ form {
 ////////////// Pagination ui //////////////
 
 ////////////// Error alert ui //////////////		
+// ----------------------------------------------
+
 .alert-box {
 	background-color: @echo_color;
 	.warning_box;

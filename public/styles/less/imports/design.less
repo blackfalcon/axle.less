@@ -1,5 +1,11 @@
+@not_set: #00FF00;
 
-/////// gray color blocks ////////
+.not_set_gradient {
+	.two_stop_linear_gradient(@not_set, @not_set);
+}
+
+
+/////// OOCSS gray color blocks ////////
 @alpha_grey: #1c1d1f;
 @bravo_grey: #36383c;
 @charlie_grey: #55585d;
@@ -11,12 +17,12 @@
 @india_grey: #fff;
 @juliet_grey: #eee;
 @kilo_grey: #777779;
-/////// gray color blocks ////////
+/////// OOCSS gray color blocks ////////
 
 
 
 
-/////// color blocks ////////
+/////// OOCSS generic color blocks ////////
 @alpha_color: #3D610A;
 @bravo_color: #71B213;
 @charlie_color: #FF9B01;
@@ -36,7 +42,7 @@
 
 
 
-/////// gradient color mixins ////////
+/////// OOCSS gradient color mixins ////////
 .alpha_color_gradient {
 	.two_stop_linear_gradient(@charlie_grey, @alpha_grey);
 	color: @india_grey;
@@ -96,7 +102,7 @@
 	.two_stop_linear_gradient(@fox_grey, @delta_grey);
 }
 
-/////// gradient color mixins ////////
+/////// OOCSS gradient color mixins ////////
 
 
 ///////// general UI mixins	///////// 
@@ -111,10 +117,17 @@
 	line-height: 32px !important;
 }
 
+.spinner_sml {
+	.ajax_spinner_sml;
+}	
+
+.spinner_lg {
+	.ajax_spinner_lg;
+}
 ///////// general UI mixins	/////////
 
 
-/////// semantic combinations ////////
+/////// axle semantic combinations ////////
 @white: @india_grey;
 @primary_text: @alpha_grey;
 @href_color: @bravo_color;
@@ -156,36 +169,10 @@
 .login_bkg {
 	.fox_color_gradient;
 }
-
-.primary_button_color {
-	.echo_color_gradient;
-}
-
-.primary_button_active {
-	.india_color_gradient;
-}
-
-.primary_button_disabled {
-	.juliet_color_gradient;
-	color: @input_disabled_text;
-	cursor: text;
-}
-	
-.secondary_button_color {
-	.golf_color_gradient;
-}
-	
-.secondary_button_active {
-	.kilo_color_gradient;
-}
-	
-.secondary_button_disabled {
-	.juliet_color_gradient;
-}
-/////// semantic combinations ///////
+/////// axle semantic combinations ////////
 
 
-/////// color blocks ////////
+/////// OOCSS color blocks ////////
 .alpha_grey {
 	background-color: @alpha_grey;
 }
@@ -263,18 +250,9 @@
 	background-color: @hotel_color;
 }
 	
-/////// color blocks ////////
+/////// OOCSS color blocks ////////
 
 
-/////////// ajax spinners ///////////
-.spinner_sml {
-	.ajax_spinner_sml;
-}	
-
-.spinner_lg {
-	.ajax_spinner_lg;
-}
-/////////// ajax spinners ///////////
 
 
 ///////////// table ui /////////////
