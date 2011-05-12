@@ -39,7 +39,7 @@
 			</fieldset>
 			
 			<div class="right_content" id="">
-				<p>Add <em>.fail</em> class to &lt;input&gt; tag.</p>
+				<p>Add <code>.fail</code> class to &lt;input&gt; tag.</p>
 				<p>Exmaple code:</p>
 				<pre>
 &lt;label for=&quot;text_field&quot;&gt;This is a label&lt;span&gt;(optional)&lt;/span&gt;&lt;/label&gt;
@@ -62,7 +62,7 @@
 			</fieldset>
 			
 			<div class="right_content" id="">
-				<p>Append the <em>disabled</em> attribute to the &lt;input&gt; tag.</p>
+				<p>Append the <code>disabled</code> attribute to the &lt;input&gt; tag.</p>
 				<p>Exmaple code:</p>
 				<pre>
 &lt;label for=&quot;text_field&quot;&gt;This is a label&lt;span&gt;(optional)&lt;/span&gt;&lt;/label&gt;
@@ -110,7 +110,7 @@
 				<p class="alert" style="display:block;">This is alert text</p>
 			</fieldset>
 			<div class="right_content" id="">
-				<p>Add <em>.fail</em> class to &lt;input&gt; tag.</p>
+				<p>Add <code>.fail</code> class to &lt;input&gt; tag.</p>
 				<p>Exmaple code:</p>
 				<pre>
 &lt;label for=&quot;file&quot;&gt;This is a label&lt;span&gt;(optional)&lt;/span&gt;&lt;/label&gt;
@@ -200,7 +200,7 @@
 				<p class="alert" style="display:block;">This is alert text</p>
 			</fieldset>
 			<div class="right_content" id="">
-				<p>Add <em>.fail</em> class to &lt;span&gt; tag.</p>
+				<p>Add <code>.fail</code> class to &lt;span&gt; tag.</p>
 				<p>Exmaple code:</p>
 				<pre>
 &lt;label for=&quot;select_list_error&quot;&gt;This is a label&lt;span&gt;(optional)&lt;/span&gt;&lt;/label&gt;
@@ -236,7 +236,7 @@
 				<p class="alert" style="display:none;">This is alert text</p>
 			</fieldset>
 			<div class="right_content" id="">
-				<p>Add attribute <em>disabled="disabled"</em> to &lt;select&gt; tag and the class <em>.disabled</em> to the parent &lt;span&gt; tag.</p>
+				<p>Add attribute <code>disabled="disabled"</code> to &lt;select&gt; tag and the class <code>.disabled</code> to the parent &lt;span&gt; tag.</p>
 				<p>Exmaple code:</p>
 				<pre>
 &lt;label for=&quot;select_list_disabled&quot;&gt;This is a label&lt;span&gt;(optional)&lt;/span&gt;&lt;/label&gt;
@@ -296,7 +296,7 @@
 			
 			
 			<div class="right_content" id="">
-				<p>Add <em>.horizontal_selectors</em> to the parent &lt;ul&gt; tag</p>
+				<p>Add <code>.horizontal_selectors</code> to the parent &lt;ul&gt; tag</p>
 				<p>Exmaple code: horizontal selectors</p>
 				<pre>
 &lt;label for=&quot;option_one&quot;&gt;This is a label&lt;span&gt;(optional)&lt;/span&gt;&lt;/label&gt;
@@ -368,7 +368,7 @@
 				<p class="alert" style="display:block;">This is alert text</p>
 			</fieldset>
 			<div class="right_content" id="">
-				<p>Add <em>.fail</em> class to parent &lt;li&gt; tag.</p>
+				<p>Add <code>.fail</code> class to parent &lt;li&gt; tag.</p>
 				<p>Exmaple code: horizontal selectors</p>
 				<pre>
 &lt;label for=&quot;option_one&quot;&gt;This is a label&lt;span&gt;(optional)&lt;/span&gt;&lt;/label&gt;
@@ -437,7 +437,7 @@
 				<p class="alert" style="display:none;">This is alert text</p>
 			</fieldset>
 			<div class="right_content" id="">
-				<p>Insert attribute <em>disabled="disabled"</em> to the disabled &lt;input&gt; tag</p>
+				<p>Insert attribute <code>disabled="disabled"</code> to the disabled &lt;input&gt; tag</p>
 				<p>Exmaple code: horizontal selectors</p>
 				<pre>
 &lt;label for=&quot;option_one&quot;&gt;This is a label&lt;span&gt;(optional)&lt;/span&gt;&lt;/label&gt;
@@ -514,7 +514,7 @@
 				<p class="alert" style="display:none;">This is alert text</p>
 			</fieldset>
 			<div class="right_content" id="">
-				<p>Add <em>.vertical_selectors</em> to the parent &lt;ul&gt; tag</p>
+				<p>Add <code>.vertical_selectors</code> to the parent &lt;ul&gt; tag</p>
 				<p>Exmaple code: horizontal selectors</p>
 				<pre>
 &lt;label for=&quot;option_three&quot;&gt;This is a label&lt;span&gt;(optional)&lt;/span&gt;&lt;/label&gt;
@@ -588,7 +588,7 @@
 				<p class="alert" style="display:block;">This is alert text</p>
 			</fieldset>
 			<div class="right_content" id="">
-				<p>Add <em>.fail</em> class to parent &lt;li&gt; tags.</p>
+				<p>Add <code>.fail</code> class to parent &lt;li&gt; tags.</p>
 				<p>Exmaple code: horizontal selectors</p>
 				<pre>
 &lt;label for=&quot;option_three&quot;&gt;This is a label&lt;span&gt;(optional)&lt;/span&gt;&lt;/label&gt;
@@ -733,7 +733,7 @@
 				<p class="alert" style="display:block;">This is alert text</p>
 			</fieldset>
 			<div class="right_content" id="">
-			<p>Add <em>.fail</em> class to the &lt;textarea&gt; tag.</p>
+			<p>Add <code>.fail</code> class to the &lt;textarea&gt; tag.</p>
 			<p>Exmaple code: textarea</p>
 				<pre>
 &lt;label for=&quot;textarea&quot;&gt;This is a label&lt;span&gt;(optional)&lt;/span&gt;&lt;/label&gt;
@@ -777,7 +777,7 @@
 			</fieldset>
 			
 			<div class="right_content" id="">
-				<p><b>Note: </b>Larger form UI is created when appending the mixin of <em>@ large_form</em> to the class of the parent container.</p>
+				<p><b>Note: </b>Larger form UI is created when appending the mixin of <code>@ large_form</code> to the class of the parent container.</p>
 				<p>Example code:</p>
 				<pre>
 &lt;style&gt;

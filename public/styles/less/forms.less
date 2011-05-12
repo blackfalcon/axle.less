@@ -20,27 +20,41 @@
 // ----------------------------------------------
 
 // This will auto concatenate a primary button with a secondary button
-button, input[type=submit], a.button {
+button, input[type=submit], input[type=button], a.button {
 	.primary_button;
+	&:nth-child(n+2) {
+		.secondary_button;
+	}
 }
 
 // This will concatenate a row of button all with the primary style
 .primary_buttons {
-	button, input[type=submit], a.button {
-		.primary_button;
+	button, input[type=submit], input[type=button], a.button {
+		&:nth-child(1n+2) {
+			.primary_button;
+		}
 	}
 }
 
 // This will concatenate a row of button all with the secondary style
 .secondary_buttons {
-	button, input[type=submit], a.button {
+	button, input[type=submit], input[type=button], a.button {
 		.secondary_button;
+	}
+}
+
+// When applied, set nth value for where CANCEL <button> link UI is to appear.  
+.cancel_buttons {
+	button, input[type=submit], input[type=button], a.button {
+		&:nth-child(1n+2) {
+			.cancel_link;
+		}
 	}
 }
 
 // This will convert a row of buttons to the SMALL style	
 .small_buttons {
-	button, input[type=submit], a.button {
+	button, input[type=submit], input[type=button], a.button {
 		.small_button;
 	}
 	a.button {
@@ -49,11 +63,7 @@ button, input[type=submit], a.button {
 }
 		
 
-button, input[type=submit], a.button {	
-	&:nth-child(n+2) {
-		.secondary_button;
-	}
-}
+
 
 // Special styles to support an <a> button
 a.button {
@@ -65,15 +75,21 @@ a.button {
 a#disabled {
 	.primary_button_disabled;
 }
+
+.cancel_buttons {
+	a#disabled {
+		background: none;
+	}
+}
 	
-// button.active, input[type=submit].active, a.active
-button.active, input[type=submit].active, a.active {
+// button.active, input[type=submit].active, input[type=button].active, a.active
+button.active, input[type=submit].active, input[type=button].active, a.active {
 	.ajax_spinner_lg;
 	color: fadeout(@alpha_grey, 100%);
 	.box_shadow(@india_grey, 0 0 0);
 }
 	
-button.active, input[type=submit].active, a.active {
+button.active, input[type=submit].active, input[type=button].active, a.active {
 	&:hover {
 		.ajax_spinner_lg;
 	}
@@ -92,7 +108,7 @@ button.active, input[type=submit].active, a.active {
 
 // Special use case if you need two primary buttons followed by secondary buttons
 .dual_primary_buttons {
- 	button, input[type=submit], a.button {
+ 	button, input[type=submit], input[type=button], a.button {
  		&:nth-child(n+2) {
  			.primary_button;
  		}
@@ -103,7 +119,7 @@ button.active, input[type=submit].active, a.active {
  }
  
 .reverse_primary_buttons {
-	button, input[type=submit], a.button {
+	button, input[type=submit], input[type=button], a.button {
 		&:nth-child(1) {
 			.secondary_button;
 		}
@@ -115,7 +131,7 @@ button.active, input[type=submit].active, a.active {
 
 
 .dual_primary_buttons_small {
-	button, input[type=submit], a.button {
+	button, input[type=submit], input[type=button], a.button {
 		.small_button;
 		&:nth-child(n+2) {
 			.primary_button;
@@ -128,7 +144,7 @@ button.active, input[type=submit].active, a.active {
 }
 			
 .reverse_primary_buttons_small {
-	button, input[type=submit], a.button {
+	button, input[type=submit], input[type=button], a.button {
 		.small_button;
 		&:nth-child(1) {
 			.secondary_button;
@@ -248,7 +264,7 @@ input[disabled], textarea[disabled], .disabled {
 }
 
 
-input[type=submit] {
+input[type=submit], input[type=button] {
 	opacity: 1.0;
 	filter: Alpha(Opacity=100);
 }

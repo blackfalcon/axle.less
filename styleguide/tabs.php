@@ -14,8 +14,8 @@
 				</ul>
 			</div>
 			<div class="" id="" style="margin-top: 10px;">
-				<p>Tab UI as applied to the &lt;li&gt;&lt;/li&gt; tags.  Apply <em>.tabbed_ui</em> class to parent &lt;ul&gt;.</p>
-				<p>The <em>.selected_tab</em> class will need to be dynamically applied to the active tab &lt;li&gt;.  Javascript onclick="return false" will need to be applied to the cooresponding &lt;a&gt; tag to render the link useless.  </p>
+				<p>Tab UI as applied to the &lt;li&gt;&lt;/li&gt; tags.  Apply <code>.tabbed_ui</code> class to parent &lt;ul&gt;.</p>
+				<p>The <code>.selected_tab</code> class will need to be dynamically applied to the active tab &lt;li&gt;.  Javascript onclick="return false" will need to be applied to the cooresponding &lt;a&gt; tag to render the link useless.  </p>
 				<p>Exmaple code:</p>
 				<pre>
 &lt;ul <span>class=&quot;tabbed_ui&quot;</span>&gt;
@@ -37,8 +37,8 @@
 				</ul>
 			</div>
 			<div class="" id="" style="margin-top: 10px;">
-				<p>Tab UI as applied to the &lt;li&gt;&lt;/li&gt; tags.  Apply <em>.tabbed_ui</em> and <em>.small_tab</em> classes to parent &lt;ul&gt;.</p>
-				<p>The <em>.selected_tab</em> class will need to be dynamically applied to the active tab &lt;li&gt;.  Javascript onclick="return false" will need to be applied to the cooresponding &lt;a&gt; tag to render the link useless.  </p>
+				<p>Tab UI as applied to the &lt;li&gt;&lt;/li&gt; tags.  Apply <code>.tabbed_ui</code> and <code>.small_tab</code> classes to parent &lt;ul&gt;.</p>
+				<p>The <code>.selected_tab</code> class will need to be dynamically applied to the active tab &lt;li&gt;.  Javascript onclick="return false" will need to be applied to the cooresponding &lt;a&gt; tag to render the link useless.  </p>
 				<p>Exmaple code:</p>
 				<pre>
 &lt;ul <span>class=&quot;tabbed_ui small_tab&quot;</span>&gt;

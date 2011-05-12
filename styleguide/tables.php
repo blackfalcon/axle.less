@@ -6,7 +6,7 @@
 		<header>
 			<p>1. Standard table UI</p>
 			<article>	
-				<p>Styles are applied to the <em>&lt;table&gt;</em> tag in the markup. No IDs or Classes necessary.  </p>	
+				<p>Styles are applied to the <code>&lt;table&gt;</code> tag in the markup. No IDs or Classes necessary.  </p>	
 			</article>
 		</header>
 		<article>

@@ -27,8 +27,8 @@
 				</li>
 			</ul>
 			
-			<p>There are a lot of little parts here to make this UI.  The &lt;ul&gt; block requires both the <em>.pagination</em> and <em>.linkBox</em> classes.  <em>.pagination</em> is the primary class that drives the UI.  <em>.linkBox</em> drives a JS feature that enables the entire &lt;li&gt; to be clickable, thus increasign the target area.</p>
-			<p><em>.pagination</em> has the <em>-box-pack: end</em> attribute that moves all the pagination elements to the right.  In order to inset any content to the left, insert another &lt;li&gt; tag with the <em>.pagination_left</em> class.</p>
+			<p>There are a lot of little parts here to make this UI.  The &lt;ul&gt; block requires both the <code>.pagination</code> and <code>.linkBox</code> classes.  <code>.pagination</code> is the primary class that drives the UI.  <code>.linkBox</code> drives a JS feature that enables the entire &lt;li&gt; to be clickable, thus increasing the target area.</p>
+			<p><code>.pagination</code> has the <code>-box-pack: end</code> attribute that moves all the pagination elements to the right.  In order to inset any content to the left, insert another &lt;li&gt; tag with the <code>.pagination_left</code> class.</p>
 			<p>Only default spacing is surrounding this element.  Over-ride at the screen template level as needed.</p>
 			<p>Example code:</p>
 			

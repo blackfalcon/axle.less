@@ -81,6 +81,29 @@
 	}
 }
 
+.cancel_link {
+	background: none;
+	border: 1px solid @alpha_grey;
+	border-width: 0 0 0 1px;
+	color: @href_color;
+	height: auto;
+	width: auto;
+	.border_radius(0px);
+	.box_shadow(0 0 0, @white);	
+	.medium;
+	
+	&:hover, &:active {
+		text-decoration: underline;
+	}
+	
+	&[disabled] {
+		text-decoration: none;
+		color: @input_disabled_text;
+		background: none;
+	}
+}
+
+
 .small_button {
 	.medium;
 	padding: 0 12px;
