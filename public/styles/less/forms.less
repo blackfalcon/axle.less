@@ -118,6 +118,17 @@ button.active, input[type=submit].active, input[type=button].active, a.active {
  	}
  }
  
+.dual_primary_cancel_buttons {
+ 	button, input[type=submit], input[type=button], a.button {
+ 		&:nth-child(n+2) {
+ 			.primary_button;
+ 		}
+ 		&:nth-child(n+3) {
+ 			.cancel_link;
+ 		}
+ 	}
+ }
+ 
 .reverse_primary_buttons {
 	button, input[type=submit], input[type=button], a.button {
 		&:nth-child(1) {

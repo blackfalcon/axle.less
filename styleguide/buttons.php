@@ -209,9 +209,13 @@
 			<div class="dual_primary_buttons" id="">
 				<button>Button text</button><button>Button text</button><button>Button text</button><button disabled="disabled">Button text</button>
 			</div>
+			<div class="dual_primary_cancel_buttons" id="">
+				<button>Button text</button><button>Button text</button><button>Button text</button><button disabled="disabled">Button text</button>
+			</div>
 			
 			<div class="" id="">
-				<p>To produce an alternate series of buttons whereas the first (2) buttons carry over the primary UI style, simply concatenate a series of &lt;button&gt; tags.  IMPORTANT! you will need to place a <code>.dual_primary_buttons</code> class in the directly preceding parent.  The <code>disabled="disabled"</code> attribute is required to apply the disabled UI. </p>
+				<p>To produce the first (2) buttons carry over the primary UI style, simply concatenate a series of &lt;button&gt; tags.  IMPORTANT! you will need to place a <code>.dual_primary_buttons</code> class in the directly preceding parent.  The <code>disabled="disabled"</code> attribute is required to apply the disabled UI. </p>
+				<p>For the 'cancel' option, use the class <code>.dual_primary_cancel_buttons</code> on the parent block.</p>
 				<p>Example code:</p>
 				<p>
 					<pre>
@@ -219,12 +223,9 @@
 	&lt;button&gt;Button text&lt;/button&gt;&lt;button&gt;Button text&lt;/button&gt;&lt;button&gt;Button text&lt;/button&gt;&lt;button disabled=&quot;disabled&quot;&gt;Button text&lt;/button&gt;
 &lt;/div&gt;
 
-or
-
-&lt;div&gt;
-  &lt;p <span>class=&quot;dual_primary_button&quot;</span>&gt;
-    &lt;button&gt;Button text&lt;/button&gt;&lt;button&gt;Button text&lt;/button&gt;&lt;button&gt;Button text&lt;/button&gt;&lt;button disabled=&quot;disabled&quot;&gt;Button text&lt;/button&gt;
-  &lt;/p&gt;
+// cancel option ~
+&lt;div <span>class=&quot;dual_primary_cancel_buttons&quot;</span> id=&quot;&quot;&gt;
+  &lt;button&gt;Button text&lt;/button&gt;&lt;button&gt;Button text&lt;/button&gt;&lt;button&gt;Button text&lt;/button&gt;&lt;button disabled=&quot;disabled&quot;&gt;Button text&lt;/button&gt;
 &lt;/div&gt;
 					</pre>
 				</p>
