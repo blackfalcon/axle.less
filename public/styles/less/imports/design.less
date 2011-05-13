@@ -22,21 +22,36 @@
 
 
 /////// OOCSS generic color blocks ////////
-@alpha_color: #8C9955;
-@bravo_color: #A3B56B;
-@charlie_color: #D18920;
-@delta_color: #EB9D22;
-@echo_color: #ECBA57;
-@fox_color: #F9C880;
-@golf_color: #DDA68A;
-@hotel_color: #E9C5AB;
-@india_color: #EED9D4;
+@alpha_primary: #E84137;
+@bravo_primary: #5BA418;
+@charlie_primary: #FADC03;
+@delta_primary: #4878CC;
+@echo_primary: #FF8609;
 
-@juliet_color: #C80030;
-@kilo_color: #FF3030;
-@lima_color: #FF8048;
-@mike_color: #FFFF7F;
-@november_color: #59A80F;
+@alpha_color: @alpha_primary;
+@bravo_color: lighten(@alpha_primary, 10%);
+@charlie_color: lighten(@alpha_primary, 30%);
+@delta_color: lighten(@alpha_primary, 40%);
+
+@echo_color: @bravo_primary;
+@fox_color: lighten(@bravo_primary, 10%);
+@golf_color: lighten(@bravo_primary, 30%);
+@hotel_color: lighten(@bravo_primary, 40%);
+
+@india_color: @charlie_primary;
+@juliet_color: lighten(@charlie_primary, 10%);
+@kilo_color: lighten(@charlie_primary, 30%);
+@lima_color: lighten(@charlie_primary, 40%);
+
+@mike_color: @delta_primary;
+@november_color: lighten(@delta_primary, 10%);
+@october_color: lighten(@delta_primary, 30%);
+@papa_color: lighten(@delta_primary, 40%);
+
+@quebec_color: @echo_primary;
+@romeo_color: lighten(@echo_primary, 10%);
+@sierra_color: lighten(@echo_primary, 30%);
+@tango_color: lighten(@echo_primary, 40%);
 /////// color blocks ////////
 
 
@@ -270,6 +285,30 @@
 
 .november_color {
 	background-color: @november_color;
+}
+
+.october_color {
+	background-color: @october_color;
+}
+
+.papa_color {
+	background-color: @papa_color;
+}
+
+.quebec_color {
+	background-color: @quebec_color;
+}
+
+.romeo_color {
+	background-color: @romeo_color;
+}
+
+.sierra_color {
+	background-color: @sierra_color;
+}
+
+.tango_color {
+	background-color: @tango_color;
 }
 
 	

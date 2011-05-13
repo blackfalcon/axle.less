@@ -98,6 +98,25 @@
 			<div class="november_color" id="">
 				<p>@november_color</p>
 			</div>
+			<div class="october_color" id="">
+				<p>@october_color</p>
+			</div>
+			<div class="papa_color" id="">
+				<p>@papa_color</p>
+			</div>
+			
+			<div class="quebec_color" id="">
+				<p>@quebec_color</p>
+			</div>
+			<div class="romeo_color" id="">
+				<p>@romeo_color</p>
+			</div>
+			<div class="sierra_color" id="">
+				<p>@sierra_color</p>
+			</div>
+			<div class="tango_color" id="">
+				<p>@tango_color</p>
+			</div>
 		</article>
 		<footer></footer>
 		
