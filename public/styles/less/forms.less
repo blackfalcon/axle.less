@@ -187,6 +187,10 @@ button.active, input[type=submit].active, input[type=button].active, a.active {
 		-webkit-appearance: none;
 				
 		.border_radius(6px);
+		
+		&:hover {
+			border-color: @charlie_grey !important;
+		}
 	}
 		
 	&:after {
@@ -263,20 +267,10 @@ input[disabled], textarea[disabled], .disabled {
 	color: @input_disabled_text;
 	opacity: .35;
 	filter: Alpha(Opacity=35);
-	select {
-		background: @input_disabled_bkg;
-		opacity: .35;
-		filter: Alpha(Opacity=35);
-		&:focus {
-			background: @input_disabled_bkg;
-		}
+	&:hover {
+		border-color: @input_disabled_border;
+		.soft_shadow;
 	}
- 	&:after {
- 		background: none;
- 		opacity: .35;
- 		filter: Alpha(Opacity=35);
- 		border: 0;
- 	}
 }
 
 
@@ -425,7 +419,7 @@ form {
 // ----------------------------------------------
 
 .alert-box {
-	background-color: @echo_color;
+	background-color: @kilo_color;
 	.warning_box;
 	.alert_icon {
 		.warning_icon_placement;
@@ -437,7 +431,7 @@ form {
 }
 			
 .success-box {
-	background-color: @fox_color;
+	background-color: @golf_color;
 	.warning_box;
 	.success_icon {
 		.warning_icon_placement;
@@ -449,7 +443,7 @@ form {
 }
 
 .error-box {
-	background-color: @delta_color;
+	background-color: @charlie_color;
 	.warning_box;
 	.error_icon {
 		.warning_icon_placement;

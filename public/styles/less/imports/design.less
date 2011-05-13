@@ -109,7 +109,6 @@
 .mike_color_gradient {
 	.two_stop_linear_gradient(@not_set, @not_set);
 }
-
 /////// OOCSS gradient color mixins ////////
 
 
@@ -131,6 +130,10 @@
 
 .spinner_lg {
 	.ajax_spinner_lg;
+}
+
+.soft_shadow {
+	.box_shadow(0 5px 15px -8px, @shadow_color);
 }
 ///////// general UI mixins	/////////
 
@@ -169,10 +172,10 @@
 @form_field_border_fail: @form_field_fail;
 @form_field_fail_bkg: lighten(@alpha_color, 35%); 
 
-@input_disabled: fadeout(@delta_grey, 85%);
-@input_disabled_bkg: fadeout(@input_disabled, 85%);
-@input_disabled_border: fadeout(@input_disabled, 50%);
-@input_disabled_text: fadeout(@input_disabled, 60%);
+@input_disabled: @bravo_grey;
+@input_disabled_bkg: fadeout(@input_disabled, 80%);
+@input_disabled_border: @input_disabled;
+@input_disabled_text: @input_disabled;
 
 // colors for buttons
 @button_text: @not_set;
@@ -312,8 +315,6 @@
 .tango_color {
 	background-color: @tango_color;
 }
-
-	
 /////// OOCSS color blocks ////////
 
 
@@ -343,7 +344,7 @@ table {
 			line-height: 30px;
 			border-bottom: 1px solid @golf_grey;
 			&:hover {
-				background-color: @juliet_grey;
+				background-color: @hotel_grey;
 			}
 		}
 	}
