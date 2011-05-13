@@ -147,6 +147,9 @@
 				position: relative;
 				left: 105%;
 				width: 35%;
+				//text-align: left;
+				font-weight: normal;
+				//.medium;
 			}
 		}
 		.tabbed_ui {
@@ -159,6 +162,11 @@
 			p {
 				color: red;
 			}
+		}
+		p {
+			//text-align: right;
+			//.large;
+			font-weight: bold;
 		}
 	}
 
@@ -297,12 +305,20 @@
 		background-color: @secondary_button_hover;
 	}
 		
-	.field_focus_color {
-		background-color: @field_focus_color;
-	}
-		
 	.form_field_border {
 		background-color: @form_field_border;
+	}
+	
+	.form_field_focus_border_color {
+		background-color: @form_field_focus_border_color;
+	}
+	
+	.form_field_focus_color {
+		background-color: @form_field_focus_color;
+	}
+	
+	.form_field_text {
+		background-color: @form_field_text;
 	}
 		
 	.form_field_border_fail {
@@ -316,6 +332,11 @@
 	.input_disabled_bkg {
 		background-color: @input_disabled_bkg;
 	}
+	
+	.form_field_background_color {
+		background-color: @form_field_background_color;	
+		.inset_border;
+	}
 		
 	.input_disabled_border {
 		background-color: @input_disabled_border;
@@ -324,6 +345,19 @@
 	.input_disabled_text {
 		background-color: @input_disabled_text;
 	}
+	
+	.mark_color {
+		background-color: @mark_color;
+	}
+	
+	.selection_color {
+		background-color: @selection_color;
+	}
+	
+	.selection_text_color {
+		background-color: @selection_text_color;
+		.inset_border;
+	}	
 	/////// semantic color blocks ////////
 	
 	

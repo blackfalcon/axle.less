@@ -4,39 +4,39 @@
 	.two_stop_linear_gradient(@not_set, @not_set);
 }
 
-
 /////// OOCSS gray color blocks ////////
-@alpha_grey: #1c1d1f;
-@bravo_grey: #36383c;
-@charlie_grey: #55585d;
-@delta_grey: #74787f;
-@echo_grey: #91969f;
-@fox_grey: #aeb4bf;
-@golf_grey: #cad1dd;
-@hotel_grey: #e5edfd;
+@alpha_grey: #252525;
+@bravo_grey: #393939;
+@charlie_grey: #464646;
+@delta_grey: #898989;
+@echo_grey: #C2C2C2;
+@fox_grey: #D1D1D1;
+@golf_grey: #E0E0E0;
+@hotel_grey: #EFEFEF;
 @india_grey: #fff;
-@juliet_grey: #eee;
-@kilo_grey: #777779;
+@juliet_grey: @not_set;
+@kilo_grey: @not_set;
 /////// OOCSS gray color blocks ////////
 
 
 
 
 /////// OOCSS generic color blocks ////////
-@alpha_color: #3D610A;
-@bravo_color: #71B213;
-@charlie_color: #FF9B01;
-@delta_color: #E12829;
-@echo_color: #FFEC53;
-@fox_color: #BEF662;
-@golf_color: #FBF0D5;
-@hotel_color: #E85C00;
+@alpha_color: #8C9955;
+@bravo_color: #A3B56B;
+@charlie_color: #D18920;
+@delta_color: #EB9D22;
+@echo_color: #ECBA57;
+@fox_color: #F9C880;
+@golf_color: #DDA68A;
+@hotel_color: #E9C5AB;
+@india_color: #EED9D4;
 
-@alpha_color_stop: #2D4807;
-@bravo_color_stop: #4C790C;
-@charlie_color_stop: #FF6600;
-@delta_color_stop: #FFDDDD;
-@echo_color_stop: #FFFFAA;
+@juliet_color: #C80030;
+@kilo_color: #FF3030;
+@lima_color: #FF8048;
+@mike_color: #FFFF7F;
+@november_color: #59A80F;
 /////// color blocks ////////
 
 
@@ -44,62 +44,55 @@
 
 /////// OOCSS gradient color mixins ////////
 .alpha_color_gradient {
-	.two_stop_linear_gradient(@charlie_grey, @alpha_grey);
-	color: @india_grey;
-	a, h1, h2, h3, h4, h5 {
-		color: @india_grey;
-	}
-	a:hover {
-		color: @bravo_color;
-	}
+	.two_stop_linear_gradient(@not_set, @not_set);
 }
 
 .bravo_color_gradient {
-	.two_stop_linear_gradient(@bravo_color_stop, @bravo_color);
+	.two_stop_linear_gradient(@not_set, @not_set);
 }
 
 .charlie_color_gradient {
-	.two_stop_linear_gradient(@alpha_color_stop, @alpha_color);
+	.two_stop_linear_gradient(@not_set, @not_set);
 }
 
 .delta_color_gradient {
-	.three_stop_linear_gradient(@alpha_color_stop, @alpha_color, @alpha_color_stop);
+	.two_stop_linear_gradient(@not_set, @not_set);
 }
 
 .echo_color_gradient {
-	.two_stop_linear_gradient(@charlie_color, @charlie_color_stop);
+	.two_stop_linear_gradient(@not_set, @not_set);
 }
 
 .fox_color_gradient {
-	.five_stop_linear_gradient(@alpha_color_stop, @alpha_color, @alpha_color_stop, @bravo_color_stop, @bravo_color);
+	.two_stop_linear_gradient(@not_set, @not_set);
 }
 
 .golf_color_gradient {
-	.two_stop_linear_gradient(@echo_grey, @bravo_grey);
+	.two_stop_linear_gradient(@not_set, @not_set);
 }
 
 .hotel_color_gradient {
-	.two_stop_linear_gradient(@hotel_grey, @india_grey);
+	.two_stop_linear_gradient(@not_set, @not_set);
 }
 
 .india_color_gradient {
-	.two_stop_linear_gradient(@charlie_color_stop, @charlie_color);
+	.two_stop_linear_gradient(@not_set, @not_set);
 }
 
 .juliet_color_gradient {
-	.two_stop_linear_gradient(@hotel_grey, @fox_grey);
+	.two_stop_linear_gradient(@not_set, @not_set);
 }
 	
 .kilo_color_gradient {
-	.two_stop_linear_gradient(@bravo_grey, @echo_grey);
+	.two_stop_linear_gradient(@not_set, @not_set);
 }
 
 .lima_color_gradient {
-	.two_stop_linear_gradient(@india_grey, @hotel_grey);
+	.two_stop_linear_gradient(@not_set, @not_set);
 }
 
 .mike_color_gradient {
-	.two_stop_linear_gradient(@fox_grey, @delta_grey);
+	.two_stop_linear_gradient(@not_set, @not_set);
 }
 
 /////// OOCSS gradient color mixins ////////
@@ -128,51 +121,54 @@
 
 
 /////// axle semantic combinations ////////
+// abstract 'white' value to easily applied to semantic class objects
 @white: @india_grey;
-@primary_text: @alpha_grey;
-@href_color: @bravo_color;
-@highlight_color: @echo_color;
-@selection_color: @charlie_color;
-@selection_text_color: @india_grey;
 
-@instructional_text: @delta_grey;
-@error_text: @delta_color;
-
-@button_text: @india_grey;
-
+// default shadow colors
 @shadow_color: fadeout(@alpha_grey, 40%);
 
-@cms_overlay: fadeout(@alpha_grey, 40%);
+// primary font color for the app
+@primary_text: @bravo_grey;
 
-@primary_button_hover: @hotel_color;
-@secondary_button_hover: @charlie_grey;
+// default <a href="#"> link color
+@href_color: @alpha_color;
 
-@field_focus_color: @golf_color;
+// used with the <mark> tag
+@mark_color: @mike_color;
 
+// overrides the default content selection color in the browser
+@selection_color: @charlie_color;
+@selection_text_color: @white;
+
+// form colors
+@instructional_text: @delta_grey;
+@error_text: @juliet_color;
+
+@form_field_focus_border_color: darken(@india_color, 10%);
+@form_field_focus_color: lighten(@india_color, 10%);
+@form_field_background_color: @white;
 @form_field_border: @delta_grey;
-@form_field_border_fail: @delta_color;
-@form_field_fail_bkg: @delta_color_stop;
+@form_field_text: @bravo_grey;
+@form_field_border_fail: @kilo_color;
+@form_field_fail_bkg: lighten(@kilo_color, 35%); 
 
-@input_disabled_bkg: @hotel_grey;
-@input_disabled_border: @golf_grey;
-@input_disabled_text: @fox_grey;
+@input_disabled_bkg: fadeout(@delta_grey, 85%);
+@input_disabled_border: fadeout(@delta_grey, 50%);
+@input_disabled_text: fadeout(@delta_grey, 60%);
 
-@logo_title: @bravo_color;
-
-@modal_background_color: @india_grey;
-
-@grid_spot_edit_border: @bravo_color;
-@grid_spot_updated_border: @charlie_color_stop;
-@grid_spot_locked_border: @delta_grey;
-
-
-.login_bkg {
-	.fox_color_gradient;
-}
+// colors for buttons
+@button_text: @not_set;
+@primary_button_hover: @not_set;
+@secondary_button_hover: @not_set;
 /////// axle semantic combinations ////////
 
 
 /////// OOCSS color blocks ////////
+.white {
+	background-color: @white;
+	.inset_border;
+}
+
 .alpha_grey {
 	background-color: @alpha_grey;
 }
@@ -207,6 +203,7 @@
 
 .india_grey {
 	background-color: @india_grey;
+	.inset_border
 }
 
 .juliet_grey {
@@ -249,6 +246,31 @@
 .hotel_color {
 	background-color: @hotel_color;
 }
+
+.india_color {
+	background-color: @india_color;
+}
+
+.juliet_color {
+	background-color: @juliet_color;
+}
+
+.kilo_color {
+	background-color: @kilo_color;
+}
+
+.lima_color {
+	background-color: @lima_color;
+}
+
+.mike_color {
+	background-color: @mike_color;
+}
+
+.november_color {
+	background-color: @november_color;
+}
+
 	
 /////// OOCSS color blocks ////////
 

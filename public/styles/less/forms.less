@@ -222,11 +222,14 @@ button.active, input[type=submit].active, input[type=button].active, a.active {
 
 input[type=text], input[type=password], select, textarea, a.ui-selectmenu, .mceLayout {
 	border: 1px solid @form_field_border;
-	padding: 6px 0 6px 6px;
+	background: @form_field_background_color;
+	.border_radius(5px);
+	padding: 6px 0 6px 10px;
 	width: 98%;
 	outline: none;
 	.field_input_spacing;
 	.field_focus;
+	.large;
 }
 	
 select {
@@ -234,7 +237,7 @@ select {
 }
 	
 .fail {
-	background: @form_field_fail_bkg;
+	background: @form_field_fail_bkg !important;
 	border-color: @form_field_border_fail !important;
 	&:focus {
 		background: @form_field_fail_bkg !important;
@@ -444,7 +447,7 @@ form {
 }
 
 .error-box {
-	background-color: @delta_color_stop;
+	background-color: @delta_color;
 	.warning_box;
 	.error_icon {
 		.warning_icon_placement;

@@ -24,7 +24,6 @@
 			<div class="delta_grey" id="">
 				<p>@delta_grey</p>
 			</div>
-			<!-- 
 			<div class="echo_grey" id="">
 				<p>@echo_grey</p>
 			</div>
@@ -40,6 +39,7 @@
 			<div class="india_grey" id="">
 				<p>@india_grey</p>
 			</div>
+			<!--
 			<div class="juliet_grey" id="">
 				<p>@juliet_grey</p>
 			</div>
@@ -68,7 +68,6 @@
 			<div class="delta_color" id="">
 				<p>@delta_color</p>
 			</div>
-			<!-- 
 			<div class="echo_color" id="">
 				<p>@echo_color</p>
 			</div>
@@ -81,7 +80,24 @@
 			<div class="hotel_color" id="">
 				<p>@hotel_color</p>
 			</div>
-			-->
+			<div class="india_color" id="">
+				<p>@india_color</p>
+			</div>
+			<div class="juliet_color" id="">
+				<p>@juliet_color</p>
+			</div>
+			<div class="kilo_color" id="">
+				<p>@kilo_color</p>
+			</div>
+			<div class="lima_color" id="">
+				<p>@lima_color</p>
+			</div>
+			<div class="mike_color" id="">
+				<p>@mike_color</p>
+			</div>
+			<div class="november_color" id="">
+				<p>@november_color</p>
+			</div>
 		</article>
 		<footer></footer>
 		

@@ -180,8 +180,14 @@
 }
 		
 .field_focus {
+	&:hover {
+		border-color: @form_field_focus_border_color;
+		.box_shadow(0 5px 15px -10px, @shadow_color);
+	}
 	&:focus {
-		background-color: @field_focus_color;
+		background-color: @form_field_focus_color;
+		border-color: @form_field_focus_border_color;
+		.box_shadow(0 5px 15px -10px, @shadow_color);
 	}
 }
 
