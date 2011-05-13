@@ -220,7 +220,7 @@ button.active, input[type=submit].active, input[type=button].active, a.active {
 //////// inputs ////////
 // ----------------------------------------------
 
-input[type=text], input[type=password], select, textarea, a.ui-selectmenu, .mceLayout {
+input[type=text], input[type=password], select, textarea, a.ui-selectmenu {
 	border: 1px solid @form_field_border;
 	background: @form_field_background_color;
 	.border_radius(5px);
@@ -230,6 +230,7 @@ input[type=text], input[type=password], select, textarea, a.ui-selectmenu, .mceL
 	.field_input_spacing;
 	.field_focus;
 	.large;
+	color: @form_field_text;
 }
 	
 select {
@@ -239,6 +240,7 @@ select {
 .fail {
 	background: @form_field_fail_bkg !important;
 	border-color: @form_field_border_fail !important;
+	color: @form_field_text_fail !important;
 	&:focus {
 		background: @form_field_fail_bkg !important;
 	}

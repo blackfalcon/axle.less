@@ -9,7 +9,7 @@
 		<div class="master_container" id="">
 			<fieldset class="styleguide_form_frame editor-container" style="">
 				<label for="text_field">This is a label<span>(optional)</span></label>
-				<input type="text" class="" name="" id="text_field" value="" />
+				<input type="text" class="" name="" id="text_field" value="" placeholder="placeholder text" />
 				<p class="instructional">This is instructional text</p>
 				<p class="alert" style="display:none;">This is alert text</p>
 			</fieldset>

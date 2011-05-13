@@ -60,6 +60,9 @@
 			<div class="form_field_fail_bkg" id="">
 				<p>@form_field_fail_bkg</p>
 			</div>
+			<div class="form_field_text_fail" id="">
+				<p>@form_field_text_fail</p>
+			</div>
 			<div class="input_disabled_border" id="">
 				<p>@input_disabled_border</p>
 			</div>

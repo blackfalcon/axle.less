@@ -14,7 +14,7 @@
 			</fieldset>
 			
 			<div class="right_content" id="">
-				<p>Exmaple code:</p>
+				<p>Example code:</p>
 				<pre>
 &lt;label for=&quot;text_field&quot;&gt;This is a label&lt;span&gt;(optional)&lt;/span&gt;&lt;/label&gt;
 &lt;input type=&quot;text&quot; class=&quot;&quot; name=&quot;&quot; id=&quot;text_field&quot; value=&quot;&quot; /&gt;

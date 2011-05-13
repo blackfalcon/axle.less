@@ -6,14 +6,14 @@
 
 /////// OOCSS gray color blocks ////////
 @alpha_grey: #252525;
-@bravo_grey: #393939;
-@charlie_grey: #464646;
-@delta_grey: #898989;
-@echo_grey: #C2C2C2;
-@fox_grey: #D1D1D1;
-@golf_grey: #E0E0E0;
-@hotel_grey: #EFEFEF;
-@india_grey: #fff;
+@bravo_grey: lighten(@alpha_grey, 10%);
+@charlie_grey: lighten(@alpha_grey, 20%);
+@delta_grey: lighten(@alpha_grey, 30%);
+@echo_grey: lighten(@alpha_grey, 40%);
+@fox_grey: lighten(@alpha_grey, 50%);
+@golf_grey: lighten(@alpha_grey, 70%);
+@hotel_grey: lighten(@alpha_grey, 80%);
+@india_grey: lighten(@alpha_grey, 100%);
 @juliet_grey: @not_set;
 @kilo_grey: @not_set;
 /////// OOCSS gray color blocks ////////
@@ -131,13 +131,13 @@
 @primary_text: @bravo_grey;
 
 // default <a href="#"> link color
-@href_color: @alpha_color;
+@href_color: darken(@lima_color, 10%);
 
 // used with the <mark> tag
 @mark_color: @mike_color;
 
 // overrides the default content selection color in the browser
-@selection_color: @charlie_color;
+@selection_color: @lima_color;
 @selection_text_color: @white;
 
 // form colors
@@ -148,7 +148,8 @@
 @form_field_focus_color: lighten(@india_color, 10%);
 @form_field_background_color: @white;
 @form_field_border: @delta_grey;
-@form_field_text: @bravo_grey;
+@form_field_text: @delta_grey;
+@form_field_text_fail: @kilo_color;
 @form_field_border_fail: @kilo_color;
 @form_field_fail_bkg: lighten(@kilo_color, 35%); 
 
