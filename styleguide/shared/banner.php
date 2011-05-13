@@ -1,1 +1,1 @@
-<div class="version_banner">0.0.1 alpha</div>
+<div class="version_banner">0.8.0 beta</div>

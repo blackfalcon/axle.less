@@ -146,31 +146,33 @@
 @primary_text: @bravo_grey;
 
 // default <a href="#"> link color
-@href_color: darken(@lima_color, 10%);
+@href_color: darken(@mike_color, 10%);
 
 // used with the <mark> tag
-@mark_color: @mike_color;
+@mark_color: @india_color;
 
 // overrides the default content selection color in the browser
-@selection_color: @lima_color;
+@selection_color: @quebec_color;
 @selection_text_color: @white;
 
 // form colors
-@instructional_text: @delta_grey;
-@error_text: @juliet_color;
+@instructional_text: @charlie_grey;
+@error_text: @alpha_color;
 
-@form_field_focus_border_color: darken(@india_color, 10%);
-@form_field_focus_color: lighten(@india_color, 10%);
+@form_field_focus_border_color: darken(@quebec_color, 10%);
+@form_field_focus_color: lighten(@quebec_color, 45%);
 @form_field_background_color: @white;
 @form_field_border: @delta_grey;
 @form_field_text: @delta_grey;
-@form_field_text_fail: @kilo_color;
-@form_field_border_fail: @kilo_color;
-@form_field_fail_bkg: lighten(@kilo_color, 35%); 
+@form_field_fail: @alpha_color;
+@form_field_text_fail: @form_field_fail;
+@form_field_border_fail: @form_field_fail;
+@form_field_fail_bkg: lighten(@alpha_color, 35%); 
 
-@input_disabled_bkg: fadeout(@delta_grey, 85%);
-@input_disabled_border: fadeout(@delta_grey, 50%);
-@input_disabled_text: fadeout(@delta_grey, 60%);
+@input_disabled: fadeout(@delta_grey, 85%);
+@input_disabled_bkg: fadeout(@input_disabled, 85%);
+@input_disabled_border: fadeout(@input_disabled, 50%);
+@input_disabled_text: fadeout(@input_disabled, 60%);
 
 // colors for buttons
 @button_text: @not_set;
