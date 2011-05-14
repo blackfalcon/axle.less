@@ -21,7 +21,10 @@
 	.bravo_color_gradient;
 }
 
-.button_disabled {
+
+// in this theme, primary and secondary disabled buttons are the same
+// but axle can support having independent designs for each disabled button if needed
+.button_disabled {   
 	.echo_color_gradient;
 	color: @input_disabled_text;
 	cursor: text;
@@ -56,6 +59,8 @@
 
 
 /////// Buttons design - primary, secondary, and small ////////
+
+// For these button, there is a repeated mixin to maintain all the outer and inner shadows in the various states
 .button_shadow (@outer_color, @inner_color) {
 	.dual_box_shadow(@outer_color, 0px 3px 3px, @inner_color, 0px -19px 10px 0px);
 }
@@ -104,6 +109,7 @@
 	.button_shadow (@shadow_color, @quebec_color);
 	&:hover {
 		.secondary_button_hover;
+		.box_shadow(@shadow_color, 0px 1px 2px);
 	}
 	&:active {
 		.secondary_button_active;

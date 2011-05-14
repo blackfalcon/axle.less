@@ -20,6 +20,7 @@
 // ----------------------------------------------
 
 // This will auto concatenate a primary button with a secondary button
+// --------------------------------------------------------------------
 button, input[type=submit], input[type=button], a.button {
 	.primary_button;
 	&:nth-child(n+2) {
@@ -28,6 +29,7 @@ button, input[type=submit], input[type=button], a.button {
 }
 
 // This will concatenate a row of button all with the primary style
+// -----------------------------------------------------------------
 .primary_buttons {
 	button, input[type=submit], input[type=button], a.button {
 		&:nth-child(1n+2) {
@@ -37,13 +39,15 @@ button, input[type=submit], input[type=button], a.button {
 }
 
 // This will concatenate a row of button all with the secondary style
+// ------------------------------------------------------------------
 .secondary_buttons {
 	button, input[type=submit], input[type=button], a.button {
 		.secondary_button;
 	}
 }
 
-// When applied, set nth value for where CANCEL <button> link UI is to appear.  
+// When applied, set nth value for where CANCEL <button> link UI is to appear. 
+// --------------------------------------------------------------------------- 
 .cancel_buttons {
 	button, input[type=submit], input[type=button], a.button {
 		&:nth-child(1n+2) {
@@ -52,7 +56,8 @@ button, input[type=submit], input[type=button], a.button {
 	}
 }
 
-// This will convert a row of buttons to the SMALL style	
+// This will convert a row of buttons to the SMALL style
+// -----------------------------------------------------	
 .small_buttons {
 	button, input[type=submit], input[type=button], a.button {
 		.small_button;
@@ -66,6 +71,7 @@ button, input[type=submit], input[type=button], a.button {
 
 
 // Special styles to support an <a> button
+// ---------------------------------------
 a.button {
 	font-weight: bold;
 	letter-spacing: -0.06em;
@@ -80,15 +86,16 @@ a.button {
 a#disabled {
 	.primary_button_disabled;
 	border-color: @fox_grey;
-	.dual_box_shadow(@shadow_color, 0px 3px 3px, @fox_grey, 0px -19px 10px 0px);
+	.button_shadow(@shadow_color, @fox_grey);
 	&:hover {
-		.box_shadow(@shadow_color, 0px 3px 3px);
+		.button_shadow(@shadow_color, @fox_grey);
 	}
 }
 
 .cancel_buttons {
 	a#disabled {
 		background: none;
+		.box_shadow(0 0 0, @white);
 		&:hover {
 			.box_shadow(0px 0 0, @white);
 			text-decoration: none;
@@ -98,17 +105,22 @@ a#disabled {
 	
 // Post click active state for buttons
 // You need to turn off all the button UI so that the spinner will show
+// --------------------------------------------------------------------
 button.active, input[type=submit].active, input[type=button].active, a.active {
+	
 	// show spinner
+	// ------------
 	.ajax_spinner_lg;
 	
 	// deactivate all the buttons UI
+	// ------------------------------
 	color: fadeout(@alpha_grey, 100%);			// makes text transparent
 	.box_shadow(fadeout(@white, 100%), 0 0 0);	// makes shadow transparent 
 	.text_shadow(0 0 0, fadeout(@white, 100%));	// makes text shadow transparent
 	border: 0px;								// removes border	
 	
 	// keeps the spinner in view with hover
+	// ------------------------------------
 	&:hover {
 		.ajax_spinner_lg;
 	}
@@ -123,9 +135,10 @@ button.active, input[type=submit].active, input[type=button].active, a.active {
  
  
 ///////// dynamic layout nth child styles for special arrangements ////////
-// ----------------------------------------------
+// ---------------------------------------------------------------------------
 
 // Special use case if you need two primary buttons followed by secondary buttons
+// -------------------------------------------------------------------------------
 .dual_primary_buttons {
  	button, input[type=submit], input[type=button], a.button {
  		&:nth-child(n+2) {
@@ -188,7 +201,7 @@ button.active, input[type=submit].active, input[type=button].active, a.active {
 //////// special case buttons use ////////
 
 //////////// styles for custom-select UI ///////////
-// ----------------------------------------------
+// --------------------------------------------------
 
 // To suport a stylized select drop down menu
 .custom-select {
@@ -241,7 +254,7 @@ button.active, input[type=submit].active, input[type=button].active, a.active {
 
 
 //////// inputs ////////
-// ----------------------------------------------
+// ---------------------
 
 input[type=text], input[type=password], select, textarea, a.ui-selectmenu {
 	border: 1px solid @form_field_border;
@@ -313,7 +326,7 @@ input[type=file], dl.horizontal_selectors, dl.vertical_selectors {
 		
 
 //////// form layouts ////////
-// ----------------------------------------------
+// ---------------------------
 
 label {
 	display: block;
@@ -337,7 +350,7 @@ form {
 }
 			
 ///////// styles to manage <ul> containers ///////////
-// ----------------------------------------------
+// ---------------------------------------------------
 
 .horizontal_selectors {
 	.flexbox(horizontal, start, end, 100%, 100%);
@@ -370,7 +383,7 @@ form {
 
 
 ////////////// Pagination ui //////////////
-// ----------------------------------------------
+// ---------------------------------------
 .pagination {
 	.flexbox(horizontal, end, center, 100%, 100%);
 	input[type=text] {
@@ -435,7 +448,7 @@ form {
 ////////////// Pagination ui //////////////
 
 ////////////// Error alert ui //////////////		
-// ----------------------------------------------
+// ----------------------------------------
 
 .alert-box {
 	background-color: @kilo_color;

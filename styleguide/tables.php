@@ -6,7 +6,8 @@
 		<header>
 			<p>1. Standard table UI</p>
 			<article>	
-				<p>Styles are applied to the <code>&lt;table&gt;</code> tag in the markup. No IDs or Classes necessary.  </p>	
+				<p>Styles are applied to the <code>&lt;table&gt;</code> tag in the markup. No IDs or Classes necessary.  </p>
+				<p>Be sure to use the <code>&lt;thead&gt;</code> and <code>&lt;tbody&gt;</code> tags.</p>	
 			</article>
 		</header>
 		<article>
@@ -42,8 +43,8 @@
 			 </table> 
 			 <p>Example code:</p>
 			 <pre>
-&lt;table&gt;
-  &lt;thead&gt;
+<span>&lt;table&gt;</span>
+  <span>&lt;thead&gt;</span>
     &lt;tr&gt;
       &lt;th&gt;header&lt;/th&gt;
       &lt;th&gt;header&lt;/th&gt;
@@ -53,7 +54,7 @@
       &lt;th&gt;header&lt;/th&gt;
     &lt;/tr&gt;
   &lt;/thead&gt;
-  &lt;tbody&gt;
+  <span>&lt;tbody&gt;</span>
     &lt;tr&gt;
       &lt;td&gt;body&lt;/td&gt;
       &lt;td&gt;body&lt;/td&gt;
