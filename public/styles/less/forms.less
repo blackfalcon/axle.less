@@ -79,6 +79,7 @@ a.button {
 
 a#disabled {
 	.primary_button_disabled;
+	border-color: @fox_grey;
 	&:hover {
 		.box_shadow(@shadow_color, 0px 3px 3px);
 	}
@@ -94,15 +95,19 @@ a#disabled {
 	}
 }
 	
-// button.active, input[type=submit].active, input[type=button].active, a.active
+// Post click active state for buttons
+// You need to turn off all the button UI so that the spinner will show
 button.active, input[type=submit].active, input[type=button].active, a.active {
+	// show spinner
 	.ajax_spinner_lg;
-	color: fadeout(@alpha_grey, 100%);
-	.box_shadow(@india_grey, 0 0 0);
-	.text_shadow(0 0 0, fadeout(@white, 100%));
-}
 	
-button.active, input[type=submit].active, input[type=button].active, a.active {
+	// deactivate all the buttons UI
+	color: fadeout(@alpha_grey, 100%);			// makes text transparent
+	.box_shadow(fadeout(@white, 100%), 0 0 0);	// makes shadow transparent 
+	.text_shadow(0 0 0, fadeout(@white, 100%));	// makes text shadow transparent
+	border: 0px;								// removes border	
+	
+	// keeps the spinner in view with hover
 	&:hover {
 		.ajax_spinner_lg;
 	}

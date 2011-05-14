@@ -27,6 +27,9 @@
 	cursor: text;
 	font-weight: normal;
 	.text_shadow(0 1px 3px, @white);
+	border-color: @fox_grey;
+	opacity: .5;
+	filter: Alpha(Opacity=50);
 }
 
 .primary_button_disabled {
@@ -61,7 +64,7 @@
 	height: 2em;
 	display: inline-block;
 	line-height: 1em;
-	.border_radius(15px);
+	.border_radius(10px);
 	.primary_button_color;
 	.box_shadow(@shadow_color, 0px 3px 3px);
 	.text_shadow(@shadow_color, 0px 1px 1px);
@@ -70,6 +73,7 @@
 	width: auto;
 	outline: none;
 	letter-spacing: -1px;
+	border: 1px solid @echo_color;
 	
 	&:hover {
 		.primary_button_hover;
@@ -91,6 +95,7 @@
 		
 .secondary_button {
 	.secondary_button_color;
+	border: 1px solid @quebec_color;
 	&:hover {
 		.secondary_button_hover;
 	}
