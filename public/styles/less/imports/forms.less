@@ -56,17 +56,21 @@
 
 
 /////// Buttons design - primary, secondary, and small ////////
+.button_shadow (@outer_color, @inner_color) {
+	.dual_box_shadow(@outer_color, 0px 3px 3px, @inner_color, 0px -19px 10px 0px);
+}
+
 .primary_button {
 	.extra_large;
 	font-weight: 600;
 	color: @button_text;
 	padding: 0px 20px;
-	height: 2em;
+	height: 3em;
 	display: inline-block;
 	line-height: 1em;
 	.border_radius(10px);
 	.primary_button_color;
-	.box_shadow(@shadow_color, 0px 3px 3px);
+	.button_shadow (@shadow_color, @echo_color);
 	.text_shadow(@shadow_color, 0px 1px 1px);
 	text-decoration: none;
 	margin: 4px 10px 0 0;
@@ -86,6 +90,7 @@
 		
 	&[disabled] {
 		.primary_button_disabled;
+		.button_shadow (@shadow_color, @fox_grey);
 		&:hover {
 			.box_shadow(@shadow_color, 0px 3px 3px);
 		}
@@ -96,6 +101,7 @@
 .secondary_button {
 	.secondary_button_color;
 	border: 1px solid @quebec_color;
+	.button_shadow (@shadow_color, @quebec_color);
 	&:hover {
 		.secondary_button_hover;
 	}
@@ -104,6 +110,7 @@
 	}
 	&[disabled] {
 		.secondary_button_disabled;
+		.button_shadow (@shadow_color, @fox_grey);
 	}
 }
 

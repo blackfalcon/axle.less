@@ -104,6 +104,12 @@
 	box-shadow: @color @shadow;
 }
 
+.dual_box_shadow (@color, @shadow, @inset_color, @inset_shadow) {
+	-moz-box-shadow: @color @shadow, inset @inset_color @inset_shadow;
+	-webkit-box-shadow: @color @shadow, inset @inset_color @inset_shadow;
+	box-shadow: @color @shadow, inset @inset_color @inset_shadow;
+}
+
 .text_shadow (@color, @shadow) {
 	-moz-text-shadow: @color @shadow;
 	-webkit-text-shadow: @color @shadow;

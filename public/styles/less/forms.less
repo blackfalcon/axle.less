@@ -58,7 +58,7 @@ button, input[type=submit], input[type=button], a.button {
 		.small_button;
 	}
 	a.button {
-		line-height: 2.5em;
+		line-height: 3em;
 	}
 }
 		
@@ -69,7 +69,7 @@ button, input[type=submit], input[type=button], a.button {
 a.button {
 	font-weight: bold;
 	letter-spacing: -0.06em;
-	line-height: 2em;
+	line-height: 3em;
 	&.active {
 		&:hover {
 			.box_shadow(0 0 0, @white);
@@ -80,6 +80,7 @@ a.button {
 a#disabled {
 	.primary_button_disabled;
 	border-color: @fox_grey;
+	.dual_box_shadow(@shadow_color, 0px 3px 3px, @fox_grey, 0px -19px 10px 0px);
 	&:hover {
 		.box_shadow(@shadow_color, 0px 3px 3px);
 	}
