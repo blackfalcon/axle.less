@@ -59,23 +59,23 @@
 
 /////// OOCSS gradient color mixins ////////
 .alpha_color_gradient {
-	.two_stop_linear_gradient(@not_set, @not_set);
+	.two_stop_linear_gradient(saturate(@hotel_color, 10%), @echo_color);
 }
 
 .bravo_color_gradient {
-	.two_stop_linear_gradient(@not_set, @not_set);
+	.two_stop_linear_gradient(@echo_color, @hotel_color);
 }
 
 .charlie_color_gradient {
-	.two_stop_linear_gradient(@not_set, @not_set);
+	.two_stop_linear_gradient(@sierra_color, @quebec_color);
 }
 
 .delta_color_gradient {
-	.two_stop_linear_gradient(@not_set, @not_set);
+	.two_stop_linear_gradient(@quebec_color, @sierra_color);
 }
 
 .echo_color_gradient {
-	.two_stop_linear_gradient(@not_set, @not_set);
+	.two_stop_linear_gradient(@hotel_grey, @fox_grey);
 }
 
 .fox_color_gradient {
@@ -175,10 +175,10 @@
 @input_disabled: @bravo_grey;
 @input_disabled_bkg: fadeout(@input_disabled, 80%);
 @input_disabled_border: @input_disabled;
-@input_disabled_text: @input_disabled;
+@input_disabled_text: fadeout(@input_disabled, 50%);
 
 // colors for buttons
-@button_text: @not_set;
+@button_text: @white;
 @primary_button_hover: @not_set;
 @secondary_button_hover: @not_set;
 /////// axle semantic combinations ////////

@@ -126,16 +126,19 @@
 		</header>
 		<article class="gradient colorcode">
 			<div class="alpha_color_gradient" id="">
-				<p>@include alpha_color_gradient</p>
+				<p>@alpha_color_gradient</p>
 			</div>
 			<div class="bravo_color_gradient" id="">
-				<p>@include bravo_color_gradient</p>
+				<p>@bravo_color_gradient</p>
 			</div>
 			<div class="charlie_color_gradient" id="">
-				<p>@include charlie_color_gradient</p>
+				<p>@charlie_color_gradient</p>
 			</div>
 			<div class="delta_color_gradient" id="">
-				<p>@include delta_color_gradient</p>
+				<p>@delta_color_gradient</p>
+			</div>
+			<div class="echo_color_gradient" id="">
+				<p>@echo_color_gradient</p>
 			</div>
 			<!-- 
 			<div class="fox_color_gradient" id="">

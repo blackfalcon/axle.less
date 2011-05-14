@@ -10,29 +10,43 @@
 
 /////// Semantic button styles ///////////
 .primary_button_color {
-	.echo_color_gradient;
+	.alpha_color_gradient;
+}
+
+.primary_button_hover {
+	.bravo_color_gradient;
 }
 
 .primary_button_active {
-	.india_color_gradient;
+	.bravo_color_gradient;
+}
+
+.button_disabled {
+	.echo_color_gradient;
+	color: @input_disabled_text;
+	cursor: text;
+	font-weight: normal;
+	.text_shadow(0 1px 3px, @white);
 }
 
 .primary_button_disabled {
-	.juliet_color_gradient;
-	color: @input_disabled_text;
-	cursor: text;
+	.button_disabled;
 }
 	
 .secondary_button_color {
-	.golf_color_gradient;
+	.charlie_color_gradient;
 }
 	
+.secondary_button_hover {
+	.delta_color_gradient;
+}
+
 .secondary_button_active {
-	.kilo_color_gradient;
+	.delta_color_gradient;
 }
 	
 .secondary_button_disabled {
-	.juliet_color_gradient;
+	.button_disabled;
 }
 /////// Semantic button styles ///////////
 
@@ -41,22 +55,25 @@
 /////// Buttons design - primary, secondary, and small ////////
 .primary_button {
 	.extra_large;
-	font-weight: 400;
+	font-weight: 600;
 	color: @button_text;
 	padding: 0px 20px;
-	height: 35px;
+	height: 2em;
 	display: inline-block;
 	line-height: 1em;
 	.border_radius(15px);
 	.primary_button_color;
-	.box_shadow(@shadow_color, 0px 2px 2px);
+	.box_shadow(@shadow_color, 0px 3px 3px);
+	.text_shadow(@shadow_color, 0px 1px 1px);
 	text-decoration: none;
 	margin: 4px 10px 0 0;
 	width: auto;
 	outline: none;
+	letter-spacing: -1px;
 	
 	&:hover {
-		background: @primary_button_hover;
+		.primary_button_hover;
+		.box_shadow(@shadow_color, 0px 1px 2px);
 	}
 		
 	&:active {
@@ -65,13 +82,17 @@
 		
 	&[disabled] {
 		.primary_button_disabled;
+		&:hover {
+			.box_shadow(@shadow_color, 0px 3px 3px);
+		}
+		
 	}
 }
 		
 .secondary_button {
 	.secondary_button_color;
 	&:hover {
-		background: @secondary_button_hover;
+		.secondary_button_hover;
 	}
 	&:active {
 		.secondary_button_active;
@@ -88,8 +109,11 @@
 	color: @href_color;
 	height: auto;
 	width: auto;
+	letter-spacing: 1px;
+	font-weight: normal;
 	.border_radius(0px);
 	.box_shadow(0 0 0, @white);	
+	.text_shadow(0 0 0, @white);
 	.medium;
 	
 	&:hover, &:active {
@@ -105,7 +129,8 @@
 
 
 .small_button {
-	.medium;
+	.large;
+	font-weight: bold;
 	padding: 0 12px;
 	line-height: 1em;
 	height: 2.5em;

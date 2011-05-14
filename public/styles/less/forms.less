@@ -70,15 +70,27 @@ a.button {
 	font-weight: bold;
 	letter-spacing: -0.06em;
 	line-height: 2em;
+	&.active {
+		&:hover {
+			.box_shadow(0 0 0, @white);
+		}
+	}
 }
 
 a#disabled {
 	.primary_button_disabled;
+	&:hover {
+		.box_shadow(@shadow_color, 0px 3px 3px);
+	}
 }
 
 .cancel_buttons {
 	a#disabled {
 		background: none;
+		&:hover {
+			.box_shadow(0px 0 0, @white);
+			text-decoration: none;
+		}
 	}
 }
 	
@@ -87,6 +99,7 @@ button.active, input[type=submit].active, input[type=button].active, a.active {
 	.ajax_spinner_lg;
 	color: fadeout(@alpha_grey, 100%);
 	.box_shadow(@india_grey, 0 0 0);
+	.text_shadow(0 0 0, fadeout(@white, 100%));
 }
 	
 button.active, input[type=submit].active, input[type=button].active, a.active {
@@ -188,7 +201,7 @@ button.active, input[type=submit].active, input[type=button].active, a.active {
 				
 		.border_radius(6px);
 		
-		&:hover {
+		&:hover, &:focus {
 			border-color: @charlie_grey !important;
 		}
 	}
