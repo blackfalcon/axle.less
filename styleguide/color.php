@@ -3,9 +3,6 @@
 	<header class="styleguide_header"><h1>| Axle | 'semantic color pallet'</h1></header>
 	<?php include 'shared/nav.php'?>
 	<article class="styleguide_body">
-		<div class="instructions">
-			<p>Axle's buttons are based on the principal that the styles support the markup. The UIs presented here are styled simply for <code>button, input[type=submit], a.button</code>.  Follow the code samples below for instructions on using class placed on the parent block element to get special layout and sizing adjustments. </p>
-		</div>
 		<header>
 			<p>1. Site color chart</p>
 		</header>
