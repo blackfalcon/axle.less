@@ -132,16 +132,22 @@
 	.border_radius(0px);
 	.box_shadow(0 0 0, @white);	
 	.text_shadow(0 0 0, @white);
-	.medium;
+	.large;
 	
 	&:hover, &:active {
 		text-decoration: underline;
+		background: none;
+		.box_shadow(0 0 0, @white);	
 	}
 	
 	&[disabled] {
 		text-decoration: none;
 		color: @input_disabled_text;
 		background: none;
+		.box_shadow(0 0 0, @white);	
+		&:hover {
+			.box_shadow(0 0 0, @white);	
+		}
 	}
 }
 
