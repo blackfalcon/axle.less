@@ -5,10 +5,65 @@
 
 
 
-
 html, body {
-	height: 100%;
+	background-color: spin(desaturate(@lima_color, 40%), 35) + @alpha_grey;
 }
+
+.site_container {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.site_navigation {
+	.fox_color_gradient;
+	color: @white;
+	.large;
+	font-weight: bold;
+	.border_radius(0 0 5px 5px);
+	.box_shadow(0 0 10px, @shadow_color);
+	a {
+		color: @white;
+		display: block;
+		&:hover {
+			.golf_color_gradient;
+			text-decoration: none;
+		}
+	}
+	ul {
+		display: inline-block;
+		height: 40px;
+		line-height: 40px;
+		margin: 0px;
+		.flexbox (horizontal, center, center, 30%, auto);
+	}
+	li {
+		.flex(1);
+		border-right: 1px solid @alpha_grey;
+		text-align: center;
+	}
+}
+
+.site_header {
+	h1 {
+		font-family: 'Pacifico', arial, serif;
+		margin: 0.5em 0;
+	}
+}
+
+.page_content {
+	background: @white;
+	padding: 20px;
+	.box_shadow(lighten(@shadow_color, 50), 0 0 10px 0px);
+	.border_radius(5px);
+}
+
+
+
+
+
+
+
+
 
 
 

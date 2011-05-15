@@ -79,11 +79,11 @@
 }
 
 .fox_color_gradient {
-	.two_stop_linear_gradient(@not_set, @not_set);
+	.two_stop_linear_gradient(@delta_grey, @alpha_grey);
 }
 
 .golf_color_gradient {
-	.two_stop_linear_gradient(@not_set, @not_set);
+	.two_stop_linear_gradient(@alpha_grey, @delta_grey);
 }
 
 .hotel_color_gradient {
@@ -143,7 +143,7 @@
 @white: @india_grey;
 
 // default shadow colors
-@shadow_color: fadeout(@alpha_grey, 40%);
+@shadow_color: fadeout(@alpha_grey, 50%);
 
 // primary font color for the app
 @primary_text: @bravo_grey;

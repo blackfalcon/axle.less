@@ -126,47 +126,47 @@
 		</header>
 		<article class="gradient colorcode">
 			<div class="alpha_color_gradient" id="">
-				<p>@alpha_color_gradient</p>
+				<p>.alpha_color_gradient</p>
 			</div>
 			<div class="bravo_color_gradient" id="">
-				<p>@bravo_color_gradient</p>
+				<p>.bravo_color_gradient</p>
 			</div>
 			<div class="charlie_color_gradient" id="">
-				<p>@charlie_color_gradient</p>
+				<p>.charlie_color_gradient</p>
 			</div>
 			<div class="delta_color_gradient" id="">
-				<p>@delta_color_gradient</p>
+				<p>.delta_color_gradient</p>
 			</div>
 			<div class="echo_color_gradient" id="">
-				<p>@echo_color_gradient</p>
+				<p>.echo_color_gradient</p>
 			</div>
-			<!-- 
 			<div class="fox_color_gradient" id="">
-				<p>@include fox_color_gradient</p>
+				<p>.fox_color_gradient</p>
 			</div>
 			<div class="golf_color_gradient" id="">
-				<p>@include golf_color_gradien</p>
+				<p>.golf_color_gradien</p>
 			</div>
+			<!-- 
 			<div class="kilo_color_gradient" id="">
-				<p>@include kilo_color_gradient</p>
+				<p>.include kilo_color_gradient</p>
 			</div>			
 			<div class="hotel_color_gradient" id="">
-				<p>@include hotel_color_gradient</p>
+				<p>.include hotel_color_gradient</p>
 			</div>
 			<div class="lima_color_gradient" id="">
-				<p>@include lima_color_gradient</p>
+				<p>.include lima_color_gradient</p>
 			</div>
 			<div class="echo_color_gradient" id="">
-				<p>@include echo_color_gradient</p>
+				<p>.include echo_color_gradient</p>
 			</div>
 			<div class="india_color_gradient" id="">
-				<p>@include india_color_gradient</p>
+				<p>.include india_color_gradient</p>
 			</div>
 			<div class="juliet_color_gradient" id="">
-				<p>@include juliet_color_gradient</p>
+				<p>.include juliet_color_gradient</p>
 			</div>
 			<div class="mike_color_gradient" id="">
-				<p>@include mike_color_gradient</p>
+				<p>.include mike_color_gradient</p>
 			</div>
 			-->
 		</article>

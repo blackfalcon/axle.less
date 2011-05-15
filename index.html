@@ -19,7 +19,7 @@
 	<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
 	
 	<!-- CSS : implied media="screen" -->
-	<link rel="stylesheet" href="/public/styles/css/google_fonts.css" />
+	<link href="http://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="/public/styles/css/core.css" />
 	
 		
@@ -30,21 +30,27 @@
 </head>
 
 <body>
-	<section class="container" id="">
+	<section class="site_container">
+	
+		<nav class="site_navigation">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">More</a></li>
+			</ul>
+		</nav>
 		
-		<header>
+		<header class="site_header">
 			<h1>Welcome to Axle!</h1>
 		</header>
 		
-		<section class="right">
+		<section class="page_content">
+			<header class="home_header"></header>
+			<nav class="page_nav"></nav>
 			<article>				
 				<p>Axle is a UI framework designed to support the concepts of OOCSS and Elemental Design Patterns.  This version is written in .LESS and I hope you find value in it's code.</p>
 				<p><a href="/styleguide/">Click here to see Axle!</a></p>
-				
-				<footer>published 5.9.2011 @ 10:44pm</footer>
-			
-			</article>
-		
+			</article>		
 		</section>	
 	</section>
 </body>
