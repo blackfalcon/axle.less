@@ -1,3 +1,24 @@
+// This document is to house Axle's dynamic mixins with arguments
+// These mixins are not intended to be application specific
+// -----------------------------------------------------------------
+
+// UI elements included in this document
+// ----------------------------------------------
+// 1) text arguments 
+// 2) gradient arguments
+// 3) shadow arguments
+// 4) border-radius arguments
+// 5) column count arguments
+// 6) flexbox arguments
+// 7) transition arguments
+// 8) transform arguments
+// 9) clearfix
+// 10) inset border
+// ----------------------------------------------
+
+
+
+
 /////// text arguments //////////
 .font (@size, @line-height, @weight) {
 	font-size: @size;
@@ -25,17 +46,17 @@
     -ms-filter: %("progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=%d, endColorstr=%d)", @start_color, @end_color);
 }
 
-.three_stop_linear_gradient (@start_color, @mid_color, @end_color) {
+.three_stop_linear_gradient (@start_color, @start_position, @mid_color, @mid_position, @end_color, @end_position) {
 	// default fallback //
 	background: @start_color;
 	// Mozilla browsers Firefox 3.6+ //
-	background: -moz-linear-gradient(top, @start_color 0%, @mid_color 50%, @end_color 100%);
+	background: -moz-linear-gradient(top, @start_color @start_position, @mid_color @mid_position, @end_color @end_position);
 	// Safari 4.0 //
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@start_color), color-stop(50%,@mid_color), color-stop(100%,@end_color));
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(@start_position,@start_color), color-stop(@mid_position,@mid_color), color-stop(@end_position,@end_color));
 	// Safari 5.0 //
-	background: -webkit-linear-gradient(top, @start_color 0%, @mid_color 50%, @end_color 100%);
+	background: -webkit-linear-gradient(top, @start_color @start_position, @mid_color @mid_position, @end_color @end_position);
 	// Opera 11.10 //
-	background-image: -o-linear-gradient(top left, @start_color 0%, @mid_color 50%, @end_color 100%);
+	background-image: -o-linear-gradient(top left, @start_color @start_position, @mid_color @mid_position, @end_color @end_position);
 	// IE6 & 7 //
     filter: e(%("progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=%d,endColorstr=%d)", @start_color, @end_color));
     // IE8 //

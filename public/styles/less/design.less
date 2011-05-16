@@ -14,6 +14,11 @@ html, body {
 	margin: 0 auto;
 }
 
+.hero {
+	background: url(/public/images/axle_header.png) no-repeat 50% 50%;
+	height: 359px;
+}
+
 .site_navigation {
 	.fox_color_gradient;
 	color: @white;
@@ -29,24 +34,14 @@ html, body {
 			text-decoration: none;
 		}
 	}
+	.ul_flexbox(30%);
 	ul {
-		display: inline-block;
 		height: 40px;
 		line-height: 40px;
 		margin: 0px;
-		.flexbox (horizontal, center, center, 30%, auto);
 	}
 	li {
-		.flex(1);
 		border-right: 1px solid @alpha_grey;
-		text-align: center;
-	}
-}
-
-.site_header {
-	h1 {
-		font-family: 'Pacifico', arial, serif;
-		margin: 0.5em 0;
 	}
 }
 
@@ -55,6 +50,57 @@ html, body {
 	padding: 20px;
 	.box_shadow(lighten(@shadow_color, 50), 0 0 10px 0px);
 	.border_radius(5px);
+	border: 1px solid @hotel_grey;
+	
+}
+
+.body_navbar {
+	.ul_flexbox(100%, 50px);
+	width: 980px;
+	margin-left: -10px;
+	background: @white;
+	.border_radius(0 0 5px 5px);
+	.box_shadow(lighten(@shadow_color, 50), 0 5px 10px 0px);
+	.three_stop_linear_gradient(@white, 0%, lighten(@hotel_grey, 30%), 60%, @hotel_grey, 95%);
+	border-top: 2px solid @hotel_grey;
+	margin-top: -5px;
+	position: relative;
+	z-index: 10;
+}
+
+.body_call_to_action {
+	width: 100%;
+	height: 100px;
+	.three_stop_linear_gradient(@white, 0%, @white, 40%, @hotel_grey, 100%);
+	border-width:0 1px 1px; 
+	border-style:solid;
+	border-color:transparent @hotel_grey @golf_grey @hotel_grey;
+	margin-top: -10px;
+	position: relative;
+	z-index: 5;
+	.box_shadow(lighten(@shadow_color, 50), 0 -5px 10px 0px);
+}
+
+.lower_content {
+	margin-top: -5px;
+	margin-bottom: 30px;
+}
+
+.content_footer  {
+	.column_count(3, 1em);
+	padding: 0 40px 10px;
+	border-bottom: 1px solid @golf_grey;
+	margin-bottom: 10px;
+	li {
+		&:first-child {
+			font-weight: bold;
+		}
+	}
+}
+
+.site_footer {
+	text-align: center;
+	padding: 10px 0;
 }
 
 

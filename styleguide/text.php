@@ -12,6 +12,12 @@
 			<h5>H5: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere malesuada adipiscing.</h5>
 		</article>
 		<footer></footer>
+		
+		<header><p>1.1 Special Heading text</p></header>
+		<article class="site_header">
+			<h1>H1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere malesuada adipiscing.</h1>
+		</article>
+		<footer></footer>
 
 		
 		<header>

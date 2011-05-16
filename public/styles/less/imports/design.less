@@ -1,10 +1,29 @@
+// The /imports/design.less file is designated for variables and repeatable objects within the .LESS code
+// ------------------------------------------------------------------------------------------------------
+
+// UI elements included in this document
+// ----------------------------------------------
+// 1) @not_set objects
+// 2) OOCSS gray color blocks
+// 3) OOCSS generic color blocks
+// 4) OOCSS gradient color mixins
+// 5) general UI mixins
+// 6) axle's semantic combinations
+// 7) OOCSS color blocks
+// 8) table ui
+
+// Items not set to a color will appear LIME when rendered
+// ----------------------------------------------
 @not_set: #00FF00;
 
 .not_set_gradient {
 	.two_stop_linear_gradient(@not_set, @not_set);
 }
 
+
+
 /////// OOCSS gray color blocks ////////
+// ----------------------------------------------
 @alpha_grey: #252525;
 @bravo_grey: lighten(@alpha_grey, 10%);
 @charlie_grey: lighten(@alpha_grey, 20%);
@@ -22,6 +41,7 @@
 
 
 /////// OOCSS generic color blocks ////////
+// ----------------------------------------------
 @alpha_primary: #E84137;
 @bravo_primary: #5BA418;
 @charlie_primary: #FADC03;
@@ -58,6 +78,7 @@
 
 
 /////// OOCSS gradient color mixins ////////
+// ----------------------------------------------
 .alpha_color_gradient {
 	.two_stop_linear_gradient(saturate(@hotel_color, 10%), @echo_color);
 }
@@ -113,6 +134,8 @@
 
 
 ///////// general UI mixins	///////// 
+// ----------------------------------------------
+
 .ajax_spinner_sml {
 	background: url("/public/images/ajax-loader_sml.gif") no-repeat 50% 50% trasnparent;
 	height: 16px;
@@ -135,10 +158,24 @@
 .soft_shadow {
 	.box_shadow(0 5px 15px -8px, @shadow_color);
 }
+
+// This mixin is used for a linear layout of LIs versus using floats
+// ----------------------------------
+.ul_flexbox (@width :100%, @height: auto, @text_align :center) {
+	ul { 
+		.flexbox (horizontal, center, center, @width, @height);
+	}
+	li {
+		.flex(1);
+		text-align: @text_align;
+	}
+}
 ///////// general UI mixins	/////////
 
 
-/////// axle semantic combinations ////////
+/////// axle's semantic combinations ////////
+// ----------------------------------------------
+
 // abstract 'white' value to easily applied to semantic class objects
 @white: @india_grey;
 
@@ -181,10 +218,12 @@
 @button_text: @white;
 @primary_button_hover: @not_set;
 @secondary_button_hover: @not_set;
-/////// axle semantic combinations ////////
+/////// axle's semantic combinations ////////
 
 
 /////// OOCSS color blocks ////////
+// ----------------------------------------------
+
 .white {
 	background-color: @white;
 	.inset_border;
@@ -321,6 +360,8 @@
 
 
 ///////////// table ui /////////////
+// ----------------------------------------------
+
 table {
 	width: 100%;
 	border: 1px solid @golf_grey;
