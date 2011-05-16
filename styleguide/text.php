@@ -13,9 +13,38 @@
 		</article>
 		<footer></footer>
 		
-		<header><p>1.1 Special Heading text</p></header>
-		<article class="site_header">
+		<header>
+			<p>1.1 Special Heading text</p>
+			<article>
+				<em>
+					<p>For OOCSS application, apply the <code>.google_font_alpha</code> to a block element containing heading tags.  For a semantic .LESS approach, apply <code>.google_font_alpha</code> to a semantically named class.</p>
+				</em>
+			</article>
+		</header>
+		<article class="h1s google_font_alpha">
 			<h1>H1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere malesuada adipiscing.</h1>
+			<h2>H2: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere malesuada adipiscing.</h2>
+			<h3>H3: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere malesuada adipiscing.</h3>
+			<h4>H4: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere malesuada adipiscing.</h4>
+			<h5>H5: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere malesuada adipiscing.</h5>
+			<p><b>OOCSS Example:</b></p>
+			<pre>
+&lt;div class=&quot;home_page_hero google_font_alpha&quot;&gt;
+  &lt;h1&gt;H1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere malesuada adipiscing.&lt;/h1&gt;
+&lt;/div&gt;
+			</pre>
+			<p><b>Semantic .LESS approach</b></p>
+			<pre>
+.LESS
+.home_page_hero {
+	.google_font_alpha;
+}
+
+HTML
+&lt;div class=&quot;home_page_hero&quot; id=&quot;&quot;&gt;
+	&lt;h1&gt;This .LESS stuff is pretty awesome!&lt;/h1&gt;
+&lt;/div&gt;
+			</pre>
 		</article>
 		<footer></footer>
 

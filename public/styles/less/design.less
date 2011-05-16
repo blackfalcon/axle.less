@@ -14,13 +14,30 @@ html, body {
 	margin: 0 auto;
 }
 
+.site_header {
+	.google_font_alpha;
+	margin: 20px 0;
+}
+
 .hero {
 	background: url(/public/images/axle_header.png) no-repeat 50% 50%;
 	height: 359px;
+	color: @white;
+	text-align: right;
+	padding: 0 30px 0 0;
+	hgroup {
+		position: relative;
+		right: 0;
+		padding: 190px 0px 0 0;
+		.google_font_alpha;
+		h1, h2, h3, h4, h5 {
+			.text_shadow(0 5px 5px, @shadow_color);
+		}
+	}
 }
 
 .site_navigation {
-	.fox_color_gradient;
+	.site_navigation_gradient;
 	color: @white;
 	.large;
 	font-weight: bold;
@@ -55,17 +72,32 @@ html, body {
 }
 
 .body_navbar {
-	.ul_flexbox(100%, 50px);
+	.large;
+	.ul_flexbox(50%, 50px);
 	width: 980px;
 	margin-left: -10px;
 	background: @white;
 	.border_radius(0 0 5px 5px);
 	.box_shadow(lighten(@shadow_color, 50), 0 5px 10px 0px);
-	.three_stop_linear_gradient(@white, 0%, lighten(@hotel_grey, 30%), 60%, @hotel_grey, 95%);
+	.body_navbar_gradient;
 	border-top: 2px solid @hotel_grey;
 	margin-top: -5px;
 	position: relative;
 	z-index: 10;
+	ul {
+		margin: 0 auto;
+	}
+	a {
+		display: block;
+		border: 1px solid transparent;
+		border-width: 0 1px;
+		color: @charlie_grey;
+		&:hover {
+			.india_color_gradient;
+			border-color: @hotel_grey;
+			text-decoration: none;
+		}
+	}
 }
 
 .body_call_to_action {
@@ -79,6 +111,12 @@ html, body {
 	position: relative;
 	z-index: 5;
 	.box_shadow(lighten(@shadow_color, 50), 0 -5px 10px 0px);
+	.ul_flexbox(100%, 120px);
+	color: @echo_grey;
+	.text_shadow(0 2px 0px, @white);
+	h3 {
+		line-height: 120px;
+	}
 }
 
 .lower_content {
@@ -105,7 +143,31 @@ html, body {
 
 
 
-
+/////////////////////////////////// only used for red banner  ///////////////////////////////
+.version_banner {
+	position: relative;
+	clip:rect(0px,60px,200px,0px);
+	z-index: 2000;
+	top: 195px;
+	right: -802px;
+	background: url(/public/images/red-banner.png) repeat-x 50% 50%;
+	.transform(rotate(44deg));
+	text-align: center;
+	.large;
+	height: 38px;
+	line-height: 38px;
+	width: 200px;
+	color: #fff;
+	.box_shadow(@shadow_color, 0 0 20px);
+	font-weight: bold;
+	margin-top: -50px;
+	-webkit-border-top-left-radius: 50px 50px;
+	-webkit-border-top-right-radius: 50px 50px;
+	-moz-border-top-left-radius: 50px 50px;
+	-moz-border-top-right-radius: 50px 50px;
+	border-top-left-radius: 50px 50px;
+	border-top-right-radius: 50px 50px;
+}
 
 
 

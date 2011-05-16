@@ -7,10 +7,11 @@
 // 2) OOCSS gray color blocks
 // 3) OOCSS generic color blocks
 // 4) OOCSS gradient color mixins
-// 5) general UI mixins
-// 6) axle's semantic combinations
-// 7) OOCSS color blocks
-// 8) table ui
+// 5) Semantic gradient ojects
+// 6) general UI mixins
+// 7) axle's semantic combinations
+// 8) OOCSS color blocks
+// 9) table ui
 
 // Items not set to a color will appear LIME when rendered
 // ----------------------------------------------
@@ -108,11 +109,11 @@
 }
 
 .hotel_color_gradient {
-	.two_stop_linear_gradient(@not_set, @not_set);
+	.three_stop_linear_gradient(@white, 0%, lighten(@hotel_grey, 30%), 60%, @hotel_grey, 95%);
 }
 
 .india_color_gradient {
-	.two_stop_linear_gradient(@not_set, @not_set);
+	.three_stop_linear_gradient(@hotel_grey, 5%, lighten(@hotel_grey, 70%), 60%, @white, 0%;
 }
 
 .juliet_color_gradient {
@@ -131,6 +132,35 @@
 	.two_stop_linear_gradient(@not_set, @not_set);
 }
 /////// OOCSS gradient color mixins ////////
+
+
+
+
+
+
+
+/////// Semantic gradient ojects/////// 
+// ----------------------------------------------
+
+.site_navigation_gradient {
+	.fox_color_gradient;
+}
+
+.body_navbar_gradient {
+	.hotel_color_gradient;
+}
+
+.body_navbar_gradient_hover {
+	.india_color_gradient;
+}
+
+/////// Semantic gradient ojects/////// 
+
+
+
+
+
+
 
 
 ///////// general UI mixins	///////// 
@@ -168,6 +198,8 @@
 	li {
 		.flex(1);
 		text-align: @text_align;
+		height: @height;
+		line-height: @height;
 	}
 }
 ///////// general UI mixins	/////////
@@ -263,7 +295,6 @@
 
 .india_grey {
 	background-color: @india_grey;
-	.inset_border
 }
 
 .juliet_grey {

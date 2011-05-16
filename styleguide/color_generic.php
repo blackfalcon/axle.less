@@ -146,22 +146,24 @@
 			<div class="golf_color_gradient" id="">
 				<p>.golf_color_gradien</p>
 			</div>
+			<div class="hotel_color_gradient" id="">
+				<p>.include hotel_color_gradient</p>
+			</div>
+			<div class="india_color_gradient" id="">
+				<p>.include india_color_gradient</p>
+			</div>
 			<!-- 
 			<div class="kilo_color_gradient" id="">
 				<p>.include kilo_color_gradient</p>
 			</div>			
-			<div class="hotel_color_gradient" id="">
-				<p>.include hotel_color_gradient</p>
-			</div>
+			
 			<div class="lima_color_gradient" id="">
 				<p>.include lima_color_gradient</p>
 			</div>
 			<div class="echo_color_gradient" id="">
 				<p>.include echo_color_gradient</p>
 			</div>
-			<div class="india_color_gradient" id="">
-				<p>.include india_color_gradient</p>
-			</div>
+			
 			<div class="juliet_color_gradient" id="">
 				<p>.include juliet_color_gradient</p>
 			</div>
