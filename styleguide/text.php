@@ -80,6 +80,18 @@ HTML
 		</article>
 		<footer></footer>
 		
+		<header><p>3. blockquote</p></header>
+		<article>
+			<blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</blockquote>
+			<p><cite>-- Some guy</cite></p>
+			<br>
+			<pre>
+&lt;blockquote&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/blockquote&gt;
+&lt;p&gt;&lt;cite&gt;-- Some guy&lt;/cite&gt;&lt;/p&gt;
+			</pre>
+		</article>
+		<footer></footer>
+		
 		
 	</article>
 <?php include 'shared/footer.php'?>

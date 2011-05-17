@@ -21,6 +21,7 @@
 	
 	<!-- CSS : implied media="screen" -->
 	<link href="http://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="/public/styles/css/core.css"/>
 
 	<script src="http://code.jquery.com/jquery-1.4.4.js"></script>
