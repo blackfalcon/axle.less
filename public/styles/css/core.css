@@ -172,7 +172,7 @@ html,body{background-color:#fffffa;}
 .lower_content{margin-top:-5px;margin-bottom:30px;}
 .content_footer{-webkit-column-count:3;-webkit-column-gap:1em;-moz-column-count:3;-moz-column-gap:1em;padding:0 40px 10px;border-bottom:1px solid #d8d8d8;margin-bottom:10px;}.content_footer li:first-child{font-weight:bold;}
 .site_footer{text-align:center;padding:10px 0;}
-.version_banner{position:relative;clip:rect(0px, 60px, 200px, 0px);z-index:2000;top:195px;right:-802px;background:url(/public/images/red-banner.png) repeat-x 50% 50%;-webkit-transform:rotate(44deg);-moz-transform:rotate(44deg);-o-transform:rotate(44deg);transform:rotate(44deg);text-align:center;font-size:1.25em;font-weight:inherit;line-height:1.5em;height:38px;line-height:38px;width:200px;color:#fff;-moz-box-shadow:rgba(37, 37, 37, 0.5) 0 0 20px;-webkit-box-shadow:rgba(37, 37, 37, 0.5) 0 0 20px;box-shadow:rgba(37, 37, 37, 0.5) 0 0 20px;font-weight:bold;margin-top:-50px;-webkit-border-top-left-radius:50px 50px;-webkit-border-top-right-radius:50px 50px;-moz-border-top-left-radius:50px 50px;-moz-border-top-right-radius:50px 50px;border-top-left-radius:50px 50px;border-top-right-radius:50px 50px;}
+.version_banner{position:relative;top:195px;right:-802px;width:200px;margin-top:-50px;-webkit-border-top-left-radius:50px 50px;-webkit-border-top-right-radius:50px 50px;-moz-border-top-left-radius:50px 50px;-moz-border-top-right-radius:50px 50px;border-top-left-radius:50px 50px;border-top-right-radius:50px 50px;}
 body{font:11px/1.5em Verdana,sans-serif;color:#3f3f3f;-webkit-font-smoothing:antialiased;}
 h1,h2,h3,h4,h5{font-family:'Trebuchet MS',Arial,Verdana,sans-serif;line-height:1.5em;}
 h1{font-size:4em;}
