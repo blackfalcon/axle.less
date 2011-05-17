@@ -14,7 +14,7 @@ html, body {
 
 .site_header {
 	.google_font_alpha;
-	margin: 20px 0;
+	margin: 10px 0 20px 0;
 }
 
 .hero {
@@ -66,12 +66,16 @@ html, body {
 	.box_shadow(lighten(@shadow_color, 50), 0 0 10px 0px);
 	.border_radius(5px);
 	border: 1px solid @hotel_grey;
+	img {
+		float: right;
+		margin: 0 0 20px 20px;
+	}
 	
 }
 
 .body_navbar {
 	.large;
-	.ul_flexbox(50%, 50px);
+	.ul_flexbox(80%, 50px);
 	width: 980px;
 	margin-left: -10px;
 	background: @white;
@@ -109,11 +113,14 @@ html, body {
 	position: relative;
 	z-index: 5;
 	.box_shadow(lighten(@shadow_color, 50), 0 -5px 10px 0px);
-	.ul_flexbox(100%, 120px);
+	.ul_flexbox(90%, 120px);
 	color: @echo_grey;
 	.text_shadow(0 2px 0px, @white);
 	h3 {
 		line-height: 120px;
+	}
+	ul {
+		margin: 0 auto;
 	}
 }
 

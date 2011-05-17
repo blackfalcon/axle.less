@@ -34,26 +34,31 @@ h1 {
 h2 {
 	//font-size: 1.5em;  // user agent default
 	font-size: 3em;
+	margin-bottom: 0.25em;
 }
 	
 h3 {
 	//font-size:  1.17em;  // user agent default
 	font-size: 2.34em;
+	margin-bottom: 0.5em;
 }
 
 h4 {
 	//font-size:  1em;  // user agent default
 	font-size: 2em;
+	margin-bottom: 0.5em;
 }
 	
 h5 {
 	//font-size:  0.83em;  // user agent default
 	font-size: 1.66em;
+	margin-bottom: 0.5em;
 }
 
 h6 {
 	//font-size:  0.75em;  // user agent default
 	font-size: 1.5em;
+	margin-bottom: 0.5em;
 }
 	
 p {
@@ -92,6 +97,30 @@ input[type=text], input[type=password], select, textarea, a.ui-selectmenu {
 	font-family: Georgia, "Times New Roman", Times, serif;
 	font-style: italic;
 	letter-spacing: 1px;
+}
+
+blockquote {
+	font-family: 'Rock Salt', arial, serif;
+	font-style: italic; 
+	.large;
+	text-align: center;
+	letter-spacing: 1px;
+	&:before, &:after {
+		content: "\201C";
+		.xx_large;
+		font-weight: bold;
+		color: @romeo_color;
+		font-family: Georgia, "Times New Roman", Times, serif;
+	}
+	&:after {
+		content: "\201E";
+		padding-left: 10px
+	}
+}
+
+cite {
+	float: right;
+	margin-right: 170px;
 }
 
 
