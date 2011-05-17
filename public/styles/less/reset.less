@@ -214,11 +214,6 @@ input {
 button {
 	cursor: pointer;
 	margin: 0;
-}
-
-// * make buttons play nice in IE
-
-button {
 	width: auto;
 	overflow: visible;
 }
@@ -229,35 +224,15 @@ button {
 	-ms-interpolation-mode: bicubic;
 }
 
-// * let's clear some floats
-
-.clearfix {
-	&:before {
-		content: "\0020";
-		display: block;
-		height: 0;
-		overflow: hidden;
-	}
-	&:after { 
-		content: "\0020";
-		display: block;
-		height: 0;
-		overflow: hidden;
-		clear: both;
-	}
-	zoom: 1;
-}
-
-
 // * Ok, this is where the fun starts.
 // *-------------------------------------------------------------------------------
 
 a:link {
-	-webkit-tap-highlight-color: orange;
+	-webkit-tap-highlight-color: @webkit_tap_hightlight;
 }
 
 ins {
-	background-color: #fcd700;
+	background-color: @ins_color;
 	color: black;
 	text-decoration: none;
 }

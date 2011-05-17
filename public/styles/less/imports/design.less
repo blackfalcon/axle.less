@@ -17,7 +17,7 @@
 // ----------------------------------------------
 @not_set: #00FF00;
 
-.not_set_gradient {
+.not_set_gradient() {
 	.two_stop_linear_gradient(@not_set, @not_set);
 }
 
@@ -166,26 +166,26 @@
 ///////// general UI mixins	///////// 
 // ----------------------------------------------
 
-.ajax_spinner_sml {
+.ajax_spinner_sml() {
 	background: url("/public/images/ajax-loader_sml.gif") no-repeat 50% 50% trasnparent;
 	height: 16px;
 	line-height: 16px !important;
 }
 
-.ajax_spinner_lg {
+.ajax_spinner_lg() {
 	background: url("/public/images/ajax-loader.gif") no-repeat 50% 50% transparent !important;
 	line-height: 32px !important;
 }
 
-.spinner_sml {
+.spinner_sml() {
 	.ajax_spinner_sml;
 }	
 
-.spinner_lg {
+.spinner_lg() {
 	.ajax_spinner_lg;
 }
 
-.soft_shadow {
+.soft_shadow() {
 	.box_shadow(0 5px 15px -8px, @shadow_color);
 }
 
@@ -220,8 +220,14 @@
 // default <a href="#"> link color
 @href_color: darken(@mike_color, 10%);
 
+// used with the <ins> tag
+@ins_color: @india_color;
+
 // used with the <mark> tag
 @mark_color: @india_color;
+
+// webkit tap highlight color
+@webkit_tap_hightlight: @quebec_color;
 
 // overrides the default content selection color in the browser
 @selection_color: @quebec_color;
