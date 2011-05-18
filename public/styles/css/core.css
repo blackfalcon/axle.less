@@ -972,7 +972,6 @@ a.button {
   padding: 0px 20px;
   height: 3em;
   display: inline-block;
-  line-height: 2.5em !important;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 10px;
@@ -1134,7 +1133,6 @@ a.button:nth-child(n+2)[disabled] {
   padding: 0px 20px;
   height: 3em;
   display: inline-block;
-  line-height: 2.5em !important;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 10px;
@@ -1157,6 +1155,7 @@ a.button:nth-child(n+2)[disabled] {
   outline: none;
   letter-spacing: -1px;
   border: 1px solid #5ba418;
+  line-height: 3em !important;
 }
 .primary_buttons button:nth-child(1n+2):hover,
 .primary_buttons input[type=submit]:nth-child(1n+2):hover,
@@ -1355,7 +1354,7 @@ a.button:nth-child(n+2)[disabled] {
   height: 2.5em;
 }
 .small_buttons a.button {
-  line-height: 3em;
+  line-height: 2.5em;
 }
 a.button {
   font-weight: bold;
@@ -1469,7 +1468,6 @@ a.active:hover {
   padding: 0px 20px;
   height: 3em;
   display: inline-block;
-  line-height: 2.5em !important;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 10px;
@@ -1631,7 +1629,6 @@ a.active:hover {
   padding: 0px 20px;
   height: 3em;
   display: inline-block;
-  line-height: 2.5em !important;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 10px;
@@ -1851,7 +1848,6 @@ a.active:hover {
   padding: 0px 20px;
   height: 3em;
   display: inline-block;
-  line-height: 2.5em !important;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 10px;
@@ -1958,7 +1954,6 @@ a.active:hover {
   padding: 0px 20px;
   height: 3em;
   display: inline-block;
-  line-height: 2.5em !important;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 10px;
@@ -2206,7 +2201,6 @@ a.active:hover {
   padding: 0px 20px;
   height: 3em;
   display: inline-block;
-  line-height: 2.5em !important;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 10px;
