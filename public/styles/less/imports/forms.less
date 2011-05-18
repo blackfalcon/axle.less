@@ -9,22 +9,22 @@
 
 
 /////// Semantic button styles ///////////
-.primary_button_color {
+.primary_button_color() {
 	.alpha_color_gradient;
 }
 
-.primary_button_hover {
+.primary_button_hover() {
 	.bravo_color_gradient;
 }
 
-.primary_button_active {
+.primary_button_active() {
 	.bravo_color_gradient;
 }
 
 
 // in this theme, primary and secondary disabled buttons are the same
 // but axle can support having independent designs for each disabled button if needed
-.button_disabled {   
+.button_disabled() {   
 	.echo_color_gradient;
 	color: @input_disabled_text;
 	cursor: text;
@@ -35,23 +35,23 @@
 	filter: Alpha(Opacity=50);
 }
 
-.primary_button_disabled {
+.primary_button_disabled() {
 	.button_disabled;
 }
 	
-.secondary_button_color {
+.secondary_button_color() {
 	.charlie_color_gradient;
 }
 	
-.secondary_button_hover {
+.secondary_button_hover() {
 	.delta_color_gradient;
 }
 
-.secondary_button_active {
+.secondary_button_active() {
 	.delta_color_gradient;
 }
 	
-.secondary_button_disabled {
+.secondary_button_disabled() {
 	.button_disabled;
 }
 /////// Semantic button styles ///////////
@@ -65,14 +65,14 @@
 	.dual_box_shadow(@outer_color, 0px 3px 3px, @inner_color, 0px -19px 10px 0px);
 }
 
-.primary_button {
+.primary_button() {
 	.extra_large;
 	font-weight: 600;
 	color: @button_text;
 	padding: 0px 20px;
 	height: 3em;
 	display: inline-block;
-	line-height: 1em;
+	line-height: 2.5em !important;
 	.border_radius(10px);
 	.primary_button_color;
 	.button_shadow (@shadow_color, @echo_color);
@@ -103,7 +103,7 @@
 	}
 }
 		
-.secondary_button {
+.secondary_button() {
 	.secondary_button_color;
 	border: 1px solid @quebec_color;
 	.button_shadow (@shadow_color, @quebec_color);
@@ -120,7 +120,7 @@
 	}
 }
 
-.cancel_link {
+.cancel_link() {
 	background: none;
 	border: 1px solid @alpha_grey;
 	border-width: 0 0 0 1px;
@@ -152,7 +152,7 @@
 }
 
 
-.small_button {
+.small_button() {
 	.large;
 	font-weight: bold;
 	padding: 0 12px;
@@ -160,7 +160,7 @@
 	height: 2.5em;
 }
 	
-.anti_button {
+.anti_button() {
 	button, input[type=submit], a.button {
  		font-size: inherit;
  		font-weight: normal;
@@ -197,7 +197,7 @@
 
 
 //////// OOCSS form settings //////////
-.field_input_spacing {
+.field_input_spacing() {
 	margin-bottom: 16px !important;
 	.small;
 	+ .instructional + .alert {
@@ -205,7 +205,7 @@
 	}
 }
 		
-.dl_selectors {
+.dl_selectors() {
 	float: left;
 	width: 100%;
 	margin-bottom: 14px;
@@ -228,7 +228,7 @@
 	}
 }
 		
-.field_focus {
+.field_focus() {
 	&:hover {
 		border-color: @form_field_focus_border_color;
 		.soft_shadow;
@@ -241,7 +241,7 @@
 }
 
 
-.large_form {
+.large_form() {
 	input {
 		padding: 9px 0 9px 6px;
 		.border_radius(5px);
@@ -259,13 +259,13 @@
 
 
 /////////// Alert icon Mixins //////////////
-.warning_box {
+.warning_box() {
 	.border_radius(6px);
 	margin-bottom: 16px;
 	padding: 6px 10px 10px;
 }
 	
-.warning_icon_placement {
+.warning_icon_placement() {
 	width: 16px;
 	height: 17px;
 	display: inline-block;
@@ -275,7 +275,7 @@
 	top: 4px;
 }
 	
-.warning_placement_before {
+.warning_placement_before() {
 	content: url(/public/images/alert_icons_sprite.png);
 	left: 0px ;
 	position: relative;

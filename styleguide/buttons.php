@@ -79,6 +79,42 @@
 		</article>
 		<footer></footer>
 
+				<header>
+			<p>1.2 All Primary buttons</p>
+		</header>
+		<article>
+			<div class="primary_buttons" id="">
+				<button>Button text</button><button>Button text</button><button disabled="disabled">Button text</button>
+			</div>
+			<div class="primary_buttons" id="">
+				<input type="submit" value="Button text"><input type="submit" value="Button text"><input type="submit" value="Button text" disabled="disabled">
+			</div>
+			<div class="primary_buttons" id="">
+				<input type="button" value="Button text"><input type="button" value="Button text"><input type="button" value="Button text" disabled="disabled">
+			</div>
+			<div class="primary_buttons" id="">
+				<a href="#" class="button">Button text</a><a href="#" class="button">Button text</a><a href="#" class="button" id="disabled">Button text</a>
+			</div>
+			<div class="" id="">
+				<p>To have all your buttons appear with the Primary style, use the class <code>.primary_buttons</code> in the parent block element.</p>
+				<p>Example code:</p>
+				<pre>
+&lt;div <span>class=&quot;primary_buttons&quot;</span> id=&quot;&quot;&gt;
+  &lt;button&gt;Button text&lt;/button&gt;&lt;button&gt;Button text&lt;/button&gt;&lt;button disabled=&quot;disabled&quot;&gt;Button text&lt;/button&gt;
+&lt;/div&gt;
+&lt;div <span>class=&quot;primary_buttons&quot;</span> id=&quot;&quot;&gt;
+  &lt;input type=&quot;submit&quot; value=&quot;Button text&quot;&gt;&lt;input type=&quot;submit&quot; value=&quot;Button text&quot;&gt;&lt;input type=&quot;submit&quot; value=&quot;Button text&quot; disabled=&quot;disabled&quot;&gt;
+&lt;/div&gt;
+&lt;div <span>class=&quot;primary_buttons&quot;</span> id=&quot;&quot;&gt;
+  &lt;input type=&quot;button&quot; value=&quot;Button text&quot;&gt;&lt;input type=&quot;button&quot; value=&quot;Button text&quot;&gt;&lt;input type=&quot;button&quot; value=&quot;Button text&quot; disabled=&quot;disabled&quot;&gt;
+&lt;/div&gt;
+&lt;div <span>class=&quot;primary_buttons&quot;</span> id=&quot;&quot;&gt;
+  &lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Button text&lt;/a&gt;&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Button text&lt;/a&gt;&lt;a href=&quot;#&quot; class=&quot;button&quot; id=&quot;disabled&quot;&gt;Button text&lt;/a&gt;
+&lt;/div&gt;
+				</pre>
+			</div>
+		</article>
+		<footer></footer>
 
 		
 		<header>
@@ -205,7 +241,9 @@
 				</p>
 			</div>
 			
-			
+			<header>
+				<p>5.1 Dual primary button </p>
+			</header>
 			<div class="dual_primary_buttons" id="">
 				<button>Button text</button><button>Button text</button><button>Button text</button><button disabled="disabled">Button text</button>
 			</div>
@@ -231,7 +269,9 @@
 				</p>
 			</div>
 			
-			
+			<header>
+				<p>5.2 Reverse primary/secondary button </p>
+			</header>
 			<div class="reverse_primary_buttons" id="">
 				<button>Button text</button><button>Button text</button><button>Button text</button><button disabled="disabled">Button text</button>
 			</div>
@@ -259,7 +299,7 @@ or
 			
 			
 			<header>
-				<p>5.1 Combination usage small buttons</p>
+				<p>5.3 Combination usage small buttons</p>
 			</header>
 			<div class="small_buttons" id="">
 				<button>Button text</button><button>Button text</button><button>Button text</button><button disabled="disabled">Button text</button>
@@ -274,7 +314,9 @@ or
 &lt;/div&gt;
 				</pre>
 			</div>
-			
+			<header>
+				<p>5.4 Dual primary small buttons</p>
+			</header>
 			<div class="dual_primary_buttons_small" id="">
 				<button>Button text</button><button>Button text</button><button>Button text</button><button disabled="disabled">Button text</button>
 			</div>
@@ -296,7 +338,9 @@ or
 &lt;/div&gt;
 					</pre>
 			</div>
-			
+			<header>
+				<p>5.5 Reverse primary small buttons</p>
+			</header>
 			<div class="reverse_primary_buttons_small" id="">
 				<button>Button text</button><button>Button text</button><button>Button text</button><button disabled="disabled">Button text</button>
 			</div>
