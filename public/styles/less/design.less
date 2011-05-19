@@ -26,7 +26,7 @@ html, body {
 	hgroup {
 		position: relative;
 		right: 0;
-		padding: 190px 0px 0 0;
+		padding: 160px 0px 0 0;
 		.google_font_alpha;
 		h1, h2, h3, h4, h5 {
 			.text_shadow(0 5px 5px, @shadow_color);
@@ -37,7 +37,7 @@ html, body {
 .site_navigation {
 	.site_navigation_gradient;
 	color: @white;
-	.large;
+	//.large;
 	font-weight: bold;
 	.border_radius(0 0 5px 5px);
 	.box_shadow(0 0 10px, @shadow_color);
@@ -69,8 +69,7 @@ html, body {
 	img {
 		float: right;
 		margin: 0 0 20px 20px;
-	}
-	
+	}	
 }
 
 .body_navbar {
@@ -127,6 +126,10 @@ html, body {
 .lower_content {
 	margin-top: -5px;
 	margin-bottom: 30px;
+	ul {
+		list-style: disc;
+		margin-left: 20px;
+	}
 }
 
 .content_footer  {

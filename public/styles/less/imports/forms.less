@@ -2,13 +2,14 @@
 
 // UI elements included in this document
 // ----------------------------------------------
-// 1) Semantic button styles
-// 2) Buttons design - primary, secondary, and small
-// 3) OOCSS form settings
-// 4) Alert icon Mixins
+// 1) Semantic button mixins
+// 2) Buttons design - primary, secondary, and small mixins
+// 3) OOCSS form mixins
+// 4) Alert icon mixins
 
 
 /////// Semantic button styles ///////////
+// ----------------------------------------------
 .primary_button_color() {
 	.alpha_color_gradient;
 }
@@ -24,6 +25,7 @@
 
 // in this theme, primary and secondary disabled buttons are the same
 // but axle can support having independent designs for each disabled button if needed
+// ----------------------------------------------
 .button_disabled() {   
 	.echo_color_gradient;
 	color: @input_disabled_text;
@@ -58,7 +60,8 @@
 
 
 
-/////// Buttons design - primary, secondary, and small ////////
+/////// Buttons design - primary, secondary, and small mixins ////////
+// ----------------------------------------------
 
 // For these button, there is a repeated mixin to maintain all the outer and inner shadows in the various states
 .button_shadow (@outer_color, @inner_color) {
@@ -196,7 +199,9 @@
 
 
 
-//////// OOCSS form settings //////////
+//////// OOCSS form mixins //////////
+// ---------------------------------
+
 .field_input_spacing() {
 	margin-bottom: 16px !important;
 	.small;
@@ -258,7 +263,8 @@
 
 
 
-/////////// Alert icon Mixins //////////////
+/////////// Alert icon mixins //////////////
+// -----------------------------------------
 .warning_box() {
 	.border_radius(6px);
 	margin-bottom: 16px;

@@ -628,7 +628,7 @@ html, body {
 .hero hgroup {
   position: relative;
   right: 0;
-  padding: 190px 0px 0 0;
+  padding: 160px 0px 0 0;
 }
 .hero hgroup h1,
 .hero hgroup h2,
@@ -656,9 +656,6 @@ html, body {
   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#727272,endColorstr=#252525);
   -ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#727272, endColorstr=#252525)";
   color: #ffffff;
-  font-size: 1.25em;
-  font-weight: inherit;
-  line-height: 1.5em;
   font-weight: bold;
   -moz-border-radius: 0 0 5px 5px;
   -webkit-border-radius: 0 0 5px 5px;
@@ -852,6 +849,10 @@ html, body {
   margin-top: -5px;
   margin-bottom: 30px;
 }
+.lower_content ul {
+  list-style: disc;
+  margin-left: 20px;
+}
 .content_footer {
   -webkit-column-count: 3;
   -webkit-column-gap: 1em;
@@ -1005,8 +1006,10 @@ blockquote:after {
   padding-left: 10px;
 }
 cite {
-  float: right;
-  margin-right: 170px;
+  margin-bottom: 2em;
+  display: block;
+  width: 80%;
+  text-align: right;
 }
 button,
 input[type=submit],

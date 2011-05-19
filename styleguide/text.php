@@ -29,19 +29,19 @@
 			<h5>H5: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere malesuada adipiscing.</h5>
 			<p><b>OOCSS Example:</b></p>
 			<pre>
-&lt;div class=&quot;home_page_hero google_font_alpha&quot;&gt;
+&lt;div <span>class=&quot;home_page_hero google_font_alpha&quot;</span>&gt;
   &lt;h1&gt;H1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere malesuada adipiscing.&lt;/h1&gt;
 &lt;/div&gt;
 			</pre>
 			<p><b>Semantic .LESS approach</b></p>
 			<pre>
 .LESS
-.home_page_hero {
-	.google_font_alpha;
+<span>.home_page_hero</span> {
+	<span>.google_font_alpha;</span>
 }
 
 HTML
-&lt;div class=&quot;home_page_hero&quot; id=&quot;&quot;&gt;
+&lt;div <span>class=&quot;home_page_hero&quot;</span> id=&quot;&quot;&gt;
 	&lt;h1&gt;This .LESS stuff is pretty awesome!&lt;/h1&gt;
 &lt;/div&gt;
 			</pre>
@@ -80,7 +80,7 @@ HTML
 		</article>
 		<footer></footer>
 		
-		<header><p>3. blockquote</p></header>
+		<header><p>4. blockquote</p></header>
 		<article>
 			<blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</blockquote>
 			<p><cite>-- Some guy</cite></p>
@@ -88,6 +88,31 @@ HTML
 			<pre>
 &lt;blockquote&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/blockquote&gt;
 &lt;p&gt;&lt;cite&gt;-- Some guy&lt;/cite&gt;&lt;/p&gt;
+			</pre>
+		</article>
+		<footer></footer>
+		
+		<header><p>5. Unordered lists</p></header>
+		<article>
+			<p>Since <code>&lt;ul&gt;&lt;/ul&gt;</code> tags are used a lot for layout, to regain the natural unordered list UI, the class of <code>.lower_content</code> is required on the parent container.</p>
+			<p>The good news is that the layout of the screen is dependent on <code>.lower_container</code>, so for the most part you get this for free an that is what we all like.</p>
+		</article>
+		<article class="lower_content">
+			<ul>
+				<li>List item one</li>
+				<li>List item two</li>
+				<li>List item three</li>
+				<li>List item four</li>
+			</ul>
+			<pre>
+&lt;div <span>class=&quot;lower_container&quot;</span>&gt;
+  &lt;ul&gt;
+    &lt;li&gt;List item one&lt;/li&gt;
+    &lt;li&gt;List item two&lt;/li&gt;
+    &lt;li&gt;List item three&lt;/li&gt;
+    &lt;li&gt;List item four&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
 			</pre>
 		</article>
 		<footer></footer>
