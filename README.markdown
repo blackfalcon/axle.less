@@ -1,7 +1,8 @@
 # Axle
 An evolving UI framework aimed to assist in Elemental Development Patterns.
+[View the website][website]
 
-## Alpha version
+## Beta version version
 The software provided is in beta development.  There are no guarantees or warranties of any kind when using this software.  Use at your own risk at this time.
 
 ## The road to 1.0
@@ -21,3 +22,8 @@ All Rights Reserved.
 
 [dale_sande]: http://blog.mbreo.com
 [gettyimages.com]: http://www.gettyimages.com
+[website]: http://axle.dalesande.com/
+
+
+
+
