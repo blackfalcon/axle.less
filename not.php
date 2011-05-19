@@ -1,7 +1,7 @@
 <?php include 'shared/head.php'?>
 
 		<header class="site_header">
-			<h1>What axle is not</h1>
+			<h1>What Axle is not</h1>
 		</header>
 
 		<section class="body_call_to_action">
