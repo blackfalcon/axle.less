@@ -695,7 +695,7 @@ html, body {
   box-pack: center;
   box-align: center;
   height: auto;
-  width: 30%;
+  width: 70%;
 }
 .site_navigation li {
   -webkit-box-flex: 1;

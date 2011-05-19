@@ -20,7 +20,7 @@
 			<p>Another problem I set out to solve is working with a distributed team where there is a shared responsibility for creating UI assets.  Couple that with an agile workflow, how does one manage this?  How does one document this?</p>
 			<p>Enter Axle.  Axle is the styleguide documentation for your web application.  Axle was born from idea that a consistent and repeatable framework will give you a number of things.  One being a visual resource to see all the assets within an application.  Another is providing code snippets, or the visual API for your web app. </p>
 			<h5>Another framework?</h5>
-			<p>Axle is not simply a CSS framework, but is more of a process in which to develop visual assets.  The real power behind Axle is to develop your UI solution in an abstract environment from the application.</p>
+			<p>Axle is not a CSS framework, but is more of a process in which to develop visual assets.  The real power behind Axle is to develop your UI solution in an abstract environment from the application.</p>
 			<p>Following the best practices of OOCSS and using power tools like .LESS, Axle empowers the User Interface Engineer to develop and document the application's design. </p>
 			<p>Axle is a clear channel of communication between the designer and the developer. The designer is confident that their design for the app is being respected and clearly represented in Axle's styelguide.  The developers on the other hand are confident that they are using an accurate resource when building out the widgets and screens of the app.  Frustrations brought on by duplication of effort, mismanagement of resources and visual maintenance nightmares can be resolved using the methods that Axle provides.</p>
 		</section>
