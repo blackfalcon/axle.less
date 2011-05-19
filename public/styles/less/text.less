@@ -2,8 +2,6 @@
 // individual element styling will be addressed in element name spaced LESS files
 
 // * @imports for google fonts are not supported by .LESS ~ I know ... lame
-// * Place @import call in /public/styles/css/google_fonts.css
-// * Call .css file in your site header
 // *-------------------------------------------------------------------------------
 
 
@@ -65,6 +63,35 @@ p {
 	margin-bottom: 1em;
 }
 
+// OOCSS text classes that can be used in the DOM if needed
+// it is preferred that you use the mixins in the creation of semantic objects
+// ---------------------------------------------------------------------------
+.small_text {
+	.small;
+}
+  
+.extra_small_text {
+	.extra_small;
+}  
+
+.medium_text {
+	.medium;
+}
+
+.large_text {
+	.large;
+}
+
+.extra_large_text {
+	.extra_large;
+}
+  
+.xx_large_text {
+	.xx_large;
+}
+// it is preferred that you use the mixins in the creation of semantic objects
+// OOCSS text classes that can be used in the DOM if needed
+
 ol, ul {
 	margin-bottom: 1em;
 }
@@ -122,5 +149,7 @@ cite {
 	float: right;
 	margin-right: 170px;
 }
+
+
 
 

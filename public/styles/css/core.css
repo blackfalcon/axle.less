@@ -915,6 +915,36 @@ h6 {
 p {
   margin-bottom: 1em;
 }
+.small_text {
+  font-size: 0.916666em;
+  font-weight: inherit;
+  line-height: 1.5em;
+}
+.extra_small_text {
+  font-size: 0.8333em;
+  font-weight: inherit;
+  line-height: 1.5em;
+}
+.medium_text {
+  font-size: 1em;
+  font-weight: inherit;
+  line-height: 1.5em;
+}
+.large_text {
+  font-size: 1.25em;
+  font-weight: inherit;
+  line-height: 1.5em;
+}
+.extra_large_text {
+  font-size: 1.5em;
+  font-weight: inherit;
+  line-height: 1.5em;
+}
+.xx_large_text {
+  font-size: 2.166666em;
+  font-weight: inherit;
+  line-height: 1.5em;
+}
 ol, ul {
   margin-bottom: 1em;
 }

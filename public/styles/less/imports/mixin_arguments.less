@@ -20,6 +20,7 @@
 
 
 /////// text arguments //////////
+// -----------------------------
 .font (@size, @line-height, @weight) {
 	font-size: @size;
 	font-weight: @weight;
@@ -29,6 +30,10 @@
 
 
 //////// gradient arguments /////////
+// The following gradients are designed to use specific color stops
+// I prefer to use standardized code as to increase consistency 
+// In your app, you are free to update so that the mixin includes setting the color stop
+// ----------------------------------------------
 .two_stop_linear_gradient (@start_color, @end_color) {
 	// default fallback //
 	background: @start_color;
@@ -40,6 +45,25 @@
 	background: -webkit-linear-gradient(top, @start_color 0%, @end_color 100%);
 	// Opera 11.10 //
 	background-image: -o-linear-gradient(top, @start_color 0%, @end_color 100%);
+	// IE6 & 7 //
+    filter: e(%("progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=%d,endColorstr=%d)", @start_color, @end_color));
+    // IE8 //
+    -ms-filter: %("progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=%d, endColorstr=%d)", @start_color, @end_color);
+}
+
+// two color stop linear gradient with color stops set as variable 
+// -------------- 
+.two_stop_linear_gradient_freestop (@start_color, @start_color_stop, @end_color, @end_color_stop) {
+	// default fallback //
+	background: @start_color;
+	// Mozilla browsers Firefox 3.6+ //
+	background: -moz-linear-gradient(top, @start_color @start_color_stop, @end_color @end_color_stop);
+	// Safari 4.0 //
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(@start_color_stop,@start_color), color-stop(@end_color_stop,@end_color));
+	// Safari 5.0 //
+	background: -webkit-linear-gradient(top, @start_color @start_color_stop, @end_color @end_color_stop);
+	// Opera 11.10 //
+	background-image: -o-linear-gradient(top, @start_color @start_color_stop, @end_color @end_color_stop);
 	// IE6 & 7 //
     filter: e(%("progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=%d,endColorstr=%d)", @start_color, @end_color));
     // IE8 //
@@ -95,6 +119,8 @@
     -ms-filter: %("progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=%d, endColorstr=%d)", @start_color, @end_color);
 }
 	
+// I know, I have to refactor this, this is kinda ugly ;(	
+// ---------------------
 .complex_gradient(@zero, @ten, @twentyfive, @thirtyseven, @fifty, @fiftyone, @eightythree, @onehndred) {
 	// default fallback //
 	background: @zero;
@@ -119,6 +145,7 @@
 
 
 /////// shadow arguments /////////
+// -------------------------------
 .box_shadow (@color, @shadow) {
 	-moz-box-shadow: @color @shadow;
 	-webkit-box-shadow: @color @shadow;
@@ -144,6 +171,7 @@
 
 
 /////// border-radius arguments	/////////
+// --------------------------------------
 .border_radius (@border_radius) {
 	-moz-border-radius: @border_radius;
 	-webkit-border-radius: @border_radius;
@@ -155,6 +183,7 @@
 
 
 /////// column count arguments	/////////
+// --------------------------------------
 .column_count(@col_count, @col_gap) {
 	-webkit-column-count: @col_count ;
 	-webkit-column-gap: @col_gap;
@@ -167,6 +196,7 @@
 
 
 ///////// flexbox arguments	/////////
+// -----------------------------------
 .flexbox (@orient, @pack, @align, @width, @height) {
 	display: -webkit-box;
 	display: -moz-box;
