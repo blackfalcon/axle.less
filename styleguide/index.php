@@ -14,70 +14,70 @@
 		</header>
 		<div class="grid_960">
 			<ul>
-				<li class="grid_7">540px (.grid_7)</li>
-				<li class="grid_5">380px (.grid_5)</li>
+				<li class="grid_7">56.25% (.grid_7)</li>
+				<li class="grid_5">39.58% (.grid_5)</li>
 			</ul>
 			<ul>
-				<li class="grid_8">620px (.grid_8)</li>
-				<li class="grid_4">300px (.grid_4)</li>
+				<li class="grid_8">64.58% (.grid_8)</li>
+				<li class="grid_4">31.25% (.grid_4)</li>
 			</ul>
 			<ul>
-				<li class="grid_9">700px (.grid_9)</li>
-				<li class="grid_3">220px (.grid_3)</li>
+				<li class="grid_9">72.91% (.grid_9)</li>
+				<li class="grid_3">22.91% (.grid_3)</li>
 			</ul>
 			<ul>
-				<li class="grid_10">780px (.grid_10)</li>
-				<li class="grid_2">140px (.grid_2)</li>
+				<li class="grid_10">81.25% (.grid_10)</li>
+				<li class="grid_2">14.58% (.grid_2)</li>
 			</ul>
 			<ul>
-				<li class="grid_11">860px (.grid_11)</li>
-				<li class="grid_1">60px</li>
+				<li class="grid_11">89.58% (.grid_11)</li>
+				<li class="grid_1">6.25%</li>
 			</ul>
 			<ul>
-				<li class="grid_12">940px (.grid_12)</li>
+				<li class="grid_12">97.91% (.grid_12)</li>
 			</ul>
 			<ul>
-				<li class="grid_1">60px</li>
-				<li class="grid_11">860px (grid_11)</li>
+				<li class="grid_1">6.25%</li>
+				<li class="grid_11">89.58% (grid_11)</li>
 			</ul>
 			<ul>
-				<li class="grid_2">140px (.grid_2)</li>
-				<li class="grid_10">780px (.grid_10)</li>
+				<li class="grid_2">14.58% (.grid_2)</li>
+				<li class="grid_10">81.25% (.grid_10)</li>
 			</ul>
 			<ul>
-				<li class="grid_3">220px (.grid_3)</li>
-				<li class="grid_9">700px (.grid_9)</li>
+				<li class="grid_3">22.91% (.grid_3)</li>
+				<li class="grid_9">72.91% (.grid_9)</li>
 			</ul>
 			<ul>
-				<li class="grid_4">300px (.grid_4)</li>
-				<li class="grid_8">620px (.grid_8)</li>
+				<li class="grid_4">31.25% (.grid_4)</li>
+				<li class="grid_8">64.58%  (.grid_8)</li>
 			</ul>
 			<ul>
-				<li class="grid_5">380px (.grid_5)</li>
-				<li class="grid_7">540px (.grid_7)</li>
+				<li class="grid_5">39.58% (.grid_5)</li>
+				<li class="grid_7">56.25% (.grid_7)</li>
 			</ul>
 			<ul>
-				<li class="grid_1">60px</li>
+				<li class="grid_1">6.25%</li>
 				<li class="grid_1">.grid_1</li>
-				<li class="grid_1">60px</li>
+				<li class="grid_1">6.25%</li>
 				<li class="grid_1">.grid_1</li>
-				<li class="grid_1">60px</li>
+				<li class="grid_1">6.25%</li>
 				<li class="grid_1">.grid_1</li>
-				<li class="grid_1">60px</li>
+				<li class="grid_1">6.25%</li>
 				<li class="grid_1">.grid_1</li>
-				<li class="grid_1">60px</li>
+				<li class="grid_1">6.25%</li>
 				<li class="grid_1">.grid_1</li>
-				<li class="grid_1">60px</li>
+				<li class="grid_1">6.25%</li>
 				<li class="grid_1">.grid_1</li>
 			</ul>
 			<ul>
-				<li class="grid_4">300px (.grid_4)</li>
-				<li class="grid_4">300px (.grid_4)</li>
-				<li class="grid_4">300px (.grid_4)</li>
+				<li class="grid_4">31.25% (.grid_4)</li>
+				<li class="grid_4">31.25% (.grid_4)</li>
+				<li class="grid_4">31.25% (.grid_4)</li>
 			</ul>
 			<ul>
-				<li class="grid_6">460px (.grid_6)</li>
-				<li class="grid_6">460px (.grid_6)</li>
+				<li class="grid_6">47.93% (.grid_6)</li>
+				<li class="grid_6">47.93% (.grid_6)</li>
 			</ul>
 		</div>
 		<article>

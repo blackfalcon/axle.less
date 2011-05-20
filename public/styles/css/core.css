@@ -526,79 +526,79 @@ table tbody tr:hover {
 .grid_placement {
   display: inline;
   float: left;
-  margin: 0 10px;
+  margin: 0 1.05%;
 }
 .grid_1 {
-  width: 60px;
+  width: 6.25%;
   display: inline;
   float: left;
-  margin: 0 10px;
+  margin: 0 1.05%;
 }
 .grid_2 {
-  width: 140px;
+  width: 14.5833333333333%;
   display: inline;
   float: left;
-  margin: 0 10px;
+  margin: 0 1.05%;
 }
 .grid_3 {
-  width: 220px;
+  width: 22.9166666666667%;
   display: inline;
   float: left;
-  margin: 0 10px;
+  margin: 0 1.05%;
 }
 .grid_4 {
-  width: 300px;
+  width: 31.25%;
   display: inline;
   float: left;
-  margin: 0 10px;
+  margin: 0 1.05%;
 }
 .grid_5 {
-  width: 380px;
+  width: 39.5833333333333%;
   display: inline;
   float: left;
-  margin: 0 10px;
+  margin: 0 1.05%;
 }
 .grid_6 {
-  width: 460px;
+  width: 47.93%;
   display: inline;
   float: left;
-  margin: 0 10px;
+  margin: 0 1.05%;
 }
 .grid_7 {
-  width: 540px;
+  width: 56.25%;
   display: inline;
   float: left;
-  margin: 0 10px;
+  margin: 0 1.05%;
 }
 .grid_8 {
-  width: 620px;
+  width: 64.5833333333333%;
   display: inline;
   float: left;
-  margin: 0 10px;
+  margin: 0 1.05%;
 }
 .grid_9 {
-  width: 700px;
+  width: 72.9166666666667%;
   display: inline;
   float: left;
-  margin: 0 10px;
+  margin: 0 1.05%;
 }
 .grid_10 {
-  width: 780px;
+  width: 81.25%;
   display: inline;
   float: left;
-  margin: 0 10px;
+  margin: 0 1.05%;
 }
 .grid_11 {
-  width: 860px;
+  width: 89.5833333333333%;
   display: inline;
   float: left;
-  margin: 0 10px;
+  margin: 0 1.05%;
 }
 .grid_12 {
-  width: 940px;
+  width: 97.9166666666667%;
   display: inline;
   float: left;
-  margin: 0 10px;
+  margin: 0 1.05%;
 }
 html, body {
   background-color: #fffffa;
