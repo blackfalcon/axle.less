@@ -20,8 +20,8 @@
 			</aside>
 			<p>Axle is not a CSS framework, but is more of a process in which to develop visual assets. The real power behind Axle is to develop your UI solution in an abstract environment from the application.</p>
 			<p>If you like OOCSS and crave real semantic markup, you will LOVE AXLE!</p>
-			<blockquote>Axle's visual API was an essential asset for getting the job done.</blockquote>
-			<p><cite>-- Anonymous developer</cite></p>
+			<blockquote>BTW- axle.dalesande.com is fucking awesome</blockquote>
+			<p><cite>-- <a href="http://twitter.com/#!/whazzmaster">whazzmaster</a></cite></p>
 		</section>
 		
 		<?php include 'shared/content_footer.php'?>

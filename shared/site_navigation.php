@@ -5,5 +5,6 @@
 				<li><a href="/how.php">How do you use it?</a></li>
 				<li><a href="/not.php">What Axle is not</a></li>
 				<li><a href="/tdd.php">tdd</a></li>
+				<li><a href="http://blog.mbreo.com">the blog</a></li>
 			</ul>
 		</nav>

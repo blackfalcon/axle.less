@@ -663,7 +663,7 @@ html, body {
   box-pack: center;
   box-align: center;
   height: auto;
-  width: 70%;
+  width: 100%;
 }
 .site_navigation li {
   -webkit-box-flex: 1;
