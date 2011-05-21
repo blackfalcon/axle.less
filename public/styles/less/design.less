@@ -17,27 +17,9 @@ html, body {
 	margin: 10px 0 20px 0;
 }
 
-.hero {
-	background: url(/public/images/axle_header.png) no-repeat 50% 50%;
-	height: 359px;
-	color: @white;
-	text-align: right;
-	padding: 0 30px 0 0;
-	hgroup {
-		position: relative;
-		right: 0;
-		padding: 160px 0px 0 0;
-		.google_font_alpha;
-		h1, h2, h3, h4, h5 {
-			.text_shadow(0 5px 5px, @shadow_color);
-		}
-	}
-}
-
 .site_navigation {
 	.site_navigation_gradient;
 	color: @white;
-	//.large;
 	font-weight: bold;
 	.border_radius(0 0 5px 5px);
 	.box_shadow(0 0 10px, @shadow_color);
@@ -126,11 +108,13 @@ html, body {
 .lower_content {
 	margin-top: -5px;
 	margin-bottom: 30px;
+	.clearfix;
 	ul {
 		list-style: disc;
 		margin-left: 20px;
 	}
 }
+
 
 .content_footer  {
 	.column_count(3, 1em);

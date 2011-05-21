@@ -618,35 +618,6 @@ html, body {
   font-family: 'Pacifico', arial, serif;
   line-height: 1.8em;
 }
-.hero {
-  background: url(/public/images/axle_header.png) no-repeat 50% 50%;
-  height: 359px;
-  color: #ffffff;
-  text-align: right;
-  padding: 0 30px 0 0;
-}
-.hero hgroup {
-  position: relative;
-  right: 0;
-  padding: 160px 0px 0 0;
-}
-.hero hgroup h1,
-.hero hgroup h2,
-.hero hgroup h3,
-.hero hgroup h4,
-.hero hgroup h5 {
-  font-family: 'Pacifico', arial, serif;
-  line-height: 1.8em;
-}
-.hero hgroup h1,
-.hero hgroup h2,
-.hero hgroup h3,
-.hero hgroup h4,
-.hero hgroup h5 {
-  -moz-text-shadow: 0 5px 5px rgba(37, 37, 37, 0.5);
-  -webkit-text-shadow: 0 5px 5px rgba(37, 37, 37, 0.5);
-  text-shadow: 0 5px 5px rgba(37, 37, 37, 0.5);
-}
 .site_navigation {
   background: #727272;
   background: -moz-linear-gradient(top, #727272 0%, #252525 100%);
@@ -848,6 +819,20 @@ html, body {
 .lower_content {
   margin-top: -5px;
   margin-bottom: 30px;
+  zoom: 1;
+}
+.lower_content:before {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+.lower_content:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
 }
 .lower_content ul {
   list-style: disc;
@@ -991,6 +976,7 @@ blockquote {
   line-height: 1.5em;
   text-align: center;
   letter-spacing: 1px;
+  margin: 2em 0 1em 0;
 }
 blockquote:before, blockquote:after {
   content: "\201C";
@@ -1000,6 +986,7 @@ blockquote:before, blockquote:after {
   font-weight: bold;
   color: #ff9f3c;
   font-family: Georgia, "Times New Roman", Times, serif;
+  line-height: .5em;
 }
 blockquote:after {
   content: "\201E";
@@ -2830,6 +2817,109 @@ form dl + p {
   top: 100px;
   right: -70px;
   width: 282px;
+}
+.hero {
+  background: url(/public/images/axle_header.png) no-repeat 50% 50%;
+  height: 359px;
+  color: #ffffff;
+  text-align: right;
+  padding: 0 30px 0 0;
+}
+.hero hgroup {
+  position: relative;
+  right: 0;
+  padding: 160px 0px 0 0;
+}
+.hero hgroup h1,
+.hero hgroup h2,
+.hero hgroup h3,
+.hero hgroup h4,
+.hero hgroup h5 {
+  font-family: 'Pacifico', arial, serif;
+  line-height: 1.8em;
+}
+.hero hgroup h1,
+.hero hgroup h2,
+.hero hgroup h3,
+.hero hgroup h4,
+.hero hgroup h5 {
+  -moz-text-shadow: 0 5px 5px rgba(37, 37, 37, 0.5);
+  -webkit-text-shadow: 0 5px 5px rgba(37, 37, 37, 0.5);
+  text-shadow: 0 5px 5px rgba(37, 37, 37, 0.5);
+}
+.version_banner {
+  position: relative;
+  top: 75px;
+  right: -802px;
+  width: 200px;
+  z-index: 2000;
+  margin-top: -50px;
+  background: url(/public/images/red-banner.png) repeat-x 50% 50%;
+  -webkit-transform: rotate(44deg);
+  -moz-transform: rotate(44deg);
+  -o-transform: rotate(44deg);
+  transform: rotate(44deg);
+  text-align: center;
+  font-size: 1.25em;
+  font-weight: inherit;
+  line-height: 1.5em;
+  height: 38px;
+  line-height: 38px;
+  color: #fff;
+  -moz-box-shadow: rgba(37, 37, 37, 0.5) 0 0 20px;
+  -webkit-box-shadow: rgba(37, 37, 37, 0.5) 0 0 20px;
+  box-shadow: rgba(37, 37, 37, 0.5) 0 0 20px;
+  font-weight: bold;
+  -webkit-border-top-left-radius: 50px 50px;
+  -webkit-border-top-right-radius: 50px 50px;
+  -moz-border-top-left-radius: 50px 50px;
+  -moz-border-top-right-radius: 50px 50px;
+  border-top-left-radius: 50px 50px;
+  border-top-right-radius: 50px 50px;
+}
+.styleguide .version_banner {
+  position: fixed;
+  top: 100px;
+  right: -70px;
+  width: 282px;
+}
+.twitter_feed {
+  width: 31.25%;
+  display: inline;
+  float: left;
+  margin: 0 1.05%;
+  zoom: 1;
+  float: right;
+  margin: 0 -10px 0 20px;
+  -moz-box-shadow: 0 0px 10px rgba(37, 37, 37, 0.5);
+  -webkit-box-shadow: 0 0px 10px rgba(37, 37, 37, 0.5);
+  box-shadow: 0 0px 10px rgba(37, 37, 37, 0.5);
+  display: none;
+}
+.twitter_feed:before {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+.twitter_feed:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+.home_twitter_feed {
+  width: 39.5833333333333%;
+  display: inline;
+  float: left;
+  margin: 0 1.05%;
+  -moz-box-shadow: 0 0px 10px rgba(37, 37, 37, 0.5);
+  -webkit-box-shadow: 0 0px 10px rgba(37, 37, 37, 0.5);
+  box-shadow: 0 0px 10px rgba(37, 37, 37, 0.5);
+  margin-right: -6.25%;
+  margin-left: 6.25%;
+  float: right;
 }
 .styleguide {
   background: #ffffff;
