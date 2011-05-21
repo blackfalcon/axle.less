@@ -2847,6 +2847,24 @@ form dl + p {
   -webkit-text-shadow: 0 5px 5px rgba(37, 37, 37, 0.5);
   text-shadow: 0 5px 5px rgba(37, 37, 37, 0.5);
 }
+.no-ie {
+  background: url(http://www.ipsofacto.net/wp-content/uploads/2010/10/no_internet_explorer_small1.png) no-repeat 50% 50%;
+  position: absolute;
+  width: 163px;
+  height: 175px;
+  margin: -42px 0 0 -58px;
+  -webkit-transform: rotate(-7deg);
+  -moz-transform: rotate(-7deg);
+  -o-transform: rotate(-7deg);
+  transform: rotate(-7deg);
+  z-index: 500;
+}
+.no-ie a {
+  display: block;
+  color: transparent;
+  width: 163px;
+  height: 175px;
+}
 .version_banner {
   position: relative;
   top: 75px;

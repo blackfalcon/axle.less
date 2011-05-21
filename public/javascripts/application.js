@@ -21,6 +21,7 @@ jQuery(document).ready(function($) {
 		target: "_blank", 
 		title: "Opens in a new window"
 	});
+	
 	// alert UI icons
 	$('.alert-box').each(function(){
 		if($(this).children('span.alert_icon').length < 1){

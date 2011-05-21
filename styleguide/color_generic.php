@@ -5,6 +5,7 @@
 	<article class="styleguide_body">
 		<div class="instructions">
 			<p>Colors represented here illustrate the full gamut of the application color pallet. Two ways to apply colors to the widgets and screens.</p>  
+			<p>More info on how color works in Axle, <a href="http://blog.mbreo.com/2011/05/color-theory-in-your-application/">please read</a>.</p>
 			<p><b>OOCSS</b> ~ apply the class name to the block element, i.e. <code>&lt;div class=&quot;alpha_grey&quot;&gt;</code>. 
 			<p>For semantic application, create the semantically names class and apply the <b>LESS</b> value, i.e. <code>.image_marketing_promo { background: @delta_color; }</code></p>
 		</div>

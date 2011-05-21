@@ -5,6 +5,7 @@
 	<article class="styleguide_body">
 		<div class="instructions">
 			<p>Axle's grid system is based off of the <a href="http://960.gs/">960 grid system</a> developed by <a href="http://sonspring.com/about">Nathan Smith</a>.  Classes can either be applied to the block element in the HTML or the preferred method is to apply the mixin to a semantically named class for the block. </p>
+			<p>Axle's grid solution is based on percentages. This will give your design ultimate flexibility that these grid spots will retain a proportional relationship regardless of the width of it's parent container. Just think about how this will work with mobile stylesheets.</p>
 		</div>
 		<header>
 			<p>1. 960 Site grid</p>
