@@ -15,10 +15,12 @@
 			<aside class="twitter_feed">
 				<?php include 'shared/twitter.php'?>
 			</aside>
-			<h5>Axle is NOT a framework, it's a visual API for your application</h5>
-			<p>I will follow up more on this later, but I wanted to put out there that Axle is not (at this time) intended to be a replacement framework for other more mature framework solutions out there.</p>
-			<p>Axle is a tool that I have come to use personally in my workflow of custom design and modular web application development. Axle has matured to be a visual API for the applications I develop.  Some may even call it Test Driven Design.</p>
-			<p>I will get more in here in the upcoming days, but till then, I encourage you stop by my blog <a href="http://blog.mbreo.com">@blog.mbreo.com</a> and follow along <a href="http://twitter.com/#!/anotheruiguy">@anotheruiguy</a>.</p>
+			<article class="main_article">
+				<h5>Axle is NOT a framework, it's a visual API for your application</h5>
+				<p>I will follow up more on this later, but I wanted to put out there that Axle is not (at this time) intended to be a replacement framework for other more mature framework solutions out there.</p>
+				<p>Axle is a tool that I have come to use personally in my workflow of custom design and modular web application development. Axle has matured to be a visual API for the applications I develop.  Some may even call it Test Driven Design.</p>
+				<p>I will get more in here in the upcoming days, but till then, I encourage you stop by my blog <a href="http://blog.mbreo.com">@blog.mbreo.com</a> and follow along <a href="http://twitter.com/#!/anotheruiguy">@anotheruiguy</a>.</p>
+			</article>
 		</section>
 		
 		<?php include 'shared/content_footer.php'?>
