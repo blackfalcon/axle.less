@@ -11,71 +11,94 @@
 // MIT license:
 // http://www.opensource.org/licenses/mit-license.php
 
+///////// Base values for building grid ///////////
+// ----------------------------------------
+@base_10: 1.05%;  // equal to 10px in the standard 960.gs
+@base_20: 2.0833333333333;
+@base_40: 4.1666666666667;
+@base_60: 6.25%;  // equal to 60px in the standard 960.gs
+@base_80: 8.3333333333333%;
 
-///////// 12 col 960 grid system ///////////
+.position() {
+	position: relative;
+}
+
 .grid_placement {
 	display: inline;
 	float: left;
-	margin: 0 1.05%;
+	margin: 0 @base_10;
 }
 
-.grid_1 {
-	width: 6.25%;
-	.grid_placement;
-}
 
-.grid_2 {
-	width: 14.5833333333333%;
-	.grid_placement;
-}
-
-.grid_3 {
-	width: 22.9166666666667%;
-	.grid_placement;
-}
-
-.grid_4 {
-	width: 31.25%;
-	.grid_placement;
-}
-
-.grid_5 {
-	width: 39.5833333333333%;
-	.grid_placement;
-}
-
-.grid_6 {
-	width: 47.93%;
-	.grid_placement;
-}
-
-.grid_7 {
-	width: 56.25%;
-	.grid_placement;
-}
-
-.grid_8 {
-	width: 64.5833333333333%;
-	.grid_placement;
-}
-
-.grid_9 {
-	width: 72.9166666666667%;
-	.grid_placement;
-}
-
-.grid_10 {
-	width: 81.25%;
-	.grid_placement;
-}
-
-.grid_11 {
-	width: 89.5833333333333%;
-	.grid_placement;
-}
-
-.grid_12 {
-	width: 97.9166666666667%;
-	.grid_placement;
-}
 ///////// 12 col 960 grid system ///////////
+// ----------------------------------------
+.grid_12(@col_count) {
+	@gutter_count: @col_count - 1;  
+	@gutter_value: @gutter_count * @base_20;
+	@col_count_width: @col_count * @base_60;
+	width: @col_count_width + @gutter_value;
+	.grid_placement;
+}
+
+
+///////// 16 col 960 grid system ///////////
+// ----------------------------------------
+.grid_16(@col_count) {
+	@gutter_count: @col_count - 1;  
+	@gutter_value: @gutter_count * @base_20;
+	@col_count_width: @col_count * @base_40;
+	width: @col_count_width + @gutter_value;
+	.grid_placement;
+}
+
+
+
+///////// prefix value accounts for a full column in the grid ////////////
+// -----------------------------------------------------------------------
+.prefix_12(@col_count) {
+	padding-left: @base_80 * @col_count;
+}
+
+.prefix_16(@col_count) {
+	padding-left: @base_60 * @col_count;
+}
+
+
+
+///////// suffix value accounts for a full column in the grid ////////////
+// -----------------------------------------------------------------------
+
+.suffix_12(@col_count) {
+	padding-right: @base_80 * @col_count;
+}
+
+.suffix_16(@col_count) {
+	padding-right: @base_60 * @col_count;
+}
+
+
+
+///////// push value accounts for a full column in the grid ////////////
+// -----------------------------------------------------------------------
+
+.push_12(@col_count) {
+	left: @base_80 * @col_count;
+	.position;
+}
+
+.push_16(@col_count) {
+	left: @base_60 * @col_count;
+	.position;
+}
+///////// pull value accounts for a full column in the grid ////////////
+// -----------------------------------------------------------------------
+
+.pull_12(@col_count) {
+	right: @base_80 * @col_count;
+	.position;
+}
+
+.pull_16(@col_count) {
+	right: @base_60 * @col_count;
+	.position;
+}

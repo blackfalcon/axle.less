@@ -4,7 +4,7 @@
 	<?php include 'shared/nav.php'?>
 	<article class="styleguide_body">
 		<div class="instructions">
-			<p>Axle's grid system is based off of the <a href="http://960.gs/">960 grid system</a> developed by <a href="http://sonspring.com/about">Nathan Smith</a>.  Classes can either be applied to the block element in the HTML or the preferred method is to apply the mixin to a semantically named class for the block. </p>
+			<p>Axle's grid system is based off of the <a href="http://960.gs/">960 grid system</a> developed by <a href="http://sonspring.com/about">Nathan Smith</a>.  Preferred method is to apply the mixin to a semantically named class for the block. </p>
 			<p>Axle's grid solution is based on percentages. This will give your design ultimate flexibility that these grid spots will retain a proportional relationship regardless of the width of it's parent container. Just think about how this will work with mobile stylesheets.</p>
 		</div>
 		<header>
@@ -15,70 +15,70 @@
 		</header>
 		<div class="grid_960">
 			<ul>
-				<li class="grid_7">56.25% (.grid_7)</li>
-				<li class="grid_5">39.58% (.grid_5)</li>
+				<li class="grid-7">56.25% (.grid_7)</li>
+				<li class="grid-5">39.58% (.grid_5)</li>
 			</ul>
 			<ul>
-				<li class="grid_8">64.58% (.grid_8)</li>
-				<li class="grid_4">31.25% (.grid_4)</li>
+				<li class="grid-8">64.58% (.grid_8)</li>
+				<li class="grid-4">31.25% (.grid_4)</li>
 			</ul>
 			<ul>
-				<li class="grid_9">72.91% (.grid_9)</li>
-				<li class="grid_3">22.91% (.grid_3)</li>
+				<li class="grid-9">72.91% (.grid_9)</li>
+				<li class="grid-3">22.91% (.grid_3)</li>
 			</ul>
 			<ul>
-				<li class="grid_10">81.25% (.grid_10)</li>
-				<li class="grid_2">14.58% (.grid_2)</li>
+				<li class="grid-10">81.25% (.grid_10)</li>
+				<li class="grid-2">14.58% (.grid_2)</li>
 			</ul>
 			<ul>
-				<li class="grid_11">89.58% (.grid_11)</li>
-				<li class="grid_1">6.25%</li>
+				<li class="grid-11">89.58% (.grid_11)</li>
+				<li class="grid-1">6.25%</li>
 			</ul>
 			<ul>
-				<li class="grid_12">97.91% (.grid_12)</li>
+				<li class="grid-12">97.91% (.grid_12)</li>
 			</ul>
 			<ul>
-				<li class="grid_1">6.25%</li>
-				<li class="grid_11">89.58% (grid_11)</li>
+				<li class="grid-1">6.25%</li>
+				<li class="grid-11">89.58% (grid_11)</li>
 			</ul>
 			<ul>
-				<li class="grid_2">14.58% (.grid_2)</li>
-				<li class="grid_10">81.25% (.grid_10)</li>
+				<li class="grid-2">14.58% (.grid_2)</li>
+				<li class="grid-10">81.25% (.grid_10)</li>
 			</ul>
 			<ul>
-				<li class="grid_3">22.91% (.grid_3)</li>
-				<li class="grid_9">72.91% (.grid_9)</li>
+				<li class="grid-3">22.91% (.grid_3)</li>
+				<li class="grid-9">72.91% (.grid_9)</li>
 			</ul>
 			<ul>
-				<li class="grid_4">31.25% (.grid_4)</li>
-				<li class="grid_8">64.58%  (.grid_8)</li>
+				<li class="grid-4">31.25% (.grid_4)</li>
+				<li class="grid-8">64.58%  (.grid_8)</li>
 			</ul>
 			<ul>
-				<li class="grid_5">39.58% (.grid_5)</li>
-				<li class="grid_7">56.25% (.grid_7)</li>
+				<li class="grid-5">39.58% (.grid_5)</li>
+				<li class="grid-7">56.25% (.grid_7)</li>
 			</ul>
 			<ul>
-				<li class="grid_1">6.25%</li>
-				<li class="grid_1">.grid_1</li>
-				<li class="grid_1">6.25%</li>
-				<li class="grid_1">.grid_1</li>
-				<li class="grid_1">6.25%</li>
-				<li class="grid_1">.grid_1</li>
-				<li class="grid_1">6.25%</li>
-				<li class="grid_1">.grid_1</li>
-				<li class="grid_1">6.25%</li>
-				<li class="grid_1">.grid_1</li>
-				<li class="grid_1">6.25%</li>
-				<li class="grid_1">.grid_1</li>
+				<li class="grid-1">6.25%</li>
+				<li class="grid-1">.grid_1</li>
+				<li class="grid-1">6.25%</li>
+				<li class="grid-1">.grid_1</li>
+				<li class="grid-1">6.25%</li>
+				<li class="grid-1">.grid_1</li>
+				<li class="grid-1">6.25%</li>
+				<li class="grid-1">.grid_1</li>
+				<li class="grid-1">6.25%</li>
+				<li class="grid-1">.grid_1</li>
+				<li class="grid-1">6.25%</li>
+				<li class="grid-1">.grid_1</li>
 			</ul>
 			<ul>
-				<li class="grid_4">31.25% (.grid_4)</li>
-				<li class="grid_4">31.25% (.grid_4)</li>
-				<li class="grid_4">31.25% (.grid_4)</li>
+				<li class="grid-4">31.25% (.grid_4)</li>
+				<li class="grid-4">31.25% (.grid_4)</li>
+				<li class="grid-4">31.25% (.grid_4)</li>
 			</ul>
 			<ul>
-				<li class="grid_6">47.93% (.grid_6)</li>
-				<li class="grid_6">47.93% (.grid_6)</li>
+				<li class="grid-6">47.93% (.grid_6)</li>
+				<li class="grid-6">47.93% (.grid_6)</li>
 			</ul>
 		</div>
 		<article>
@@ -103,11 +103,11 @@
 }
 
 .site_nav {
-  .grid_4;
+  .grid_12(4);
 }
 
 .main_content {
-  .grid_8;
+  .grid_12(8);
 }
 			</pre>
 

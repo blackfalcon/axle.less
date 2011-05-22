@@ -49,8 +49,9 @@ html, body {
 	.border_radius(5px);
 	border: 1px solid @hotel_grey;
 	img {
+		.grid_12(4);
 		float: right;
-		margin: 0 0 20px 20px;
+		//.prefix_1_16;
 	}	
 }
 
@@ -108,11 +109,24 @@ html, body {
 .lower_content {
 	margin-top: -5px;
 	margin-bottom: 30px;
+	padding: 2.0833333333333% 0;
 	.clearfix;
 	ul {
 		list-style: disc;
-		margin-left: 20px;
+		margin-left: 2.0833333333333%;
 	}
+}
+
+.main_article {
+	padding-left: 2.0833333333333%;
+	padding-right: 2.0833333333333%;
+}
+
+.summary_quote {
+	.large;
+	.grid_12(7);
+	float: left;
+	.push_12(.5);
 }
 
 

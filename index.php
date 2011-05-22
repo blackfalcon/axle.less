@@ -14,14 +14,16 @@
 				<li><a href="http://github.com/blackfalcon/axle.less" class="button">go Git some!</a></li>
 			</ul>
 		</section>
-		<section class="page_content lower_content large">
+		<section class="page_content lower_content">
+			<article class="summary_quote">
+				<p>Axle is not a CSS framework, but is more of a process in which to develop visual assets. The real power behind Axle is to develop your UI solution in an abstract environment from the application.</p>
+				<p>If you like OOCSS and crave real semantic markup, you will LOVE AXLE!</p>
+				<blockquote>BTW- axle.dalesande.com is fucking awesome</blockquote>
+				<p><cite>-- <a href="http://twitter.com/#!/whazzmaster">whazzmaster</a></cite></p>
+			</article>
 			<aside class="home_twitter_feed">
 				<?php include 'partials/twitter.php'?>
-			</aside>
-			<p>Axle is not a CSS framework, but is more of a process in which to develop visual assets. The real power behind Axle is to develop your UI solution in an abstract environment from the application.</p>
-			<p>If you like OOCSS and crave real semantic markup, you will LOVE AXLE!</p>
-			<blockquote>BTW- axle.dalesande.com is fucking awesome</blockquote>
-			<p><cite>-- <a href="http://twitter.com/#!/whazzmaster">whazzmaster</a></cite></p>
+			</aside>			
 		</section>
 		
 		<?php include 'shared/content_footer.php'?>
