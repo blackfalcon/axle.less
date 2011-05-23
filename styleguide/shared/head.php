@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	
-	<title>Axle v.alpha</title>
+	<title>Axle.LESS ~ Putting 'Object' in OOCSS since 2011</title>
 	
 	<meta http-equiv="Content-Language" content="en-us" />
 	<meta name="description" content="">

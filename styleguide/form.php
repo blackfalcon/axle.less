@@ -777,11 +777,13 @@
 			</fieldset>
 			
 			<div class="right_content" id="">
-				<p><b>Note: </b>Larger form UI is created when appending the mixin of <code>@ large_form</code> to the class of the parent container.</p>
+				<p><b>Note: </b>Larger form UI is created when appending the mixin of <code>.large_form</code> to the class of the parent container.</p>
 				<p>Example code:</p>
 				<pre>
 &lt;style&gt;
-  .foo_form {@include large_form}
+  .foo_form {
+    .large_form
+  }
 &lt;/style&gt;
 
 &lt;fieldset <span>class=&quot;foo_form&quot;</span> style=&quot;&quot;&gt;
