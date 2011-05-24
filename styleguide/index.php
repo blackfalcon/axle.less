@@ -6,7 +6,7 @@
 		<div class="instructions">
 			<p>Axle's grid system is based off of the <a href="http://960.gs/">960 grid system</a> developed by <a href="http://sonspring.com/about">Nathan Smith</a>. You and others led the way ... thanks for all the hard work.</p>
 			<p>Axle's grid.LESS can support both a <a href="/styleguide/">12</a> and <a href="grid_16.php">16</a> col grid system.  Below is an example of a 12 col.  Each grid width is a percentage of the 960px space.  See code instructions and examples below.	</p>
-			<p></p>
+			<p>Keep in mind, these are percentages of 960, not exact pixels. What you lose in pixel direct specification, you gain in flexibility. Pick your poison.  </p>
 		</div>
 		<header>
 			<p>1. 960 Site grid</p>
@@ -57,20 +57,6 @@
 			</ul>
 			<ul>
 				<li class="grid-11">.grid_12(11)</li>
-				<li class="grid-1">.grid_12(1)</li>
-			</ul>
-			<ul>
-				<li class="grid-1">.grid_12(1)</li>
-				<li class="grid-1">.grid_12(1)</li>
-				<li class="grid-1">.grid_12(1)</li>
-				<li class="grid-1">.grid_12(1)</li>
-				<li class="grid-1">.grid_12(1)</li>
-				<li class="grid-1">.grid_12(1)</li>
-				<li class="grid-1">.grid_12(1)</li>
-				<li class="grid-1">.grid_12(1)</li>
-				<li class="grid-1">.grid_12(1)</li>
-				<li class="grid-1">.grid_12(1)</li>
-				<li class="grid-1">.grid_12(1)</li>
 				<li class="grid-1">.grid_12(1)</li>
 			</ul>
 			<ul>

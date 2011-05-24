@@ -20,7 +20,7 @@
 
 ///////// Base values for building grid ///////////
 // ------------------------------------------------
-@base_10: 1.05%;	// equal to 10px in the standard 960.gs
+@base_10: 1.038%;	// equal to 10px in the standard 960.gs
 @base_20: 2.084%;	// equal to 20px in the standard 960.gs
 @base_40: 4.17%;	// equal to 40px in 16 col standard 960.gs
 @base_60: 6.25%;	// equal to 60px in 12/16 col standard 960.gs
@@ -60,6 +60,7 @@
 .grid_16(@col_count) {
 	.grid_support_math; 
 	@base_value: @base_40;
+	margin: 0 1.01167%
 }
 
 
@@ -114,3 +115,25 @@
 	right: @base_60 * @col_count;
 	.position;
 }
+
+
+
+
+
+
+/////////// `Grid >> Children (Alpha ~ First, Omega ~ Last) ///////////
+// --------------------------------------------------------------------
+.alpha() {
+	margin-left: 0;
+}
+
+.omega() {
+	margin-right: 0;
+}
+
+
+
+
+
+
+
