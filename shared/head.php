@@ -25,6 +25,9 @@
 	
 		
 	<script src="http://code.jquery.com/jquery-1.4.4.js"></script>
+	<!--[if (gte IE 6)&(lte IE 8)]>
+		<script type="text/javascript" src="selectivizr.js"></script>
+	<![endif]-->
 	<script src="/public/javascripts/modernizr-1.7.min.js"></script>
 	<script src="/public/javascripts/css_browser_selector.js"></script>
 	<script src="/public/javascripts/application.js"></script>
@@ -34,13 +37,3 @@
 <body>
 	<section class="site_container">
 		<?php include 'shared/site_navigation.php'?>
-
-
-
-
-
-
-
-
-
-
