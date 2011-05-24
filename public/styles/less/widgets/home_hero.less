@@ -16,18 +16,34 @@
 }
 
 .no-ie {
-	background: url(http://www.ipsofacto.net/wp-content/uploads/2010/10/no_internet_explorer_small1.png) no-repeat 50% 50%;
+	background: url(/public/images/browserSupport.png) no-repeat 50% 30% fadeout(@alpha_grey, 40%);
+	.border_radius(0 30px);
+	.box_shadow(0 0 10px, @shadow_color);
 	position: absolute;
-	width: 144px;
-	height: 160px;
-	.transform(rotate(-7deg));
-	z-index: 500;
+	width: 300px;
+	height: 130px;
+	.transform(rotate(-11deg));
+	z-index: 1000;
 	.pull_12(0.35);
-	top: -40px;
+	top: -10px;
+	.pull_12(.7);
 	a {
 		display: block;
-		color: transparent;
-		width: 163px;
-		height: 175px;
+		color: white;
+		width: 280px;
+		height: 40px;
+		font-weight: bold;
+		position: absolute;
+		z-index: 300;
+		top: 3px;
+		left: -40px;
+		padding: 82px 40px 0 40px;
+		font-family: 'Trebuchet MS',Arial,Verdana,sans-serif;
+		.extra_large;
+		font-weight: bold;
+		.text_shadow(0 0 3px, @shadow_color);
+		&:hover {
+			text-decoration: none;
+		}
 	}
 }

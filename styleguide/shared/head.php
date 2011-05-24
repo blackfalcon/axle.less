@@ -23,6 +23,7 @@
 	<link href="http://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet" type="text/css">
 	<link href="http://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="/public/styles/css/core.css"/>
+	<link rel="stylesheet" href="/public/styles/css/styleguide.css"/>
 
 	<script src="http://code.jquery.com/jquery-1.4.4.js"></script>
 	<script src="/public/javascripts/modernizr-1.7.min.js"></script>

@@ -51,7 +51,6 @@ html, body {
 	img[title*=Icon] {
 		.grid_12(4);
 		float: right;
-		//.prefix_1_16;
 	}	
 }
 
@@ -95,7 +94,7 @@ html, body {
 	position: relative;
 	z-index: 5;
 	.box_shadow(lighten(@shadow_color, 50), 0 -5px 10px 0px);
-	.ul_flexbox(90%, 120px);
+	.ul_flexbox(100%, 120px);
 	color: @echo_grey;
 	.text_shadow(0 2px 0px, @white);
 	h3 {
@@ -103,6 +102,14 @@ html, body {
 	}
 	ul {
 		margin: 10px auto 0 auto;
+	}
+}
+
+.gecko {
+	.body_call_to_action {
+		ul {
+			margin-top: 0px;
+		}
 	}
 }
 
@@ -145,6 +152,12 @@ html, body {
 .site_footer {
 	text-align: center;
 	padding: 10px 0;
+}
+
+img[title=browser_support] {
+	float: right;
+	.prefix_12(.5);
+	.suffix_12(.25);
 }
 
 
