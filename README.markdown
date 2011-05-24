@@ -11,6 +11,7 @@ The software provided is in beta development.  There are no guarantees or warran
 1. Possibly consider supporting icons for buttons
 1. Want to replace the designed select menu with alternate solution
 1. Need to write up some documentation 
+1. Increase browser support
 
 ## Author
 Axle is written by [Dale Sande][dale_sande].<br>

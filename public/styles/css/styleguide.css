@@ -112,12 +112,12 @@ table tbody tr{line-height:30px;border-bottom:1px solid #d8d8d8;}table tbody tr:
 .styleguide .selection_color{background-color:#ff8609;}
 .styleguide .selection_text_color{background-color:#ffffff;-moz-box-shadow:inset 0 0 1px #252525;-webkit-box-shadow:inset 0 0 1px #252525;box-shadow:inset 0 0 1px #252525;}
 .styleguide .india_grey,.styleguide .hotel_color_gradient,.styleguide .india_color_gradient{-moz-box-shadow:inset 0 0 1px #252525;-webkit-box-shadow:inset 0 0 1px #252525;box-shadow:inset 0 0 1px #252525;}
-.styleguide .grid_960{background:url(/public/images/12_col.gif) repeat-y;width:960px;zoom:1;text-align:center;margin:10px 0;float:left;font-size:0.916666em;font-weight:inherit;line-height:1.5em;font-weight:bold;}.styleguide .grid_960:before{content:"\0020";display:block;height:0;overflow:hidden;}
+.styleguide .grid_960{background:url(/styleguide/images/12_col.gif) repeat-y;width:960px;zoom:1;text-align:center;margin:10px 0;float:left;font-size:0.916666em;font-weight:inherit;line-height:1.5em;font-weight:bold;}.styleguide .grid_960:before{content:"\0020";display:block;height:0;overflow:hidden;}
 .styleguide .grid_960:after{content:"\0020";display:block;height:0;overflow:hidden;clear:both;}
 .styleguide .grid_960 ul{zoom:1;margin:1em 0;}.styleguide .grid_960 ul:before{content:"\0020";display:block;height:0;overflow:hidden;}
 .styleguide .grid_960 ul:after{content:"\0020";display:block;height:0;overflow:hidden;clear:both;}
 .styleguide .grid_960 ul li{background:rgba(255, 255, 255, 0.5);-moz-box-shadow:inset 0 0 10px #252525;-webkit-box-shadow:inset 0 0 10px #252525;box-shadow:inset 0 0 10px #252525;padding:5px 0;}
-.styleguide .grid_960.col_16{background:url(/public/images/16_col.gif) repeat-y;}
+.styleguide .grid_960.col_16{background:url(/styleguide/images/16_col.gif) repeat-y;}
 .styleguide .grid_960 .grid-1{display:inline;float:left;margin:0 1.038%;width:6.25%;}
 .styleguide .grid_960 .grid-2{display:inline;float:left;margin:0 1.038%;width:14.584%;}
 .styleguide .grid_960 .grid-3{display:inline;float:left;margin:0 1.038%;width:22.918%;}
