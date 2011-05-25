@@ -118,31 +118,31 @@ table tbody tr{line-height:30px;border-bottom:1px solid #d8d8d8;}table tbody tr:
 .styleguide .grid_960 ul:after{content:"\0020";display:block;height:0;overflow:hidden;clear:both;}
 .styleguide .grid_960 ul li{background:rgba(255, 255, 255, 0.5);-moz-box-shadow:inset 0 0 10px #252525;-webkit-box-shadow:inset 0 0 10px #252525;box-shadow:inset 0 0 10px #252525;padding:5px 0;}
 .styleguide .grid_960.col_16{background:url(/styleguide/images/16_col.gif) repeat-y;}
-.styleguide .grid_960 .grid-1{display:inline;float:left;margin:0 1.038%;width:6.25%;}
-.styleguide .grid_960 .grid-2{display:inline;float:left;margin:0 1.038%;width:14.584%;}
-.styleguide .grid_960 .grid-3{display:inline;float:left;margin:0 1.038%;width:22.918%;}
-.styleguide .grid_960 .grid-4{display:inline;float:left;margin:0 1.038%;width:31.252000000000002%;}
-.styleguide .grid_960 .grid-5{display:inline;float:left;margin:0 1.038%;width:39.586%;}
-.styleguide .grid_960 .grid-6{display:inline;float:left;margin:0 1.038%;width:47.92%;}
-.styleguide .grid_960 .grid-7{display:inline;float:left;margin:0 1.038%;width:56.254000000000005%;}
-.styleguide .grid_960 .grid-8{display:inline;float:left;margin:0 1.038%;width:64.588%;}
-.styleguide .grid_960 .grid-9{display:inline;float:left;margin:0 1.038%;width:72.922%;}
-.styleguide .grid_960 .grid-10{display:inline;float:left;margin:0 1.038%;width:81.256%;}
-.styleguide .grid_960 .grid-11{display:inline;float:left;margin:0 1.038%;width:89.59%;}
-.styleguide .grid_960 .grid-12{display:inline;float:left;margin:0 1.038%;width:97.924%;}
-.styleguide .grid_960 .grid-16-1{display:inline;float:left;margin:0 1.038%;width:4.17%;margin:0 1.01167%;}
-.styleguide .grid_960 .grid-16-2{display:inline;float:left;margin:0 1.038%;width:10.424%;margin:0 1.01167%;}
-.styleguide .grid_960 .grid-16-3{display:inline;float:left;margin:0 1.038%;width:16.678%;margin:0 1.01167%;}
-.styleguide .grid_960 .grid-16-4{display:inline;float:left;margin:0 1.038%;width:22.932000000000002%;margin:0 1.01167%;}
-.styleguide .grid_960 .grid-16-5{display:inline;float:left;margin:0 1.038%;width:29.186%;margin:0 1.01167%;}
-.styleguide .grid_960 .grid-16-6{display:inline;float:left;margin:0 1.038%;width:35.44%;margin:0 1.01167%;}
-.styleguide .grid_960 .grid-16-7{display:inline;float:left;margin:0 1.038%;width:41.694%;margin:0 1.01167%;}
-.styleguide .grid_960 .grid-16-8{display:inline;float:left;margin:0 1.038%;width:47.948%;margin:0 1.01167%;}
-.styleguide .grid_960 .grid-16-9{display:inline;float:left;margin:0 1.038%;width:54.202%;margin:0 1.01167%;}
-.styleguide .grid_960 .grid-16-10{display:inline;float:left;margin:0 1.038%;width:60.456%;margin:0 1.01167%;}
-.styleguide .grid_960 .grid-16-11{display:inline;float:left;margin:0 1.038%;width:66.71%;margin:0 1.01167%;}
-.styleguide .grid_960 .grid-16-12{display:inline;float:left;margin:0 1.038%;width:72.964%;margin:0 1.01167%;}
-.styleguide .grid_960 .grid-16-13{display:inline;float:left;margin:0 1.038%;width:79.218%;margin:0 1.01167%;}
-.styleguide .grid_960 .grid-16-14{display:inline;float:left;margin:0 1.038%;width:85.472%;margin:0 1.01167%;}
-.styleguide .grid_960 .grid-16-15{display:inline;float:left;margin:0 1.038%;width:91.726%;margin:0 1.01167%;}
-.styleguide .grid_960 .grid-16-16{display:inline;float:left;margin:0 1.038%;width:97.98%;margin:0 1.01167%;}
+.styleguide .grid_960 .grid-1{display:inline;float:left;margin:0 10px;width:60px;}
+.styleguide .grid_960 .grid-2{display:inline;float:left;margin:0 10px;width:140px;}
+.styleguide .grid_960 .grid-3{display:inline;float:left;margin:0 10px;width:220px;}
+.styleguide .grid_960 .grid-4{display:inline;float:left;margin:0 10px;width:300px;}
+.styleguide .grid_960 .grid-5{display:inline;float:left;margin:0 10px;width:380px;}
+.styleguide .grid_960 .grid-6{display:inline;float:left;margin:0 10px;width:460px;}
+.styleguide .grid_960 .grid-7{display:inline;float:left;margin:0 10px;width:540px;}
+.styleguide .grid_960 .grid-8{display:inline;float:left;margin:0 10px;width:620px;}
+.styleguide .grid_960 .grid-9{display:inline;float:left;margin:0 10px;width:700px;}
+.styleguide .grid_960 .grid-10{display:inline;float:left;margin:0 10px;width:780px;}
+.styleguide .grid_960 .grid-11{display:inline;float:left;margin:0 10px;width:860px;}
+.styleguide .grid_960 .grid-12{display:inline;float:left;margin:0 10px;width:940px;}
+.styleguide .grid_960 .grid-16-1{display:inline;float:left;margin:0 10px;width:40px;}
+.styleguide .grid_960 .grid-16-2{display:inline;float:left;margin:0 10px;width:100px;}
+.styleguide .grid_960 .grid-16-3{display:inline;float:left;margin:0 10px;width:160px;}
+.styleguide .grid_960 .grid-16-4{display:inline;float:left;margin:0 10px;width:220px;}
+.styleguide .grid_960 .grid-16-5{display:inline;float:left;margin:0 10px;width:280px;}
+.styleguide .grid_960 .grid-16-6{display:inline;float:left;margin:0 10px;width:340px;}
+.styleguide .grid_960 .grid-16-7{display:inline;float:left;margin:0 10px;width:400px;}
+.styleguide .grid_960 .grid-16-8{display:inline;float:left;margin:0 10px;width:460px;}
+.styleguide .grid_960 .grid-16-9{display:inline;float:left;margin:0 10px;width:520px;}
+.styleguide .grid_960 .grid-16-10{display:inline;float:left;margin:0 10px;width:580px;}
+.styleguide .grid_960 .grid-16-11{display:inline;float:left;margin:0 10px;width:640px;}
+.styleguide .grid_960 .grid-16-12{display:inline;float:left;margin:0 10px;width:700px;}
+.styleguide .grid_960 .grid-16-13{display:inline;float:left;margin:0 10px;width:760px;}
+.styleguide .grid_960 .grid-16-14{display:inline;float:left;margin:0 10px;width:820px;}
+.styleguide .grid_960 .grid-16-15{display:inline;float:left;margin:0 10px;width:880px;}
+.styleguide .grid_960 .grid-16-16{display:inline;float:left;margin:0 10px;width:940px;}

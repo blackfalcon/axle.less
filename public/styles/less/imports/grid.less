@@ -20,11 +20,17 @@
 
 ///////// Base values for building grid ///////////
 // ------------------------------------------------
-@base_10: 1.038%;	// equal to 10px in the standard 960.gs
-@base_20: 2.084%;	// equal to 20px in the standard 960.gs
-@base_40: 4.17%;	// equal to 40px in 16 col standard 960.gs
-@base_60: 6.25%;	// equal to 60px in 12/16 col standard 960.gs
-@base_80: 8.4%;		// equal to 80px in 12 col standard 960.gs
+//@base_10: 1.038%;	// equal to 10px in the standard 960.gs
+//@base_20: 2.084%;	// equal to 20px in the standard 960.gs
+//@base_40: 4.17%;	// equal to 40px in 16 col standard 960.gs
+//@base_60: 6.25%;	// equal to 60px in 12/16 col standard 960.gs
+//@base_80: 8.4%;		// equal to 80px in 12 col standard 960.gs
+
+@base_10: 10px;	// equal to 10px in the standard 960.gs
+@base_20: 20px;	// equal to 20px in the standard 960.gs
+@base_40: 40px;	// equal to 40px in 16 col standard 960.gs
+@base_60: 60px;	// equal to 60px in 12/16 col standard 960.gs
+@base_80: 80px;		// equal to 80px in 12 col standard 960.gs
 
 .position() {
 	position: relative;
@@ -60,7 +66,6 @@
 .grid_16(@col_count) {
 	.grid_support_math; 
 	@base_value: @base_40;
-	margin: 0 1.01167%
 }
 
 

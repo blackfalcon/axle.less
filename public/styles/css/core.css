@@ -617,8 +617,8 @@ html, body {
 .page_content img[title*=Icon] {
   display: inline;
   float: left;
-  margin: 0 1.038%;
-  width: 31.252000000000002%;
+  margin: 0 10px;
+  width: 300px;
   float: right;
 }
 .body_navbar {
@@ -772,10 +772,10 @@ html, body {
   line-height: 1.5em;
   display: inline;
   float: left;
-  margin: 0 1.038%;
-  width: 56.254000000000005%;
+  margin: 0 10px;
+  width: 540px;
   float: left;
-  left: 2.1%;
+  left: 20px;
   position: relative;
 }
 .content_footer {
@@ -796,8 +796,8 @@ html, body {
 }
 img[title=browser_support] {
   float: right;
-  padding-left: 4.2%;
-  padding-right: 2.1%;
+  padding-left: 40px;
+  padding-right: 20px;
 }
 code {
   border: 1px solid #252525;
@@ -2819,10 +2819,10 @@ form dl + p {
   -ms-transform: rotate(-11deg);
   transform: rotate(-11deg);
   z-index: 1000;
-  right: 2.94%;
+  right: 28px;
   position: relative;
   top: -10px;
-  right: 5.88%;
+  right: 56px;
   position: relative;
 }
 .no-ie a {
@@ -2904,8 +2904,8 @@ form dl + p {
 .twitter_feed {
   display: inline;
   float: left;
-  margin: 0 1.038%;
-  width: 31.252000000000002%;
+  margin: 0 10px;
+  width: 300px;
   zoom: 1;
   float: right;
   margin: 0 -10px 0 20px;
@@ -2930,12 +2930,12 @@ form dl + p {
 .home_twitter_feed {
   display: inline;
   float: left;
-  margin: 0 1.038%;
-  width: 39.586%;
+  margin: 0 10px;
+  width: 380px;
   -moz-box-shadow: 0 0px 10px rgba(37, 37, 37, 0.5);
   -webkit-box-shadow: 0 0px 10px rgba(37, 37, 37, 0.5);
   box-shadow: 0 0px 10px rgba(37, 37, 37, 0.5);
   float: left;
-  left: 4.2%;
+  left: 40px;
   position: relative;
 }
