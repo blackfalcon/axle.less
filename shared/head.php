@@ -24,13 +24,13 @@
 	<link rel="stylesheet" href="/public/styles/css/core.css" />
 	
 		
-	<script src="http://code.jquery.com/jquery-1.4.4.js"></script>
+	<script src="http://code.jquery.com/jquery-1.6.1.js"></script>		<!-- v1.6.1 May 12 2011 -->
+	<script src="/public/javascripts/modernizr-1.7.min.js"></script>	<!-- v1.7 http://www.modernizr.com/ -->
 	<!--[if (gte IE 6)&(lte IE 8)]>
-		<script type="text/javascript" src="selectivizr.js"></script>
+		<script src="/public/javascripts/selectivizr.js"></script>		<!-- v1.0.2 http://selectivizr.com/ -->
 	<![endif]-->
-	<script src="/public/javascripts/modernizr-1.7.min.js"></script>
-	<script src="/public/javascripts/css_browser_selector.js"></script>
-	<script src="/public/javascripts/application.js"></script>
+	<script src="/public/javascripts/css_browser_selector.js"></script>	<!-- November 02, 2010 (v0.4.0) http://bit.ly/j5Jlwf -->
+	<script src="/public/javascripts/application.js"></script>			<!-- v1.0.0 -->
 
 </head>
 
