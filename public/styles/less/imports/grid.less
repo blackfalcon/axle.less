@@ -12,7 +12,7 @@
 // ---------------------------------------------------------------------------
 // 
 // Updated by Dale Sande
-//
+// It is amazing how complex this gets, can't imagine trying to do this in old fashioned CSS
 //
 
 
@@ -20,35 +20,37 @@
 
 ///////// Base values for building grid ///////////
 // ------------------------------------------------
-//@base_10: 1.038%;	// equal to 10px in the standard 960.gs
-//@base_20: 2.084%;	// equal to 20px in the standard 960.gs
-//@base_40: 4.17%;	// equal to 40px in 16 col standard 960.gs
-//@base_60: 6.25%;	// equal to 60px in 12/16 col standard 960.gs
-//@base_80: 8.4%;		// equal to 80px in 12 col standard 960.gs
+@fluid_10: 1.04%;						// percentage of 10px in the standard 960.gs  // optimized for firefox 12 col
+@fluid_10_webkit: @fluid_10 + 0.01%;	// percentage of 10px in the standard 960.gs  // webkit support
+@fluid_10_moz_16: @fluid_10 - 0.04%;	// percentage of 10px in the standard 960.gs  // moz 16 col support
+
+@fluid_20: 2.084%;	// percentage of 20px in the standard 960.gs
+@fluid_40: 4.17%;	// percentage of 40px in 16 col standard 960.gs
+@fluid_60: 6.25%;	// percentage of 60px in 12/16 col standard 960.gs
+@fluid_80: 8.4%;	// percentage of 80px in 12 col standard 960.gs
 
 @base_10: 10px;	// equal to 10px in the standard 960.gs
 @base_20: 20px;	// equal to 20px in the standard 960.gs
 @base_40: 40px;	// equal to 40px in 16 col standard 960.gs
 @base_60: 60px;	// equal to 60px in 12/16 col standard 960.gs
-@base_80: 80px;		// equal to 80px in 12 col standard 960.gs
+@base_80: 80px;	// equal to 80px in 12 col standard 960.gs
 
 .position() {
 	position: relative;
 }
 
-.grid_placement() {
+.grid_placement(@var) {
 	display: inline;
 	float: left;
-	margin: 0 @base_10;
+	margin: 0 @var;
 }
 
-.grid_support_math() {
-	@gutter_count: @col_count - 1;
-	@gutter_value: @gutter_count * @base_20;
-	@col_count_width: @col_count * @base_value;
-	.grid_placement;
-	
-	width: @col_count_width + @gutter_value;
+.grid_support_math(@gbase, @gplacement) {
+	@gutter_count: @col_count - 1;				// creates the gutter count based from column -1
+	@gutter_value: @gutter_count * @gbase;		// the gutter count * gutter width set in the mixin ~ see line 60 example
+	@col_count_width: @col_count * @base_value;	// calc width from col count by base value set in the grid mixin ~ see line 60 example
+	.grid_placement(@gplacement);				// this sets margin width for line 44
+	width: @col_count_width + @gutter_value;	// writes an actual CSS value
 }
 
 
@@ -56,16 +58,25 @@
 ///////// 12 col 960 grid system ///////////
 // ----------------------------------------
 .grid_12(@col_count) {
-	.grid_support_math; 
+	.grid_support_math(@base_20, @base_10); 
 	@base_value: @base_60;
 }
 
+.flgrid_12(@col_count) {
+	.grid_support_math(@fluid_20, @fluid_10);
+	@base_value: @fluid_60;
+}
 
 ///////// 16 col 960 grid system ///////////
 // ----------------------------------------
 .grid_16(@col_count) {
-	.grid_support_math; 
+	.grid_support_math(@base_20, @base_10); 
 	@base_value: @base_40;
+}
+
+.flgrid_16(@col_count) {
+	.grid_support_math(@fluid_20, @fluid_10); 
+	@base_value: @fluid_40;
 }
 
 
@@ -75,8 +86,16 @@
 	padding-left: @base_80 * @col_count;
 }
 
+.flprefix_12(@col_count) {
+	padding-left: @fluid_80 * @col_count;
+}
+
 .prefix_16(@col_count) {
 	padding-left: @base_60 * @col_count;
+}
+
+.flprefix_16(@col_count) {
+	padding-left: @fluid_60 * @col_count;
 }
 
 
@@ -88,8 +107,16 @@
 	padding-right: @base_80 * @col_count;
 }
 
+.flsuffix_12(@col_count) {
+	padding-right: @fluid_80 * @col_count;
+}
+
 .suffix_16(@col_count) {
 	padding-right: @base_60 * @col_count;
+}
+
+.flsuffix_16(@col_count) {
+	padding-right: @fluid_60 * @col_count;
 }
 
 
@@ -102,8 +129,18 @@
 	.position;
 }
 
+.flpush_12(@col_count) {
+	left: @fluid_80 * @col_count;
+	.position;
+}
+
 .push_16(@col_count) {
 	left: @base_60 * @col_count;
+	.position;
+}
+
+.flpush_16(@col_count) {
+	left: @fluid_60 * @col_count;
 	.position;
 }
 
@@ -116,8 +153,18 @@
 	.position;
 }
 
+.flpull_12(@col_count) {
+	right: @fluid_80 * @col_count;
+	.position;
+}
+
 .pull_16(@col_count) {
 	right: @base_60 * @col_count;
+	.position;
+}
+
+.flpull_16(@col_count) {
+	right: @fluid_60 * @col_count;
 	.position;
 }
 
