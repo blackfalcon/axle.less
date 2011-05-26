@@ -57,7 +57,7 @@ table tbody tr{line-height:30px;border-bottom:1px solid #d8d8d8;}table tbody tr:
 .secondary_button_hover{background:#ff8609;background:-moz-linear-gradient(top, #ff8609 0%, #ffd1a2 100%);background:-webkit-gradient(linear, left top, left bottom, color-stop(0%, #ff8609), color-stop(100%, #ffd1a2));background:-webkit-linear-gradient(top, #ff8609 0%, #ffd1a2 100%);background-image:-o-linear-gradient(top, #ff8609 0%, #ffd1a2 100%);filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#ff8609,endColorstr=#ffd1a2);-ms-filter:"progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#ff8609, endColorstr=#ffd1a2)";}
 .styleguide{background:#ffffff;}.styleguide body{background:#ffffff;}
 .styleguide #header{visibility:hidden;display:none;}
-.styleguide .instructions{display:block;margin-top:40px;font-size:1.25em;font-weight:inherit;line-height:1.5em;}
+.styleguide .instructions{display:block;font-size:1.25em;font-weight:inherit;line-height:1.5em;}
 .styleguide code{padding:3px 6px;border:1px solid #252525;white-space:nowrap;}
 .styleguide article{float:left;width:100%;}
 .styleguide pre{background:#313131;padding:20px;-moz-border-radius:10px;-webkit-border-radius:10px;border-radius:10px;color:orange;font-size:1.25em;font-weight:inherit;line-height:1.5em;margin-bottom:20px;font-weight:bolder;}.styleguide pre span{color:white;}
@@ -118,31 +118,62 @@ table tbody tr{line-height:30px;border-bottom:1px solid #d8d8d8;}table tbody tr:
 .styleguide .grid_960 ul:after{content:"\0020";display:block;height:0;overflow:hidden;clear:both;}
 .styleguide .grid_960 ul li{background:rgba(255, 255, 255, 0.5);-moz-box-shadow:inset 0 0 10px #252525;-webkit-box-shadow:inset 0 0 10px #252525;box-shadow:inset 0 0 10px #252525;padding:5px 0;}
 .styleguide .grid_960.col_16{background:url(/styleguide/images/16_col.gif) repeat-y;}
-.styleguide .grid_960 .grid-1{display:inline;float:left;margin:0 10px;width:60px;}
-.styleguide .grid_960 .grid-2{display:inline;float:left;margin:0 10px;width:140px;}
-.styleguide .grid_960 .grid-3{display:inline;float:left;margin:0 10px;width:220px;}
-.styleguide .grid_960 .grid-4{display:inline;float:left;margin:0 10px;width:300px;}
-.styleguide .grid_960 .grid-5{display:inline;float:left;margin:0 10px;width:380px;}
-.styleguide .grid_960 .grid-6{display:inline;float:left;margin:0 10px;width:460px;}
-.styleguide .grid_960 .grid-7{display:inline;float:left;margin:0 10px;width:540px;}
-.styleguide .grid_960 .grid-8{display:inline;float:left;margin:0 10px;width:620px;}
-.styleguide .grid_960 .grid-9{display:inline;float:left;margin:0 10px;width:700px;}
-.styleguide .grid_960 .grid-10{display:inline;float:left;margin:0 10px;width:780px;}
-.styleguide .grid_960 .grid-11{display:inline;float:left;margin:0 10px;width:860px;}
-.styleguide .grid_960 .grid-12{display:inline;float:left;margin:0 10px;width:940px;}
-.styleguide .grid_960 .grid-16-1{display:inline;float:left;margin:0 10px;width:40px;}
-.styleguide .grid_960 .grid-16-2{display:inline;float:left;margin:0 10px;width:100px;}
-.styleguide .grid_960 .grid-16-3{display:inline;float:left;margin:0 10px;width:160px;}
-.styleguide .grid_960 .grid-16-4{display:inline;float:left;margin:0 10px;width:220px;}
-.styleguide .grid_960 .grid-16-5{display:inline;float:left;margin:0 10px;width:280px;}
-.styleguide .grid_960 .grid-16-6{display:inline;float:left;margin:0 10px;width:340px;}
-.styleguide .grid_960 .grid-16-7{display:inline;float:left;margin:0 10px;width:400px;}
-.styleguide .grid_960 .grid-16-8{display:inline;float:left;margin:0 10px;width:460px;}
-.styleguide .grid_960 .grid-16-9{display:inline;float:left;margin:0 10px;width:520px;}
-.styleguide .grid_960 .grid-16-10{display:inline;float:left;margin:0 10px;width:580px;}
-.styleguide .grid_960 .grid-16-11{display:inline;float:left;margin:0 10px;width:640px;}
-.styleguide .grid_960 .grid-16-12{display:inline;float:left;margin:0 10px;width:700px;}
-.styleguide .grid_960 .grid-16-13{display:inline;float:left;margin:0 10px;width:760px;}
-.styleguide .grid_960 .grid-16-14{display:inline;float:left;margin:0 10px;width:820px;}
-.styleguide .grid_960 .grid-16-15{display:inline;float:left;margin:0 10px;width:880px;}
-.styleguide .grid_960 .grid-16-16{display:inline;float:left;margin:0 10px;width:940px;}
+.styleguide .grid-1{display:inline;float:left;margin:0 10px;width:60px;}
+.styleguide .grid-2{display:inline;float:left;margin:0 10px;width:140px;}
+.styleguide .grid-3{display:inline;float:left;margin:0 10px;width:220px;}
+.styleguide .grid-4{display:inline;float:left;margin:0 10px;width:300px;}
+.styleguide .grid-5{display:inline;float:left;margin:0 10px;width:380px;}
+.styleguide .grid-6{display:inline;float:left;margin:0 10px;width:460px;}
+.styleguide .grid-7{display:inline;float:left;margin:0 10px;width:540px;}
+.styleguide .grid-8{display:inline;float:left;margin:0 10px;width:620px;}
+.styleguide .grid-9{display:inline;float:left;margin:0 10px;width:700px;}
+.styleguide .grid-10{display:inline;float:left;margin:0 10px;width:780px;}
+.styleguide .grid-11{display:inline;float:left;margin:0 10px;width:860px;}
+.styleguide .grid-12{display:inline;float:left;margin:0 10px;width:940px;}
+.styleguide .grid-16-1{display:inline;float:left;margin:0 10px;width:40px;}
+.styleguide .grid-16-2{display:inline;float:left;margin:0 10px;width:100px;}
+.styleguide .grid-16-3{display:inline;float:left;margin:0 10px;width:160px;}
+.styleguide .grid-16-4{display:inline;float:left;margin:0 10px;width:220px;}
+.styleguide .grid-16-5{display:inline;float:left;margin:0 10px;width:280px;}
+.styleguide .grid-16-6{display:inline;float:left;margin:0 10px;width:340px;}
+.styleguide .grid-16-7{display:inline;float:left;margin:0 10px;width:400px;}
+.styleguide .grid-16-8{display:inline;float:left;margin:0 10px;width:460px;}
+.styleguide .grid-16-9{display:inline;float:left;margin:0 10px;width:520px;}
+.styleguide .grid-16-10{display:inline;float:left;margin:0 10px;width:580px;}
+.styleguide .grid-16-11{display:inline;float:left;margin:0 10px;width:640px;}
+.styleguide .grid-16-12{display:inline;float:left;margin:0 10px;width:700px;}
+.styleguide .grid-16-13{display:inline;float:left;margin:0 10px;width:760px;}
+.styleguide .grid-16-14{display:inline;float:left;margin:0 10px;width:820px;}
+.styleguide .grid-16-15{display:inline;float:left;margin:0 10px;width:880px;}
+.styleguide .grid-16-16{display:inline;float:left;margin:0 10px;width:940px;}
+.styleguide .flgrid-1{display:inline;float:left;margin:0 1.04%;width:6.25%;}
+.styleguide .flgrid-2{display:inline;float:left;margin:0 1.04%;width:14.584%;}
+.styleguide .flgrid-3{display:inline;float:left;margin:0 1.04%;width:22.918%;}
+.styleguide .flgrid-4{display:inline;float:left;margin:0 1.04%;width:31.252000000000002%;}
+.styleguide .flgrid-5{display:inline;float:left;margin:0 1.04%;width:39.586%;}
+.styleguide .flgrid-6{display:inline;float:left;margin:0 1.04%;width:47.92%;}
+.styleguide .flgrid-7{display:inline;float:left;margin:0 1.04%;width:56.254000000000005%;}
+.styleguide .flgrid-8{display:inline;float:left;margin:0 1.04%;width:64.588%;}
+.styleguide .flgrid-9{display:inline;float:left;margin:0 1.04%;width:72.922%;}
+.styleguide .flgrid-10{display:inline;float:left;margin:0 1.04%;width:81.256%;}
+.styleguide .flgrid-11{display:inline;float:left;margin:0 1.04%;width:89.59%;}
+.styleguide .flgrid-12{display:inline;float:left;margin:0 1.04%;width:97.924%;}
+.styleguide .flgrid-16-1{display:inline;float:left;margin:0 1.04%;width:4.17%;}
+.styleguide .flgrid-16-2{display:inline;float:left;margin:0 1.04%;width:10.424%;}
+.styleguide .flgrid-16-3{display:inline;float:left;margin:0 1.04%;width:16.678%;}
+.styleguide .flgrid-16-4{display:inline;float:left;margin:0 1.04%;width:22.932000000000002%;}
+.styleguide .flgrid-16-5{display:inline;float:left;margin:0 1.04%;width:29.186%;}
+.styleguide .flgrid-16-6{display:inline;float:left;margin:0 1.04%;width:35.44%;}
+.styleguide .flgrid-16-7{display:inline;float:left;margin:0 1.04%;width:41.694%;}
+.styleguide .flgrid-16-8{display:inline;float:left;margin:0 1.04%;width:47.948%;}
+.styleguide .flgrid-16-9{display:inline;float:left;margin:0 1.04%;width:54.202%;}
+.styleguide .flgrid-16-10{display:inline;float:left;margin:0 1.04%;width:60.456%;}
+.styleguide .flgrid-16-11{display:inline;float:left;margin:0 1.04%;width:66.71%;}
+.styleguide .flgrid-16-12{display:inline;float:left;margin:0 1.04%;width:72.964%;}
+.styleguide .flgrid-16-13{display:inline;float:left;margin:0 1.04%;width:79.218%;}
+.styleguide .flgrid-16-14{display:inline;float:left;margin:0 1.04%;width:85.472%;}
+.styleguide .flgrid-16-15{display:inline;float:left;margin:0 1.04%;width:91.726%;}
+.styleguide .flgrid-16-16{display:inline;float:left;margin:0 1.04%;width:97.98%;}
+.styleguide.webkit li[class*=flgrid]{margin:0 1.05%;}
+.styleguide.gecko li[class*=flgrid]{margin:0 1%;}
+.gecko.styleguide pre{font-weight:normal;}

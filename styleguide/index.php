@@ -1,10 +1,10 @@
 <?php include 'shared/head.php'?>
 	<?php include 'shared/banner.php'?>
-	<header class="styleguide_header"><h1>| Axle | '960 grid' | 12 col</h1></header>
+	<header class="styleguide_header"><h1>| Axle | '960 grid' | 12 col | px</h1></header>
 	<?php include 'shared/nav.php'?>
 	<article class="styleguide_body">
 		<div class="instructions">
-			<p>Axle's grid system is based off of the <a href="http://960.gs/">960 grid system</a> developed by <a href="http://sonspring.com/about">Nathan Smith</a>. You and others led the way ... thanks for all the hard work.</p>
+			<p>Axle's grid system is based off of the <a href="http://960.gs/">960 grid system</a> developed by <a href="http://sonspring.com/about">Nathan Smith</a>. You and others led the way ... thanks for all the hard work.  As as base, Axle's grid is using a standard pixel based solution. <a href="grid_12_fluid.php">For a fluid solution, click here.</a></p>
 			<p>Axle's grid.LESS can support both a <a href="/styleguide/">12</a> and <a href="grid_16.php">16</a> col grid system.  Below is an example of a 12 col.  See code instructions and examples below.	</p>
 		</div>
 		<header>
