@@ -87,7 +87,7 @@
 			<p>In your semantic class, use the mixin of <code>.grid_12()</code> or <code>.grid_16()</code> depending on the layout you want to use.  The same syntax will be used for <code>.prefix_12(), suffix_12(), pull_12() and push_12()</code> or  <code>.prefix_16(), suffix_16(), pull_16() and push_16()</code></p>
 			<p>In the <code>()</code> you will enter the column values and Axle takes care of the rest.</p>
 			<p>Axle's solution is completely mathematical, fluid and based on percentages.  Whereas a .pull or .push in 960gs will move the block a full 60px or 80px, Axle's grid solution will allow you to move a fraction of a grid if needed.</p>
-			<p>Using something like <code>.push_12(.5)</code> will push the block element 1/2 a grid (or 40px per this example).</p>
+			<p>Using something like <code>.push_16(.5)</code> will push the block element 1/2 a grid (or 30px per this example).</p>
 			<p><b>Building a semantic block element class using mixins.</b></p>
 			<p><b>HTML Example:</b></p>
 			<pre>
@@ -106,16 +106,16 @@
 			<pre>
 <span>.summary_quote</span> {
   .large;
-  .grid_12(7);
+  .grid_16(9);
   float: left;
-  .push_12(.25);
+  .push_16(.25);
 }
 
 <span>.home_twitter_feed</span> {
-  .grid_12(5);
+  .grid_16(7);
   .box_shadow (0 0px 10px, @shadow_color);
   float: left; 
-  .push_12(1);
+  .push_16(1);
 }			
 			</pre>
 		</article>		
