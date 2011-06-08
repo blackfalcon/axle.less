@@ -177,3 +177,13 @@ table tbody tr{line-height:30px;border-bottom:1px solid #d8d8d8;}table tbody tr:
 .styleguide.webkit li[class*=flgrid]{margin:0 1.05%;}
 .styleguide.gecko li[class*=flgrid]{margin:0 1%;}
 .gecko.styleguide pre{font-weight:normal;}
+.blog_container{width:960px;float:left;margin-bottom:20px;}.blog_container header{border:0px !important;}
+.styleguide .blog_structure header{color:#3f3f3f;padding:0;margin:0;border-width:0;}
+.styleguide .blog_structure .site_header{display:inline;float:left;margin:0 10px;width:940px;background:#f1f1f1;margin-bottom:10px;}.styleguide .blog_structure .site_header nav{background:#d8d8d8;margin:10px;}
+.styleguide .blog_structure .primary_content_section{background:yellow;float:left;display:inline;float:left;margin:0 10px;width:700px;padding:5px 0;}.styleguide .blog_structure .primary_content_section header,.styleguide .blog_structure .primary_content_section article,.styleguide .blog_structure .primary_content_section aside,.styleguide .blog_structure .primary_content_section footer{padding:5px 0;margin:5px 0;}
+.styleguide .blog_structure .primary_content_section article{background:orange;}
+.styleguide .blog_structure .primary_content_section header{background:red;}
+.styleguide .blog_structure .primary_content_section footer{background:green;float:left;width:100%;}
+.styleguide .blog_structure .site_aside{float:right;display:inline;float:left;margin:0 10px;width:220px;background:blue;}
+.styleguide .blog_structure .site_aside_section{background:purple;margin-bottom:20px;}
+.styleguide .blog_structure .site_footer{float:left;display:inline;float:left;margin:0 10px;width:940px;background:lime;}

@@ -1,0 +1,71 @@
+///////////// styles for the display of template screens /////////////
+
+
+// needed to define space within context of the styleguide
+// --------------------------------------------------------
+.blog_container {
+	width: 960px;
+	float: left;
+	margin-bottom: 20px;
+
+	header {
+		border: 0px !important;
+	}
+}
+
+
+// Necessary to address header UI issues inherited from the styleguide css
+// I apologize if this gets a little ugly ;()
+// ----------------------------------------------------------------------
+.styleguide {
+	.blog_structure {
+		header {
+			color: @primary_text;
+			padding: 0;
+			margin: 0;
+			border-width: 0;
+		}
+		.site_header {
+			.grid_12(12);
+			background: @hotel_grey;
+			margin-bottom: 10px;
+			nav {
+				background: darken(@hotel_grey, 10%);
+				margin: 10px;
+			}
+		}
+		.primary_content_section {
+			background: yellow;
+			float: left;
+			.grid_12(9);
+			padding: 5px 0;
+			header, article, aside, footer {
+				padding: 5px 0;
+				margin: 5px 0;
+			}
+			article { background: orange; }
+			header { background: red; }
+			footer { 
+				background: green;
+				float: left;
+				width: 100%; 
+			}
+		}
+		.site_aside {
+			float: right;
+			.grid_12(3);
+			background: blue;
+		} 
+		
+		.site_aside_section {
+			background: purple;
+			margin-bottom: 20px;
+		}
+		
+		.site_footer {
+			float: left;
+			.grid_12(12);
+			background: lime;
+		}
+	}
+} 
