@@ -398,23 +398,19 @@ form {
 			.flexbox(horizontal, end, center, 100%, 100%);
 			margin: 0px;
 			li {
-				line-height: 1em;
+				line-height: 2.5em;
 				width: 32px;
-				height: 22px;
+				height: 2.83333em;
 				border: 1px solid @echo_grey;
-				.lima_color_gradient;
-				&:active {
+				.border_radius(5px);
+				.echo_color_gradient;
+				&:hover, &:active {
 					.box_shadow(inset fadeout(@alpha_grey, 80%), 0px 0px 10px 0px);
-				}
-				&:hover {
-					a {
-						border-color: transparent @bravo_color transparent @bravo_color;
-					}
 				}
 			}
 			li {
 				&:nth-child(1) {
-					margin: 0 1px 0 6px;
+					margin: 0 5px 0 6px;
 				}
 				&:nth-child(2) {
 					margin: 0;
