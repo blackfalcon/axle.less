@@ -31,9 +31,8 @@
 
 //////// gradient arguments /////////
 // The following gradients are designed to use specific color stops
-// I prefer to use standardized code as to increase consistency 
-// In your app, you are free to update so that the mixin includes setting the color stop
-// ----------------------------------------------
+// I like to use standardized code as to increase consistency 
+// -------------------------------------------------------------------------------------
 .two_stop_linear_gradient (@start_color, @end_color) {
 	// default fallback //
 	background: @start_color;
@@ -45,42 +44,6 @@
 	background: -webkit-linear-gradient(top, @start_color 0%, @end_color 100%);
 	// Opera 11.10 //
 	background-image: -o-linear-gradient(top, @start_color 0%, @end_color 100%);
-	// IE6 & 7 //
-    filter: e(%("progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=%d,endColorstr=%d)", @start_color, @end_color));
-    // IE8 //
-    -ms-filter: %("progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=%d, endColorstr=%d)", @start_color, @end_color);
-}
-
-// two color stop linear gradient with color stops set as variable 
-// -------------- 
-.two_stop_linear_gradient_freestop (@start_color, @start_color_stop, @end_color, @end_color_stop) {
-	// default fallback //
-	background: @start_color;
-	// Mozilla browsers Firefox 3.6+ //
-	background: -moz-linear-gradient(top, @start_color @start_color_stop, @end_color @end_color_stop);
-	// Safari 4.0 //
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(@start_color_stop,@start_color), color-stop(@end_color_stop,@end_color));
-	// Safari 5.0 //
-	background: -webkit-linear-gradient(top, @start_color @start_color_stop, @end_color @end_color_stop);
-	// Opera 11.10 //
-	background-image: -o-linear-gradient(top, @start_color @start_color_stop, @end_color @end_color_stop);
-	// IE6 & 7 //
-    filter: e(%("progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=%d,endColorstr=%d)", @start_color, @end_color));
-    // IE8 //
-    -ms-filter: %("progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=%d, endColorstr=%d)", @start_color, @end_color);
-}
-
-.three_stop_linear_gradient (@start_color, @start_position, @mid_color, @mid_position, @end_color, @end_position) {
-	// default fallback //
-	background: @start_color;
-	// Mozilla browsers Firefox 3.6+ //
-	background: -moz-linear-gradient(top, @start_color @start_position, @mid_color @mid_position, @end_color @end_position);
-	// Safari 4.0 //
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(@start_position,@start_color), color-stop(@mid_position,@mid_color), color-stop(@end_position,@end_color));
-	// Safari 5.0 //
-	background: -webkit-linear-gradient(top, @start_color @start_position, @mid_color @mid_position, @end_color @end_position);
-	// Opera 11.10 //
-	background-image: -o-linear-gradient(top, @start_color @start_position, @mid_color @mid_position, @end_color @end_position);
 	// IE6 & 7 //
     filter: e(%("progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=%d,endColorstr=%d)", @start_color, @end_color));
     // IE8 //
@@ -103,7 +66,7 @@
     // IE8 //
     -ms-filter: %("progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=%d, endColorstr=%d)", @start_color, @end_color);
 }
-	
+
 .five_stop_linear_gradient (@start_color, @quater_color, @mid_color, @quater3_color, @end_color) {
 	// default fallback //
 	background: @start_color;
@@ -118,7 +81,7 @@
     // IE8 //
     -ms-filter: %("progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=%d, endColorstr=%d)", @start_color, @end_color);
 }
-	
+
 // I know, I have to refactor this, this is kinda ugly ;(	
 // ---------------------
 .complex_gradient(@zero, @ten, @twentyfive, @thirtyseven, @fifty, @fiftyone, @eightythree, @onehndred) {
@@ -138,6 +101,46 @@
     -ms-filter: %("progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=%d, endColorstr=%d)", @zero, @onehndred);
 }
 
+
+
+// The following gradients are designed with variable color stops
+// It is recommended to use these to build reusable objects in the LESS
+// -------------------------------------------------------------------------------------
+.two_stop_linear_gradient_freestop (@start_color, @start_color_stop, @end_color, @end_color_stop) {
+	// default fallback //
+	background: @start_color;
+	// Mozilla browsers Firefox 3.6+ //
+	background: -moz-linear-gradient(top, @start_color @start_color_stop, @end_color @end_color_stop);
+	// Safari 4.0 //
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(@start_color_stop,@start_color), color-stop(@end_color_stop,@end_color));
+	// Safari 5.0 //
+	background: -webkit-linear-gradient(top, @start_color @start_color_stop, @end_color @end_color_stop);
+	// Opera 11.10 //
+	background-image: -o-linear-gradient(top, @start_color @start_color_stop, @end_color @end_color_stop);
+	// IE6 & 7 //
+    filter: e(%("progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=%d,endColorstr=%d)", @start_color, @end_color));
+    // IE8 //
+    -ms-filter: %("progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=%d, endColorstr=%d)", @start_color, @end_color);
+}
+
+// three color stop linear gradient with color stops set as variable 
+// --------------------------------------------------------------- 
+.three_stop_linear_gradient_freestop (@start_color, @start_color_stop, @mid_color, @mid_color_stop, @end_color, @end_color_stop) {
+	// default fallback //
+	background: @start_color;
+	// Mozilla browsers Firefox 3.6+ //
+	background: -moz-linear-gradient(top, @start_color @start_color_stop, @mid_color @mid_color_stop, @end_color @end_color_stop);
+	// Safari 4.0 //
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(@start_color_stop,@start_color), color-stop(@mid_color_stop,@mid_color), color-stop(@end_color_stop,@end_color));
+	// Safari 5.0 //
+	background: -webkit-linear-gradient(top, @start_color @start_color_stop, @mid_color @mid_color_stop, @end_color @end_color_stop);
+	// Opera 11.10 //
+	background-image: -o-linear-gradient(top, @start_color @start_color_stop, @mid_color @mid_color_stop, @end_color @end_color_stop);
+	// IE6 & 7 //
+    filter: e(%("progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=%d,endColorstr=%d)", @start_color, @end_color));
+    // IE8 //
+    -ms-filter: %("progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=%d, endColorstr=%d)", @start_color, @end_color);
+}
 //////// gradient arguments /////////
 
 
