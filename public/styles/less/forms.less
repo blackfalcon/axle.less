@@ -258,7 +258,7 @@ input[type=text], input[type=password], select, textarea, a.ui-selectmenu {
 	border: 1px solid @form_field_border;
 	background: @form_field_background_color;
 	.border_radius(5px);
-	padding: 6px 0 6px 10px;
+	padding: .4em 0 .4em 0.666667em;
 	width: 98%;
 	outline: none;
 	.field_input_spacing;
@@ -310,7 +310,7 @@ input[type=submit], input[type=button] {
 }
 
 textarea {
-	height: 250px;
+	height: 16.666667em;
 	font-family: Courier;
 }
 			
@@ -331,10 +331,10 @@ label {
 	.small;
 	font-weight: bold;
 	line-height: 1em;
-	margin-bottom: 4px;
+	margin-bottom: .5em;
 	span {
 		color: @delta_grey;
-		padding-left: 3px;
+		padding-left: .25em;
 		font-weight: normal;
 	}
 }
@@ -342,7 +342,7 @@ label {
 form {
 	dl {
 		+ p {
-			margin-bottom: 0px;
+			margin-bottom: 0;
 		}
 	}
 }
@@ -354,8 +354,8 @@ form {
 	.flexbox(horizontal, start, end, 100%, 100%);
 	.field_input_spacing;
 	li {
-		margin-right: 10px;
-		padding-right: 10px;
+		margin-right: .8333333em;
+		padding-right: .8333333em;
 	}
 	label {
 		display: inline-block;
@@ -371,7 +371,7 @@ form {
 	label {
 		display: inline-block;
 		font-weight: normal;
-		margin-bottom: 8px;
+		margin-bottom: .6666667em;
 		font-size: 1em;
 	}
 }
@@ -385,10 +385,11 @@ form {
 .pagination {
 	.flexbox(horizontal, end, center, 100%, 100%);
 	input[type=text] {
-		width: 22px;
+		width: 2em;
 		margin: 0px 8px !important;
-		padding-right: 6px;
+		padding-right: .4em;
 		border-color: @echo_grey;
+		text-align: center;
 	}
 	li.pagination_left {
 		.flex(1);
@@ -396,16 +397,16 @@ form {
 	li {
 		> ul {
 			.flexbox(horizontal, end, center, 100%, 100%);
-			margin: 0px;
+			margin: 0;
 			li {
 				line-height: 2.5em;
-				width: 32px;
+				width: 2.6666667em;
 				height: 2.83333em;
 				border: 1px solid @echo_grey;
 				.border_radius(5px);
 				.echo_color_gradient;
 				&:hover, &:active {
-					.box_shadow(inset fadeout(@alpha_grey, 80%), 0px 0px 10px 0px);
+					.box_shadow(inset fadeout(@alpha_grey, 80%), 0 0 .8333333em 0);
 				}
 			}
 			li {
@@ -420,18 +421,18 @@ form {
 				a {
 					border-color: transparent @bravo_grey transparent transparent;
 					border-style: solid;
-					border-width: 6px 11px 6px 0px;
+					border-width: .5em .91666667em .5em 0;
 					display: inline-block;
 					position: relative;
-					top: 5px;
-					left: 10px;
+					top: .41666667em;
+					left: .8333333em;
 				}
 			}
 			li  {
 				+ li  {
 					a {
 						border-color: transparent transparent transparent @bravo_grey;
-						border-width: 6px 0px 6px 11px;
+						border-width: .5em 0 .5em .91666667em;
 					}
 				}
 			}
