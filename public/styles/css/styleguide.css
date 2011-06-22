@@ -177,3 +177,19 @@ table tbody tr{line-height:30px;border-bottom:1px solid #d8d8d8;}table tbody tr:
 .styleguide.webkit li[class*=flgrid]{margin:0 1.05%;}
 .styleguide.gecko li[class*=flgrid]{margin:0 1%;}
 .gecko.styleguide pre{font-weight:normal;}
+.str{color:#EC7600;}
+.kwd{color:#93C763;}
+.com{color:#66747B;}
+.typ{color:#678CB1;}
+.lit{color:#FACD22;}
+.pun{color:#F1F2F3;}
+.pln{color:#F1F2F3;}
+.tag{color:#8AC763;}
+.atn{color:#E0E2E4;}
+.atv{color:#EC7600;}
+.dec{color:purple;}
+pre.prettyprint{border:0px solid #888;}
+ol.linenums{margin-top:0;margin-bottom:0;}
+.prettyprint{background:#252525;}
+li.L0,li.L1,li.L2,li.L3,li.L4,li.L5,li.L6,li.L7,li.L8,li.L9{color:#555;}
+li.L1,li.L3,li.L5,li.L7,li.L9{background:#3F3F3F;}

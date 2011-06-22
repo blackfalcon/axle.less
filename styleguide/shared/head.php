@@ -24,7 +24,6 @@
 	<link href="http://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="/public/styles/css/core.css"/>
 	<link rel="stylesheet" href="/public/styles/css/styleguide.css"/>
-	<link rel="stylesheet" href="/public/styles/css/prettify.css"/>
 
 	
 	<script src="http://code.jquery.com/jquery-1.6.1.js"></script>		<!-- v1.6.1 May 12 2011 -->
@@ -35,7 +34,7 @@
 	<script src="/public/javascripts/css_browser_selector.js"></script>	<!-- November 02, 2010 (v0.4.0) http://bit.ly/j5Jlwf -->
 	<script src="/public/javascripts/application.js"></script>			<!-- v1.0.0 -->
 	<script src="/styleguide/javascripts/axle.js"></script>				<!-- v.1.0.0 -->
-	<script src="/styleguide/javascripts/prettify.js"></script>				<!-- v.1.0.0 -->
+	<script src="/styleguide/javascripts/prettify.js"></script>			<!-- Packaged from revision 187 -->
 
 
 </head>
