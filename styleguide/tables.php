@@ -42,7 +42,7 @@
 			 	</tbody>
 			 </table> 
 			 <p>Example code:</p>
-			 <pre>
+			 <pre class="prettyprint">
 <span>&lt;table&gt;</span>
   <span>&lt;thead&gt;</span>
     &lt;tr&gt;

@@ -60,7 +60,7 @@ table tbody tr{line-height:30px;border-bottom:1px solid #d8d8d8;}table tbody tr:
 .styleguide .instructions{display:block;font-size:1.25em;font-weight:inherit;line-height:1.5em;}
 .styleguide code{padding:3px 6px;border:1px solid #252525;white-space:nowrap;}
 .styleguide article{float:left;width:100%;}
-.styleguide pre{background:#313131;padding:20px;-moz-border-radius:10px;-webkit-border-radius:10px;border-radius:10px;color:orange;font-size:1.25em;font-weight:inherit;line-height:1.5em;margin-bottom:20px;font-weight:bolder;}.styleguide pre span{color:white;}
+.styleguide pre{-moz-border-radius:10px;-webkit-border-radius:10px;border-radius:10px;font-size:1.25em;font-weight:inherit;line-height:1.5em;margin-bottom:20px;font-weight:bolder;padding:20px;}
 .styleguide .button_styleguide div{padding-bottom:10px;}
 .styleguide .form_styleguide pre{width:590px;overflow:auto;margin-left:0px;}
 .styleguide .form_styleguide .master_container{float:left;width:100%;}

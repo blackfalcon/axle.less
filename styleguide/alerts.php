@@ -10,9 +10,8 @@
 			<div class="alert-box">This is an alert. You may need to pay attention to this message.</div>
 		</article>
 		<p>Exmaple code:</p>
-		<pre>
-&lt;div <span>class=&quot;alert-box&quot;</span>&gt;This is an alert. You may need to pay attention to this message.&lt;/div&gt;
-		</pre>
+		<pre class="prettyprint">
+&lt;div <span>class=&quot;alert-box&quot;</span>&gt;This is an alert. You may need to pay attention to this message.&lt;/div&gt;</pre>
 		<footer></footer>
 		
 		<header>
@@ -22,9 +21,8 @@
 			<div class="success-box">Congratulations.  You have done something awesome.</div>
 		</article>
 		<p>Example code:</p>
-		<pre>
-&lt;div <span>class=&quot;success-box&quot;</span>&gt;Congratulations.  You have done something awesome.&lt;/div&gt;		
-		</pre>
+		<pre class="prettyprint">
+&lt;div <span>class=&quot;success-box&quot;</span>&gt;Congratulations.  You have done something awesome.&lt;/div&gt;</pre>
 		<footer></footer>
 		
 		<header>
@@ -34,9 +32,8 @@
 			<div class="error-box">Wow.  You are really doing it wrong.</div>
 		</article>
 		<p>Example code:</p>
-		<pre>
-&lt;div <span>class=&quot;error-box&quot;</span>&gt;Wow.  You are really doing it wrong.&lt;/div&gt;
-		</pre>
+		<pre class="prettyprint">
+&lt;div <span>class=&quot;error-box&quot;</span>&gt;Wow.  You are really doing it wrong.&lt;/div&gt;</pre>
 		<footer></footer>
 	</article>
 

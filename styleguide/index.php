@@ -73,8 +73,8 @@
 			<p>Using something like <code>.push_12(.5)</code> will push the block element 1/2 a grid (or 40px per this example).</p>
 			<p><b>Building a semantic block element class using mixins.</b></p>
 			<p><b>HTML Example:</b></p>
-			<pre>
-&lt;article <span>class=&quot;summary_quote&quot;</span>&gt;
+			<pre class="prettyprint">
+&lt;article class=&quot;summary_quote&quot;&gt;
   &lt;p&gt;Axle is not a CSS framework, but is more of a process in which to develop visual assets. The real power behind Axle is to develop your UI solution in an abstract environment from the application.&lt;/p&gt;
   &lt;p&gt;If you like OOCSS and crave real semantic markup, you will LOVE AXLE!&lt;/p&gt;
   &lt;blockquote&gt;BTW- axle.dalesande.com is fucking awesome&lt;/blockquote&gt;
@@ -82,19 +82,18 @@
 &lt;/article&gt;
 &lt;aside <span>class=&quot;home_twitter_feed&quot;</span>&gt;
   &lt;?php include 'partials/twitter.php'?&gt;
-&lt;/aside&gt;			
-			</pre>
+&lt;/aside&gt;</pre>
 			
 			<p><b>LESS Example:</b></p>
-			<pre>
-<span>.summary_quote</span> {
+			<pre class="prettyprint">
+.summary_quote {
   .large;
   .grid_12(7);
   float: left;
   .push_12(.25);
 }
 
-<span>.home_twitter_feed</span> {
+.home_twitter_feed {
   .grid_12(5);
   .box_shadow (0 0px 10px, @shadow_color);
   float: left; 

@@ -16,7 +16,7 @@
 			
 			<div class="right_content" id="">
 				<p>Exmaple code:</p>
-				<pre>
+				<pre class="prettyprint">
 &lt;label for=&quot;text_field&quot;&gt;This is a label&lt;span&gt;(optional)&lt;/span&gt;&lt;/label&gt;
 &lt;input type=&quot;text&quot; class=&quot;&quot; name=&quot;&quot; id=&quot;text_field&quot; value=&quot;&quot; /&gt;
 &lt;p <span>class=&quot;instructional&quot;</span>&gt;This is instructional text&lt;/p&gt;
@@ -41,7 +41,7 @@
 			<div class="right_content" id="">
 				<p>Add <code>.fail</code> class to &lt;input&gt; tag.</p>
 				<p>Exmaple code:</p>
-				<pre>
+				<pre class="prettyprint">
 &lt;label for=&quot;text_field&quot;&gt;This is a label&lt;span&gt;(optional)&lt;/span&gt;&lt;/label&gt;
 &lt;input type=&quot;text&quot; <span>class=&quot;fail&quot;</span> name=&quot;&quot; id=&quot;text_field&quot; value=&quot;&quot; /&gt;
 &lt;p <span>class=&quot;instructional&quot;</span>&gt;This is instructional text&lt;/p&gt;
@@ -64,7 +64,7 @@
 			<div class="right_content" id="">
 				<p>Append the <code>disabled</code> attribute to the &lt;input&gt; tag.</p>
 				<p>Exmaple code:</p>
-				<pre>
+				<pre class="prettyprint">
 &lt;label for=&quot;text_field&quot;&gt;This is a label&lt;span&gt;(optional)&lt;/span&gt;&lt;/label&gt;
 &lt;input type=&quot;text&quot; class=&quot;&quot; name=&quot;&quot; id=&quot;text_field&quot; value=&quot;&quot; <span>disabled=&quot;disabled&quot;</span> /&gt;
 &lt;p <span>class=&quot;instructional&quot;</span>&gt;This is instructional text&lt;/p&gt;
@@ -88,7 +88,7 @@
 			</fieldset>
 			<div class="right_content" id="">
 				<p>Exmaple code:</p>
-				<pre>
+				<pre class="prettyprint">
 &lt;label for=&quot;file&quot;&gt;This is a label&lt;span&gt;(optional)&lt;/span&gt;&lt;/label&gt;
 &lt;input type=&quot;file&quot; class=&quot;&quot; name=&quot;&quot; id=&quot;file&quot; value=&quot;&quot; /&gt;
 &lt;p <span>class=&quot;instructional&quot;</span>&gt;This is instructional text&lt;/p&gt;
@@ -112,7 +112,7 @@
 			<div class="right_content" id="">
 				<p>Add <code>.fail</code> class to &lt;input&gt; tag.</p>
 				<p>Exmaple code:</p>
-				<pre>
+				<pre class="prettyprint">
 &lt;label for=&quot;file&quot;&gt;This is a label&lt;span&gt;(optional)&lt;/span&gt;&lt;/label&gt;
 &lt;input type=&quot;file&quot; <span>class=&quot;fail&quot;</span> name=&quot;&quot; id=&quot;file&quot; value=&quot;&quot; /&gt;
 &lt;p <span>class=&quot;instructional&quot;</span>&gt;This is instructional text&lt;/p&gt;
@@ -133,7 +133,7 @@
 			</fieldset>
 			<div class="right_content" id="">
 				<p>Exmaple code:</p>
-				<pre>
+				<pre class="prettyprint">
 &lt;label for=&quot;file&quot;&gt;This is a label&lt;span&gt;(optional)&lt;/span&gt;&lt;/label&gt;
 &lt;input type=&quot;file&quot; class=&quot;&quot; name=&quot;&quot; id=&quot;file&quot; value=&quot;&quot; disabled=&quot;disabled&quot; /&gt;
 &lt;p <span>class=&quot;instructional&quot;</span>&gt;This is instructional text&lt;/p&gt;
@@ -164,7 +164,7 @@
 			</fieldset>
 			<div class="right_content" id="">
 				<p>Exmaple code:</p>
-				<pre>
+				<pre class="prettyprint">
 &lt;label for=&quot;select_list&quot;&gt;This is a label&lt;span&gt;(optional)&lt;/span&gt;&lt;/label&gt;
 &lt;span <span>class=&quot;custom-select&quot;</span>&gt;
   &lt;select id=&quot;select_list&quot;&gt;
@@ -202,7 +202,7 @@
 			<div class="right_content" id="">
 				<p>Add <code>.fail</code> class to &lt;span&gt; tag.</p>
 				<p>Exmaple code:</p>
-				<pre>
+				<pre class="prettyprint">
 &lt;label for=&quot;select_list_error&quot;&gt;This is a label&lt;span&gt;(optional)&lt;/span&gt;&lt;/label&gt;
 &lt;span <span>class=&quot;custom-select fail&quot;</span>&gt;
   &lt;select id=&quot;select_list_error&quot;&gt;
@@ -238,7 +238,7 @@
 			<div class="right_content" id="">
 				<p>Add attribute <code>disabled="disabled"</code> to &lt;select&gt; tag and the class <code>.disabled</code> to the parent &lt;span&gt; tag.</p>
 				<p>Exmaple code:</p>
-				<pre>
+				<pre class="prettyprint">
 &lt;label for=&quot;select_list_disabled&quot;&gt;This is a label&lt;span&gt;(optional)&lt;/span&gt;&lt;/label&gt;
 &lt;span <span>class=&quot;custom-select disabled&quot;</span>&gt;
   &lt;select id=&quot;select_list_disabled&quot; <span>disabled=&quot;disabled&quot;</span>&gt;
@@ -298,7 +298,7 @@
 			<div class="right_content" id="">
 				<p>Add <code>.horizontal_selectors</code> to the parent &lt;ul&gt; tag</p>
 				<p>Exmaple code: horizontal selectors</p>
-				<pre>
+				<pre class="prettyprint">
 &lt;label for=&quot;option_one&quot;&gt;This is a label&lt;span&gt;(optional)&lt;/span&gt;&lt;/label&gt;
 &lt;ul <span>class=&quot;horizontal_selectors&quot;</span>&gt;
   &lt;li&gt;
@@ -370,7 +370,7 @@
 			<div class="right_content" id="">
 				<p>Add <code>.fail</code> class to parent &lt;li&gt; tag.</p>
 				<p>Exmaple code: horizontal selectors</p>
-				<pre>
+				<pre class="prettyprint">
 &lt;label for=&quot;option_one&quot;&gt;This is a label&lt;span&gt;(optional)&lt;/span&gt;&lt;/label&gt;
 &lt;ul <span>class=&quot;horizontal_selectors&quot;</span>&gt;
   &lt;<span>li class=&quot;fail&quot;</span>&gt;
@@ -439,7 +439,7 @@
 			<div class="right_content" id="">
 				<p>Insert attribute <code>disabled="disabled"</code> to the disabled &lt;input&gt; tag</p>
 				<p>Exmaple code: horizontal selectors</p>
-				<pre>
+				<pre class="prettyprint">
 &lt;label for=&quot;option_one&quot;&gt;This is a label&lt;span&gt;(optional)&lt;/span&gt;&lt;/label&gt;
 &lt;ul <span>class=&quot;horizontal_selectors&quot;</span>&gt;
   &lt;li&gt;
@@ -516,7 +516,7 @@
 			<div class="right_content" id="">
 				<p>Add <code>.vertical_selectors</code> to the parent &lt;ul&gt; tag</p>
 				<p>Exmaple code: horizontal selectors</p>
-				<pre>
+				<pre class="prettyprint">
 &lt;label for=&quot;option_three&quot;&gt;This is a label&lt;span&gt;(optional)&lt;/span&gt;&lt;/label&gt;
 &lt;ul <span>class=&quot;vertical_selectors&quot;</span>&gt;
   &lt;li&gt;
@@ -590,7 +590,7 @@
 			<div class="right_content" id="">
 				<p>Add <code>.fail</code> class to parent &lt;li&gt; tags.</p>
 				<p>Exmaple code: horizontal selectors</p>
-				<pre>
+				<pre class="prettyprint">
 &lt;label for=&quot;option_three&quot;&gt;This is a label&lt;span&gt;(optional)&lt;/span&gt;&lt;/label&gt;
 &lt;ul class=&quot;vertical_selectors&quot;&gt;
   &lt;li <span>class=&quot;fail&quot;</span>&gt;
@@ -664,7 +664,7 @@
 			</fieldset>
 			<div class="right_content" id="">
 				<p>Exmaple code: vertical selectors</p>
-				<pre>
+				<pre class="prettyprint">
 &lt;label for=&quot;option_three&quot;&gt;This is a label&lt;span&gt;(optional)&lt;/span&gt;&lt;/label&gt;
 &lt;ul <span>class=&quot;vertical_selectors&quot;</span>&gt;
   &lt;li&gt;
@@ -710,7 +710,7 @@
 			</fieldset>
 			<div class="right_content" id="">
 			<p>Exmaple code: textarea</p>
-				<pre>
+				<pre class="prettyprint">
 &lt;label for=&quot;textarea&quot;&gt;This is a label&lt;span&gt;(optional)&lt;/span&gt;&lt;/label&gt;
 &lt;textarea id=&quot;textarea&quot;&gt;hello, I am text&lt;/textarea&gt;
 &lt;p <span>class=&quot;instructional&quot</span>;&gt;This is instructional text&lt;/p&gt;
@@ -735,7 +735,7 @@
 			<div class="right_content" id="">
 			<p>Add <code>.fail</code> class to the &lt;textarea&gt; tag.</p>
 			<p>Exmaple code: textarea</p>
-				<pre>
+				<pre class="prettyprint">
 &lt;label for=&quot;textarea&quot;&gt;This is a label&lt;span&gt;(optional)&lt;/span&gt;&lt;/label&gt;
 &lt;textarea id=&quot;textarea&quot; <span>class=&quot;fail&quot;</span>&gt;hello, I am text&lt;/textarea&gt;
 &lt;p <span>class=&quot;instructional&quot</span>;&gt;This is instructional text&lt;/p&gt;
@@ -759,7 +759,7 @@
 			</fieldset>
 			<div class="right_content" id="">
 			<p>Exmaple code: textarea</p>
-				<pre>
+				<pre class="prettyprint">
 &lt;label for=&quot;textarea&quot;&gt;This is a label&lt;span&gt;(optional)&lt;/span&gt;&lt;/label&gt;
 &lt;textarea id=&quot;textarea&quot; <span>disabled=&quot;disabled&quot;</span>&gt;hello, I am text&lt;/textarea&gt;
 &lt;p <span>class=&quot;instructional&quot</span>&gt;This is instructional text&lt;/p&gt;
@@ -779,7 +779,7 @@
 			<div class="right_content" id="">
 				<p><b>Note: </b>Larger form UI is created when appending the mixin of <code>.large_form</code> to the class of the parent container.</p>
 				<p>Example code:</p>
-				<pre>
+				<pre class="prettyprint">
 &lt;style&gt;
   .foo_form {
     .large_form

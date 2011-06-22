@@ -32,7 +32,7 @@
 			<p>Only default spacing is surrounding this element.  Over-ride at the screen template level as needed.</p>
 			<p>Example code:</p>
 			
-			<pre>
+			<pre class="prettyprint">
 &lt;ul <span>class=&quot;pagination linkBox&quot;</span>&gt;
   &lt;li <span>class=&quot;pagination_left&quot;</span>&gt;
     &lt;h4&gt;This is a title&lt;/h4&gt;
@@ -80,7 +80,7 @@
 			<p>Following the same pattern as above, simply remove the &lt;li class=&quot;pagination_left&quot;&gt; block and the CSS will address the rest.</p>
 			<p>Example code:</p>
 			
-			<pre>
+			<pre class="prettyprint">
 &lt;ul <span>class=&quot;pagination linkBox&quot;</span>&gt;
   &lt;li&gt;Page&lt;/li&gt;
   &lt;li&gt;&lt;input type=&quot;text&quot; title=&quot;tool tip message&quot;  <span>maxlength=&quot;3&quot;</span>/&gt;&lt;/li&gt;

@@ -32,7 +32,7 @@
 				<p>Example use case.  The navigation for Axle is using <a href="http://html5.dalesande.com/are.php">flex-box</a>.  This is a super awesome tool and I encourage everybody to use it.  But ... isn't supported in all browsers.  What do you do?</p>
 				<p>With modernizer installed, it will place a class attribute in your <code>&lt;html&gt;</code> tag of ether <code>flexbox</code> or <code>no-flexbox</code>.</p>
 				<p>I prefer to code in the mindset that the feature I am developing for exists, then engineer the fallback solution. So for the nav, I used <code>flex-box</code> then hooking off the existing tags in the DOM, I engineered this fallback.</p>
-				<pre>
+				<pre class="prettyprint">
 // ---------------------------------------
 .no-flexbox {
   .site_navigation, .body_navbar, .body_call_to_action {
@@ -76,7 +76,7 @@
 				<h3>One more thing ...</h3>
 				<p><a href="http://rafael.adm.br/css_browser_selector/">CSS Browser Selector</a>.  While not an exciting name, it is an awesome tool and I am very happy to support it.</p>
 				<p>While modernizer is totally awesome and I 100% support this concept, there will be times when you need to target the browser specifically.  html5 boilerplate supports this with the following code from <a href="http://paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/">Paul</a>:</p>
-				<pre>
+				<pre class="prettyprint">
 &lt;!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ --&gt;
 &lt;!--[if lt IE 7]&gt; &lt;html class=&quot;no-js ie6&quot; lang=&quot;en&quot;&gt; &lt;![endif]--&gt;
 &lt;!--[if IE 7]&gt;    &lt;html class=&quot;no-js ie7&quot; lang=&quot;en&quot;&gt; &lt;![endif]--&gt;
@@ -84,7 +84,7 @@
 &lt;!--[if gt IE 8]&gt;&lt;!--&gt;  &lt;html class=&quot;no-js&quot; lang=&quot;en&quot;&gt; &lt;!--&lt;![endif]--&gt;				
 				</pre>
 				<p>I never found this to be all that awesome. I never want to write conditional comments or any IE hack for that matter ever again.  So, enter <a href="http://rafael.adm.br/css_browser_selector/">CSS Browser Selector</a>.  This very simple script works in the same way that modernizer does. It will place selectors in the <code>&lt;html&gt;</code> tag. Like the following:</p>
-				<pre>
+				<pre class="prettyprint">
 &lt;html class=&quot; webkit chrome mac js&quot;&gt;
 				</pre>
 				<p>From here, you can hook off of a selector much like you would using modernizer. This is a last resort option.  Use sparingly as most of the time when a UI isn't working as expected, there is a better way.  The more 'browser' specific work you need to do, the harder your app is to maintain.  </p>

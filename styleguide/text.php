@@ -28,23 +28,21 @@
 			<h4>H4: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere malesuada adipiscing.</h4>
 			<h5>H5: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere malesuada adipiscing.</h5>
 			<p><b>OOCSS Example:</b></p>
-			<pre>
+			<pre class="prettyprint">
 &lt;div <span>class=&quot;home_page_hero google_font_alpha&quot;</span>&gt;
   &lt;h1&gt;H1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere malesuada adipiscing.&lt;/h1&gt;
 &lt;/div&gt;
 			</pre>
 			<p><b>Semantic .LESS approach</b></p>
-			<pre>
-.LESS
-<span>.home_page_hero</span> {
-	<span>.google_font_alpha;</span>
-}
-
-HTML
-&lt;div <span>class=&quot;home_page_hero&quot;</span> id=&quot;&quot;&gt;
-	&lt;h1&gt;This .LESS stuff is pretty awesome!&lt;/h1&gt;
-&lt;/div&gt;
-			</pre>
+			<pre class="prettyprint">
+.home_page_hero {
+  .google_font_alpha;
+}</pre>
+			<p><b>Supporting markup</b></p>
+			<pre class="prettyprint">
+&lt;div class=&quot;home_page_hero&quot;&gt;
+  &lt;h1&gt;This LESS stuff is pretty awesome!&lt;/h1&gt;
+&lt;/div&gt;</pre>
 		</article>
 		<footer></footer>
 
@@ -85,7 +83,7 @@ HTML
 			<blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</blockquote>
 			<p><cite>-- Some guy</cite></p>
 			<br>
-			<pre>
+			<pre class="prettyprint">
 &lt;blockquote&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;/blockquote&gt;
 &lt;p&gt;&lt;cite&gt;-- Some guy&lt;/cite&gt;&lt;/p&gt;
 			</pre>
@@ -104,7 +102,7 @@ HTML
 				<li>List item three</li>
 				<li>List item four</li>
 			</ul>
-			<pre>
+			<pre class="prettyprint">
 &lt;div <span>class=&quot;lower_container&quot;</span>&gt;
   &lt;ul&gt;
     &lt;li&gt;List item one&lt;/li&gt;
