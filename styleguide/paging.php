@@ -33,12 +33,12 @@
 			<p>Example code:</p>
 			
 			<pre class="prettyprint">
-&lt;ul <span>class=&quot;pagination linkBox&quot;</span>&gt;
-  &lt;li <span>class=&quot;pagination_left&quot;</span>&gt;
+&lt;ul class=&quot;pagination linkBox&quot;</span>&gt;
+  &lt;li class=&quot;pagination_left&quot;</span>&gt;
     &lt;h4&gt;This is a title&lt;/h4&gt;
   &lt;/li&gt;
   &lt;li&gt;Page&lt;/li&gt;
-  &lt;li&gt;&lt;input type=&quot;text&quot; title=&quot;tool tip message&quot; <span>maxlength=&quot;3&quot;</span>/&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;input type=&quot;text&quot; title=&quot;tool tip message&quot; maxlength=&quot;3&quot;</span>/&gt;&lt;/li&gt;
   &lt;li&gt;of XX&lt;/li&gt;
   &lt;li&gt;
     &lt;ul&gt;
@@ -81,9 +81,9 @@
 			<p>Example code:</p>
 			
 			<pre class="prettyprint">
-&lt;ul <span>class=&quot;pagination linkBox&quot;</span>&gt;
+&lt;ul class=&quot;pagination linkBox&quot;</span>&gt;
   &lt;li&gt;Page&lt;/li&gt;
-  &lt;li&gt;&lt;input type=&quot;text&quot; title=&quot;tool tip message&quot;  <span>maxlength=&quot;3&quot;</span>/&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;input type=&quot;text&quot; title=&quot;tool tip message&quot;  maxlength=&quot;3&quot;</span>/&gt;&lt;/li&gt;
   &lt;li&gt;of XX&lt;/li&gt;
   &lt;li&gt;
     &lt;ul&gt;

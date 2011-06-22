@@ -43,8 +43,8 @@
 			 </table> 
 			 <p>Example code:</p>
 			 <pre class="prettyprint">
-<span>&lt;table&gt;</span>
-  <span>&lt;thead&gt;</span>
+&lt;table&gt;</span>
+  &lt;thead&gt;</span>
     &lt;tr&gt;
       &lt;th&gt;header&lt;/th&gt;
       &lt;th&gt;header&lt;/th&gt;
@@ -54,7 +54,7 @@
       &lt;th&gt;header&lt;/th&gt;
     &lt;/tr&gt;
   &lt;/thead&gt;
-  <span>&lt;tbody&gt;</span>
+  &lt;tbody&gt;</span>
     &lt;tr&gt;
       &lt;td&gt;body&lt;/td&gt;
       &lt;td&gt;body&lt;/td&gt;

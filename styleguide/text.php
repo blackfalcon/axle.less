@@ -29,7 +29,7 @@
 			<h5>H5: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere malesuada adipiscing.</h5>
 			<p><b>OOCSS Example:</b></p>
 			<pre class="prettyprint">
-&lt;div <span>class=&quot;home_page_hero google_font_alpha&quot;</span>&gt;
+&lt;div class=&quot;home_page_hero google_font_alpha&quot;</span>&gt;
   &lt;h1&gt;H1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere malesuada adipiscing.&lt;/h1&gt;
 &lt;/div&gt;
 			</pre>
@@ -56,14 +56,14 @@
 			</article>
 		</header>
 		<article class="body_text">
-			<p class="extra_small"><span>class="extra_small"</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dolor diam, condimentum gravida ultricies non, sollicitudin eget nunc.</p>
-			<p class="small"><span>class="small"</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dolor diam, condimentum gravida ultricies non, sollicitudin eget nunc.</p>
-			<p class="medium"><span>class="medium" (default site style)</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dolor diam, condimentum gravida ultricies non, sollicitudin eget nunc.</p>
+			<p class="extra_small">class="extra_small"</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dolor diam, condimentum gravida ultricies non, sollicitudin eget nunc.</p>
+			<p class="small">class="small"</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dolor diam, condimentum gravida ultricies non, sollicitudin eget nunc.</p>
+			<p class="medium">class="medium" (default site style)</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dolor diam, condimentum gravida ultricies non, sollicitudin eget nunc.</p>
 		</article>
 		<article class="body_text">
-			<p class="large"><span>class="large"</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dolor diam, condimentum gravida ultricies non, sollicitudin eget nunc.</p>
-			<p class="extra_large"><span>class="extra_large"</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dolor diam, condimentum gravida ultricies non, sollicitudin eget nunc.</p>
-			<p class="xx_large"><span>class="xx_large"</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dolor diam, condimentum gravida ultricies non, sollicitudin eget nunc.</p>
+			<p class="large">class="large"</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dolor diam, condimentum gravida ultricies non, sollicitudin eget nunc.</p>
+			<p class="extra_large">class="extra_large"</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dolor diam, condimentum gravida ultricies non, sollicitudin eget nunc.</p>
+			<p class="xx_large">class="xx_large"</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dolor diam, condimentum gravida ultricies non, sollicitudin eget nunc.</p>
 		</article>
 		<footer></footer>
 		
@@ -103,7 +103,7 @@
 				<li>List item four</li>
 			</ul>
 			<pre class="prettyprint">
-&lt;div <span>class=&quot;lower_container&quot;</span>&gt;
+&lt;div class=&quot;lower_container&quot;</span>&gt;
   &lt;ul&gt;
     &lt;li&gt;List item one&lt;/li&gt;
     &lt;li&gt;List item two&lt;/li&gt;

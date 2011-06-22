@@ -28,13 +28,13 @@
 				<p>All buttons by default assume this style.  Apply the <code>disabled="disabled"</code> attribute to the buttons rendered useless to the user.</p>
 				<p>Example code:</p>
 				<pre class="prettyprint">
-&lt;button&gt;Button text&lt;/button&gt;&lt;button&gt;Button text&lt;/button&gt;&lt;button <span>disabled=&quot;disabled&quot;</span>&gt;Button text&lt;/button&gt;
+&lt;button&gt;Button text&lt;/button&gt;&lt;button&gt;Button text&lt;/button&gt;&lt;button disabled=&quot;disabled&quot;</span>&gt;Button text&lt;/button&gt;
 
-&lt;input <span>type=&quot;submit&quot;</span> value=&quot;Button text&quot;&gt;&lt;input <span>type=&quot;submit&quot;</span> value=&quot;Button text&quot;&gt;&lt;<span>input type=&quot;submit&quot;</span> value=&quot;Button text&quot; <span>disabled=&quot;disabled&quot;</span>&gt;
+&lt;input type=&quot;submit&quot;</span> value=&quot;Button text&quot;&gt;&lt;input type=&quot;submit&quot;</span> value=&quot;Button text&quot;&gt;&lt;input type=&quot;submit&quot;</span> value=&quot;Button text&quot; disabled=&quot;disabled&quot;</span>&gt;
 
-&lt;input <span>type=&quot;button&quot;</span> value=&quot;Button text&quot;&gt;&lt;input <span>type=&quot;button&quot;</span> value=&quot;Button text&quot;&gt;&lt;<span>input type=&quot;button&quot;</span> value=&quot;Button text&quot; <span>disabled=&quot;disabled&quot;</span>&gt;
+&lt;input type=&quot;button&quot;</span> value=&quot;Button text&quot;&gt;&lt;input type=&quot;button&quot;</span> value=&quot;Button text&quot;&gt;&lt;input type=&quot;button&quot;</span> value=&quot;Button text&quot; disabled=&quot;disabled&quot;</span>&gt;
 
-&lt;a href=&quot;#&quot; <span>class=&quot;button&quot;</span>&gt;Button text&lt;/a&gt;&lt;a href=&quot;#&quot; <span>class=&quot;button&quot;</span>&gt;Button text&lt;/a&gt;&lt;a href=&quot;#&quot; <span>class=&quot;button&quot;</span><span>id=&quot;disabled&quot;</span>&gt;Button text&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;button&quot;</span>&gt;Button text&lt;/a&gt;&lt;a href=&quot;#&quot; class=&quot;button&quot;</span>&gt;Button text&lt;/a&gt;&lt;a href=&quot;#&quot; class=&quot;button&quot;</span>id=&quot;disabled&quot;</span>&gt;Button text&lt;/a&gt;
 				</pre>
 			</div>
 		</article>
@@ -61,16 +61,16 @@
 				<p><p>Place the <code>.cancel_buttons</code> class on the parent block.</p>
 				<p>Example code:</p>
 				<pre class="prettyprint">
-&lt;div <span>class=&quot;cancel_buttons&quot;</span> id=&quot;&quot;&gt;
+&lt;div class=&quot;cancel_buttons&quot;</span> id=&quot;&quot;&gt;
   &lt;button&gt;Button text&lt;/button&gt;&lt;button&gt;Cancel&lt;/button&gt;&lt;button disabled=&quot;disabled&quot;&gt;Disabled cancel&lt;/button&gt;
 &lt;/div&gt;
-&lt;div <span>class=&quot;cancel_buttons&quot;</span> id=&quot;&quot;&gt;
+&lt;div class=&quot;cancel_buttons&quot;</span> id=&quot;&quot;&gt;
   &lt;input type=&quot;submit&quot; value=&quot;Button text&quot;&gt;&lt;input type=&quot;submit&quot; value=&quot;Cancel&quot;&gt;&lt;input type=&quot;submit&quot; value=&quot;Disabled cancel&quot; disabled=&quot;disabled&quot;&gt;
 &lt;/div&gt;
-&lt;div <span>class=&quot;cancel_buttons&quot;</span> id=&quot;&quot;&gt;
+&lt;div class=&quot;cancel_buttons&quot;</span> id=&quot;&quot;&gt;
   &lt;input type=&quot;button&quot; value=&quot;Button text&quot;&gt;&lt;input type=&quot;button&quot; value=&quot;Cancel&quot;&gt;&lt;input type=&quot;button&quot; value=&quot;Disabled cancel&quot; disabled=&quot;disabled&quot;&gt;
 &lt;/div&gt;
-&lt;div <span>class=&quot;cancel_buttons&quot;</span> id=&quot;&quot;&gt;
+&lt;div class=&quot;cancel_buttons&quot;</span> id=&quot;&quot;&gt;
   &lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Button text&lt;/a&gt;&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Cancel&lt;/a&gt;&lt;a href=&quot;#&quot; class=&quot;button&quot; id=&quot;disabled&quot;&gt;Disabled cancel&lt;/a&gt;
 &lt;/div&gt;
 				</pre>
@@ -98,16 +98,16 @@
 				<p>To have all your buttons appear with the Primary style, use the class <code>.primary_buttons</code> in the parent block element.</p>
 				<p>Example code:</p>
 				<pre class="prettyprint">
-&lt;div <span>class=&quot;primary_buttons&quot;</span> id=&quot;&quot;&gt;
+&lt;div class=&quot;primary_buttons&quot;</span> id=&quot;&quot;&gt;
   &lt;button&gt;Button text&lt;/button&gt;&lt;button&gt;Button text&lt;/button&gt;&lt;button disabled=&quot;disabled&quot;&gt;Button text&lt;/button&gt;
 &lt;/div&gt;
-&lt;div <span>class=&quot;primary_buttons&quot;</span> id=&quot;&quot;&gt;
+&lt;div class=&quot;primary_buttons&quot;</span> id=&quot;&quot;&gt;
   &lt;input type=&quot;submit&quot; value=&quot;Button text&quot;&gt;&lt;input type=&quot;submit&quot; value=&quot;Button text&quot;&gt;&lt;input type=&quot;submit&quot; value=&quot;Button text&quot; disabled=&quot;disabled&quot;&gt;
 &lt;/div&gt;
-&lt;div <span>class=&quot;primary_buttons&quot;</span> id=&quot;&quot;&gt;
+&lt;div class=&quot;primary_buttons&quot;</span> id=&quot;&quot;&gt;
   &lt;input type=&quot;button&quot; value=&quot;Button text&quot;&gt;&lt;input type=&quot;button&quot; value=&quot;Button text&quot;&gt;&lt;input type=&quot;button&quot; value=&quot;Button text&quot; disabled=&quot;disabled&quot;&gt;
 &lt;/div&gt;
-&lt;div <span>class=&quot;primary_buttons&quot;</span> id=&quot;&quot;&gt;
+&lt;div class=&quot;primary_buttons&quot;</span> id=&quot;&quot;&gt;
   &lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Button text&lt;/a&gt;&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Button text&lt;/a&gt;&lt;a href=&quot;#&quot; class=&quot;button&quot; id=&quot;disabled&quot;&gt;Button text&lt;/a&gt;
 &lt;/div&gt;
 				</pre>
@@ -139,21 +139,21 @@
 				<p>Place the <code>.secondary_buttons</code> class on the parent block</p>
 				<p>Example code:</p>
 				<pre class="prettyprint">
-&lt;div <span>class=&quot;secondary_buttons&quot;</span>&gt;
+&lt;div class=&quot;secondary_buttons&quot;</span>&gt;
 	&lt;button&gt;Button text&lt;/button&gt;&lt;button&gt;Button text&lt;/button&gt;&lt;button disabled=&quot;disabled&quot;&gt;Button text&lt;/button&gt;
 &lt;/div&gt;
-&lt;div <span>class=&quot;secondary_buttons&quot;</span>&gt;
+&lt;div class=&quot;secondary_buttons&quot;</span>&gt;
 	&lt;input type=&quot;submit&quot; value=&quot;Button text&quot;&gt;&lt;input type=&quot;submit&quot; value=&quot;Button text&quot;&gt;&lt;input type=&quot;submit&quot; value=&quot;Button text&quot; disabled=&quot;disabled&quot;&gt;
 &lt;/div&gt;
-&lt;div <span>class=&quot;secondary_buttons&quot;</span>&gt;
+&lt;div class=&quot;secondary_buttons&quot;</span>&gt;
 	&lt;input type=&quot;button&quot; value=&quot;Button text&quot;&gt;&lt;input type=&quot;button&quot; value=&quot;Button text&quot;&gt;&lt;input type=&quot;button&quot; value=&quot;Button text&quot; disabled=&quot;disabled&quot;&gt;
 &lt;/div&gt;
-&lt;div <span>class=&quot;secondary_buttons&quot;</span>&gt;
+&lt;div class=&quot;secondary_buttons&quot;</span>&gt;
 	&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Button text&lt;/a&gt;&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Button text&lt;/a&gt;&lt;a href=&quot;#&quot; class=&quot;button&quot; id=&quot;disabled&quot;&gt;Button text&lt;/a&gt;
 &lt;/div&gt;
 
 // cancel option ~
-&lt;div <span>class=&quot;secondary_buttons cancel_buttons&quot;</span> id=&quot;&quot;&gt;
+&lt;div class=&quot;secondary_buttons cancel_buttons&quot;</span> id=&quot;&quot;&gt;
   &lt;button&gt;Button text&lt;/button&gt;&lt;button&gt;Cancel&lt;/button&gt;&lt;button disabled=&quot;disabled&quot;&gt;Disabled cancel&lt;/button&gt;
 &lt;/div&gt;
 				</pre>
@@ -175,12 +175,12 @@
 				<p>The small primary button will assume the default <buttom> style.  Apply the <code>.small_buttons</code> class to a parent block element to reduce the appearance.  </p>
 				<p>Example code:</p>
 				<pre class="prettyprint">
-&lt;div <span>class=&quot;small_buttons&quot;</span>&gt;
+&lt;div class=&quot;small_buttons&quot;</span>&gt;
 	&lt;button&gt;Button text&lt;/button&gt;&lt;button&gt;Button text&lt;/button&gt;&lt;button disabled=&quot;disabled&quot;&gt;Button text&lt;/button&gt;
 &lt;/div&gt;
 
 // cancel option ~
-&lt;div <span>class=&quot;small_buttons cancel_buttons&quot;</span> id=&quot;&quot;&gt;
+&lt;div class=&quot;small_buttons cancel_buttons&quot;</span> id=&quot;&quot;&gt;
   &lt;button&gt;Button text&lt;/button&gt;&lt;button&gt;Button text&lt;/button&gt;&lt;button disabled=&quot;disabled&quot;&gt;Button text&lt;/button&gt;
 &lt;/div&gt;
 				</pre>
@@ -201,12 +201,12 @@
 				<p>The small secondary button requires two class modifications.<br>Apply the <code>.secondary_buttons</code> and <code>.small_button</code> classes to a parent block element for this UI.</p>
 				<p>Example code:</p>
 				<pre class="prettyprint">
-&lt;div <span>class=&quot;secondary_buttons small_buttons&quot;</span>&gt;
+&lt;div class=&quot;secondary_buttons small_buttons&quot;</span>&gt;
 	&lt;button&gt;Button text&lt;/button&gt;&lt;button&gt;Button text&lt;/button&gt;&lt;button disabled=&quot;disabled&quot;&gt;Button text&lt;/button&gt;
 &lt;/div&gt;
 
 // cancel option ~
-&lt;div <span>class=&quot;secondary_buttons small_buttons cancel_buttons&quot;</span> id=&quot;&quot;&gt;
+&lt;div class=&quot;secondary_buttons small_buttons cancel_buttons&quot;</span> id=&quot;&quot;&gt;
   &lt;button&gt;Button text&lt;/button&gt;&lt;button&gt;Button text&lt;/button&gt;&lt;button disabled=&quot;disabled&quot;&gt;Button text&lt;/button&gt;
 &lt;/div&gt;
 				</pre>
@@ -233,7 +233,7 @@
 &lt;button&gt;Button text&lt;/button&gt;&lt;button&gt;Button text&lt;/button&gt;&lt;button&gt;Button text&lt;/button&gt;&lt;button disabled=&quot;disabled&quot;&gt;Button text&lt;/button&gt;
 
 // cancel option ~
-&lt;div <span>class=&quot;cancel_buttons&quot;</span> id=&quot;&quot;&gt;
+&lt;div class=&quot;cancel_buttons&quot;</span> id=&quot;&quot;&gt;
   &lt;button&gt;Button text&lt;/button&gt;&lt;button&gt;Button text&lt;/button&gt;&lt;button&gt;Button text&lt;/button&gt;&lt;button disabled=&quot;disabled&quot;&gt;Button text&lt;/button&gt;
 &lt;/div&gt;
 					</pre>
@@ -256,12 +256,12 @@
 				<p>Example code:</p>
 				<p>
 					<pre class="prettyprint">
-&lt;div <span>class=&quot;dual_primary_buttons&quot;</span>&gt;
+&lt;div class=&quot;dual_primary_buttons&quot;</span>&gt;
 	&lt;button&gt;Button text&lt;/button&gt;&lt;button&gt;Button text&lt;/button&gt;&lt;button&gt;Button text&lt;/button&gt;&lt;button disabled=&quot;disabled&quot;&gt;Button text&lt;/button&gt;
 &lt;/div&gt;
 
 // cancel option ~
-&lt;div <span>class=&quot;dual_primary_cancel_buttons&quot;</span> id=&quot;&quot;&gt;
+&lt;div class=&quot;dual_primary_cancel_buttons&quot;</span> id=&quot;&quot;&gt;
   &lt;button&gt;Button text&lt;/button&gt;&lt;button&gt;Button text&lt;/button&gt;&lt;button&gt;Button text&lt;/button&gt;&lt;button disabled=&quot;disabled&quot;&gt;Button text&lt;/button&gt;
 &lt;/div&gt;
 					</pre>
@@ -278,14 +278,14 @@
 			<p>Example code:</p>
 				<p>
 					<pre class="prettyprint">
-&lt;div <span>class=&quot;reverse_primary_buttons&quot;</span>&gt;
+&lt;div class=&quot;reverse_primary_buttons&quot;</span>&gt;
 	&lt;button&gt;Button text&lt;/button&gt;&lt;button&gt;Button text&lt;/button&gt;&lt;button&gt;Button text&lt;/button&gt;&lt;button disabled=&quot;disabled&quot;&gt;Button text&lt;/button&gt;
 &lt;/div&gt;
 
 or
 
 &lt;div&gt;
-  &lt;p <span>class=&quot;reverse_primary_button&quot;</span>&gt;
+  &lt;p class=&quot;reverse_primary_button&quot;</span>&gt;
     &lt;button&gt;Button text&lt;/button&gt;&lt;button&gt;Button text&lt;/button&gt;&lt;button&gt;Button text&lt;/button&gt;&lt;button disabled=&quot;disabled&quot;&gt;Button text&lt;/button&gt;
   &lt;/p&gt;
 &lt;/div&gt;
@@ -308,7 +308,7 @@ or
 				<p>To produce a series of buttons, simply concatenate a series of &lt;button&gt; tags.  The <code>disabled="disabled"</code> attribute is required to apply the disabled UI. For the smaller buttons, place the <code>.small_buttons</code> class on a parent container.</p>
 				<p>Example code:</p>
 				<pre class="prettyprint">
-&lt;div <span>class=&quot;small_buttons&quot;</span>&gt;
+&lt;div class=&quot;small_buttons&quot;</span>&gt;
 	&lt;button&gt;Button text&lt;/button&gt;&lt;button&gt;Button text&lt;/button&gt;&lt;button&gt;Button text&lt;/button&gt;&lt;button disabled=&quot;disabled&quot;&gt;Button text&lt;/button&gt;
 &lt;/div&gt;
 				</pre>
@@ -324,14 +324,14 @@ or
 				<p>To produce an alternate series of buttons whereas the first (2) buttons carry over the primary UI style, simply concatenate a series of &lt;button&gt; tags.  IMPORTANT! you will need to place a <code>.dual_primary_buttons_small</code> class in the directly preceding parent.  The <code>disabled="disabled"</code> attribute is required to apply the disabled UI. </p>
 				<p>Example code:</p>
 					<pre class="prettyprint">
-&lt;div <span>class=&quot;dual_primary_buttons_small&quot;</span>&gt;
+&lt;div class=&quot;dual_primary_buttons_small&quot;</span>&gt;
 	&lt;button&gt;Button text&lt;/button&gt;&lt;button&gt;Button text&lt;/button&gt;&lt;button&gt;Button text&lt;/button&gt;&lt;button disabled=&quot;disabled&quot;&gt;Button text&lt;/button&gt;
 &lt;/div&gt;
 
 or
 
 &lt;div&gt;
-  &lt;p <span>class=&quot;dual_primary_buttons_small&quot;</span>&gt;
+  &lt;p class=&quot;dual_primary_buttons_small&quot;</span>&gt;
     &lt;button&gt;Button text&lt;/button&gt;&lt;button&gt;Button text&lt;/button&gt;&lt;button&gt;Button text&lt;/button&gt;&lt;button disabled=&quot;disabled&quot;&gt;Button text&lt;/button&gt;
   &lt;/p&gt;
 &lt;/div&gt;
@@ -348,14 +348,14 @@ or
 				<p>To produce an alternate series of buttons whereas the first (2) buttons carry over the primary UI style, simply concatenate a series of &lt;button&gt; tags.  IMPORTANT! you will need to place a <code>.dual_primary_buttons_small</code> class in the directly preceding parent.  The <code>disabled="disabled"</code> attribute is required to apply the disabled UI. </p>
 				<p>Example code:</p>
 					<pre class="prettyprint">
-&lt;div <span>class=&quot;reverse_primary_buttons_small&quot;</span>&gt;
+&lt;div class=&quot;reverse_primary_buttons_small&quot;</span>&gt;
 	&lt;button&gt;Button text&lt;/button&gt;&lt;button&gt;Button text&lt;/button&gt;&lt;button&gt;Button text&lt;/button&gt;&lt;button disabled=&quot;disabled&quot;&gt;Button text&lt;/button&gt;
 &lt;/div&gt;
 
 or
 
 &lt;div&gt;
-  &lt;p <span>class=&quot;reverse_primary_buttons_small&quot;</span>&gt;
+  &lt;p class=&quot;reverse_primary_buttons_small&quot;</span>&gt;
     &lt;button&gt;Button text&lt;/button&gt;&lt;button&gt;Button text&lt;/button&gt;&lt;button&gt;Button text&lt;/button&gt;&lt;button disabled=&quot;disabled&quot;&gt;Button text&lt;/button&gt;
   &lt;/p&gt;
 &lt;/div&gt;
@@ -384,11 +384,11 @@ or
 				<p>Clicking a button will dynamically add the <code>.active</code> class to the &lt;button&gt; tag.</p>
 				<p>Example code:</p>
 				<pre class="prettyprint">
-&lt;button <span>class=&quot;active&quot;</span>&gt;Button text&lt;/button&gt;&lt;button&gt;Button text&lt;/button&gt;&lt;button disabled=&quot;disabled&quot;&gt;Button text&lt;/button&gt;
+&lt;button class=&quot;active&quot;</span>&gt;Button text&lt;/button&gt;&lt;button&gt;Button text&lt;/button&gt;&lt;button disabled=&quot;disabled&quot;&gt;Button text&lt;/button&gt;
 
-&lt;input type=&quot;submit&quot; value=&quot;Button text&quot; <span>class=&quot;active&quot;</span>&gt;&lt;input type=&quot;submit&quot; value=&quot;Button text&quot; class=&quot;&quot;&gt;&lt;input type=&quot;submit&quot; value=&quot;Button text&quot; disabled=&quot;disabled&quot;&gt;
+&lt;input type=&quot;submit&quot; value=&quot;Button text&quot; class=&quot;active&quot;</span>&gt;&lt;input type=&quot;submit&quot; value=&quot;Button text&quot; class=&quot;&quot;&gt;&lt;input type=&quot;submit&quot; value=&quot;Button text&quot; disabled=&quot;disabled&quot;&gt;
 
-&lt;a href=&quot;#&quot; <span>class=&quot;button active&quot;</span>&gt;Button text&lt;/a&gt;&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Button text&lt;/a&gt;&lt;a href=&quot;#&quot; spanclass=&quot;button&quot; id=&quot;disabled&quot;&gt;Button text&lt;/a&gt;
+&lt;a href=&quot;#&quot; class=&quot;button active&quot;</span>&gt;Button text&lt;/a&gt;&lt;a href=&quot;#&quot; class=&quot;button&quot;&gt;Button text&lt;/a&gt;&lt;a href=&quot;#&quot; spanclass=&quot;button&quot; id=&quot;disabled&quot;&gt;Button text&lt;/a&gt;
 				</pre>
 			</div>
 		</article>
@@ -412,8 +412,8 @@ or
 			</div>
 			<p>Example code:</p>
 			<pre class="prettyprint">
-&lt;div <span>class=&quot;small_buttons&quot;</span>&gt;
-  &lt;button <span>class=&quot;active&quot;</span>&gt;Button text&lt;/button&gt;&lt;button&gt;Button text&lt;/button&gt;&lt;button disabled=&quot;disabled&quot;&gt;Button text&lt;/button&gt;
+&lt;div class=&quot;small_buttons&quot;</span>&gt;
+  &lt;button class=&quot;active&quot;</span>&gt;Button text&lt;/button&gt;&lt;button&gt;Button text&lt;/button&gt;&lt;button disabled=&quot;disabled&quot;&gt;Button text&lt;/button&gt;
 &lt;/div&gt;
 			</pre>
 		</article>

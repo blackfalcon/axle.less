@@ -18,9 +18,9 @@
 				<p>The <code>.selected_tab</code> class will need to be dynamically applied to the active tab &lt;li&gt;.  Javascript onclick="return false" will need to be applied to the cooresponding &lt;a&gt; tag to render the link useless.  </p>
 				<p>Exmaple code:</p>
 				<pre class="prettyprint">
-&lt;ul <span>class=&quot;tabbed_ui&quot;</span>&gt;
+&lt;ul class=&quot;tabbed_ui&quot;</span>&gt;
   &lt;li&gt;&lt;a href=&quot;#&quot;&gt;tabbed link&lt;/a&gt;&lt;/li&gt;
-  &lt;li <span>class=&quot;selected_tab&quot;</span>&gt;&lt;a href=&quot;/&quot; <span>onclick=&quot;return false&quot;</span>&gt;tabbed link&lt;/a&gt;&lt;/li&gt;
+  &lt;li class=&quot;selected_tab&quot;</span>&gt;&lt;a href=&quot;/&quot; onclick=&quot;return false&quot;</span>&gt;tabbed link&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 				</pre>
 			</div>
@@ -41,9 +41,9 @@
 				<p>The <code>.selected_tab</code> class will need to be dynamically applied to the active tab &lt;li&gt;.  Javascript onclick="return false" will need to be applied to the cooresponding &lt;a&gt; tag to render the link useless.  </p>
 				<p>Exmaple code:</p>
 				<pre class="prettyprint">
-&lt;ul <span>class=&quot;tabbed_ui small_tab&quot;</span>&gt;
+&lt;ul class=&quot;tabbed_ui small_tab&quot;</span>&gt;
   &lt;li&gt;&lt;a href=&quot;#&quot;&gt;tabbed link&lt;/a&gt;&lt;/li&gt;
-  &lt;li <span>class=&quot;selected_tab&quot;</span>&gt;&lt;a href=&quot;/&quot; onclick=&quot;return false&quot;&gt;tabbed link&lt;/a&gt;&lt;/li&gt;
+  &lt;li class=&quot;selected_tab&quot;</span>&gt;&lt;a href=&quot;/&quot; onclick=&quot;return false&quot;&gt;tabbed link&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 				</pre>
 			</div>

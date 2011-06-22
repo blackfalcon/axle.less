@@ -80,7 +80,7 @@
   &lt;blockquote&gt;BTW- axle.dalesande.com is fucking awesome&lt;/blockquote&gt;
   &lt;p&gt;&lt;cite&gt;-- &lt;a href=&quot;http://twitter.com/#!/whazzmaster&quot;&gt;whazzmaster&lt;/a&gt;&lt;/cite&gt;&lt;/p&gt;
 &lt;/article&gt;
-&lt;aside <span>class=&quot;home_twitter_feed&quot;</span>&gt;
+&lt;aside class=&quot;home_twitter_feed&quot;</span>&gt;
   &lt;?php include 'partials/twitter.php'?&gt;
 &lt;/aside&gt;</pre>
 			
