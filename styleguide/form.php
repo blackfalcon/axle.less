@@ -8,19 +8,19 @@
 		</header>
 		<div class="master_container" id="">
 			<fieldset class="styleguide_form_frame editor-container" style="">
-				<label for="text_field">This is a label(optional)</span></label>
+				<label for="text_field">This is a label<span>(optional)</span></label>
 				<input type="text" class="" name="" id="text_field" value="" placeholder="placeholder text" />
 				<p class="instructional">This is instructional text</p>
 				<p class="alert" style="display:none;">This is alert text</p>
 			</fieldset>
 			
 			<div class="right_content" id="">
-				<p>Exmaple code:</p>
+				<p>Example code:</p>
 				<pre class="prettyprint">
 &lt;label for=&quot;text_field&quot;&gt;This is a label&lt;span&gt;(optional)&lt;/span&gt;&lt;/label&gt;
 &lt;input type=&quot;text&quot; class=&quot;&quot; name=&quot;&quot; id=&quot;text_field&quot; value=&quot;&quot; /&gt;
-&lt;p class=&quot;instructional&quot;</span>&gt;This is instructional text&lt;/p&gt;
-&lt;p class=&quot;alert&quot;</span> style=&quot;display:none;&quot;</span>&gt;This is alert text&lt;/p&gt;	
+&lt;p class=&quot;instructional&quot;&gt;This is instructional text&lt;/p&gt;
+&lt;p class=&quot;alert&quot; style=&quot;display:none;&quot;</span>&gt;This is alert text&lt;/p&gt;	
 				</pre>
 			</div>
 		</div>
@@ -30,7 +30,7 @@
 		</header>
 		<div class="master_container" id="">
 			<fieldset class="styleguide_form_frame editor-container" style="">
-				<label for="text_field">This is a label(optional)</span></label>
+				<label for="text_field">This is a label<span>(optional)</span></label>
 				<input type="text" class="fail" name="" id="text_field" value="" />
 				<p class="instructional">This is instructional text</p>
 				<p class="alert" style="display:block;">This is alert text</p>
@@ -40,7 +40,7 @@
 			
 			<div class="right_content" id="">
 				<p>Add <code>.fail</code> class to &lt;input&gt; tag.</p>
-				<p>Exmaple code:</p>
+				<p>Example code:</p>
 				<pre class="prettyprint">
 &lt;label for=&quot;text_field&quot;&gt;This is a label&lt;span&gt;(optional)&lt;/span&gt;&lt;/label&gt;
 &lt;input type=&quot;text&quot; class=&quot;fail&quot;</span> name=&quot;&quot; id=&quot;text_field&quot; value=&quot;&quot; /&gt;
@@ -55,7 +55,7 @@
 		</header>
 		<div class="master_container" id="">
 			<fieldset class="styleguide_form_frame editor-container" style="">
-				<label for="text_field">This is a label(optional)</span></label>
+				<label for="text_field">This is a label<span>(optional)</span></label>
 				<input type="text" class="" name="" id="text_field" value="" disabled="disabled" />
 				<p class="instructional">This is instructional text</p>
 				<p class="alert" style="display:none;">This is alert text</p>
@@ -63,7 +63,7 @@
 			
 			<div class="right_content" id="">
 				<p>Append the <code>disabled</code> attribute to the &lt;input&gt; tag.</p>
-				<p>Exmaple code:</p>
+				<p>Example code:</p>
 				<pre class="prettyprint">
 &lt;label for=&quot;text_field&quot;&gt;This is a label&lt;span&gt;(optional)&lt;/span&gt;&lt;/label&gt;
 &lt;input type=&quot;text&quot; class=&quot;&quot; name=&quot;&quot; id=&quot;text_field&quot; value=&quot;&quot; disabled=&quot;disabled&quot;</span> /&gt;
@@ -81,13 +81,13 @@
 		</header>
 		<div class="master_container" id="">	
 			<fieldset class="styleguide_form_frame editor-container" style="">
-				<label for="file">This is a label(optional)</span></label>
+				<label for="file">This is a label<span>(optional)</span></label>
 				<input type="file" class="" name="file" id="file_field" value="" />
 				<p class="instructional">This is instructional text</p>
 				<p class="alert" style="display:none;">This is alert text</p>
 			</fieldset>
 			<div class="right_content" id="">
-				<p>Exmaple code:</p>
+				<p>Example code:</p>
 				<pre class="prettyprint">
 &lt;label for=&quot;file&quot;&gt;This is a label&lt;span&gt;(optional)&lt;/span&gt;&lt;/label&gt;
 &lt;input type=&quot;file&quot; class=&quot;&quot; name=&quot;&quot; id=&quot;file&quot; value=&quot;&quot; /&gt;
@@ -102,7 +102,7 @@
 		</header>
 		<div class="master_container" id="">	
 			<fieldset class="styleguide_form_frame editor-container" style="">
-				<label for="file">This is a label(optional)</span></label>
+				<label for="file">This is a label<span>(optional)</span></label>
 				<input type="file" class="fail" name="file" id="file_field" value="" />
 				<p class="instructional">This is instructional text</p>
 				<p class="alert" style="display:block;">This is alert text</p>
@@ -111,7 +111,7 @@
 			</fieldset>
 			<div class="right_content" id="">
 				<p>Add <code>.fail</code> class to &lt;input&gt; tag.</p>
-				<p>Exmaple code:</p>
+				<p>Example code:</p>
 				<pre class="prettyprint">
 &lt;label for=&quot;file&quot;&gt;This is a label&lt;span&gt;(optional)&lt;/span&gt;&lt;/label&gt;
 &lt;input type=&quot;file&quot; class=&quot;fail&quot;</span> name=&quot;&quot; id=&quot;file&quot; value=&quot;&quot; /&gt;
@@ -126,13 +126,13 @@
 		</header>
 		<div class="master_container" id="">	
 			<fieldset class="styleguide_form_frame editor-container" style="">
-				<label for="file">This is a label(optional)</span></label>
+				<label for="file">This is a label<span>(optional)</span></label>
 				<input type="file" class="" name="file" id="file_field" value="" disabled="disabled" />
 				<p class="instructional">This is instructional text</p>
 				<p class="alert" style="display:none;">This is alert text</p>
 			</fieldset>
 			<div class="right_content" id="">
-				<p>Exmaple code:</p>
+				<p>Example code:</p>
 				<pre class="prettyprint">
 &lt;label for=&quot;file&quot;&gt;This is a label&lt;span&gt;(optional)&lt;/span&gt;&lt;/label&gt;
 &lt;input type=&quot;file&quot; class=&quot;&quot; name=&quot;&quot; id=&quot;file&quot; value=&quot;&quot; disabled=&quot;disabled&quot; /&gt;
@@ -150,7 +150,7 @@
 		</header>
 		<div class="master_container" id="">
 			<fieldset class="styleguide_form_frame editor-container" style="">
-				<label for="select_list">This is a label(optional)</span></label>
+				<label for="select_list">This is a label<span>(optional)</span></label>
 				<span class="custom-select">
 					<select id="select_list">
 						<option value="">text</option>
@@ -163,7 +163,7 @@
 				<p class="alert" style="display:none;">This is alert text</p>
 			</fieldset>
 			<div class="right_content" id="">
-				<p>Exmaple code:</p>
+				<p>Example code:</p>
 				<pre class="prettyprint">
 &lt;label for=&quot;select_list&quot;&gt;This is a label&lt;span&gt;(optional)&lt;/span&gt;&lt;/label&gt;
 &lt;span class=&quot;custom-select&quot;</span>&gt;
@@ -185,7 +185,7 @@
 		</header>
 		<div class="master_container" id="">
 			<fieldset class="styleguide_form_frame editor-container" style="">
-				<label for="select_list_error">This is a label(optional)</span></label>
+				<label for="select_list_error">This is a label<span>(optional)</span></label>
 				<span class="custom-select fail">
 					<select id="select_list_error">
 						<option value="">text</option>
@@ -201,7 +201,7 @@
 			</fieldset>
 			<div class="right_content" id="">
 				<p>Add <code>.fail</code> class to &lt;span&gt; tag.</p>
-				<p>Exmaple code:</p>
+				<p>Example code:</p>
 				<pre class="prettyprint">
 &lt;label for=&quot;select_list_error&quot;&gt;This is a label&lt;span&gt;(optional)&lt;/span&gt;&lt;/label&gt;
 &lt;span class=&quot;custom-select fail&quot;</span>&gt;
@@ -223,7 +223,7 @@
 		</header>
 		<div class="master_container" id="">
 			<fieldset class="styleguide_form_frame editor-container" style="">
-				<label for="select_list_disabled">This is a label(optional)</span></label>
+				<label for="select_list_disabled">This is a label<span>(optional)</span></label>
 				<span class="custom-select disabled">
 					<select id="select_list_disabled" disabled="disabled">
 						<option value="">text</option>
@@ -237,7 +237,7 @@
 			</fieldset>
 			<div class="right_content" id="">
 				<p>Add attribute <code>disabled="disabled"</code> to &lt;select&gt; tag and the class <code>.disabled</code> to the parent &lt;span&gt; tag.</p>
-				<p>Exmaple code:</p>
+				<p>Example code:</p>
 				<pre class="prettyprint">
 &lt;label for=&quot;select_list_disabled&quot;&gt;This is a label&lt;span&gt;(optional)&lt;/span&gt;&lt;/label&gt;
 &lt;span class=&quot;custom-select disabled&quot;</span>&gt;
@@ -265,7 +265,7 @@
 		</header>
 		<div class="master_container" id="">	
 			<fieldset class="styleguide_form_frame editor-container " style="">	
-				<label for="option_one">This is a label(optional)</span></label>
+				<label for="option_one">This is a label<span>(optional)</span></label>
 				<ul class="horizontal_selectors">
 					<li>
 						<input type="radio" name="option" id="option_one" value=""/>
@@ -279,7 +279,7 @@
 				<p class="instructional">This is instructional text</p>
 				<p class="alert" style="display:none;">This is alert text</p>
 				
-				<label for="option_one_checkbox">This is a label(optional)</span></label>
+				<label for="option_one_checkbox">This is a label<span>(optional)</span></label>
 				<ul class="horizontal_selectors">
 					<li>
 						<input type="checkbox" name="option" id="option_one_checkbox" value=""/>
@@ -297,7 +297,7 @@
 			
 			<div class="right_content" id="">
 				<p>Add <code>.horizontal_selectors</code> to the parent &lt;ul&gt; tag</p>
-				<p>Exmaple code: horizontal selectors</p>
+				<p>Example code: horizontal selectors</p>
 				<pre class="prettyprint">
 &lt;label for=&quot;option_one&quot;&gt;This is a label&lt;span&gt;(optional)&lt;/span&gt;&lt;/label&gt;
 &lt;ul class=&quot;horizontal_selectors&quot;</span>&gt;
@@ -335,7 +335,7 @@
 		</header>
 		<div class="master_container" id="">	
 			<fieldset class="styleguide_form_frame editor-container" style="">	
-				<label for="option_one_error">This is a label(optional)</span></label>
+				<label for="option_one_error">This is a label<span>(optional)</span></label>
 				<ul class="horizontal_selectors">
 					<li class="fail">
 						<input type="radio" name="option" id="option_one_error" value=""/>
@@ -351,7 +351,7 @@
 				<p class="alert" style="display:block;">This is alert text</p>
 				<p class="alert" style="display:block;">This is alert text</p>
 				
-				<label for="option_one_checkbox_error">This is a label(optional)</span></label>
+				<label for="option_one_checkbox_error">This is a label<span>(optional)</span></label>
 				<ul class="horizontal_selectors">
 					<li class="fail">
 						<input type="checkbox" name="option" id="option_one_checkbox_error" value=""/>
@@ -369,7 +369,7 @@
 			</fieldset>
 			<div class="right_content" id="">
 				<p>Add <code>.fail</code> class to parent &lt;li&gt; tag.</p>
-				<p>Exmaple code: horizontal selectors</p>
+				<p>Example code: horizontal selectors</p>
 				<pre class="prettyprint">
 &lt;label for=&quot;option_one&quot;&gt;This is a label&lt;span&gt;(optional)&lt;/span&gt;&lt;/label&gt;
 &lt;ul class=&quot;horizontal_selectors&quot;</span>&gt;
@@ -408,7 +408,7 @@
 		</header>
 		<div class="master_container" id="">	
 			<fieldset class="styleguide_form_frame editor-container" style="">	
-				<label for="option_one">This is a label(optional)</span></label>
+				<label for="option_one">This is a label<span>(optional)</span></label>
 				<ul class="horizontal_selectors">
 					<li>
 						<input type="radio" name="option" id="option_one" value="" disabled="disabled"/>
@@ -422,7 +422,7 @@
 				<p class="instructional">This is instructional text</p>
 				<p class="alert" style="display:none;">This is alert text</p>
 				
-				<label for="option_one_checkbox">This is a label(optional)</span></label>
+				<label for="option_one_checkbox">This is a label<span>(optional)</span></label>
 				<ul class="horizontal_selectors">
 					<li>
 						<input type="checkbox" name="option" id="option_one_checkbox" value="" disabled="disabled"/>
@@ -438,7 +438,7 @@
 			</fieldset>
 			<div class="right_content" id="">
 				<p>Insert attribute <code>disabled="disabled"</code> to the disabled &lt;input&gt; tag</p>
-				<p>Exmaple code: horizontal selectors</p>
+				<p>Example code: horizontal selectors</p>
 				<pre class="prettyprint">
 &lt;label for=&quot;option_one&quot;&gt;This is a label&lt;span&gt;(optional)&lt;/span&gt;&lt;/label&gt;
 &lt;ul class=&quot;horizontal_selectors&quot;</span>&gt;
@@ -485,7 +485,7 @@
 		</header>
 		<div class="master_container" id="">	
 			<fieldset class="styleguide_form_frame editor-container" style="">	
-				<label for="option_three">This is a label(optional)</span></label>
+				<label for="option_three">This is a label<span>(optional)</span></label>
 				<ul class="vertical_selectors">
 					<li>
 						<input type="radio" name="option_vert" id="option_three" value=""/>
@@ -499,7 +499,7 @@
 				<p class="instructional">This is instructional text</p>
 				<p class="alert" style="display:none;">This is alert text</p>
 				
-				<label for="option_three_checkbox">This is a label(optional)</span></label>
+				<label for="option_three_checkbox">This is a label<span>(optional)</span></label>
 				<ul class="vertical_selectors">
 					<li>
 						<input type="checkbox" name="option_vert" id="option_three_checkbox" value=""/>
@@ -515,7 +515,7 @@
 			</fieldset>
 			<div class="right_content" id="">
 				<p>Add <code>.vertical_selectors</code> to the parent &lt;ul&gt; tag</p>
-				<p>Exmaple code: horizontal selectors</p>
+				<p>Example code: horizontal selectors</p>
 				<pre class="prettyprint">
 &lt;label for=&quot;option_three&quot;&gt;This is a label&lt;span&gt;(optional)&lt;/span&gt;&lt;/label&gt;
 &lt;ul class=&quot;vertical_selectors&quot;</span>&gt;
@@ -555,7 +555,7 @@
 		</header>
 		<div class="master_container" id="">	
 			<fieldset class="styleguide_form_frame editor-container" style="">	
-				<label for="option_three">This is a label(optional)</span></label>
+				<label for="option_three">This is a label<span>(optional)</span></label>
 				<ul class="vertical_selectors">
 					<li class="fail">
 						<input type="radio" name="option_vert" id="option_three" value=""/>
@@ -571,7 +571,7 @@
 				<p class="alert" style="display:block;">This is alert text</p>
 				<p class="alert" style="display:block;">This is alert text</p>
 				
-				<label for="option_three_checkbox">This is a label(optional)</span></label>
+				<label for="option_three_checkbox">This is a label<span>(optional)</span></label>
 				<ul class="vertical_selectors">
 					<li class="fail">
 						<input type="checkbox" name="option_vert" id="option_three_checkbox" value=""/>
@@ -589,7 +589,7 @@
 			</fieldset>
 			<div class="right_content" id="">
 				<p>Add <code>.fail</code> class to parent &lt;li&gt; tags.</p>
-				<p>Exmaple code: horizontal selectors</p>
+				<p>Example code: horizontal selectors</p>
 				<pre class="prettyprint">
 &lt;label for=&quot;option_three&quot;&gt;This is a label&lt;span&gt;(optional)&lt;/span&gt;&lt;/label&gt;
 &lt;ul class=&quot;vertical_selectors&quot;&gt;
@@ -634,7 +634,7 @@
 		</header>
 		<div class="master_container" id="">	
 			<fieldset class="styleguide_form_frame editor-container" style="">	
-				<label for="option_three">This is a label(optional)</span></label>
+				<label for="option_three">This is a label<span>(optional)</span></label>
 				<ul class="vertical_selectors">
 					<li>
 						<input type="radio" name="option_vert" id="option_three" value="" disabled="disabled"/>
@@ -648,7 +648,7 @@
 				<p class="instructional">This is instructional text</p>
 				<p class="alert" style="display:none;">This is alert text</p>
 				
-				<label for="option_three_checkbox">This is a label(optional)</span></label>
+				<label for="option_three_checkbox">This is a label<span>(optional)</span></label>
 				<ul class="vertical_selectors">
 					<li>
 						<input type="checkbox" name="option_vert" id="option_three_checkbox" value="" disabled="disabled"/>
@@ -663,7 +663,7 @@
 				<p class="alert" style="display:none;">This is alert text</p>
 			</fieldset>
 			<div class="right_content" id="">
-				<p>Exmaple code: vertical selectors</p>
+				<p>Example code: vertical selectors</p>
 				<pre class="prettyprint">
 &lt;label for=&quot;option_three&quot;&gt;This is a label&lt;span&gt;(optional)&lt;/span&gt;&lt;/label&gt;
 &lt;ul class=&quot;vertical_selectors&quot;</span>&gt;
@@ -703,13 +703,13 @@
 		</header>
 		<div class="master_container" id="">	
 			<fieldset class="styleguide_form_frame editor-container" style="">		
-				<label for="textarea">This is a label(optional)</span></label>
+				<label for="textarea">This is a label<span>(optional)</span></label>
 				<textarea id="textarea">hello, I am text</textarea>
 				<p class="instructional">This is instructional text</p>
 				<p class="alert" style="display:none;">This is alert text</p>
 			</fieldset>
 			<div class="right_content" id="">
-			<p>Exmaple code: textarea</p>
+			<p>Example code: textarea</p>
 				<pre class="prettyprint">
 &lt;label for=&quot;textarea&quot;&gt;This is a label&lt;span&gt;(optional)&lt;/span&gt;&lt;/label&gt;
 &lt;textarea id=&quot;textarea&quot;&gt;hello, I am text&lt;/textarea&gt;
@@ -725,7 +725,7 @@
 		</header>
 		<div class="master_container" id="">	
 			<fieldset class="styleguide_form_frame editor-container" style="">		
-				<label for="textarea">This is a label(optional)</span></label>
+				<label for="textarea">This is a label<span>(optional)</span></label>
 				<textarea id="textarea" class="fail">hello, I am text</textarea>
 				<p class="instructional">This is instructional text</p>
 				<p class="alert" style="display:block;">This is alert text</p>
@@ -734,7 +734,7 @@
 			</fieldset>
 			<div class="right_content" id="">
 			<p>Add <code>.fail</code> class to the &lt;textarea&gt; tag.</p>
-			<p>Exmaple code: textarea</p>
+			<p>Example code: textarea</p>
 				<pre class="prettyprint">
 &lt;label for=&quot;textarea&quot;&gt;This is a label&lt;span&gt;(optional)&lt;/span&gt;&lt;/label&gt;
 &lt;textarea id=&quot;textarea&quot; class=&quot;fail&quot;</span>&gt;hello, I am text&lt;/textarea&gt;
@@ -752,13 +752,13 @@
 		</header>
 		<div class="master_container" id="">	
 			<fieldset class="styleguide_form_frame editor-container" style="">		
-				<label for="textarea">This is a label(optional)</span></label>
+				<label for="textarea">This is a label<span>(optional)</span></label>
 				<textarea id="textarea" disabled="disabled">hello, I am text</textarea>
 				<p class="instructional">This is instructional text</p>
 				<p class="alert" style="display:none;">This is alert text</p>
 			</fieldset>
 			<div class="right_content" id="">
-			<p>Exmaple code: textarea</p>
+			<p>Example code: textarea</p>
 				<pre class="prettyprint">
 &lt;label for=&quot;textarea&quot;&gt;This is a label&lt;span&gt;(optional)&lt;/span&gt;&lt;/label&gt;
 &lt;textarea id=&quot;textarea&quot; disabled=&quot;disabled&quot;</span>&gt;hello, I am text&lt;/textarea&gt;
@@ -772,7 +772,7 @@
 		<header><p>7 Large inputs</p></header>
 		<div class="master_container" id="">
 			<fieldset class="styleguide_form_frame editor-container foo_form" style="">
-				<label for="text_field">This is a label(optional)</span></label>
+				<label for="text_field">This is a label<span>(optional)</span></label>
 				<input type="text" class="" name="" id="text_field" value="" />
 			</fieldset>
 			

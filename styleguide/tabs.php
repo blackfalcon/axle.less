@@ -16,7 +16,7 @@
 			<div class="" id="" style="margin-top: 10px;">
 				<p>Tab UI as applied to the &lt;li&gt;&lt;/li&gt; tags.  Apply <code>.tabbed_ui</code> class to parent &lt;ul&gt;.</p>
 				<p>The <code>.selected_tab</code> class will need to be dynamically applied to the active tab &lt;li&gt;.  Javascript onclick="return false" will need to be applied to the cooresponding &lt;a&gt; tag to render the link useless.  </p>
-				<p>Exmaple code:</p>
+				<p>Example code:</p>
 				<pre class="prettyprint">
 &lt;ul class=&quot;tabbed_ui&quot;</span>&gt;
   &lt;li&gt;&lt;a href=&quot;#&quot;&gt;tabbed link&lt;/a&gt;&lt;/li&gt;
@@ -39,7 +39,7 @@
 			<div class="" id="" style="margin-top: 10px;">
 				<p>Tab UI as applied to the &lt;li&gt;&lt;/li&gt; tags.  Apply <code>.tabbed_ui</code> and <code>.small_tab</code> classes to parent &lt;ul&gt;.</p>
 				<p>The <code>.selected_tab</code> class will need to be dynamically applied to the active tab &lt;li&gt;.  Javascript onclick="return false" will need to be applied to the cooresponding &lt;a&gt; tag to render the link useless.  </p>
-				<p>Exmaple code:</p>
+				<p>Example code:</p>
 				<pre class="prettyprint">
 &lt;ul class=&quot;tabbed_ui small_tab&quot;</span>&gt;
   &lt;li&gt;&lt;a href=&quot;#&quot;&gt;tabbed link&lt;/a&gt;&lt;/li&gt;

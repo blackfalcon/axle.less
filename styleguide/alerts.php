@@ -9,9 +9,9 @@
 		<article class="flex_blocks">
 			<div class="alert-box">This is an alert. You may need to pay attention to this message.</div>
 		</article>
-		<p>Exmaple code:</p>
+		<p>Example code:</p>
 		<pre class="prettyprint">
-&lt;div class=&quot;alert-box&quot;</span>&gt;This is an alert. You may need to pay attention to this message.&lt;/div&gt;</pre>
+&lt;div class=&quot;alert-box&quot;&gt;This is an alert. You may need to pay attention to this message.&lt;/div&gt;</pre>
 		<footer></footer>
 		
 		<header>
@@ -22,7 +22,7 @@
 		</article>
 		<p>Example code:</p>
 		<pre class="prettyprint">
-&lt;div class=&quot;success-box&quot;</span>&gt;Congratulations.  You have done something awesome.&lt;/div&gt;</pre>
+&lt;div class=&quot;success-box&quot;&gt;Congratulations.  You have done something awesome.&lt;/div&gt;</pre>
 		<footer></footer>
 		
 		<header>
@@ -33,7 +33,7 @@
 		</article>
 		<p>Example code:</p>
 		<pre class="prettyprint">
-&lt;div class=&quot;error-box&quot;</span>&gt;Wow.  You are really doing it wrong.&lt;/div&gt;</pre>
+&lt;div class=&quot;error-box&quot;&gt;Wow.  You are really doing it wrong.&lt;/div&gt;</pre>
 		<footer></footer>
 	</article>
 
