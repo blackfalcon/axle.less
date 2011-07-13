@@ -11,5 +11,6 @@
 	<p><a href="/styleguide/alerts.php">Alerts</a></p>
 	<p><a href="/styleguide/form.php">Forms</a></p>
 	<p><a href="/styleguide/tables.php">Tables</a></p>
+	<p><a href="/styleguide/widgets/index.php">Widgets</a></p>
 	<div class="nav_title">navigation</div>
 </nav>

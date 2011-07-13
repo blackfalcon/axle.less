@@ -1,0 +1,43 @@
+.imageblock_title_caption {
+	background: url(/styleguide/images/12_col.gif);
+	li {
+		.inset_border;
+		background: fadeout(@white, 50%);
+	}
+	.sudo_image {
+		background: @hotel_grey;
+	}
+}
+
+.image_block_grid {
+	.grid_12(9);
+	> li {
+		.grid_12(3);
+		height: 300px;
+		&:first-child {
+			.alpha;
+		}
+		&:last-child {
+			.omega;
+		}
+	}
+	.image, .title, .caption {
+		.grid_12(3);
+		.alpha;
+		.omega;
+		height: 130px;
+	}
+	
+	.title {
+		height: 30px;
+		background: @alpha_grey;
+		h2 {
+			.medium;
+			margin: 0;
+			line-height: 30px;
+			color: @white;
+		}
+	}
+}
+
+
