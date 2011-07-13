@@ -1,7 +1,7 @@
-<?php include 'shared/template_head.php'?>
+<?php include '../shared/template_head.php'?>
 
 <body onload="prettyPrint()">
-	<?php include 'shared/layout_nav.php'?>
+	<?php include '../shared/layout_nav.php'?>
 	<section class="blog_container" id="">
 		<header class="site_header">
 			<h1>site header</h1>

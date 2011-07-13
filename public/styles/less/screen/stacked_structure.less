@@ -1,4 +1,4 @@
-.blog_container {
+.stacked_container {
 	background: url(/styleguide/images/12_col.gif) repeat-y;
 	.site_header, .primary_content_section, .site_aside, .site_aside_section, .site_footer {
 		.inset_border;
@@ -8,12 +8,18 @@
 			background: fadeout(@white, 50%);
 		}
 	}
+	.quad_blocks {
+		li {
+			.inset_border;
+			background: fadeout(@white, 50%);
+		}
+	}
 }
 
 
 ///////////// styles for the display of template screens /////////////
 // ----------------------------------------------------------------------
-.blog_container {
+.stacked_container {
 	width: 960px;
 	margin-bottom: 20px;
 	.clearfix;
@@ -32,9 +38,27 @@
 			margin: 10px;
 		}
 	}
+	
+	.hero_section {
+		.grid_12(12);
+		height: 200px;
+		.alpha;
+	}
+	
+	.quad_blocks {
+		ul {
+			margin: 10px 0;
+			float: left;
+		}
+		li {
+			.grid_12(3);
+			height: 150px;
+		}
+	}
+	
 	.primary_content_section {
 		float: left;
-		.grid_12(9);
+		.grid_12(12);
 		footer { 
 			float: left;
 			width: 100%; 
@@ -44,10 +68,6 @@
 		float: right;
 		.grid_12(3);
 	} 
-	
-	.site_aside_section {
-		margin-bottom: 20px;
-	}
 	
 	.site_footer {
 		float: left;

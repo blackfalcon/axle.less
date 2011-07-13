@@ -1,9 +1,15 @@
-.blog_container {
+.multi_stacked_container {
 	background: url(/styleguide/images/12_col.gif) repeat-y;
-	.site_header, .primary_content_section, .site_aside, .site_aside_section, .site_footer {
+	.site_header, .primary_content_section, .site_aside, .site_aside_section, .site_footer, .title_bar {
 		.inset_border;
 		background: fadeout(@white, 50%);
 		nav, article, header, footer {
+			.inset_border;
+			background: fadeout(@white, 50%);
+		}
+	}
+	.quad_blocks, .double_blocks {
+		li {
 			.inset_border;
 			background: fadeout(@white, 50%);
 		}
@@ -13,7 +19,7 @@
 
 ///////////// styles for the display of template screens /////////////
 // ----------------------------------------------------------------------
-.blog_container {
+.multi_stacked_container {
 	width: 960px;
 	margin-bottom: 20px;
 	.clearfix;
@@ -32,26 +38,61 @@
 			margin: 10px;
 		}
 	}
+	
+	.hero_section {
+		.grid_12(12);
+		height: 200px;
+		.alpha;
+	}
+	
+	.double_blocks {
+		ul {
+			float: left;
+			margin-bottom: 0;
+		}
+		li {
+			.grid_12(6);
+			height: 150px;
+		}
+	}
+	
+	.quad_blocks {
+		ul {
+			float: left;
+			margin-bottom: 0;
+		}
+		li {
+			.grid_12(3);
+			height: 150px;
+		}
+	}
+	
 	.primary_content_section {
 		float: left;
 		.grid_12(9);
+		height: 200px;
 		footer { 
 			float: left;
 			width: 100%; 
 		}
 	}
+	
+	.title_bar {
+		.grid_12(12);
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	
 	.site_aside {
 		float: right;
 		.grid_12(3);
+		height: 200px
 	} 
-	
-	.site_aside_section {
-		margin-bottom: 20px;
-	}
 	
 	.site_footer {
 		float: left;
 		.grid_12(12);
 		height: 300px;
+		margin-top: 10px;
 	}
 }

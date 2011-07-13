@@ -1,9 +1,15 @@
-.blog_container {
+.hero_with_nav {
 	background: url(/styleguide/images/12_col.gif) repeat-y;
-	.site_header, .primary_content_section, .site_aside, .site_aside_section, .site_footer {
+	.site_header, .primary_content_section, .site_aside, .site_aside_section, .site_footer, .title_bar {
 		.inset_border;
 		background: fadeout(@white, 50%);
 		nav, article, header, footer {
+			.inset_border;
+			background: fadeout(@white, 50%);
+		}
+	}
+	.quad_blocks {
+		li {
 			.inset_border;
 			background: fadeout(@white, 50%);
 		}
@@ -13,7 +19,7 @@
 
 ///////////// styles for the display of template screens /////////////
 // ----------------------------------------------------------------------
-.blog_container {
+.hero_with_nav {
 	width: 960px;
 	margin-bottom: 20px;
 	.clearfix;
@@ -32,21 +38,33 @@
 			margin: 10px;
 		}
 	}
+	
+	.quad_blocks {
+		ul {
+			float: left;
+		}
+		li {
+			.grid_12(3);
+			height: 150px;
+		}
+	}
+	
 	.primary_content_section {
 		float: left;
 		.grid_12(9);
-		footer { 
-			float: left;
-			width: 100%; 
-		}
+		height: 200px
 	}
+	
 	.site_aside {
 		float: right;
 		.grid_12(3);
+		height: 200px;
 	} 
 	
-	.site_aside_section {
-		margin-bottom: 20px;
+	.title_bar {
+		.grid_12(12);
+		margin-top: 10px;
+		margin-bottom: 10px;
 	}
 	
 	.site_footer {

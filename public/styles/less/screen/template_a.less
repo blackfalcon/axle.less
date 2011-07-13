@@ -1,5 +1,5 @@
-.full_grid {
-	background: url(/styleguide/images/16_col.gif);
+.template_a {
+	background: url(/styleguide/images/12_col.gif) repeat-y;
 	.site_header, .primary_content_section, .site_aside, .site_aside_section, .site_footer {
 		.inset_border;
 		background: fadeout(@white, 50%);
@@ -13,10 +13,11 @@
 
 ///////////// styles for the display of template screens /////////////
 // ----------------------------------------------------------------------
-.dynamic_container {
-	width: 100%;
+.template_a {
+	width: 960px;
 	margin-bottom: 20px;
 	.clearfix;
+	margin: 0 auto;
 	
 	header {
 		color: @primary_text;
@@ -25,32 +26,21 @@
 		border-width: 0;
 	}
 	.site_header {
-		width: 100%;
+		.grid_12(12);
 		margin-bottom: 10px;
 		nav {
 			margin: 10px;
 		}
 	}
+	
 	.primary_content_section {
-		article {
-			.clearfix;
-		}
-		width: auto;
-		.prefix_12_auto(3);
-		.thumbnail {
-			.inset_border;
-			.grid_16(3.5);
-			margin: 0 20px 20px 0;
-			height: 200px;
-		}
-	}
-	.site_aside {
-		float: right;
-		.grid_12(3);
+		.grid_12(12);
+		height: 400px;
 	} 
 	
 	.site_footer {
-		float: left;
-		width: 100%;
+		.grid_12(12);
+		height: 300px;
+		margin-top: 10px;
 	}
 }
