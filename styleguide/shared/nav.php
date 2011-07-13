@@ -1,5 +1,7 @@
 <nav class="styleguide_nav">
 	<p><a href="/styleguide/index.php">960 grid</a></p>
+	<p><a href="/styleguide/blog_template.php">Layout templates</a></p>
+	<p></p>
 	<p><a href="/styleguide/text.php">Text</a></p>
 	<p><a href="/styleguide/color.php">Semantic colors</a></p>
 	<p><a href="/styleguide/color_generic.php">Abstract colors</a></p>

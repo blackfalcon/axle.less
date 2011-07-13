@@ -1,0 +1,56 @@
+.blog_container {
+	background: url(/styleguide/images/12_col.gif) repeat-y;
+	.site_header, .primary_content_section, .site_aside, .site_aside_section, .site_footer {
+		.inset_border;
+		background: fadeout(@white, 50%);
+		nav, article, header, footer {
+			.inset_border;
+			background: fadeout(@white, 50%);
+		}
+	}
+}
+
+
+///////////// styles for the display of template screens /////////////
+// ----------------------------------------------------------------------
+.blog_container {
+	width: 960px;
+	margin-bottom: 20px;
+	.clearfix;
+	margin: 0 auto;
+	
+	header {
+		color: @primary_text;
+		padding: 0;
+		margin: 0;
+		border-width: 0;
+	}
+	.site_header {
+		.grid_12(12);
+		margin-bottom: 10px;
+		nav {
+			margin: 10px;
+		}
+	}
+	.primary_content_section {
+		float: left;
+		.grid_12(9);
+		footer { 
+			float: left;
+			width: 100%; 
+		}
+	}
+	.site_aside {
+		float: right;
+		.grid_12(3);
+	} 
+	
+	.site_aside_section {
+		margin-bottom: 20px;
+	}
+	
+	.site_footer {
+		float: left;
+		.grid_12(12);
+	}
+}

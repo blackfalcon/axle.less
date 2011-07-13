@@ -7,6 +7,8 @@
 @import "../imports/forms.less";
 @import "../imports/grid.less";
 
+@import "../widgets/styleguide_nav.less";
+
 
 //// styleguide UI ////
 .styleguide {
@@ -167,7 +169,7 @@
 		
 	.flex_blocks {
 		.india_grey {
-			border: 1px dashed transparentize(@alpha_grey, .7);
+			border: 1px dashed fadeout(@alpha_grey, .7);
 			p {
 				top: 70px;
 			}
@@ -189,63 +191,6 @@
 	
 	
 	
- 	.styleguide_nav {
-		position: fixed;
-		z-index: 1000;
-		border: 1px solid #ccc;
-		left: -157px;
-		top: 100px;
-		width: 120px;
-		padding: 10px 20px 10px 10px;
-		.border_radius(5px);
-		.box_shadow(#ccc, 0px 0px 20px);
-		.transition(all, .5s, ease-in-out, 0s);
-		background-color: #fff;
-		.nav_title {
-			.transform(rotate(-90deg));
-			position: absolute;
-			top: 0px;
-			left: 35px;
-			.extra_large;
-			padding: 60px 100px 100px 100px;
-			letter-spacing: 4px;
-		}
-		p {
-			margin: 0.5em 0 0 0;
-			text-align: center;
-			width: 100%;
-			a {
-				color: #fff;
-				&:hover {
-					text-decoration: none;
-					.four_stop_linear_gradient (#feccb1, #f17432, #ea5507, #fb955e);
-				.four_stop_linear_gradient (#9dd53a, #a1d54f, #80c217, #7cbc0a);
-				}
-				display: inline-block;
-				width: 100%;
-				margin: -5px;
-				padding: 5px;
-				.border_radius(5px);
-			}
-			.four_stop_linear_gradient (#feccb1, #f17432, #ea5507, #fb955e);
-			padding: 5px;
-			.border_radius(5px);
-			display: inline-block;
-			color: #fff;
-			font-weight: bold;
-			width: 100%;
-			&:hover {
-				text-decoration: none;
-			}
-			&:first-child {
-				margin-top: 0;
-			}
-		}
- 		&:hover {
- 			left: 30px;
- 			color: rgba(0,0,0,0);
- 		}
- 	}
 	#standard_modal_alt {
 		width: 600px !important;
 	}
@@ -651,3 +596,6 @@ li.L1, li.L3, li.L5, li.L7, li.L9 {
     background: #3F3F3F;
 }
 
+@import "blog_structure.less";
+@import "content_structure.less";
+@import "dynamic_structure.less";
