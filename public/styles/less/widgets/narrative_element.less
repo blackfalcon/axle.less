@@ -1,0 +1,40 @@
+///// Styles to support grid layout UI in styleguide
+// ------------------------------------------------
+.narrative_grid {
+	background: url(/styleguide/images/16_col.gif);
+	li {
+		background: fadeout(@white, 40%);
+	}
+	.sudo_image {
+		background: @hotel_grey;
+	}
+}
+///// Styles to support grid layout UI in styleguide
+
+
+////  narrative_element  ////
+// --------------------------
+.narrative_element() {
+	.grid_16(12);
+	> li {
+		.grid_16(6);
+		&:first-child {
+			.alpha;
+		}
+		&:last-child {
+			.omega;
+		}
+	}
+	.media {
+		.grid_16(6);
+		height: 250px;
+	}
+	.text {
+		.bulleted_list;
+	}
+}
+
+.global_assignment {
+	.narrative_element;
+}
+////  narrative_element  ////

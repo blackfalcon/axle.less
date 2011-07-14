@@ -1,19 +1,26 @@
-.imageblock_title_caption {
+///// Styles to support grid layout UI in styleguide
+// ------------------------------------------------
+.imageblock_grid {
 	background: url(/styleguide/images/12_col.gif);
 	li {
-		.inset_border;
-		background: fadeout(@white, 50%);
+		background: fadeout(@white, 40%);
 	}
 	.sudo_image {
 		background: @hotel_grey;
 	}
 }
+///// Styles to support grid layout UI in styleguide
 
-.image_block_grid {
+
+///// Styles for Three column image block w/title and caption
+// ----------------------------------------------------------
+.image_block_caption() {
 	.grid_12(9);
+	ul {
+		.clearfix;
+	}
 	> li {
 		.grid_12(3);
-		height: 300px;
 		&:first-child {
 			.alpha;
 		}
@@ -36,8 +43,19 @@
 			margin: 0;
 			line-height: 30px;
 			color: @white;
+			padding: 0 0 0 10px;
+		}
+	}
+	.caption {
+		.two_stop_linear_gradient (@fox_grey, fadeout(@white, 100%));
+		height: 100px;
+		p {
+			padding: 10px;
 		}
 	}
 }
 
-
+.featured_events {
+	.image_block_caption;
+}
+///// Styles for Three column image block w/title and caption
