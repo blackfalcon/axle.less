@@ -8,7 +8,7 @@
 			<p>The Narrative element is a 12 col of a 16 col grid layout.  Consists of two blocks of 6.</p>
 			<p>For semantic use, apply the <code>.narrative_element</code> mixin within the semantic class for the block element.</p>
 		</header>
-		<article class="narrative_grid">
+		<article class="col_16_grid">
 			<ul class="global_assignment">
 				<li class="media">image content</li>
 				<li class="text">
@@ -85,7 +85,7 @@
 			<p>1.1 Narrative element </p>
 			<p>To use a reverse UI version of the narrative element, simply swap the order of the <code>.text</code> and <code>.media</code> HTML blocks as shown below.</p>
 		</header>
-		<article class="narrative_grid">
+		<article class="col_16_grid">
 			<ul class="global_assignment">
 				<li class="text">
 					<h4>Narrative title</h4>
