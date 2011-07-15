@@ -1,8 +1,46 @@
 // Text mixins
 // Find the .font argument @ /imports/mixin_arguments.less
 
-//////// repeated text settings //////////
+//////// heading text mixins //////////
+// ------------------------------------
+.heading_1(){
+	font-size: 4em;
+}
+
+.heading_2() {
+	font-size: 3em;
+	margin-bottom: 0.25em;
+}
+
+.heading_3() {
+	font-size: 2.34em;
+	margin-bottom: 0.5em;
+}
+
+.heading_4() {
+	font-size: 2em;
+	margin-bottom: 0.5em;
+}
+
+.heading_5() {
+	font-size: 1.66em;
+	margin-bottom: 0.5em;
+}
+
+.heading_6() {
+	font-size: 1.5em;
+	margin-bottom: 0.5em;
+}
+
+
+//////// standard text mixins //////////
 // --------------------------------------
+
+//
+// this needs to be updates so that you can't use the classes as OOCSS, 
+// but apply objects to semantic code
+//
+
 .macro {
 	.font(0.6333em, 1.5em, inherit);
 }
