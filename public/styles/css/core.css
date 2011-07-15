@@ -134,6 +134,7 @@ h5{font-size:1.66em;margin-bottom:0.5em;}
 h6{font-size:1.5em;margin-bottom:0.5em;}
 p{margin-bottom:1em;}
 .gecko h1{font-weight:normal;}
+.macro_text{font-size:0.6333em;font-weight:inherit;line-height:1.5em;}
 .small_text{font-size:0.916666em;font-weight:inherit;line-height:1.5em;}
 .extra_small_text{font-size:0.8333em;font-weight:inherit;line-height:1.5em;}
 .medium_text{font-size:1em;font-weight:inherit;line-height:1.5em;}
