@@ -1,5 +1,6 @@
 <nav class="styleguide_nav">
 	<p><a href="/styleguide/index.php">Axle</a></p>
+	<p><a href="/styleguide/widgets/imageblock_caption.php">Widgets</a></p>
 	<p></p>
 	<p><a href="/styleguide/page_templates/template_a.php">Template A</a></p>
 	<p><a href="/styleguide/page_templates/template_b.php">Template B</a></p>

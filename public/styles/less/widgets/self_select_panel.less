@@ -1,3 +1,88 @@
-.blank_code {
-	background: green;
+///// Styles to support grid layout UI in styleguide
+// ------------------------------------------------
+.self_select_grid {
+	background: url(/styleguide/images/12_col.gif);
+}
+///// Styles to support grid layout UI in styleguide
+
+
+///// Styles for Three column image block w/title and caption
+// ----------------------------------------------------------
+.self_select_panel() {
+	.extra_large;
+	text-indent: 0.5555556em;
+	font-weight: bold;
+	li {
+		line-height: 2em;
+		border-bottom: 1px solid @golf_grey;
+		&:hover {
+			background: @hotel_grey;
+		}
+	}
+	a {
+		display: block;
+		background: url(/public/images/self_select_panel.png) no-repeat 90% 50%;
+		color: @alpha_grey;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+	.header {
+		background: @alpha_grey;
+		color: @white;
+		&:hover {
+			background: @alpha_grey;
+		}
+	}
+	.selected {
+		background: @hotel_grey;
+		border-bottom-color: @charlie_grey;
+		ul {
+			margin-bottom: 0;
+		}
+	}
+	.selected_content {
+		color: @white;
+		.macro;
+		li {
+			border: 0;
+			&:hover {
+				background: transparent;
+			}
+		}
+	}
+	.carrot {
+		background: transparent;
+		height: auto;
+		position: absolute;
+		margin: -.6666667em 0 0 1.833333em;
+		span {
+			border-color: transparent transparent @charlie_grey transparent;
+			border-style: solid;
+			border-width: 0 0.6666667em 0.6666667em 0.6666667em;
+			display: block;
+			height: auto;
+			width: auto;
+		}
+	}
+	.content {
+		background: @charlie_grey;
+		line-height: 1.5em !important;
+		padding: .666667em .666667em 2em .666667em;
+		text-indent: 0;
+		font-weight: normal;
+		&:hover {
+			background: @charlie_grey !important;
+		}
+	}
+}
+///// Styles for Three column image block w/title and caption
+
+
+
+
+// ------- semantic application for axle ---------- //
+.example_self_select_panel {
+	.grid_12(3);
+	.self_select_panel;
 }

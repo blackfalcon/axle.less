@@ -6,29 +6,23 @@
 		<header>
 			<p>1. Self select navigation panel</p>
 		</header>
-		<article class="imageblock_grid">
-			<ul class="featured_events">
-				<li>
-					<ul>
-						<li class="image">image block</div></li>
-						<li class="title"><h2>title block</h2></li>
-						<li class="caption"><p>caption block</p></li>
-					</ul>
+		<article class="self_select_grid">
+			<ul class="example_self_select_panel">
+				<li class="header">Select list item</li>
+				<li><a href="#">Select list item</a></li>
+				<li class="selected">
+					<a href="#">Select list item</a>
+					<div class="selected_content">
+						<ul>
+							<li class="carrot"><span></span></li>
+							<li class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+						</ul>
+					</div>
 				</li>
-				<li>
-					<ul>
-						<li class="image">image block</div></li>
-						<li class="title"><h2>title block</h2></li>
-						<li class="caption"><p>caption block</p></li>
-					</ul>
-				</li>
-				<li>
-					<ul>
-						<li class="image">image block</div></li>
-						<li class="title"><h2>title block</h2></li>
-						<li class="caption"><p>caption block</p></li>
-					</ul>
-				</li>
+				<li><a href="#">Select list item</a></li>
+				<li><a href="#">Select list item</a></li>
+				<li><a href="#">Select list item</a></li>
+				<li><a href="#">Select list item</a></li>
 			</ul>
 		</article>
 		
@@ -37,70 +31,95 @@
 			<p>HTML Example:</p>
 			<pre class="prettyprint">
 &lt;article&gt;
-  &lt;ul class=&quot;featured_events&quot;&gt;
-    &lt;li&gt;
-      &lt;ul&gt;
-        &lt;li class=&quot;image&quot;&gt;image block&lt;/div&gt;&lt;/li&gt;
-        &lt;li class=&quot;title&quot;&gt;&lt;h2&gt;title block&lt;/h2&gt;&lt;/li&gt;
-        &lt;li class=&quot;caption&quot;&gt;&lt;p&gt;caption block&lt;/p&gt;&lt;/li&gt;
-      &lt;/ul&gt;
+  &lt;ul class=&quot;example_self_select_panel&quot;&gt;
+    &lt;li class=&quot;header&quot;&gt;Select list item&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Select list item&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;selected&quot;&gt;
+      &lt;a href=&quot;#&quot;&gt;Select list item&lt;/a&gt;
+      &lt;div class=&quot;selected_content&quot;&gt;
+        &lt;ul&gt;
+          &lt;li class=&quot;carrot&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;/li&gt;
+          &lt;li class=&quot;content&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/div&gt;
     &lt;/li&gt;
-    &lt;li&gt;
-      &lt;ul&gt;
-        &lt;li class=&quot;image&quot;&gt;image block&lt;/div&gt;&lt;/li&gt;
-        &lt;li class=&quot;title&quot;&gt;&lt;h2&gt;title block&lt;/h2&gt;&lt;/li&gt;
-        &lt;li class=&quot;caption&quot;&gt;&lt;p&gt;caption block&lt;/p&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/li&gt;
-    &lt;li&gt;
-      &lt;ul&gt;
-        &lt;li class=&quot;image&quot;&gt;image block&lt;/div&gt;&lt;/li&gt;
-        &lt;li class=&quot;title&quot;&gt;&lt;h2&gt;title block&lt;/h2&gt;&lt;/li&gt;
-        &lt;li class=&quot;caption&quot;&gt;&lt;p&gt;caption block&lt;/p&gt;&lt;/li&gt;
-      &lt;/ul&gt;
-    &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Select list item&lt;/a&gt;&lt;/li&gt;  
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Select list item&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Select list item&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Select list item&lt;/a&gt;&lt;/li&gt;
   &lt;/ul&gt;
-&lt;/article&gt;			
+&lt;/article&gt;
 			</pre>
 		</article>
 		
 		<article>
 			<p>Example LESS mixin:</p>
 			<pre class="prettyprint">
-.image_block_caption {
-	.grid_12(9);
-	> li {
-		.grid_12(3);
-		&:first-child {
-			.alpha;
-		}
-		&:last-child {
-			.omega;
+.self_select_panel() {
+	.extra_large;
+	text-indent: 0.5555556em;
+	font-weight: bold;
+	li {
+		line-height: 2em;
+		border-bottom: 1px solid @golf_grey;
+		&:hover {
+			background: @hotel_grey;
 		}
 	}
-	.image, .title, .caption {
-		.grid_12(3);
-		.alpha;
-		.omega;
-		height: 130px;
+	a {
+		display: block;
+		background: url(/public/images/self_select_panel.png) no-repeat 90% 50%;
+		color: @alpha_grey;
+		&:hover {
+			text-decoration: none;
+		}
 	}
-	
-	.title {
-		height: 30px;
+	.header {
 		background: @alpha_grey;
-		h2 {
-			.medium;
-			margin: 0;
-			line-height: 30px;
-			color: @white;
-			padding: 0 0 0 10px;
+		color: @white;
+		&:hover {
+			background: @alpha_grey;
 		}
 	}
-	.caption {
-		.two_stop_linear_gradient (@fox_grey, fadeout(@white, 100%));
-		height: 100px;
-		p {
-			padding: 10px;
+	.selected {
+		background: @hotel_grey;
+		border-bottom-color: @charlie_grey;
+		ul {
+			margin-bottom: 0;
+		}
+	}
+	.selected_content {
+		color: @white;
+		.macro;
+		li {
+			border: 0;
+			&:hover {
+				background: transparent;
+			}
+		}
+	}
+	.carrot {
+		background: transparent;
+		height: auto;
+		position: absolute;
+		margin: -.6666667em 0 0 1.833333em;
+		span {
+			border-color: transparent transparent @charlie_grey transparent;
+			border-style: solid;
+			border-width: 0 0.6666667em 0.6666667em 0.6666667em;
+			display: block;
+			height: auto;
+			width: auto;
+		}
+	}
+	.content {
+		background: @charlie_grey;
+		line-height: 1.5em !important;
+		padding: .666667em .666667em 2em .666667em;
+		text-indent: 0;
+		font-weight: normal;
+		&:hover {
+			background: @charlie_grey !important;
 		}
 	}
 }
@@ -110,9 +129,11 @@
 		
 		<article>
 			<p>Example semantic LESS:</p>
+			<p><b>Note that the width <code>.grid_12(3);</code> of the widget is defined in the application of the widget, not in the widget itself.</b></p>
 			<pre class="prettyprint">
-.featured_events {
-	.image_block_caption;
+.example_self_select_panel {
+	.grid_12(3);
+	.self_select_panel;
 }
 			</pre>
 		</article>

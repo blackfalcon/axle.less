@@ -47,8 +47,9 @@ table{width:100%;border:1px solid #d8d8d8;border-width:1px 1px 0;margin-bottom:1
 table th,table td{padding:0 10px;}
 table td{padding:10px;line-height:1.5em;}
 table tbody tr{line-height:30px;border-bottom:1px solid #d8d8d8;}table tbody tr:hover{background-color:#f1f1f1;}
-.small{font-size:0.916666em;font-weight:inherit;line-height:1.5em;}
+.macro{font-size:0.6333em;font-weight:inherit;line-height:1.5em;}
 .extra_small{font-size:0.8333em;font-weight:inherit;line-height:1.5em;}
+.small{font-size:0.916666em;font-weight:inherit;line-height:1.5em;}
 .medium{font-size:1em;font-weight:inherit;line-height:1.5em;}
 .large{font-size:1.25em;font-weight:inherit;line-height:1.5em;}
 .extra_large{font-size:1.5em;font-weight:inherit;line-height:1.5em;}
@@ -85,6 +86,8 @@ table tbody tr{line-height:30px;border-bottom:1px solid #d8d8d8;}table tbody tr:
 .styleguide .colorcode p,.styleguide .gradient p{font-weight:bold;}
 .styleguide .styleguide_form_frame{border:1px dashed #a5a5a5;float:left;width:335px;padding:16px 16px 0;-moz-border-radius:6px;-webkit-border-radius:6px;border-radius:6px;margin-bottom:10px;}
 .styleguide .flex_blocks .india_grey{border:1px dashed rgba(37, 37, 37, 0.993);}.styleguide .flex_blocks .india_grey p{top:70px;}
+.styleguide .example_bullets ul{list-style:disc;margin:0 0 1.5em 1.6666667em;}
+.styleguide .example_bullets li{float:none;}
 .styleguide .gradient .alpha_color_gradient p{color:#252525;}
 .styleguide .login_body{margin:0 0 30px 0;padding:0;}
 .styleguide #standard_modal_alt{width:600px !important;}

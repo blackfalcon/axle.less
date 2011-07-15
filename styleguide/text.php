@@ -90,31 +90,54 @@
 		</article>
 		<footer></footer>
 		
-		<header><p>5. Unordered lists</p></header>
+		<header><p>5 Unordered lists</p></header>
 		<article>
-			<p>Since <code>&lt;ul&gt;&lt;/ul&gt;</code> tags are used a lot for layout, to regain the natural unordered list UI, the class of <code>.lower_content</code> is required on the parent container.</p>
-			<p>The good news is that the layout of the screen is dependent on <code>.lower_container</code>, so for the most part you get this for free an that is what we all like.</p>
+			<p>Since <code>&lt;ul&gt;&lt;/ul&gt;</code> tags are used a lot for layout, to regain a standard unordered list UI, use the <code>.bulleted_list</code> mixin in your semantic LESS class as illustrated.</p>
 		</article>
-		<article class="lower_content">
+		<article class="example_bullets">
 			<ul>
-				<li>List item one</li>
-				<li>List item two</li>
-				<li>List item three</li>
-				<li>List item four</li>
+				<li>Standard unordered list of items</li>
+				<li>Thing to list out</li>
+				<li>Grocery list maybe is a good one?</li>
+				<li>Right, list of Netflix movies I will never watch!</li>
 			</ul>
+		</article>
+		
+		<article>
+			<p>Example HTML:</p>
 			<pre class="prettyprint">
-&lt;div class=&quot;lower_container&quot;</span>&gt;
+&lt;article class=&quot;example_bullets&quot;&gt;
   &lt;ul&gt;
-    &lt;li&gt;List item one&lt;/li&gt;
-    &lt;li&gt;List item two&lt;/li&gt;
-    &lt;li&gt;List item three&lt;/li&gt;
-    &lt;li&gt;List item four&lt;/li&gt;
+    &lt;li&gt;Standard unordered list of items&lt;/li&gt;
+    &lt;li&gt;Thing to list out&lt;/li&gt;
+    &lt;li&gt;Grocery list maybe is a good one?&lt;/li&gt;
+    &lt;li&gt;Right, list of Netflix movies I will never watch!&lt;/li&gt;
   &lt;/ul&gt;
-&lt;/div&gt;
+&lt;/article&gt;
 			</pre>
 		</article>
-		<footer></footer>
 		
+		<article>
+			<p>.LESS mixin</p>
+			<pre class="prettyprint">
+.bulleted_list() {
+	ul {
+		list-style: disc;
+		margin: 0 0 1.5em 1.6666667em;
+	}
+	li {
+		float: none;
+	}
+}			</pre>
+		</article>
+		
+		<article>
+			<p>Example semantic LESS</p>
+			<pre class="prettyprint">
+.example_bullets {
+	.bulleted_list;
+}				</pre>
+		</article>
 		
 	</article>
 <?php include 'shared/footer.php'?>
