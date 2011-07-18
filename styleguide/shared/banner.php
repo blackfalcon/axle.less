@@ -1,1 +1,1 @@
-<div class="version_banner">0.8.4 beta</div>
+<div class="version_banner">0.8.6 beta</div>
