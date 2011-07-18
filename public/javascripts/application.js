@@ -15,6 +15,26 @@ jQuery(document).ready(function($) {
 		$(".toggle").toggle();
 	});
 	
+	$(".block00").hover(function () {
+		$(".content00").toggle();
+	});
+	
+	$(".block01").hover(function () {
+		$(".content01").toggle();
+	});
+	
+	$(".block02").hover(function () {
+		$(".content02").toggle();
+	});
+	
+	$(".block03").hover(function () {
+		$(".content03").toggle();
+	});
+	
+	$(".block04").hover(function () {
+		$(".content04").toggle();
+	});
+	
 	// Auto opens all hrefs that point to external sites in another window
 	$('a[href^="http://"]')
 		.attr({

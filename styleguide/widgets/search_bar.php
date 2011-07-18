@@ -7,7 +7,7 @@
 			<p>1. Standard site search bar</p>
 		</header>
 		
-		<article class="imageblock_grid">
+		<article class="imageblock_grid inner_widget">
 			<div class="site_search_block">
 				<form>
 					<input type="text" />

@@ -27,14 +27,18 @@
 		}
 	}
 	.selected {
-		background: @hotel_grey;
-		border-bottom-color: @charlie_grey;
+		//background: @hotel_grey;
+		//border-bottom-color: @charlie_grey;
 		ul {
 			margin-bottom: 0;
 		}
 	}
 	.selected_content {
 		color: @white;
+		position: absolute;
+		width: 220px;
+		margin-left: 220px;
+		margin-top: -3em;
 		.macro;
 		li {
 			border: 0;
@@ -47,11 +51,11 @@
 		background: transparent;
 		height: auto;
 		position: absolute;
-		margin: -.6666667em 0 0 1.833333em;
+		margin: 9px 0 0 -7px;
 		span {
-			border-color: transparent transparent @charlie_grey transparent;
+			border-color: transparent @charlie_grey transparent transparent;
 			border-style: solid;
-			border-width: 0 0.6666667em 0.6666667em 0.6666667em;
+			border-width: 0.6666667em 0.6666667em 0.6666667em 0;
 			display: block;
 			height: auto;
 			width: auto;
@@ -59,6 +63,7 @@
 	}
 	.content {
 		background: @charlie_grey;
+		.border_radius(0 5px 5px 5px);
 		line-height: 1.5em !important;
 		padding: .666667em .666667em 2em .666667em;
 		text-indent: 0;

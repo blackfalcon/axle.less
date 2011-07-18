@@ -8,7 +8,15 @@
 			<nav>header nav</nav>
 		</header>
 		
-		<section class="screen_header">Screen-header section</section>
+		<section class="screen_header">
+			<div class="site_search_block">
+				<form>
+					<input type="text" />
+					<button>search</button>
+				</form>	
+			</div>		
+		</section>
+		
 		<aside class="site_aside">Content section</aside>
 		<section class="primary_content_section">Hero section</section>
 	

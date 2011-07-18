@@ -1,6 +1,6 @@
 .template_b {
 	background: url(/styleguide/images/12_col.gif) repeat-y;
-	.site_header, .primary_content_section, .site_aside, .site_aside_section, .site_footer {
+	.site_header, .screen_header, .primary_content_section, .site_aside, .site_aside_section, .site_footer {
 		.inset_border;
 		background: fadeout(@white, 50%);
 		nav, article, header, footer {
@@ -15,7 +15,7 @@
 // ----------------------------------------------------------------------
 .template_b {
 	width: 960px;
-	margin-bottom: 20px;
+	margin-bottom: 1.6666667em;
 	.clearfix;
 	margin: 0 auto;
 	
@@ -27,26 +27,32 @@
 	}
 	.site_header {
 		.grid_12(12);
-		margin-bottom: 10px;
+		margin-bottom: 0.8333333em;
 		nav {
-			margin: 10px;
+			margin: 0.8333333em;
 		}
 	}
+	.screen_header {
+		.grid_12(12);
+		min-height: 100px;
+		margin-bottom: 0.8333333em;
+	}
+	
 	.primary_content_section {
 		float: left;
 		.grid_12(9);
-		height: 300px;
+		min-height: 300px;
 	}
 	.site_aside {
 		float: right;
 		.grid_12(3);
-		height: 300px;
+		min-height: 300px;
 	} 
 	
 	.site_footer {
 		float: left;
 		.grid_12(12);
-		height: 300px;
-		margin-top: 10px;
+		min-height: 300px;
+		margin-top: 0.8333333em;
 	}
 }
