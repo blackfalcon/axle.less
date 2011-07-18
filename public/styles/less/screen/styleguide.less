@@ -8,9 +8,12 @@
 @import "../imports/grid.less";
 
 @import "../widgets/styleguide_nav.less";
+// -------------------------------------------------------
+// The imports/ directory are intended for reusable mixins
 
 
-//// styleguide UI ////
+///////          styleguide UI            ///////
+// ------------------------------------------- //
 .styleguide {
 	background: @white;
 	
@@ -516,7 +519,8 @@
 		}
 	}
 }
-//// styleguide UI ////
+///////          styleguide UI            ///////
+// ------------------------------------------- //
 
 
 
@@ -600,7 +604,99 @@ li.L1, li.L3, li.L5, li.L7, li.L9 {
     background: #3F3F3F;
 }
 
+// ----------------------------------------
+///////////// prettify styles //////////////////
 
+
+
+
+// OOCSS text classes for styleguide use only
+// ------------------------------------------
+.macro_text {
+	.macro;
+}
+
+.small_text {
+	.small;
+}
+  
+.extra_small_text {
+	.extra_small;
+}  
+
+.medium_text {
+	.medium;
+}
+
+.large_text {
+	.large;
+}
+
+.extra_large_text {
+	.extra_large;
+}
+  
+.xx_large_text {
+	.xx_large;
+}
+// OOCSS text classes for styleguide use only
+// ------------------------------------------
+
+
+
+
+
+////////// styles to support UI in styleguide  //////////////
+// ------------------------------------------------------- //
+.li_support() {
+	margin-bottom: 20px;
+	li {
+		background: fadeout(@white, 40%);
+	}
+	.sudo_image {
+		background: @hotel_grey;
+	}
+}
+
+.grid_bkg_12() {
+	background: url(/styleguide/images/12_col.gif);
+	.li_support;
+}
+
+.grid_bkg_16() {
+	background: url(/styleguide/images/16_col.gif);
+	.li_support;
+}
+
+////////////////
+
+.col_16_grid {
+	.grid_bkg_16;
+}
+
+.self_select_grid {
+	background: url(/styleguide/images/12_col.gif);
+	margin-bottom: 20px;
+}
+
+.imageblock_grid {
+	.grid_bkg_12;
+
+}
+// ------------------------------------------------------- //
+////////// styles to support UI in styleguide  //////////////
+
+
+
+
+
+
+
+
+
+
+////////// imported ui styles for templates //////////////
+// ---------------------------------------------------- //
 @import "template_a.less";
 @import "template_b.less";
 @import "dynamic_grid.less";
@@ -608,3 +704,5 @@ li.L1, li.L3, li.L5, li.L7, li.L9 {
 @import "multi_stacked_structure.less";
 @import "stacked_structure.less";
 @import "blog_structure.less";
+// ---------------------------------------------------- //
+////////// imported ui styles for templates //////////////

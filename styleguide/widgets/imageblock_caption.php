@@ -33,7 +33,15 @@
 		</article>
 		
 		<article>
-			<p></p>
+			<p>Example semantic LESS:</p>
+			<pre class="prettyprint">
+.featured_events {
+	.image_block_caption;
+}
+			</pre>
+		</article>
+		
+		<article>
 			<p>HTML Example:</p>
 			<pre class="prettyprint">
 &lt;article&gt;
@@ -105,15 +113,6 @@
 	}
 }
 
-			</pre>
-		</article>
-		
-		<article>
-			<p>Example semantic LESS:</p>
-			<pre class="prettyprint">
-.featured_events {
-	.image_block_caption;
-}
 			</pre>
 		</article>
 	</section>

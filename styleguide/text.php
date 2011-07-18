@@ -5,11 +5,11 @@
 		<?php include 'shared/nav.php'?>
 		<header><p>1. Heading text</p></header>
 		<article class="h1s">
-			<h1>H1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere malesuada adipiscing.</h1>
-			<h2>H2: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere malesuada adipiscing.</h2>
-			<h3>H3: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere malesuada adipiscing.</h3>
-			<h4>H4: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere malesuada adipiscing.</h4>
-			<h5>H5: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere malesuada adipiscing.</h5>
+			<h1>heading_1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere malesuada adipiscing.</h1>
+			<h2>heading_2: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere malesuada adipiscing.</h2>
+			<h3>heading_3: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere malesuada adipiscing.</h3>
+			<h4>heading_4: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere malesuada adipiscing.</h4>
+			<h5>heading_5: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere malesuada adipiscing.</h5>
 		</article>
 		<footer></footer>
 		
@@ -22,15 +22,15 @@
 			</article>
 		</header>
 		<article class="h1s google_font_alpha">
-			<h1>H1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere malesuada adipiscing.</h1>
-			<h2>H2: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere malesuada adipiscing.</h2>
-			<h3>H3: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere malesuada adipiscing.</h3>
-			<h4>H4: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere malesuada adipiscing.</h4>
-			<h5>H5: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere malesuada adipiscing.</h5>
+			<h1>heading_1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere malesuada adipiscing.</h1>
+			<h2>heading_2: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere malesuada adipiscing.</h2>
+			<h3>heading_3: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere malesuada adipiscing.</h3>
+			<h4>heading_4: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere malesuada adipiscing.</h4>
+			<h5>heading_5: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere malesuada adipiscing.</h5>
 			<p><b>OOCSS Example:</b></p>
 			<pre class="prettyprint">
 &lt;div class=&quot;home_page_hero google_font_alpha&quot;</span>&gt;
-  &lt;h1&gt;H1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere malesuada adipiscing.&lt;/h1&gt;
+  &lt;h1&gt;heading_ 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere malesuada adipiscing.&lt;/h1&gt;
 &lt;/div&gt;
 			</pre>
 			<p><b>Semantic .LESS approach</b></p>
@@ -50,32 +50,51 @@
 		<header>
 			<p>2. body text</p>
 			<article>
-				<em>
-					<p>Applying a size class to the parent block element or the LESS mixin to a semantic class will adjust the font size in the appropriate em scale.</p>
-				</em>
+				<p>Font styles are based on <code>em</code> scales, see <a href="http://www.alistapart.com/articles/howtosizetextincss/">How to Size Text in CSS</a>.  Setting the 'medium' or base font size for the application on the <code>body</code> tag sets the app precedence.</p> 
+				<p>At the appropriate block level apply the LESS mixins of <code>macro, extra_small, small, medium, large, extra_large, xx_large</code> to the semantically named classes in your design LESS.  </p>
 			</article>
 		</header>
 		<article class="body_text">
-			<p class="macro_text">class="macro_text"</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dolor diam, condimentum gravida ultricies non, sollicitudin eget nunc.</p>
-			<p class="extra_small">class="extra_small"</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dolor diam, condimentum gravida ultricies non, sollicitudin eget nunc.</p>
-			<p class="small">class="small"</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dolor diam, condimentum gravida ultricies non, sollicitudin eget nunc.</p>
-			<p class="medium">class="medium" (default site style)</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dolor diam, condimentum gravida ultricies non, sollicitudin eget nunc.</p>
-		</article>
-		<article class="body_text">
-			<p class="large">class="large"</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dolor diam, condimentum gravida ultricies non, sollicitudin eget nunc.</p>
-			<p class="extra_large">class="extra_large"</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dolor diam, condimentum gravida ultricies non, sollicitudin eget nunc.</p>
-			<p class="xx_large">class="xx_large"</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dolor diam, condimentum gravida ultricies non, sollicitudin eget nunc.</p>
+			<p class="macro_text">@macro: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dolor diam, condimentum gravida ultricies non, sollicitudin eget nunc.</p>
+			<p class="extra_small">@extra_small: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dolor diam, condimentum gravida ultricies non, sollicitudin eget nunc.</p>
+			<p class="small">@small: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dolor diam, condimentum gravida ultricies non, sollicitudin eget nunc.</p>
+			<p class="medium">@medium: (default site style)</span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dolor diam, condimentum gravida ultricies non, sollicitudin eget nunc.</p>
+			<p class="large">@large: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dolor diam, condimentum gravida ultricies non, sollicitudin eget nunc.</p>
+			<p class="extra_large">@extra_large: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dolor diam, condimentum gravida ultricies non, sollicitudin eget nunc.</p>
+			<p class="xx_large">@xx_large: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dolor diam, condimentum gravida ultricies non, sollicitudin eget nunc.</p>
 		</article>
 		<footer></footer>
 		
-		<header><p>3. Standard body links</p></header>
 		<article>
-			<p><em>Note: The following examples show that by simply using an &lt;a&gt; tag will produce the desired UI.  But also appending the font size classes as described in #2 will account for the appropriate font sizes.</em>  </p>
+			<p>Example HTML:</p>
+			<pre class="prettyprint">
+&lt;article class=&quot;leading_article&quot;&gt;
+  &lt;header&gt;
+    This is going to be some large text!
+  &lt;/header&gt;
+  &lt;p&gt;For the sake of giving emphasis to the leading article, we will make the body copy larger.&lt;/p&gt;
+&lt;/article&gt;</pre>
 		</article>
+		
+		<article>
+			<p>Example LESS:</p>
+			<pre class="prettyprint">
+.leading_article {
+  header {
+    @xx_large;
+  }
+  p {
+    @large;
+  }
+}</pre>
+		</article>
+		
+		<header>
+			<p>3. Standard body links</p>
+			<p>The following examples show that by simply using an &lt;a&gt; tag will produce the desired UI.</p>
+		</header>
 		<article class="link_text">
-			<p class="extra_small"><a href="#">&lt;p class=&quot;extra_small&quot;&gt;&lt;a href=&quot;#&quot;&gt;extra-small&lt;/a&gt;&lt;/p&gt;</a></p>
-			<p class="small"><a href="#">&lt;p class=&quot;small&quot;&gt;&lt;a href=&quot;#&quot;&gt;small&lt;/a&gt;&lt;/p&gt;</a></p>
-			<p><a href="#">&lt;p&gt;&lt;a href=&quot;#&quot;&gt;medium (defult)&lt;/a&gt;&lt;/p&gt;</a></p>
+			<p><a href="#">&lt;p&gt;&lt;a href=&quot;#&quot;&gt;standard copy 1em font style&lt;/a&gt;&lt;/p&gt;</a></p>
 		</article>
 		<footer></footer>
 		
