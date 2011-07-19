@@ -1190,6 +1190,16 @@ li.L9 {
 .col_16_grid .sudo_image {
   background: #f1f1f1;
 }
+.col_12_grid {
+  background: url(/styleguide/images/12_col.gif);
+  margin-bottom: 20px;
+}
+.col_12_grid li {
+  background: rgba(255, 255, 255, 0.6);
+}
+.col_12_grid .sudo_image {
+  background: #f1f1f1;
+}
 .self_select_grid {
   background: url(/styleguide/images/12_col.gif);
   margin-bottom: 20px;

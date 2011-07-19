@@ -25,6 +25,10 @@
 		</aside>
 		
 		<section class="primary_content_section editorial">
+			<article class="slide_viewer">
+				<?php include '../widgets/_slide_show.php'?>
+			</article>
+			
 			<article class="image_blocks">
 				<h3>In hac habitasse platea dictumst</h3>
 				<ul class="featured_events">

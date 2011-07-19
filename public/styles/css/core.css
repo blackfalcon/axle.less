@@ -2922,6 +2922,36 @@ form dl + p {
   left: 40px;
   position: relative;
 }
+.slide_show_container {
+  display: inline;
+  float: left;
+  margin: 0 10px;
+  width: 700px;
+  margin-left: 0;
+  margin-right: 0;
+  border: 1px solid #252525;
+}
+.slide_show_view {
+  background: #8b8b8b;
+  display: inline;
+  float: left;
+  margin: 0 10px;
+  width: 689.5999999999999px;
+  margin-left: 0;
+  margin-right: 0;
+  margin: 5px;
+  height: 300px;
+}
+.slide_show_tools {
+  display: inline;
+  float: left;
+  margin: 0 10px;
+  width: 689.5999999999999px;
+  margin-left: 0;
+  margin-right: 0;
+  margin: 0 5px 5px;
+  float: left;
+}
 .template_a {
   background: url(/styleguide/images/12_col.gif) repeat-y;
 }
@@ -3475,6 +3505,10 @@ form dl + p {
   height: 0;
   overflow: hidden;
   clear: both;
+}
+.editorial .slide_viewer {
+  border: 0;
+  padding: 0;
 }
 .global_assignment, .editorial_subscription, .deep_file_research {
   display: inline;
