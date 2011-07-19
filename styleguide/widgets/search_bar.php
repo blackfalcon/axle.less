@@ -8,7 +8,9 @@
 		</header>
 		
 		<article class="imageblock_grid inner_widget">
-			<?php include '../widgets/_search_bar.php'?>
+			<div class="site_search_block">
+				<?php include '../widgets/_search_bar.php'?>
+			</div>	
 		</article>
 		
 

@@ -7,7 +7,9 @@
 			<p>1. Self select navigation panel</p>
 		</header>
 		<article class="self_select_grid inner_widget">
-			<?php include '../widgets/_self_select_panel.php'?>
+			<ul class="example_self_select_panel">
+				<?php include '../widgets/_self_select_panel.php'?>
+			</ul>
 		</article>
 		
 		<article>

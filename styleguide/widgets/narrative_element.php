@@ -9,7 +9,9 @@
 			<p>For semantic use, apply the <code>.narrative_element</code> mixin within the semantic class for the block element.</p>
 		</header>
 		<article class="col_16_grid inner_widget">
-			<?php include '../widgets/_narrative_element_left.php'?>
+			<ul class="global_assignment">
+				<?php include '../widgets/_narrative_element_left.php'?>
+			</ul>
 		</article>
 		
 		
@@ -74,7 +76,9 @@
 			<p>To use a reverse UI version of the narrative element, simply swap the order of the <code>.text</code> and <code>.media</code> HTML blocks as shown below.</p>
 		</header>
 		<article class="col_16_grid inner_widget">
-			<?php include '../widgets/_narrative_element_right.php'?>
+			<ul class="global_assignment">
+				<?php include '../widgets/_narrative_element_right.php'?>
+			</ul>
 		</article>
 		
 				<article>

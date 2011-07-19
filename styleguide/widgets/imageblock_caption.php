@@ -7,7 +7,9 @@
 			<p>1. Three column image block w/title and caption</p>
 		</header>
 		<article class="imageblock_grid inner_widget">
-			<?php include '../widgets/_imageblock_caption.php'?>
+			<ul class="featured_events">
+				<?php include '../widgets/_imageblock_caption.php'?>
+			</ul>
 		</article>
 		
 		<article>
