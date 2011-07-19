@@ -8,12 +8,7 @@
 		</header>
 		
 		<article class="imageblock_grid inner_widget">
-			<div class="site_search_block">
-				<form>
-					<input type="text" />
-					<button>search</button>
-				</form>			
-			</div>
+			<?php include '../widgets/_search_bar.php'?>
 		</article>
 		
 

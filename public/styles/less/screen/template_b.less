@@ -1,12 +1,8 @@
 .template_b {
 	background: url(/styleguide/images/12_col.gif) repeat-y;
-	.site_header, .screen_header, .primary_content_section, .site_aside, .site_aside_section, .site_footer {
+	nav, .site_header, .screen_header, .primary_content_section, .site_aside, .site_aside_section, .site_footer {
 		.inset_border;
 		background: fadeout(@white, 50%);
-		nav, article, header, footer {
-			.inset_border;
-			background: fadeout(@white, 50%);
-		}
 	}
 }
 
@@ -43,6 +39,7 @@
 		.grid_12(9);
 		min-height: 300px;
 	}
+		
 	.site_aside {
 		float: right;
 		.grid_12(3);
@@ -54,5 +51,62 @@
 		.grid_12(12);
 		min-height: 300px;
 		margin-top: 0.8333333em;
+	}
+}
+
+
+
+/////////////// styles for example template
+// -----------------------------------------
+.template_b {
+	.screen_header {
+		header {
+			.heading_2;
+			font-weight: bold;
+		}
+		article {
+			.large;
+		}
+	}
+	
+	.primary_content_section {
+		article {
+			border-bottom: 1px solid @delta_grey;
+			padding-bottom: 1.5em;
+			margin-bottom: 1.5em;
+			.clearfix;
+		}
+	}
+	
+	.narratives {
+		.global_assignment {
+			border-bottom: 1px solid @delta_grey;
+			margin-bottom: 1.5em;
+				&:last-child {
+					border: 0;
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+	
+	.editorial_coverage {
+		ul {
+			.grid_12(9);
+			.alpha;
+			.omega;
+		}
+		li {
+			.grid_12(3);
+			&:first-child {
+				.alpha;
+			}
+			&:last-child {
+				.omega;
+			}
+		}
+		p {
+			margin: 0;
+		}
 	}
 }
