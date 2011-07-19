@@ -128,6 +128,17 @@ button.active, input[type=submit].active, input[type=button].active, a.active {
 	.anti_button;
 }
 
+
+.mini_pagination {
+	font-weight: bold;
+	line-height: 2.08333333em;
+	li {
+		float: left;
+		margin-right: 0.8333333em;
+	}
+	.mini_buttons;
+}
+
 ////// buttons ////////
  
  
@@ -296,7 +307,6 @@ input[disabled], textarea[disabled], .disabled {
 	border-color: @input_disabled_border;
 	color: @input_disabled_text;
 	opacity: .35;
-	//filter: Alpha(Opacity=35);
 	&:hover {
 		border-color: @input_disabled_border;
 		.soft_shadow;
@@ -306,7 +316,6 @@ input[disabled], textarea[disabled], .disabled {
 
 input[type=submit], input[type=button] {
 	opacity: 1.0;
-	//filter: Alpha(Opacity=100);
 }
 
 textarea {

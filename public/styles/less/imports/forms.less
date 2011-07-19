@@ -161,7 +161,6 @@
 	
 .anti_button() {
 	button, input[type=submit], a.button {
- 		font-size: inherit;
  		font-weight: normal;
  		color: @alpha_grey;
 		padding: 0;
@@ -190,6 +189,36 @@
 	}
 }
 		
+.mini_buttons () {
+	.anti_button;
+	button {
+		.two_stop_linear_gradient (lighten(@hotel_grey, 10%), @hotel_grey);
+		.border_radius (.25em);
+		border: 1px solid @golf_grey;
+		width: 1.3888888em;
+		height: 1.3888888em;
+		color: transparent;
+		.text_shadow (transparent, 0 0 0);
+		display: inline-block;
+		span {
+			background: url(/public/images/self_select_panel.png) no-repeat 50% 50%;
+			display: block;
+			width: 0.555556em;
+			height: 0.555556em;
+			margin: 0 auto;
+			.transform (rotate(180deg));
+		}
+		&:hover {
+			.box_shadow (@white, 0 0 0);
+			.two_stop_linear_gradient (@hotel_grey, lighten(@hotel_grey, 10%));
+		}
+		+ button {
+			span {
+				.transform (rotate(0deg));
+			}
+		}
+	}
+}
 	
 /////// Buttons design - primary, secondary, and small ////////
 
