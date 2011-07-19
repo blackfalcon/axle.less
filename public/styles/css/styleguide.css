@@ -327,6 +327,10 @@ table tbody tr:hover {
   padding: 60px 100px 100px 100px;
   letter-spacing: 4px;
 }
+.styleguide_nav:hover {
+  left: 30px;
+  color: rgba(0, 0, 0, 0);
+}
 .styleguide_nav p {
   margin: 0.5em 0 0 0;
   text-align: center;
@@ -379,10 +383,6 @@ table tbody tr:hover {
 }
 .styleguide_nav p:first-child {
   margin-top: 0;
-}
-.styleguide_nav:hover {
-  left: 30px;
-  color: rgba(0, 0, 0, 0);
 }
 .styleguide {
   background: #ffffff;
@@ -1190,6 +1190,16 @@ li.L9 {
 .col_16_grid .sudo_image {
   background: #f1f1f1;
 }
+.col_12_grid {
+  background: url(/styleguide/images/12_col.gif);
+  margin-bottom: 20px;
+}
+.col_12_grid li {
+  background: rgba(255, 255, 255, 0.6);
+}
+.col_12_grid .sudo_image {
+  background: #f1f1f1;
+}
 .self_select_grid {
   background: url(/styleguide/images/12_col.gif);
   margin-bottom: 20px;
@@ -1203,4 +1213,7 @@ li.L9 {
 }
 .imageblock_grid .sudo_image {
   background: #f1f1f1;
+}
+.inner_widget {
+  background-position: -10px 0;
 }

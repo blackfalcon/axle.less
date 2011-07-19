@@ -6,23 +6,9 @@
 		<header>
 			<p>1. Self select navigation panel</p>
 		</header>
-		<article class="self_select_grid">
+		<article class="self_select_grid inner_widget">
 			<ul class="example_self_select_panel">
-				<li class="header">Select list item</li>
-				<li><a href="#">Select list item</a></li>
-				<li class="selected">
-					<a href="#">Select list item</a>
-					<div class="selected_content">
-						<ul>
-							<li class="carrot"><span></span></li>
-							<li class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
-						</ul>
-					</div>
-				</li>
-				<li><a href="#">Select list item</a></li>
-				<li><a href="#">Select list item</a></li>
-				<li><a href="#">Select list item</a></li>
-				<li><a href="#">Select list item</a></li>
+				<?php include '../widgets/_self_select_panel.php'?>
 			</ul>
 		</article>
 		

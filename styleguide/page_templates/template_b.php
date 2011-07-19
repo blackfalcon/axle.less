@@ -7,6 +7,8 @@
 			<h1>site header</h1>
 			<nav>header nav</nav>
 		</header>
+		
+		<section class="screen_header">Screen-header section</section>
 		<aside class="site_aside">Content section</aside>
 		<section class="primary_content_section">Hero section</section>
 	

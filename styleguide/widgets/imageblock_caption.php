@@ -6,29 +6,9 @@
 		<header>
 			<p>1. Three column image block w/title and caption</p>
 		</header>
-		<article class="imageblock_grid">
+		<article class="imageblock_grid inner_widget">
 			<ul class="featured_events">
-				<li>
-					<ul>
-						<li class="image">image block</div></li>
-						<li class="title"><h2>title block</h2></li>
-						<li class="caption"><p>caption block</p></li>
-					</ul>
-				</li>
-				<li>
-					<ul>
-						<li class="image">image block</div></li>
-						<li class="title"><h2>title block</h2></li>
-						<li class="caption"><p>caption block</p></li>
-					</ul>
-				</li>
-				<li>
-					<ul>
-						<li class="image">image block</div></li>
-						<li class="title"><h2>title block</h2></li>
-						<li class="caption"><p>caption block</p></li>
-					</ul>
-				</li>
+				<?php include '../widgets/_imageblock_caption.php'?>
 			</ul>
 		</article>
 		
