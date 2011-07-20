@@ -9,7 +9,7 @@
 		
 		<article class="imageblock_grid inner_widget">
 			<div class="site_search_block">
-				<?php include '../widgets/_search_bar.php'?>
+				<?php include '../../partials/_search_bar.php'?>
 			</div>	
 		</article>
 		

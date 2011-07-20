@@ -8,7 +8,7 @@
 		</header>
 		<article class="imageblock_grid inner_widget">
 			<ul class="featured_events">
-				<?php include '../widgets/_imageblock_caption.php'?>
+				<?php include '../../partials/_imageblock_caption.php'?>
 			</ul>
 		</article>
 		

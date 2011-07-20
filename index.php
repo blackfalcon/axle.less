@@ -5,7 +5,7 @@
 		</header>
 		<?php include 'styleguide/shared/banner.php'?>
 		<section class="page_content">
-			<?php include 'partials/home_hero.php'?>		
+			<?php include 'partials/_home_hero.php'?>		
 		</section>	
 		<?php include 'shared/body_navbar.php'?>
 		<section class="body_call_to_action">
@@ -22,7 +22,7 @@
 				<p><cite>-- <a href="http://twitter.com/#!/dubharmonic">@dubharmonic Eric Sorenson</a></cite></p>
 			</article>
 			<aside class="home_twitter_feed">
-				<?php include 'partials/twitter.php'?>
+				<?php include 'partials/_twitter.php'?>
 			</aside>			
 		</section>
 		

@@ -1,7 +1,7 @@
-<?php include 'shared/head.php'?>
-	<?php include 'shared/banner.php'?>
+<?php include '../shared/head.php'?>
+	<?php include '../shared/banner.php'?>
 	<header class="styleguide_header"><h1>| Axle | 'pagination'</h1></header>
-	<?php include 'shared/nav.php'?>
+	<?php include '../shared/widget_nav.php'?>
 	<article class="styleguide_body button_styleguide">
 
 		<header>
@@ -101,10 +101,10 @@
 			</pre>
 		</article>
 		
-		<header>2 Mini Paging</header>
+		<header>2 Mini pagination</header>
 		<article>
 			<ul class="mini_pagination">
-				<?php include 'widgets/_mini_buttons.php'?>
+				<?php include '../../partials/_mini_buttons.php'?>
 			</ul>
 			
 			
@@ -179,4 +179,4 @@
 	
 	
 	</article>
-<?php include 'shared/footer.php'?>
+<?php include '../shared/footer.php'?>

@@ -10,7 +10,7 @@
 		</header>
 		<article class="col_16_grid inner_widget">
 			<ul class="global_assignment">
-				<?php include '../widgets/_narrative_element_left.php'?>
+				<?php include '../../partials/_narrative_element_left.php'?>
 			</ul>
 		</article>
 		
@@ -77,7 +77,7 @@
 		</header>
 		<article class="col_16_grid inner_widget">
 			<ul class="global_assignment">
-				<?php include '../widgets/_narrative_element_right.php'?>
+				<?php include '../../partials/_narrative_element_right.php'?>
 			</ul>
 		</article>
 		

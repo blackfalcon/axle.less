@@ -123,21 +123,23 @@ button.active, input[type=submit].active, input[type=button].active, a.active {
 		.ajax_spinner_lg;
 	}
 }
-		
+
+
+// OOCSS use case for reverting a button to a clean UI state
+// only use in case of emergency
+// ---------------------------------------------------------		
 .anti_buttons {
 	.anti_button;
 }
 
-
-.mini_pagination {
-	font-weight: bold;
-	line-height: 2.08333333em;
-	li {
-		float: left;
-		margin-right: 0.8333333em;
-	}
+.pill_buttons {
 	.mini_buttons;
 }
+
+.pill_buttons_nav {
+	.mini_buttons_paging;
+}
+
 
 ////// buttons ////////
  

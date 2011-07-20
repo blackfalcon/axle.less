@@ -418,5 +418,81 @@ or
 			</pre>
 		</article>
 		<footer></footer>
+		
+		<header>
+			<p>7. Mini buttons</p>
+			<p>In the example below, the class <code>.pill_buttons</code> are build using the mixin of <code>.mini_buttons</code></p>
+		</header>
+		<article>
+			<div class="pill_buttons" id="">
+				<button>X</button><button>X</button><button>X</button>
+			</div>
+		</article>
+		
+		<article>
+			<p>Example HTML:</p>
+			<pre class="prettyprint">
+&lt;div class=&quot;pill_buttons&quot;&gt;
+  &lt;button&gt;X&lt;/button&gt;&lt;button&gt;X&lt;/button&gt;&lt;button&gt;X&lt;/button&gt;
+&lt;/div&gt;
+			</pre>
+		</article>
+		
+		<article>
+			<p>Example LESS:</p>
+			<pre class="prettyprint">
+.pill_buttons {		// semantic named class
+  .mini_buttons;	// LESS mixin use
+}
+			</pre>
+		</article>
+		
+		<header>
+			<p>7.1 Pill button paging</p>
+		</header>
+		<article>
+			<div class="pill_buttons_nav" id="">
+				<button><span>reverse</span></button><button><span>advance</span></button>
+			</div>
+		</article>
+		
+		<article>
+			<p>Example HTML:</p>
+			<pre class="prettyprint">
+&lt;div class=&quot;pill_buttons_nav&quot; id=&quot;&quot;&gt;
+  &lt;button&gt;&lt;span&gt;reverse&lt;/span&gt;&lt;/button&gt;&lt;button&gt;&lt;span&gt;advance&lt;/span&gt;&lt;/button&gt;
+&lt;/div&gt;
+			</pre>
+		</article>
+		
+		<article>
+			<p>Example LESS:</p>
+			<pre class="prettyprint">
+.pill_buttons_nav {
+  .mini_buttons_paging;
+}
+			</pre>
+		</article>
 	</article>
 <?php include 'shared/footer.php'?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

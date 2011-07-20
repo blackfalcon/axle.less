@@ -1,5 +1,5 @@
 .slide_show_container {
-	.grid_12(9);
+	.grid_12(8.98);
 	.alpha;
 	.omega;
 	border: 1px solid @alpha_grey;
@@ -7,17 +7,52 @@
 
 .slide_show_view {
 	background: @echo_grey;
-	.grid_12(8.87);
+	.grid_12(8.86);			// take into account padding and borders
 	.alpha;
 	.omega;
 	margin: 5px;
 	height: 300px;
+	color: @white;
+	line-height: 300px;
+	text-align: center;
 }
 
 .slide_show_tools {
-	.grid_12(8.87);
+	.grid_12(8.87);			// take into account padding and borders
 	.alpha;
 	.omega;
-	margin: 0 5px 5px;
+	margin: 0 5px;
 	float: left;
+	ul {
+		float: left;
+		margin: 0;
+	}
+}
+
+.mini_pagination {
+	font-weight: bold;
+	line-height: 2.08333333em;
+	width: auto;
+	float: right !important;
+	li {
+		float: left;
+		margin-right: 0.8333333em;
+		&:last-child {
+			margin: 0;
+			line-height: 3em;
+		}
+	}
+	.mini_buttons_paging;
+}
+
+
+.tool_box {
+	line-height: 2.08333333em;
+	li {
+		float: left;
+		margin-right: 0.8333333em;
+	}
+	a {
+		color: @alpha_grey;
+	}
 }
