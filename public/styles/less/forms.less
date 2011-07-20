@@ -123,10 +123,23 @@ button.active, input[type=submit].active, input[type=button].active, a.active {
 		.ajax_spinner_lg;
 	}
 }
-		
+
+
+// OOCSS use case for reverting a button to a clean UI state
+// only use in case of emergency
+// ---------------------------------------------------------		
 .anti_buttons {
 	.anti_button;
 }
+
+.pill_buttons {
+	.mini_buttons;
+}
+
+.pill_buttons_nav {
+	.mini_buttons_paging;
+}
+
 
 ////// buttons ////////
  
@@ -296,7 +309,6 @@ input[disabled], textarea[disabled], .disabled {
 	border-color: @input_disabled_border;
 	color: @input_disabled_text;
 	opacity: .35;
-	//filter: Alpha(Opacity=35);
 	&:hover {
 		border-color: @input_disabled_border;
 		.soft_shadow;
@@ -306,7 +318,6 @@ input[disabled], textarea[disabled], .disabled {
 
 input[type=submit], input[type=button] {
 	opacity: 1.0;
-	//filter: Alpha(Opacity=100);
 }
 
 textarea {

@@ -161,7 +161,6 @@
 	
 .anti_button() {
 	button, input[type=submit], a.button {
- 		font-size: inherit;
  		font-weight: normal;
  		color: @alpha_grey;
 		padding: 0;
@@ -189,7 +188,58 @@
 		}
 	}
 }
-		
+
+
+// This mixin only accounts for general color and shape of a mini button
+// see .pill_buttons style building for example
+// ---------------------------------------------------------------------	
+.mini_buttons () {
+	.anti_button;
+	button {
+		.two_stop_linear_gradient (lighten(@hotel_grey, 10%), @hotel_grey);
+		.border_radius (.25em);
+		border: 1px solid @golf_grey;
+		.text_shadow (transparent, 0 0 0);
+		display: inline-block;
+		margin-right: 0.4166667em;
+		line-height: 2em;
+		padding: 0 0.4166667em;
+		.medium;
+		&:last-child {
+			margin: 0;
+		}
+		&:hover {
+			.box_shadow (@white, 0 0 0);
+			.two_stop_linear_gradient (@hotel_grey, lighten(@hotel_grey, 10%));
+		}
+	}
+}
+
+// This mixin builds on the mini_button mixin and adds values for size and icon content in button
+// see slide show style building for example
+// ----------------------------------------------------------------------------------------------
+.mini_buttons_paging() {
+	.mini_buttons;
+	button {
+		width: 1.6666667em;
+		height: 1.6666667em;
+		color: transparent;
+		span {
+			background: url(/public/images/self_select_panel.png) no-repeat 50% 50%;
+			display: block;
+			width: 0.8333333em;
+			height: 0.8333333em;
+			margin: 0 auto;
+			.transform (rotate(180deg));
+			text-indent: -10000px;
+		}
+		+ button {
+			span {
+				.transform (rotate(0deg));
+			}
+		}
+	}
+}
 	
 /////// Buttons design - primary, secondary, and small ////////
 
