@@ -104,7 +104,11 @@
 		<header>2 Mini pagination</header>
 		<article>
 			<ul class="mini_pagination">
-				<?php include '../../partials/_mini_buttons.php'?>
+				<li>1 of 15</li>
+				<li>
+					<button><span>reverse</span></button>
+					<button><span>adcance</span></button>
+				</li>
 			</ul>
 			
 			
